@@ -1,0 +1,128 @@
+/* Our local icons as a font */
+ @font-face {
+  font-family: 'PersonalGenomesOrgIcons';
+  src: url('../fonts/PersonalGenomesOrgIcons.eot');
+  src: url('../fonts/PersonalGenomesOrgIcons.eot') format('embedded-opentype'), url('../fonts/PersonalGenomesOrgIcons.html') format('woff'), url('../fonts/PersonalGenomesOrgIcons-2.html') format('truetype'), url('../fonts/PersonalGenomesOrgIcons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.pgorg-icon {
+  display: inline-block;
+  font-family: PersonalGenomesOrgIcons;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.pgorg-icon-translation:before {
+  content: "T";
+}
+
+/* Sticky footer styles
+   -------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 175px;
+}
+body > .container {
+  margin-top:60px;
+}
+
+.footer {
+  font-family: "Raleway";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 175px;
+  padding-top: 75px;
+}
+.footer .wrapper {
+    border-top: 2px solid #eee;;
+}
+
+
+.footer h5 {
+    margin: 15px 0px 8px;
+}
+
+.jumbotron {
+  margin-top: 40px;
+}
+#home-page .jumbotron .h1, .jumbotron h1 {
+  font-size:5rem;
+  font-weight: 400;
+}
+
+#home-page .jumbotron p {
+  font-weight: 300;
+  font-size: 1.9rem;
+}
+
+.jumbotron p {
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.jumbotron li {
+  font-size: 1.7rem;
+}
+
+body {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:1.5rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+    .footer {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.bio {
+  margin-bottom: 20px;
+  margin-
+}
+
+/* Stuff for our staff pages */
+.bio h4,.bio h5,.bio p {
+    margin:12px;
+}
+.bio h5 {
+  font-weight: 400;
+}
+.bio img {
+    margin:12px;
+}
+/* Remove top margin for correct spacing of the top and heading */
+.top-heading {
+    margin-top:0px;
+}
+
+/* Style for the front page layouts */
+.infobox {
+    padding-bottom: 10px;
+}
+
+/* Anchor links fail because the content starts under the navbar.
+   This fix is adapted from:
+   http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/  */
+span.anchor-tag:before {
+  display: block;
+  content: "";
+  height:55px;
+  margin:-55px 0 0;
+}

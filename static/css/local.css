@@ -2,7 +2,7 @@
  @font-face {
   font-family: 'PersonalGenomesOrgIcons';
   src: url('../fonts/PersonalGenomesOrgIcons.eot');
-  src: url('../fonts/PersonalGenomesOrgIcons.eot') format('embedded-opentype'), url('../fonts/PersonalGenomesOrgIcons.html') format('woff'), url('../fonts/PersonalGenomesOrgIcons-2.html') format('truetype'), url('../fonts/PersonalGenomesOrgIcons.svg') format('svg');
+  src: url('../fonts/PersonalGenomesOrgIcons.eot') format('embedded-opentype'), url('../fonts/PersonalGenomesOrgIcons.woff') format('woff'), url('../fonts/PersonalGenomesOrgIcons-2.ttf') format('truetype'), url('../fonts/PersonalGenomesOrgIcons.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }

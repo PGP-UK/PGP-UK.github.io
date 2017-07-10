@@ -11,7 +11,7 @@
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" type="text/css">
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.15/r-2.1.1/sc-1.4.2/datatables.css" />
+  <link href="/static/css/dataTables.bootstrap.min.css" rel="stylesheet">
   <link href="/static/css/local.css" rel="stylesheet">
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
@@ -67,24 +67,68 @@
     <div class="page-header">
       <h2>Our Data</h2>
     </div>
-    <p class="lead">Please see below for data produced from the Personal Genome Projects UK (PGP-UK). This page will automatically be updated as more data becomes available.</p>
-    <table class="table" id="table">
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Study Accession</th>
-          <th>Sample Accession</th>
-          <th>ENA Experiment Accession</th>
-          <th>ENA Run Accession</th>
-          <th>EVA Analysis Accession</th>
-          <th>Array Express Accession</th>
-          <th>Age at Sample Collection</th>
-          <th>Gender</th>
-          <th>Smoking Status</th>
-          <th></th>
-        </tr>
-      </thead>
-    </table>
+    <p class="lead">Please see below for data produced from the Personal Genome Projects UK (PGP-UK).</p>
+    <div class="table-responsive">
+      <table class="table" id="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Sample Accession</th>
+            <th>ENA Experiment Accession</th>
+            <th>EVA Analysis Accession</th>
+            <th>Array Express Accession</th>
+            <th>Age at Sample Collection</th>
+            <th>Gender</th>
+            <th>Files</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="file_modal" tabindex="-1" role="dialog" aria-labelledby="files_title">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title" id="files_title"><span id="participant_id_files">--</span> Files</h2>
+        </div>
+        <div class="modal-body">
+            <p>Below are direct links to each of the files associated with this PGP participant.</p>
+            <table class="table info_table">
+              <tbody>
+                <tr>
+                  <td>ENA</td>
+                  <td>
+                      <a id="ena_bam_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Bam File</a>&nbsp;&bull;&nbsp;<a id="ena_fastq_1_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> FastQ File (1)</a>&nbsp;&bull;&nbsp;<a id="ena_fastq_2_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> FastQ File (2) </a>&nbsp;&bull;&nbsp;<a id="ena_sra_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> SRA </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>EVA</td>
+                  <td>
+                      <a id="eva_vcf_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> VCF </a>&nbsp;&bull;&nbsp;<a id="eva_vcf_tabix_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> VCF Tabix Index file </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Blood ArrayExpress</td>
+                  <td>
+                      <a id="array_express_blood_idat_red_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Blood Red IDAT File </a>&nbsp;&bull;&nbsp;<a id="array_express_blood_idat_green_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Blood Green IDAT File </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Saliva ArrayExpress</td>
+                  <td>
+                      <a id="array_express_saliva_idat_red_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Saliva Red IDAT File </a>&nbsp;&bull;&nbsp;<a id="array_express_saliva_idat_green_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Saliva Green IDAT File </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="footer">
     <div class="wrapper">
@@ -119,7 +163,8 @@
   <!-- JS placed at the end of the document so the pages load faster -->
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.js"></script>
+  <script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="/static/js/dataTables.bootstrap.min.js"></script>
   <script type="text/javascript" src="/static/js/data.js"></script>
   <script type="text/javascript">
   (function($) {

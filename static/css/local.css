@@ -228,3 +228,25 @@ h6 {
     float: left !important;
   }
 }
+
+
+.info_table tr td:first-child {
+  text-align: right;
+  border-right: 1px solid #d0d0d0;
+}
+
+.info_table tr td:last-child {
+  text-align: left;
+}
+
+.info_table td {
+  padding: 5px 8px;
+}
+
+.info_table {
+  width: initial;
+}
+
+.info_table>tbody>tr>td, .info_table>tbody>tr>th, .info_table>tfoot>tr>td, .info_table>tfoot>tr>th, .info_table>thead>tr>td, .info_table>thead>tr>th {
+  border-top:none;
+}

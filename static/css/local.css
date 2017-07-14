@@ -245,6 +245,10 @@ h6 {
 
 .info_table {
   width: initial;
+  background-color: transparent !important;
+  padding-left:50px;
+  margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .info_table>tbody>tr>td, .info_table>tbody>tr>th, .info_table>tfoot>tr>td, .info_table>tfoot>tr>th, .info_table>thead>tr>td, .info_table>thead>tr>th {

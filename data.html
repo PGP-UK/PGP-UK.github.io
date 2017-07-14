@@ -43,6 +43,7 @@
           <li><a href="/sign-up">Volunteer</a></li>
           <li><a href="/data">Data</a></li>
           <li><a href="/news">News</a></li>
+          <li><a href="https://pgpukblog.wordpress.com/" target="_blank">Blog</a></li>
           <li>
             <p class="navbar-btn">
               <a href="https://my.personalgenomes.org.uk" class="btn btn-success">Participant Log in</a>
@@ -69,66 +70,108 @@
     </div>
     <p class="lead">Please see below for data produced from the Personal Genome Projects UK (PGP-UK).</p>
     <div class="table-responsive">
-      <table class="table" id="table">
+      <table class="table text-center table-striped" id="table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Sample Accession</th>
-            <th>ENA Experiment Accession</th>
-            <th>EVA Analysis Accession</th>
-            <th>Array Express Accession</th>
-            <th>Age at Sample Collection</th>
-            <th>Gender</th>
-            <th>Files</th>
+            <th class="text-center">ID</th>
+            <th class="text-center">Genome Data (ENA)</th>
+            <th class="text-center">Variant Data (EVA)</th>
+            <th class="text-center">Methylome Data (Array Express)</th>
+            <!-- <th class="text-center">Transcriptome Data (Array Express)</th> -->
+            <th width="90px"></th>
           </tr>
         </thead>
       </table>
     </div>
   </div>
-  <!-- Modal -->
-  <div class="modal fade" id="file_modal" tabindex="-1" role="dialog" aria-labelledby="files_title">
-    <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h2 class="modal-title" id="files_title"><span id="participant_id_files">--</span> Files</h2>
-        </div>
-        <div class="modal-body">
-            <p>Below are direct links to each of the files associated with this PGP participant.</p>
-            <table class="table info_table">
-              <tbody>
-                <tr>
-                  <td>ENA</td>
-                  <td>
-                      <a id="ena_bam_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Bam File</a>&nbsp;&bull;&nbsp;<a id="ena_fastq_1_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> FastQ File (1)</a>&nbsp;&bull;&nbsp;<a id="ena_fastq_2_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> FastQ File (2) </a>&nbsp;&bull;&nbsp;<a id="ena_sra_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> SRA </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>EVA</td>
-                  <td>
-                      <a id="eva_vcf_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> VCF </a>&nbsp;&bull;&nbsp;<a id="eva_vcf_tabix_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> VCF Tabix Index file </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Blood ArrayExpress</td>
-                  <td>
-                      <a id="array_express_blood_idat_red_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Blood Red IDAT File </a>&nbsp;&bull;&nbsp;<a id="array_express_blood_idat_green_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Blood Green IDAT File </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Saliva ArrayExpress</td>
-                  <td>
-                      <a id="array_express_saliva_idat_red_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Saliva Red IDAT File </a>&nbsp;&bull;&nbsp;<a id="array_express_saliva_idat_green_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Saliva Green IDAT File </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
+  <!-- templats -->
+  <div id="files_template" style="display:none;">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
+      <table class="table info_table" style="">
+        <tbody>
+          <tr>
+            <td>ENA</td>
+            <td>
+                <a target="_blank" class="ena_bam_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Bam File</a>&nbsp;&bull;&nbsp;<a target="_blank" class="ena_fastq_1_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> FastQ File (1)</a>&nbsp;&bull;&nbsp;<a target="_blank" class="ena_fastq_2_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> FastQ File (2) </a>&nbsp;&bull;&nbsp;<a target="_blank" class="ena_sra_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> SRA </a>
+            </td>
+          </tr>
+          <tr>
+            <td>EVA</td>
+            <td>
+                <a target="_blank" class="eva_vcf_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> VCF </a>&nbsp;&bull;&nbsp;<a target="_blank" class="eva_vcf_tabix_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> VCF Tabix Index file </a>
+            </td>
+          </tr>
+          <tr class="array_express_file_data_row">
+            <td>Blood ArrayExpress</td>
+            <td>
+                <a target="_blank" class="array_express_blood_idat_red_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Blood Red IDAT File </a>&nbsp;&bull;&nbsp;<a target="_blank" class="array_express_blood_idat_green_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Blood Green IDAT File </a>
+            </td>
+          </tr>
+          <tr class="array_express_file_data_row">
+            <td>Saliva ArrayExpress</td>
+            <td>
+                <a target="_blank" class="array_express_saliva_idat_red_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Saliva Red IDAT File </a>&nbsp;&bull;&nbsp;<a target="_blank" class="array_express_saliva_idat_green_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Saliva Green IDAT File </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <!-- templats -->
+  <div id="traits_template" style="display:none;">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
+      <table class="table info_table" style="">
+        <tbody>
+          <tr>
+            <td>Gender</td>
+            <td class="survey_gender"></td>
+          </tr>
+          <tr>
+            <td>Date of Birth</td>
+            <td class="survey_date_of_birth"></td>
+          </tr>
+          <tr>
+            <td>Age at Sample Collection</td>
+            <td class="survey_age_at_sample_collection"></td>
+          </tr>
+          <tr>
+            <td>Current Smoker</td>
+            <td class="survey_current_smoker"></td>
+          </tr>
+          <tr>
+            <td>Ex-Smoker?</td>
+            <td class="survey_ex_smoker"></td>
+          </tr>
+          <tr>
+            <td>Blood Type</td>
+            <td class="survey_blood_type"></td>
+          </tr>
+          <tr>
+            <td>Handedness</td>
+            <td class="survey_handedness"></td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td class="survey_weight"></td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td class="survey_height"></td>
+          </tr>
+          <tr>
+            <td>Hair Colour</td>
+            <td class="survey_hair_colour"></td>
+          </tr>
+          <tr>
+            <td>Right Eye Colour</td>
+            <td class="survey_right_eye_colour"></td>
+          </tr>
+          <tr>
+            <td>Left Eye Colour</td>
+            <td class="survey_left_eye_colour"></td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 class="pull-left" style="margin-left: 20px; margin-top:10px"><small class="survey_sub_text">*Survey taken on <span class="survey_date"></span></small></h3>
   </div>
   <div class="footer">
     <div class="wrapper">

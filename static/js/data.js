@@ -32,7 +32,7 @@ if (!ES) { ES = {}; }
   };
 
   ES.addPlotIconToTopTable = function(dataset) {
-    var btn_html = '<button type="button" class="btn btn-default trait_btn" aria-label="Trait Data" data-toggle="modal"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>&nbsp;&nbsp;<button type="button" class="btn btn-default file_btn" aria-label="Download Files" data-toggle="modal" data-target="#file_modal"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>';
+    var btn_html = '<button type="button" class="btn btn-default trait_btn" aria-label="Trait Data" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>&nbsp;&nbsp;<button type="button" class="btn btn-default file_btn" aria-label="Download Files" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>';
     for (var i = 0; i < dataset.length; i++) {
       dataset[i].push(btn_html);
     }

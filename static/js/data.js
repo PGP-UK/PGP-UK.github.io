@@ -7,9 +7,11 @@ if (!ES) { ES = {}; }
       var datatable = ES.initializeTable(json, 'table');
       $.getJSON('https://pgp-uk.github.io/data/json/out.json', function(json) {
         ES.makePlotIconClickable(datatable, 'table', json, '.file_btn');
+        $('[data-toggle="tooltip"]').tooltip();
       });
       $.getJSON('https://pgp-uk.github.io/data/json/phenotype_latest.json', function(json) {
         ES.makePlotIconClickable(datatable, 'table', json, '.trait_btn');
+        $('[data-toggle="tooltip"]').tooltip();
       });
     });
   };
@@ -18,6 +20,7 @@ if (!ES) { ES = {}; }
     dataset = ES.addPlotIconToTopTable(dataset);
     var dt = $('#' + tableId).DataTable({
       data: dataset,
+      responsive: true,
       iDisplayLength: 25,
       pagingType: 'full',
       order: [
@@ -32,7 +35,7 @@ if (!ES) { ES = {}; }
   };
 
   ES.addPlotIconToTopTable = function(dataset) {
-    var btn_html = '<button type="button" class="btn btn-default trait_btn" aria-label="Trait Data" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>&nbsp;&nbsp;<button type="button" class="btn btn-default file_btn" aria-label="Download Files" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>';
+    var btn_html = '<button type="button" class="btn btn-default trait_btn" aria-label="Trait Data" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Phenotype Data"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></button>&nbsp;&nbsp;<button type="button" class="btn btn-default file_btn" aria-label="Download Files" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="Download Files"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span></button>';
     for (var i = 0; i < dataset.length; i++) {
       dataset[i].push(btn_html);
     }

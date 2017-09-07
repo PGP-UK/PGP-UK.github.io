@@ -9,7 +9,7 @@ if (!ES) { ES = {}; }
         ES.makePlotIconClickable(datatable, 'table', json, '.file_btn');
         $('[data-toggle="tooltip"]').tooltip();
       });
-      $.getJSON('https://pgp-uk.github.io/data/json/phenotype_latest.json', function(json) {
+      $.getJSON('https://pgp-uk.github.io/data/json/phenotype.json', function(json) {
         ES.makePlotIconClickable(datatable, 'table', json, '.trait_btn');
         $('[data-toggle="tooltip"]').tooltip();
       });

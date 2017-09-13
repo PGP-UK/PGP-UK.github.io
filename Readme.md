@@ -1,6 +1,6 @@
-# Readme
+# Live Website
 
-Static website running: http://www.personalgenomes.org.uk
+Static website running: https://www.personalgenomes.org.uk
 
 This is the live branch that is built and hosted on Netlify.
 

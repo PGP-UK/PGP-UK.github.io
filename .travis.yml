@@ -1,0 +1,12 @@
+before_script: gem install typhoeus
+script: bash ./deploy.sh
+language: ruby
+rvm:
+  - 2.3
+env:
+  global:
+    - GH_REF: github.com/PGP-UK/data.git
+    - secure: JiWD/QOLnjowC69zVRoFFMfUyGKmKbu7wSMRor2h5upuLn9Y3tF3ZMLTwKgPCjxjZntrUZSXZdqQV9dthRvJGVwuvPeLf0h4aR4c4bDpxV8FwwoxvQt2kDUCYE/EQTWAthB/fwzvgt7YuvCrrda8NGK6qz2QCB6AtAU984pPKtYfyPi6KuZXQRlm7xNthIqVhGhkgidQFx9RccwhsoUVcmGEwi0AyeDY+GKWTOlrIX+jPfxGa7tR9ih5KtlylCEtBuJMPnaOPsqW8JpDUXFWJml3t1pR3MPyYK0l26ShIWwen7/0osuAjzPsgfD1RPDudilpNtf0VmTHejxfb8NX8kChgUxkXdwE4B9Vnn1+k7Ufa9xqcwRgogdwUKgUmQGZnOJIfK+KV2idowPlQIM+SopibMO6M5vzdji/bFitdrorub8/KbTR7yDe5jFltlk5q5tgw/8n3SMM2stpAXnjozt5nH4YZqIv+zqlGJ7+5w1gOKGYWlzppCggSdeJAhXTyvbkMjUZHQlriL/DpKZYGipOe06DLLwfiK4NP1XzDUJckeV4/cJIoJU791MAyDkLUUNPPvn1Mu7ftuJ6zDgCMu0Ca4aV05KkKSuiB5SvC76gN8sdbgI2U8qUtd/ehP2GZw0xdjwDgaIF1SeSful/Vrmzmnr2rtkX1Ur3vUMYoVk=
+branches:
+  only:
+    - master

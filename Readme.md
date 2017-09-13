@@ -2,6 +2,10 @@
 
 Static website running: http://www.personalgenomes.org.uk
 
-PGP-UK Data Page: [https://www.personalgenomes.org.uk/data](https://www.personalgenomes.org.uk/data)
+This is the live branch that is built and hosted on Netlify.
 
-This repository contains information for the PGP-UK Data page (and assets for PGP-UK emails).
+### Other Branches
+
+* Live: live branch
+* Master: Legacy website hosted by github (pgp-uk.github.io). This only contains old email assets.
+* Cron: trigger a rebuild of the live branch on netlify.

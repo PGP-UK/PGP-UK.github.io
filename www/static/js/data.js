@@ -3,13 +3,13 @@ if (!ES) { ES = {}; }
 
 (function() { // ES module
   ES.init = function() {
-    $.getJSON('https://www.personalgenomes.org.uk/data/json/data.json', function(json) {
+    $.getJSON('https://personalgenomes.org.uk/data/json/data.json', function(json) {
       var datatable = ES.initializeTable(json, 'table');
-      $.getJSON('https://www.personalgenomes.org.uk/data/json/out.json', function(json) {
+      $.getJSON('https://personalgenomes.org.uk/data/json/out.json', function(json) {
         ES.makePlotIconClickable(datatable, 'table', json, '.file_btn');
         $('[data-toggle="tooltip"]').tooltip();
       });
-      $.getJSON('https://www.personalgenomes.org.uk/data/json/phenotype.json', function(json) {
+      $.getJSON('https://personalgenomes.org.uk/data/json/phenotype.json', function(json) {
         ES.makePlotIconClickable(datatable, 'table', json, '.trait_btn');
         $('[data-toggle="tooltip"]').tooltip();
       });
@@ -36,10 +36,11 @@ if (!ES) { ES = {}; }
         "orderable": false
       },
       {
-        "width": "92px",
+        "width": "104px",
         "targets": 5
     }]
     });
+    $('.dataTables_filter').addClass('pull-right')
     return dt;
   };
 

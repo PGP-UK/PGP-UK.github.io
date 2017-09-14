@@ -254,3 +254,7 @@ h6 {
 .info_table>tbody>tr>td, .info_table>tbody>tr>th, .info_table>tfoot>tr>td, .info_table>tfoot>tr>th, .info_table>thead>tr>td, .info_table>thead>tr>th {
   border-top:none;
 }
+
+.table>thead:first-child>tr:first-child>th:last-child {
+  width: 90px !important;
+}

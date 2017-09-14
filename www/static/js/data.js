@@ -26,10 +26,19 @@ if (!ES) { ES = {}; }
       order: [
         [1, "asc"]
       ],
+      bAutoWidth: false,
       columnDefs: [{
-        "targets": 4,
+        "targets": 5,
         "orderable": false
-      }]
+      },
+      {
+        "targets": 1,
+        "orderable": false
+      },
+      {
+        "width": "92px",
+        "targets": 5
+    }]
     });
     return dt;
   };

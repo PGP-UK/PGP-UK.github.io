@@ -76,11 +76,11 @@ def restructure_results(results)
   r = {}
   results.each do |result|
     if result[:type] == 'arrayexpress'
-      pgp_id = result[:characteristicsindividual].to_sym
+      pgp_id = normalize_hex_id(result[:characteristicsindividual]).to_sym
     elsif result[:type] == 'ena' || result[:type] == 'eva'
-      pgp_id = result[:sample_alias].to_sym
+      pgp_id = parse_hex_id(result).to_sym
     elsif result[:type] == 'genome_report'
-      pgp_id = result['human_id'].to_sym
+      pgp_id = normalize_hex_id(result['human_id']).to_sym
     end
     type = result[:type].to_sym
     r[pgp_id] ||= {}
@@ -115,10 +115,22 @@ def write_to_json_file(outfile, data)
 end
 
 def get_sample_id(h)
-  return h[:genome_report][0]['human_id'] unless h[:genome_report].nil?
-  return h[:ena][0]['sample_alias'] unless h[:ena].nil?
-  return h[:eva][0]['sample_alias'] unless h[:eva].nil?
-  return h[:arrayexpress][0]['characteristicsindividual'] unless h[:arrayexpress].nil?
+  return normalize_hex_id(h[:genome_report][0]['human_id']) unless h[:genome_report].nil?
+  return parse_hex_id(h[:ena][0]) unless h[:ena].nil?
+  return parse_hex_id(h[:eva][0]) unless h[:eva].nil?
+  return normalize_hex_id(h[:arrayexpress][0]['characteristicsindividual']) unless h[:arrayexpress].nil?
+end
+
+def parse_hex_id(h)
+  return normalize_hex_id(h[:sample_alias]) if h[:sample_alias] =~ /uk\S{6}/
+  # if not in correct format assume PGP100
+  d = SANGER_KEY[ h[:sample_alias] ]
+  return nil if h[:sample_title] != d[:sanger_id]
+  return normalize_hex_id(d[:pgp_id])
+end
+
+def normalize_hex_id(id)
+  'uk' + id[2..-1].upcase
 end
 
 def create_datatable_json(results)
@@ -130,13 +142,22 @@ def create_datatable_json(results)
     analysis_acc = h[:eva].nil? ? 'Coming Soon!' : "<a href='http://www.ebi.ac.uk/ena/data/view/#{h[:eva][0][:analysis_accession]}&display=html' target='_blank'>#{h[:eva][0][:analysis_accession]}</a>"
     array_express_acc = h[:arrayexpress].nil? ? 'Coming Soon!' : "<a href='https://www.ebi.ac.uk/arrayexpress/experiments/#{h[:arrayexpress][0][:accession]}/' target='_blank'>#{h[:arrayexpress][0][:accession]}</a>"
     arr = [sample_alias, genome_report, experiment_acc, analysis_acc, array_express_acc]
+    puts arr if sample_alias == 'ukAED6EE'
     data << arr
   end
   data
 end
 
-### RUNNING the file
-project_accession = ['PRJEB17529']
+
+### MAIN RUNNING the script
+
+# parse SANGER keys for PGP100
+SANGER_KEY = {}
+CSV.foreach('sanger_ids_key.csv') do |r|
+  SANGER_KEY[r[0]] = {pgp_id: r[1], sanger_id: r[2]}
+end
+
+project_accession = ['PRJEB17529', 'PRJEB13150']
 array_express_accessions = ['E-MTAB-5377']
 out_dir = ARGV[0]
 

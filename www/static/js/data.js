@@ -94,9 +94,7 @@ if (!ES) { ES = {}; }
     } else {
       var data = dataset[id];
       var file_html = $('#files_template').clone().attr('id', 'files_'+id).show();
-      file_html = ES.addBamFileHref(file_html, data);
-      file_html = ES.addFastqFilesHref(file_html, data);
-      file_html = ES.addSraFileHref(file_html, data);
+      file_html = ES.addEnaFilesHref(file_html, data);
       file_html = ES.addVcfFilesHref(file_html, data);
       file_html = ES.addIdatFilesHref(file_html, data);
       row.child( file_html ).show();
@@ -105,34 +103,67 @@ if (!ES) { ES = {}; }
   };
 
   /* Adding ENA links*/
+
+  ES.addEnaFilesHref = function(file_html, data){
+    if (data.ena === undefined) {
+      $(file_html).find('.ena_file_data_row').hide();
+  } else {
+      file_html = ES.addBamFileHref(file_html, data);
+      file_html = ES.addFastqFilesHref(file_html, data);
+      file_html = ES.addSraFileHref(file_html, data);
+    }
+    return file_html;
+  }
+
   ES.addBamFileHref = function(file_html, data) {
-    var ftp_url = 'ftp://' + data.ena[0].submitted_ftp;
-    $(file_html).find('.ena_bam_file').attr('href', ftp_url);
+    if (data.ena[0].submitted_ftp === undefined) {
+      $(file_html).find('.ena_bam_file').hide();
+  } else {
+      $(file_html).find('.ena_bam_file').show();
+      var ftp_url = 'ftp://' + data.ena[0].submitted_ftp;
+      $(file_html).find('.ena_bam_file').attr('href', ftp_url);
+    }
     return file_html;
   };
 
   ES.addFastqFilesHref = function(file_html, data) {
-    var fastq_links = data.ena[0].fastq_ftp.split(';');
-    var fastq1ftp_url = 'ftp://' + fastq_links[0];
-    $(file_html).find('.ena_fastq_1_file').attr('href', fastq1ftp_url);
-    var fastq2ftp_url = 'ftp://' + fastq_links[1];
-    $(file_html).find('.ena_fastq_2_file').attr('href', fastq2ftp_url);
+    if (data.ena[0].fastq_ftp === undefined) {
+      $(file_html).find('.ena_fastq_1_file').hide();
+      $(file_html).find('.ena_fastq_2_file').hide();
+  } else {
+      $(file_html).find('.ena_fastq_1_file').show();
+      $(file_html).find('.ena_fastq_2_file').show();
+      var fastq_links = data.ena[0].fastq_ftp.split(';');
+      var fastq1ftp_url = 'ftp://' + fastq_links[0];
+      $(file_html).find('.ena_fastq_1_file').attr('href', fastq1ftp_url);
+      var fastq2ftp_url = 'ftp://' + fastq_links[1];
+      $(file_html).find('.ena_fastq_2_file').attr('href', fastq2ftp_url);
+    }
     return file_html;
   };
 
   ES.addSraFileHref = function(file_html, data) {
-    var ftp_url = 'ftp://' + data.ena[0].sra_ftp;
-    $(file_html).find('.ena_sra_file').attr('href', ftp_url);
+    if (data.ena[0].sra_ftp === undefined) {
+      $(file_html).find('.ena_sra_file').hide();
+  } else {
+    $(file_html).find('.ena_sra_file').show();
+      var ftp_url = 'ftp://' + data.ena[0].sra_ftp;
+      $(file_html).find('.ena_sra_file').attr('href', ftp_url);
+    }
     return file_html;
   };
 
   /* Adding EVA links*/
   ES.addVcfFilesHref = function(file_html, data) {
-    var vcf_link = data.eva[0].submitted_ftp.split(';');
-    var vcf_ftp_url = 'ftp://' + vcf_link[0];
-    $(file_html).find('.eva_vcf_file').attr('href', vcf_ftp_url);
-    var vcf_tabix_ftp_url = 'ftp://' + vcf_link[1];
-    $(file_html).find('.eva_vcf_tabix_file').attr('href', vcf_tabix_ftp_url);
+    if (data.eva === undefined) {
+      $(file_html).find('.eva_file_data_row').hide();
+  } else {
+      var vcf_link = data.eva[0].submitted_ftp.split(';');
+      var vcf_ftp_url = 'ftp://' + vcf_link[0];
+      $(file_html).find('.eva_vcf_file').attr('href', vcf_ftp_url);
+      var vcf_tabix_ftp_url = 'ftp://' + vcf_link[1];
+      $(file_html).find('.eva_vcf_tabix_file').attr('href', vcf_tabix_ftp_url);
+  }
     return file_html;
   };
 
@@ -141,7 +172,6 @@ if (!ES) { ES = {}; }
     if (data.arrayexpress === undefined) {
       $(file_html).find('.array_express_file_data_row').hide();
     } else {
-      $(file_html).find('.array_express_file_data_row').show();
       for (var i = 0; i < data.arrayexpress.length; i++) {
         var http_url = 'https://www.ebi.ac.uk/arrayexpress/files/' + data.arrayexpress[i].accession + '/' + data.arrayexpress[i].accession + '.raw.1.zip/' + data.arrayexpress[i].array_data_file;
         var colour = data.arrayexpress[i].array_data_file.split('_')[2];

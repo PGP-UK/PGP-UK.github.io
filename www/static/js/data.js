@@ -159,10 +159,17 @@ if (!ES) { ES = {}; }
       $(file_html).find('.eva_file_data_row').hide();
   } else {
       var vcf_link = data.eva[0].submitted_ftp.split(';');
-      var vcf_ftp_url = 'ftp://' + vcf_link[0];
-      $(file_html).find('.eva_vcf_file').attr('href', vcf_ftp_url);
-      var vcf_tabix_ftp_url = 'ftp://' + vcf_link[1];
-      $(file_html).find('.eva_vcf_tabix_file').attr('href', vcf_tabix_ftp_url);
+      for (var x in vcf_link){
+        if (x.split('.').pop()=="tbi"){
+          var vcf_tabix_ftp_url = 'ftp://' + x;
+          $(file_html).find('.eva_vcf_tabix_file').attr('href', vcf_tabix_ftp_url);
+        }else{
+        if (x.split('.').pop()=="gz"){
+          var vcf_ftp_url = 'ftp://' + x;
+          $(file_html).find('.eva_vcf_file').attr('href', vcf_ftp_url);
+        }
+      }
+    }
   }
     return file_html;
   };

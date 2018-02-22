@@ -2,6 +2,7 @@ require 'typhoeus'
 require 'csv'
 require 'json'
 require 'uri'
+require 'pry'
 
 def init(project_accession, array_express_accessions)
   hydra = Typhoeus::Hydra.new
@@ -85,7 +86,7 @@ def restructure_results(results)
     type = result[:type].to_sym
     r[pgp_id] ||= {}
     r[pgp_id][type] ||= []
-    r[pgp_id][type] << result
+    r[pgp_id][type] << result.transform_keys(&:to_sym)
   end
   r
 end
@@ -115,10 +116,11 @@ def write_to_json_file(outfile, data)
 end
 
 def get_sample_id(h)
-  return normalize_hex_id(h[:genome_report][0]['human_id']) unless h[:genome_report].nil?
+  p h
+  return normalize_hex_id(h[:genome_report][0][:human_id]) unless h[:genome_report].nil?
   return parse_hex_id(h[:ena][0]) unless h[:ena].nil?
   return parse_hex_id(h[:eva][0]) unless h[:eva].nil?
-  return normalize_hex_id(h[:arrayexpress][0]['characteristicsindividual']) unless h[:arrayexpress].nil?
+  return normalize_hex_id(h[:arrayexpress][0][:characteristicsindividual]) unless h[:arrayexpress].nil?
 end
 
 def parse_hex_id(h)
@@ -130,6 +132,8 @@ def parse_hex_id(h)
 end
 
 def normalize_hex_id(id)
+  p 3 
+  puts id
   'uk' + id[2..-1].upcase
 end
 

@@ -158,17 +158,14 @@ if (!ES) { ES = {}; }
     if (data.eva === undefined) {
       $(file_html).find('.eva_file_data_row').hide();
   } else {
-    $(file_html).find('.eva_file_data_row').show();
-    $(file_html).find('.vcf_tabix_ftp_url').show();
-    $(file_html).find('.vcf_ftp_url').show();
       var vcf_link = data.eva[0].submitted_ftp.split(';');
-      for (var x in vcf_link){
-        if (x.split('.').pop()=="tbi"){
-          var vcf_tabix_ftp_url = 'ftp://' + x;
+      for (var x=0; x<vcf_link.length;x++){
+        if (vcf_link[x].split('.').pop()=="tbi"){
+          var vcf_tabix_ftp_url = 'ftp://' + vcf_link[x];
           $(file_html).find('.eva_vcf_tabix_file').attr('href', vcf_tabix_ftp_url);
         }else{
-        if (x.split('.').pop()=="gz"){
-          var vcf_ftp_url = 'ftp://' + x;
+        if (vcf_link[x].split('.').pop()=="gz"){
+          var vcf_ftp_url = 'ftp://' + vcf_link[x];
           $(file_html).find('.eva_vcf_file').attr('href', vcf_ftp_url);
         }
       }

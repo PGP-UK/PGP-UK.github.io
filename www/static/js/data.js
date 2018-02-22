@@ -158,6 +158,7 @@ if (!ES) { ES = {}; }
     if (data.eva === undefined) {
       $(file_html).find('.eva_file_data_row').hide();
   } else {
+    $(file_html).find('.eva_file_data_row').show();
       var vcf_link = data.eva[0].submitted_ftp.split(';');
       for (var x in vcf_link){
         if (x.split('.').pop()=="tbi"){

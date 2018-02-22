@@ -159,6 +159,8 @@ if (!ES) { ES = {}; }
       $(file_html).find('.eva_file_data_row').hide();
   } else {
     $(file_html).find('.eva_file_data_row').show();
+    $(file_html).find('.vcf_tabix_ftp_url').show();
+    $(file_html).find('.vcf_ftp_url').show();
       var vcf_link = data.eva[0].submitted_ftp.split(';');
       for (var x in vcf_link){
         if (x.split('.').pop()=="tbi"){

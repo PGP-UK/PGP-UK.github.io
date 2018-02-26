@@ -40,7 +40,7 @@ if (!ES) { ES = {}; }
         "targets": 5
     }]
     });
-    $('.dataTables_filter').addClass('pull-right')
+    $('.dataTables_filter').addClass('pull-right');
     return dt;
   };
 
@@ -113,7 +113,7 @@ if (!ES) { ES = {}; }
       file_html = ES.addSraFileHref(file_html, data);
     }
     return file_html;
-  }
+  };
 
   ES.addBamFileHref = function(file_html, data) {
     if (data.ena[0].submitted_ftp === undefined) {
@@ -204,7 +204,7 @@ if (!ES) { ES = {}; }
   ES.updateTraitsHtml = function (data, traits_html) {
     if (data === undefined) {
       $(traits_html).find('.info_table').remove();
-      $(traits_html).find('.survey_sub_text').text('There is no trait data associated with this participant currently.')
+      $(traits_html).find('.survey_sub_text').text('There is no trait data associated with this participant currently.');
     } else {
       $(traits_html).find('.survey_gender').text(data[1]);
       $(traits_html).find('.survey_date_of_birth').text(data[2]);

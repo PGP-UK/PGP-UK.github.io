@@ -2,7 +2,6 @@ require 'typhoeus'
 require 'csv'
 require 'json'
 require 'uri'
-require 'pry'
 
 def init(project_accession, array_express_accessions)
   hydra = Typhoeus::Hydra.new

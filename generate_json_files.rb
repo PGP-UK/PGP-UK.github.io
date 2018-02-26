@@ -81,32 +81,21 @@ def restructure_results(results)
     elsif result[:type] == 'ena' || result[:type] == 'eva'
       pgp_id = parse_hex_id(result).to_sym
     elsif result[:type] == 'genome_report'
-      pgp_id = normalize_hex_id(result['human_id']).to_sym
+      pgp_id = normalize_hex_id(result[:human_id]).to_sym
     end
     type = result[:type].to_sym
     r[pgp_id] ||= {}
     r[pgp_id][type] ||= []
-    r[pgp_id][type] << result.transform_keys(&:to_sym)
+    r[pgp_id][type] << result
   end
   r
-end
-
-## Not Used
-def get_participant_genome_report_url(sample)
-  url = "https://my.personalgenomes.org.uk/profile/#{sample}.json"
-  json_string = Typhoeus::Request.new(url).run.body
-  data = JSON.parse(json_string)
-  genome_report = data['files'].select do |f|
-    f['name'] =~ /Genome Report \(Released by PGP-UK on/
-  end
-  genome_report.empty? ? nil : genome_report[0]['download_url']
 end
 
 def get_genome_report_url
   url = 'https://my.personalgenomes.org.uk/public_genetic_data.json'
   json_string = Typhoeus::Request.new(url).run.body
-  json = JSON.parse(json_string)
-  json['aaData'].select { |e| e['data_type'] == 'Genome Report' }.each do |e|
+  json = JSON.parse(json_string, symbolize_names: true)
+  json[:aaData].select { |e| e[:data_type] == 'Genome Report' }.each do |e|
     e.merge!({ type: 'genome_report' })
   end
 end

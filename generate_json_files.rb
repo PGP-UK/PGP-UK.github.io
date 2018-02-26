@@ -126,7 +126,7 @@ def create_datatable_json(results)
   data = []
   results.each do |sample, h|
     sample_alias = "<a href='https://my.personalgenomes.org.uk/profile/#{get_sample_id(h)}' target='_blank'>#{get_sample_id(h)}</a>"
-    genome_report = h[:genome_report].nil? ? 'Coming Soon!' : "<a href='#{h[:genome_report][0]['download_url']}'><button type='button' class='btn btn-default' aria-label='Genome Report' data-toggle='tooltip' data-trigger='hover' data-placement='bottom' title='Genome Report'><span class='glyphicon glyphicon-file' aria-hidden='true'></span></button></a>"
+    genome_report = h[:genome_report].nil? ? 'Coming Soon!' : "<a href='#{h[:genome_report][0][:download_url]}'><button type='button' class='btn btn-default' aria-label='Genome Report' data-toggle='tooltip' data-trigger='hover' data-placement='bottom' title='Genome Report'><span class='glyphicon glyphicon-file' aria-hidden='true'></span></button></a>"
     experiment_acc = h[:ena].nil? ? 'Coming Soon!' : "<a href='http://www.ebi.ac.uk/ena/data/view/#{h[:ena][0][:experiment_accession]}' target='_blank'>#{h[:ena][0][:experiment_accession]}</a>"
     analysis_acc = h[:eva].nil? ? 'Coming Soon!' : "<a href='http://www.ebi.ac.uk/ena/data/view/#{h[:eva][0][:analysis_accession]}&display=html' target='_blank'>#{h[:eva][0][:analysis_accession]}</a>"
     array_express_acc = h[:arrayexpress].nil? ? 'Coming Soon!' : "<a href='https://www.ebi.ac.uk/arrayexpress/experiments/#{h[:arrayexpress][0][:accession]}/' target='_blank'>#{h[:arrayexpress][0][:accession]}</a>"

@@ -78,6 +78,7 @@ def restructure_results(results)
     if result[:type] == 'arrayexpress'
       pgp_id = normalize_hex_id(result[:characteristicsindividual]).to_sym
     elsif result[:type] == 'ena' || result[:type] == 'eva'
+      next if !parse_hex_id(result)
       pgp_id = parse_hex_id(result).to_sym
     elsif result[:type] == 'genome_report'
       pgp_id = normalize_hex_id(result[:human_id]).to_sym
@@ -114,6 +115,7 @@ def parse_hex_id(h)
   return normalize_hex_id(h[:sample_alias]) if h[:sample_alias] =~ /uk\S{6}/
   # if not in correct format assume PGP100
   d = SANGER_KEY[ h[:sample_alias] ]
+  return nil if !d
   return nil if h[:sample_title] != d[:sanger_id]
   return normalize_hex_id(d[:pgp_id])
 end
@@ -126,7 +128,7 @@ def create_datatable_json(results)
   data = []
   results.each do |sample, h|
     sample_alias = "<a href='https://my.personalgenomes.org.uk/profile/#{get_sample_id(h)}' target='_blank'>#{get_sample_id(h)}</a>"
-    genome_report = h[:genome_report].nil? ? 'Coming Soon!' : "<a href='#{h[:genome_report][0][:download_url]}'><button type='button' class='btn btn-default' aria-label='Genome Report' data-toggle='tooltip' data-trigger='hover' data-placement='bottom' title='Genome Report'><span class='glyphicon glyphicon-file' aria-hidden='true'></span></button></a>"
+    genome_report = "<button type='button' class='btn btn-default report_btn' aria-label='PGP-UK Reports' data-toggle='tooltip' data-trigger='hover' data-placement='bottom' title='PGP-UK Reports'><span class='glyphicon glyphicon-file' aria-hidden='true'></span></button>"
     experiment_acc = h[:ena].nil? ? 'Coming Soon!' : "<a href='http://www.ebi.ac.uk/ena/data/view/#{h[:ena][0][:experiment_accession]}' target='_blank'>#{h[:ena][0][:experiment_accession]}</a>"
     analysis_acc = h[:eva].nil? ? 'Coming Soon!' : "<a href='http://www.ebi.ac.uk/ena/data/view/#{h[:eva][0][:analysis_accession]}&display=html' target='_blank'>#{h[:eva][0][:analysis_accession]}</a>"
     array_express_acc = h[:arrayexpress].nil? ? 'Coming Soon!' : "<a href='https://www.ebi.ac.uk/arrayexpress/experiments/#{h[:arrayexpress][0][:accession]}/' target='_blank'>#{h[:arrayexpress][0][:accession]}</a>"

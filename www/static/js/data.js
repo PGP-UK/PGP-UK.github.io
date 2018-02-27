@@ -7,6 +7,7 @@ if (!ES) { ES = {}; }
       var datatable = ES.initializeTable(json, 'table');
       $.getJSON('/data/json/out.json', function(json) {
         ES.makePlotIconClickable(datatable, 'table', json, '.file_btn');
+        ES.makeReportIconClickable(datatable, 'table', json, '.report_btn');
         $('[data-toggle="tooltip"]').tooltip();
       });
       $.getJSON('/data/json/phenotype.json', function(json) {
@@ -52,6 +53,22 @@ if (!ES) { ES = {}; }
     return dataset;
   };
 
+  ES.makeReportIconClickable = function(datatable, tableId, dataset, type) {
+    $('#' + tableId).on('click', '.close', function() {
+      var $tr = $(this).closest('tr').prev()[0];
+      var row = datatable.row( $tr );
+      row.child.hide();
+      $tr.removeClass('shown');
+    });
+    $('#' + tableId).on('click', type, function() {
+      var $tr  = $(this).closest('tr');
+      var id_td = $tr.children('td')[0];
+      var id = $(id_td).text();
+      var row = datatable.row( $tr );
+      ES.openReportsChildRow(row, $tr, dataset, id);
+    });
+  };
+
   ES.makePlotIconClickable = function(datatable, tableId, dataset, type) {
     $('#' + tableId).on('click', '.close', function() {
       var $tr = $(this).closest('tr').prev()[0];
@@ -70,6 +87,21 @@ if (!ES) { ES = {}; }
         ES.openFilesChildRow(row, $tr, dataset, id);
       }
     });
+  };
+
+  ES.openReportsChildRow = function(row, tr, dataset, id) {
+    if (row.child.isShown() && $(row.child()).find('#reports_'+id).length === 1) {
+      // already open
+      row.child.hide();
+      tr.removeClass('shown');
+    } else {
+      var data = dataset[id];
+      var reports_html = $('#reports_template').clone().attr('id', 'reports_'+id).show();
+      reports_html = ES.addGenomeReportHref(reports_html, data);
+      reports_html = ES.addMethReportHref(reports_html, data);
+      row.child( reports_html ).show();
+      tr.addClass('shown');
+    }
   };
 
   ES.openTraitsChildRow = function(row, tr, dataset, id) {
@@ -100,6 +132,28 @@ if (!ES) { ES = {}; }
       row.child( file_html ).show();
       tr.addClass('shown');
     }
+  };
+
+  ES.addGenomeReportHref = function(file_html, data){
+    if (data.genome_report === undefined) {
+      $(file_html).find('.genome_report_row').hide();
+  } else {
+      $(file_html).find('.genome_report').show();
+      var http_url = data.genome_report[0].download_url;
+      $(file_html).find('.genome_report').attr('href', http_url);
+    }
+    return file_html;
+  };
+
+  ES.addMethReportHref = function(file_html, data){
+    if (data.meth_report === undefined) {
+      $(file_html).find('.meth_report_row').hide();
+  } else {
+      $(file_html).find('.meth_report').show();
+      var http_url = data.meth_report[0].download_url;
+      $(file_html).find('.meth_report').attr('href', http_url);
+    }
+    return file_html;
   };
 
   /* Adding ENA links*/
@@ -159,13 +213,13 @@ if (!ES) { ES = {}; }
       $(file_html).find('.eva_file_data_row').hide();
   } else {
       var vcf_link = data.eva[0].submitted_ftp.split(';');
-      for (var x=0; x<vcf_link.length;x++){
-        if (vcf_link[x].split('.').pop()=="tbi"){
-          var vcf_tabix_ftp_url = 'ftp://' + vcf_link[x];
+      for (var i=0; i<vcf_link.length;i++){
+        if (vcf_link[i].split('.').pop()=="tbi"){
+          var vcf_tabix_ftp_url = 'ftp://' + vcf_link[i];
           $(file_html).find('.eva_vcf_tabix_file').attr('href', vcf_tabix_ftp_url);
         }else{
-        if (vcf_link[x].split('.').pop()=="gz"){
-          var vcf_ftp_url = 'ftp://' + vcf_link[x];
+        if (vcf_link[i].split('.').pop()=="gz"){
+          var vcf_ftp_url = 'ftp://' + vcf_link[i];
           $(file_html).find('.eva_vcf_file').attr('href', vcf_ftp_url);
         }
       }

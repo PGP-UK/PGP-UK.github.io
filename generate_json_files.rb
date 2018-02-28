@@ -78,7 +78,6 @@ def restructure_results(results)
     if result[:type] == 'arrayexpress'
       pgp_id = normalize_hex_id(result[:characteristicsindividual]).to_sym
     elsif result[:type] == 'ena' || result[:type] == 'eva'
-      next if !parse_hex_id(result)
       pgp_id = parse_hex_id(result).to_sym
     elsif result[:type] == 'genome_report'
       pgp_id = normalize_hex_id(result[:human_id]).to_sym
@@ -113,9 +112,9 @@ end
 
 def parse_hex_id(h)
   return normalize_hex_id(h[:sample_alias]) if h[:sample_alias] =~ /uk\S{6}/
+  return normalize_hex_id(h[:library_name]) if h[:library_name] =~ /uk\S{6}/ # For PGP-UK Donations
   # if not in correct format assume PGP100
   d = SANGER_KEY[ h[:sample_alias] ]
-  return nil if !d
   return nil if h[:sample_title] != d[:sanger_id]
   return normalize_hex_id(d[:pgp_id])
 end

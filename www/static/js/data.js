@@ -2,17 +2,6 @@ var ES; // define global ES (acronym for EBI_Search)  object
 if (!ES) { ES = {}; }
 
 (function() { // ES module
-  ES.init = function() {
-    $.getJSON('/data/json/table.json', function(json) {
-      var datatable = ES.initializeTable(json, 'table');
-      $.getJSON('/data/json/data.json', function(data_json) {
-        ES.makePlotIconClickable(datatable, 'table', data_json, '.file_btn');
-        ES.makePlotIconClickable(datatable, 'table', data_json, '.report_btn');
-        ES.makePlotIconClickable(datatable, 'table', data_json, '.trait_btn');
-      });
-    });
-  };
-
   ES.initializeTable = function(dataset, tableId) {
     var dt = $('#' + tableId).DataTable({
       data: dataset,

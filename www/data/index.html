@@ -267,7 +267,14 @@
     <script type="text/javascript">
         (function($) {
             $(function() {
-                ES.init();
+                $.getJSON('/data/json/table.json', function(json) {
+                  var datatable = ES.initializeTable(json, 'table');
+                  $.getJSON('/data/json/data.json', function(data_json) {
+                    ES.makePlotIconClickable(datatable, 'table', data_json, '.file_btn');
+                    ES.makePlotIconClickable(datatable, 'table', data_json, '.report_btn');
+                    ES.makePlotIconClickable(datatable, 'table', data_json, '.trait_btn');
+                  });
+                });
             });
         })(jQuery);
     </script>

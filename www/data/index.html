@@ -2,235 +2,275 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Personal Genome Project: United Kingdom</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="PersonalGenomes.org.uk">
-  <!-- Styles -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,500" rel="stylesheet">
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Personal Genome Project: United Kingdom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="PersonalGenomes.org.uk">
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Raleway:400,500" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/local.css" rel="stylesheet">
-  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-  <!--[if lt IE 9]>
+    <link href="/static/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
-  <link href="/static/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <link href="/static/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">
             <img alt="Brand" class="pull-left" src="/static/img/uk/uk-flag.jpg" style="max-height:16px;">&nbsp; Personal Genome Project: UK
           </a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/people">Team</a></li>
+                    <li><a href="/sign-up">Volunteer</a></li>
+                    <li><a href="/data">Data</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="https://pgpukblog.wordpress.com/" target="_blank">Blog</a></li>
+                    <li>
+                        <p class="navbar-btn">
+                            <a href="https://my.personalgenomes.org.uk" class="btn btn-success">Participant Log in</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="/about">About</a></li>
-          <li><a href="/people">Team</a></li>
-          <li><a href="/sign-up">Volunteer</a></li>
-          <li><a href="/data">Data</a></li>
-          <li><a href="/news">News</a></li>
-          <li><a href="https://pgpukblog.wordpress.com/" target="_blank">Blog</a></li>
-          <li>
-            <p class="navbar-btn">
-              <a href="https://my.personalgenomes.org.uk" class="btn btn-success">Participant Log in</a>
-            </p>
-          </li>
-        </ul>
-      </div>
+    </nav>
+    <div class="container">
+        <div class="give_now_wrapper">
+            <div class="give_now_text">
+                <p>If you wish to support the PGP-UK project, please:</p>
+            </div>
+            <div class="btn give_now_btn">
+                <a href="https://aoc.ucl.ac.uk/alumni/donations-gbp-single?id=BFF810C3-6A09-4EA4-A993-4D39C96D88D1" target="_blank">
+                    <h1>Give now</h1>
+                    <p>Personal Genome Project UK (PGP-UK)</p>
+                </a>
+            </div>
+        </div>
+        <div class="page-header">
+            <h2>Our Data</h2>
+        </div>
+        <p class="lead">Please see below for data produced from the Personal Genome Projects UK (PGP-UK).</p>
+        <div class="table-responsive">
+            <table class="table text-center table-hover" id="table">
+                <thead>
+                    <tr>
+                        <th class="text-center">PGP-UK ID</th>
+                        <th class="text-center">Reports</th>
+                        <th class="text-center">Genome</th>
+                        <th class="text-center">Methylome</th>
+                        <th class="text-center">Transcriptome</th>
+                        <th style="width:90px!important"></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
     </div>
-  </nav>
-  <div class="container">
-    <div class="give_now_wrapper">
-      <div class="give_now_text">
-        <p>If you wish to support the PGP-UK project, please:</p>
-      </div>
-      <div class="btn give_now_btn">
-        <a href="https://aoc.ucl.ac.uk/alumni/donations-gbp-single?id=BFF810C3-6A09-4EA4-A993-4D39C96D88D1" target="_blank">
-          <h1>Give now</h1>
-          <p>Personal Genome Project UK (PGP-UK)</p>
-        </a>
-      </div>
-    </div>
-    <div class="page-header">
-      <h2>Our Data</h2>
-    </div>
-    <p class="lead">Please see below for data produced from the Personal Genome Projects UK (PGP-UK).</p>
-    <div class="table-responsive">
-      <table class="table text-center table-striped" id="table">
-        <thead>
-          <tr>
-            <th class="text-center">PGP-UK ID (Public Profile)</th>
-            <th class="text-center">Reports</th>
-            <th class="text-center">Genome Data (ENA)</th>
-            <th class="text-center">Variant Data (EVA)</th>
-            <th class="text-center">Methylome Data (Array Express)</th>
-            <!-- <th class="text-center">Transcriptome Data (Array Express)</th> -->
-            <th style="width:90px!important"></th>
-          </tr>
-        </thead>
-      </table>
-    </div>
-  </div>
-  <!-- templats -->
-  <div id="reports_template" style="display:none;">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
-      <table class="table info_table table-condensed table-striped">
-        <tbody>
-          <tr class="genome_report_row">
-            <td>PGP-UK Genome Report</td>
-            <td>
-                <a target="_blank" class="genome_report"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Genome Report</a>
-            </td>
-          </tr>
-          <tr class="meth_report_row">
-            <td>PGP-UK Methylome Report</td>
-            <td>
-                <a target="_blank" class="meth_report"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Methylome Report</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-  </div>
-  <!-- templats -->
-  <div id="files_template" style="display:none;">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
-      <table class="table info_table table-condensed table-striped">
-        <tbody>
-          <tr class="ena_file_data_row">
-            <td>Genome Data (ENA)</td>
-            <td>
-                <a target="_blank" class="ena_bam_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Bam File</a>&nbsp;&bull;&nbsp;<a target="_blank" class="ena_fastq_1_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> FastQ File (1)</a>&nbsp;&bull;&nbsp;<a target="_blank" class="ena_fastq_2_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> FastQ File (2) </a>&nbsp;&bull;&nbsp;<a target="_blank" class="ena_sra_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> SRA </a>
-            </td>
-          </tr>
-          <tr class="eva_file_data_row">
-            <td>Variant Data (EVA)</td>
-            <td>
-                <a target="_blank" class="eva_vcf_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> VCF </a>&nbsp;&bull;&nbsp;<a target="_blank" class="eva_vcf_tabix_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> VCF Tabix Index file </a>
-            </td>
-          </tr>
-          <tr class="array_express_file_data_row">
-            <td>Methylation Array Data (450k)</td>
-            <td>
-                <a target="_blank" class="array_express_blood_idat_red_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Blood Red IDAT File </a>&nbsp;&bull;&nbsp;<a target="_blank" class="array_express_blood_idat_green_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Blood Green IDAT File </a><br>
-                <a target="_blank" class="array_express_saliva_idat_red_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>Saliva Red IDAT File </a>&nbsp;&bull;&nbsp;<a target="_blank" class="array_express_saliva_idat_green_file"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span> Saliva Green IDAT File </a>
-
-            </td>
-          </tr>
-        </tbody>
-      </table>
-  </div>
-  <!-- templats -->
-  <div id="traits_template" style="display:none;">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
-      <table class="table info_table table-striped">
-        <tbody>
-          <tr>
-            <td>Sex</td>
-            <td class="survey_gender"></td>
-          </tr>
-          <tr>
-            <td>Date of Birth</td>
-            <td class="survey_date_of_birth"></td>
-          </tr>
-          <tr>
-            <td>Age at Sample Collection</td>
-            <td class="survey_age_at_sample_collection"></td>
-          </tr>
-          <tr>
-            <td>Current Smoker</td>
-            <td class="survey_current_smoker"></td>
-          </tr>
-          <tr>
-            <td>Ex-Smoker?</td>
-            <td class="survey_ex_smoker"></td>
-          </tr>
-          <tr>
-            <td>Blood Type</td>
-            <td class="survey_blood_type"></td>
-          </tr>
-          <tr>
-            <td>Handedness</td>
-            <td class="survey_handedness"></td>
-          </tr>
-          <tr>
-            <td>Weight</td>
-            <td class="survey_weight"></td>
-          </tr>
-          <tr>
-            <td>Height</td>
-            <td class="survey_height"></td>
-          </tr>
-          <tr>
-            <td>Hair Colour</td>
-            <td class="survey_hair_colour"></td>
-          </tr>
-          <tr>
-            <td>Right Eye Colour</td>
-            <td class="survey_right_eye_colour"></td>
-          </tr>
-          <tr>
-            <td>Left Eye Colour</td>
-            <td class="survey_left_eye_colour"></td>
-          </tr>
-        </tbody>
-      </table>
-      <h3 class="pull-left" style="margin-left: 20px; margin-top:10px"><small class="survey_sub_text">*Survey taken on <span class="survey_date"></span></small></h3>
-  </div>
-  <div class="footer">
-    <div class="wrapper">
-      <div class="container">
+    <!-- templats -->
+    <div id="reports_template" style="display:none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
         <div class="row">
-          <div class="col-sm-4 col-md-4">
-            <h5>PGP Global Network</h5>
-            <p>
-              <a href="http://personalgenomes.org/harvard" target="_blank">United States</a>&nbsp;&bull;&nbsp;<a href="http://personalgenomes.org/canada" target="_blank">Canada</a>&nbsp;&bull;&nbsp;<a href="/">United Kingdom</a>&nbsp;&bull;&nbsp;<a href="http://personalgenomes.org/austria" target="_blank">Austria</a>
-              <br>
-              <a href="/global-network">Learn about our network</a>
-            </p>
-          </div>
-          <div class="col-sm-4 col-md-4">
-            <h5>Website information</h5>
-            <p>
-              <a href="/contact-us">Contact Us</a>&nbsp;&bull;&nbsp;<a href="http://www.personalgenomes.org/organization" target="_blank"><span class="h5">About PersonalGenomes.org</span></a>
-              <br>
-              <a href="http://www.personalgenomes.org/tos" target="_blank">Terms of Service</a>&nbsp;&bull;&nbsp;<a href="http://www.personalgenomes.org/website-privacy-policy" target="_blank">Privacy Policy</a>
-            </p>
-          </div>
-          <div class="col-sm-4 col-md-4">
-            <h5>Stay connected with PGP-UK</h5>
-            <p>
-              <a href="https://twitter.com/pgpuk_genomes" target="_blank"><i class="icon-twitter"></i>Twitter</a>&nbsp;&bull;&nbsp;<a href="https://pgpukblog.wordpress.com/" target="_blank"><i class="icon-pencil"></i>Blog</a>&nbsp;&bull;&nbsp;<a href="http://getconference.com/" target="_blank"><i class="icon-group"></i>GET Conference</a>
-            </p>
-          </div>
+            <h3 class="text-left">PGP-UK Reports</h3>
+            <div style="margin-top: 3rem; margin-bottom:3rem;">
+                <p class="text-left">
+                    <a type="button" class="btn btn-lg btn-default genome_report" style="display:none;">
+                        <i class="fal fa-lg fa-file-alt"></i>&nbsp;Genome Report
+                    </a> &nbsp;&nbsp;
+                    <a type="button" class="btn btn-lg btn-default meth_report" style="display:none;">
+                        <i class="fal fa-lg fa-file-alt"></i>&nbsp;Methylome Report
+                    </a>
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- JS placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
-  <script type="text/javascript" src="/static/js/dataTables.bootstrap.min.js"></script>
-  <script type="text/javascript" src="/static/js/data.js"></script>
-  <script type="text/javascript">
-  (function($) {
-    $(function() {
-      ES.init();
-    });
-  })(jQuery);
-  </script>
+    <!-- templats -->
+    <div id="files_template" style="display:none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
+        <div class="row">
+            <h3 class="text-left">PGP-UK Data</h3>
+            <div class="text-left" style="margin-top: 3rem; margin-bottom:3rem;">
+                <h4 class="genome_title">Genome Data</h4>
+                <div class="wgs_file_data_row">
+                    <p style="line-height:4.5rem;">
+                        <a type="button" class="btn btn-default ena_bam_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;Bam File
+                        </a> &nbsp;&nbsp;
+                        <a type="button" class="btn btn-default ena_fastq_1_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;FastQ File (1)
+                        </a> &nbsp;&nbsp;
+                        <a type="button" class="btn btn-default ena_fastq_2_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;FastQ File (2)
+                        </a> &nbsp;&nbsp;
+                        <a type="button" class="btn btn-default ena_sra_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;SRA
+                        </a>
+                    </p>
+                </div>
+                <div class="eva_file_data_row">
+                    <p>
+                        <a type="button" class="btn btn-default eva_vcf_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;VCF
+                        </a> &nbsp;&nbsp;
+                        <a type="button" class="btn btn-default eva_vcf_tabix_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;VCF Tabix Index file
+                        </a>
+                    </p>
+                </div>
+                <h4 class="methylome_title">Methylome Data</h4>
+                <div class="meth_450k_file_data_row">
+                    <p style="line-height:4.5rem;">
+                        <a type="button" class="btn btn-default meth_450k_blood_idat_red_file">
+                            <i class="fal fa-file"></i>&nbsp;Blood Red IDAT File
+                        </a> &nbsp;&nbsp;
+                        <a type="button" class="btn btn-default meth_450k_blood_idat_green_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;Blood Green IDAT File
+                        </a> &nbsp;&nbsp;
+                        <br>
+                        <a type="button" class="btn btn-default meth_450k_saliva_idat_red_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;Saliva Red IDAT File
+                        </a> &nbsp;&nbsp;
+                        <a type="button" class="btn btn-default meth_450k_saliva_idat_green_file">
+                            <i class="fal fa-file-alt"></i>&nbsp;Saliva Green IDAT File
+                        </a>
+                    </p>
+                </div>
+                <!-- <h4>Transcriptomic Data</h4> -->
+
+                <div id="user_uploaded_data" style="display:none;">
+                    <h3 class="text-left">User Uploaded Data</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- templats -->
+    <div id="traits_template" style="display:none;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
+        <div class="row">
+            <h3 class="text-left">Phenotype Data</h3>
+            <div style="margin-top: 3rem; margin-bottom:3rem;">
+                <table class="table info_table table-striped">
+                    <tbody>
+                        <tr>
+                            <td>Sex</td>
+                            <td class="survey_gender"></td>
+                        </tr>
+                        <tr>
+                            <td>Date of Birth</td>
+                            <td class="survey_date_of_birth"></td>
+                        </tr>
+                        <tr>
+                            <td>Age at Sample Collection</td>
+                            <td class="survey_age_at_sample_collection"></td>
+                        </tr>
+                        <tr>
+                            <td>Current Smoker</td>
+                            <td class="survey_current_smoker"></td>
+                        </tr>
+                        <tr>
+                            <td>Ex-Smoker?</td>
+                            <td class="survey_ex_smoker"></td>
+                        </tr>
+                        <tr>
+                            <td>Blood Type</td>
+                            <td class="survey_blood_type"></td>
+                        </tr>
+                        <tr>
+                            <td>Handedness</td>
+                            <td class="survey_handedness"></td>
+                        </tr>
+                        <tr>
+                            <td>Weight</td>
+                            <td class="survey_weight"></td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td class="survey_height"></td>
+                        </tr>
+                        <tr>
+                            <td>Hair Colour</td>
+                            <td class="survey_hair_colour"></td>
+                        </tr>
+                        <tr>
+                            <td>Right Eye Colour</td>
+                            <td class="survey_right_eye_colour"></td>
+                        </tr>
+                        <tr>
+                            <td>Left Eye Colour</td>
+                            <td class="survey_left_eye_colour"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 class="pull-left" style="margin-left: 20px; margin-top:10px"><small class="survey_sub_text">*Survey taken on <span class="survey_date"></span></small></h3>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <h5>PGP Global Network</h5>
+                        <p>
+                            <a href="http://personalgenomes.org/harvard" target="_blank">United States</a>
+                            &nbsp;&bull;&nbsp;
+                            <a href="http://personalgenomes.org/canada" target="_blank">Canada</a>
+                            &nbsp;&bull;&nbsp;
+                            <a href="/">United Kingdom</a>
+                            &nbsp;&bull;&nbsp;
+                            <a href="http://personalgenomes.org/austria" target="_blank">Austria</a><br>
+                            <a href="/global-network">Learn about our network</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <h5>Website information</h5>
+                        <p>
+                            <a href="/contact-us">Contact Us</a>&nbsp;&bull;&nbsp;<a href="http://www.personalgenomes.org/organization" target="_blank"><span class="h5">About PersonalGenomes.org</span></a>
+                            <br>
+                            <a href="http://www.personalgenomes.org/tos" target="_blank">Terms of Service</a>&nbsp;&bull;&nbsp;<a href="http://www.personalgenomes.org/website-privacy-policy" target="_blank">Privacy Policy</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <h5>Stay connected with PGP-UK</h5>
+                        <p>
+                            <a href="https://twitter.com/pgpuk_genomes" target="_blank"><i class="icon-twitter"></i>Twitter</a>&nbsp;&bull;&nbsp;<a href="https://pgpukblog.wordpress.com/" target="_blank"><i class="icon-pencil"></i>Blog</a>&nbsp;&bull;&nbsp;
+                            <a href="http://getconference.com/" target="_blank"><i class="icon-group"></i>GET Conference</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="/static/js/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/data.js"></script>
+    <script defer src="/static/js/fontawesome-all.js"></script>
+    <script type="text/javascript">
+        (function($) {
+            $(function() {
+                ES.init();
+            });
+        })(jQuery);
+    </script>
 </body>
 
 </html>

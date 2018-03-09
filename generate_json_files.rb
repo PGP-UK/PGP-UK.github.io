@@ -208,15 +208,7 @@ end
 def td1_sample_alias(h)
   sample_alias = get_sample_id(h)
   url = "https://my.personalgenomes.org.uk/profile/#{sample_alias}"
-  name = get_real_name(h)
-  name_html = name.nil? ? '' : "<br>(#{name})"
-  "<a class='pgp_hex_id' href='#{url}' target='_blank'>#{sample_alias}</a>" +
-    name_html
-end
-
-def get_real_name(h)
-  return if h[:pgp_profile].empty?
-  h[:pgp_profile][:real_name]
+  "<a class='pgp_hex_id' href='#{url}' target='_blank'>#{sample_alias}</a>"
 end
 
 def td2_reports_btn(h)

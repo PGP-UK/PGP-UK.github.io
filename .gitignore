@@ -1,4 +1,6 @@
 www/_site
 www/data/json/data.json
 www/data/json/table.json
+www/data/json/data_file_links.json
+www/data/data_file_links.csv
 www/data/phenotype.csv

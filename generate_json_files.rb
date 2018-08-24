@@ -372,7 +372,7 @@ PHENOTYPE_DATA = parse_phenotype_csv(phenotype_csv_file)
 
 project_accession = %w[PRJEB17529 PRJEB13150 PRJEB25139]
 arrayexpress_accessions = %w[E-MTAB-5377 E-MTAB-6523]
-out_dir = ARGV[0]
+out_dir = 'www/data/json'
 
 responses = init(project_accession, arrayexpress_accessions)
 run(out_dir, responses)

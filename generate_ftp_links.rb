@@ -127,9 +127,7 @@ end
 
 csv_file = File.join('www/data', 'data_file_links.csv')
 
-File.open(csv_file, 'w') do |f|
-  results.each { |r| f.puts r.join("\t") }
-end
+File.open(csv_file, 'w') { |f| results.each { |r| f.puts r.join(',') } }
 
 json_results = {}
 results.each do |r|

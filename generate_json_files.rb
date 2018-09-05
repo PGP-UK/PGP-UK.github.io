@@ -14,6 +14,7 @@ end
 def run(out_dir, responses)
   results = analyse_responses(responses)
   write_to_json_file(File.join(out_dir, 'data.json'), results)
+  write_data_ndjson_file(File.join(out_dir, 'data.ndjson'), results)
   data = create_datatable_json(results)
   write_to_json_file(File.join(out_dir, 'table.json'), data)
 end
@@ -190,6 +191,15 @@ end
 
 def write_to_json_file(outfile, data)
   File.open(outfile, 'w') { |io| io.puts data.to_json }
+end
+
+def write_data_ndjson_file(outfile, data)
+  File.open(outfile, 'w') do |io|
+    data.each do |hex, d|
+      h = { hex_id: hex, data: d }
+      io.puts h.to_json
+    end
+  end
 end
 
 def create_datatable_json(results)

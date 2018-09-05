@@ -138,6 +138,4 @@ end
 
 json_file = File.join('www/data/json', 'data_file_links.json')
 
-File.open(json_file, 'w') do |f|
-  results.each { |r| f.puts r.join("\t") }
-end
+File.open(json_file, 'w') { |f| f.puts results.to_json }

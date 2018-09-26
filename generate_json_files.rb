@@ -181,7 +181,8 @@ end
 
 def parse_pgp100_hex_id(h)
   d = SANGER_KEY[ h[:sample_alias] ]
-  return nil if h[:sample_title] != d[:sanger_id]
+  # return nil if h[:sample_title] != d[:sanger_id]
+  return nil if d.nil? || d[:pgp_id].nil?
   normalize_hex_id(d[:pgp_id])
 end
 

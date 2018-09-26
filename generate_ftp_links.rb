@@ -7,7 +7,7 @@ def generate_urls(hash, keys, hash_is_arry = false)
     else
       hash[k].split(';')
     end
-  end.flatten
+  end.flatten.compact
 end
 
 def get_type(type, url)
@@ -40,9 +40,8 @@ def get_type(type, url)
     return 'Transcriptomic - Proton RNA Sequence Fastq (_1)' if url.end_with? '_1.fastq.gz'
     return 'Transcriptomic - Proton RNA Sequence Fastq (_2)' if url.end_with? '_2.fastq.gz'
   elsif type == 'rnaseq'
-    return 'Transcriptomic - RNAseq Fastq' if url.end_with? '.fastq.gz'
-    return 'Transcriptomic - RNAseq Fastq (_1)' if url.end_with? '_1.fastq.gz'
-    return 'Transcriptomic - RNAseq Fastq (_2)' if url.end_with? '_2.fastq.gz'
+    return 'Transcriptomic - RNAseq BAM' if url.end_with? '.bam?download'
+    return 'Transcriptomic - RNAseq BAM index' if url.end_with? '.bam.bai?download'
   elsif type == 'amplicon'
     return 'Transcriptomic - Amplicon Fastq' if url.end_with? '.fastq.gz'
     return 'Transcriptomic - Amplicon Fastq (_1)' if url.end_with? '_1.fastq.gz'
@@ -75,10 +74,12 @@ end
 
 def get_meth_array_links(id, meth_array)
   return if meth_array.nil?
+  ae_ftp_start = 'ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB'
+  ae_html_start = 'https://www.ebi.ac.uk/arrayexpress/files'
   links = meth_array.map do |h|
     "#{h[:comment_arrayexpress_ftp_file]}/#{h[:array_data_file]}" \
-    "?#{h[:characteristicsorganism_part]}"
-  end.flatten
+    "?#{h[:characteristicsorganism_part]}".gsub(ae_ftp_start, ae_html_start)
+  end.flatten.compact
   process_links(links, id, 'meth_array')
 end
 
@@ -86,7 +87,7 @@ def get_profile_links(id, pgp_profile)
   return if pgp_profile.nil?
   links = pgp_profile[:files].map do |h|
     "#{h[:download_url]}?#{h[:data_type]}"
-  end.flatten
+  end.flatten.compact
   process_links(links, id, 'pgp_profile')
 end
 
@@ -98,7 +99,17 @@ end
 
 def get_rnaseq_links(id, rnaseq)
   return if rnaseq.nil?
-  links = generate_urls(rnaseq, %i[commentfastq_uri], true)
+  ae_ftp_start = 'ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB'
+  ae_html_start = 'https://www.ebi.ac.uk/arrayexpress/files'
+  links = rnaseq.map do |h|
+    
+    next if h[:comment_derived_arrayexpress_ftp_file].strip.empty?
+    next if h[:derived_array_data_file].strip.empty?
+    "#{h[:comment_derived_arrayexpress_ftp_file]}/" \
+    "#{h[:derived_array_data_file]}?download".gsub(ae_ftp_start, ae_html_start)
+  end.flatten.compact
+  require 'pry'
+  binding.pry
   process_links(links, id, 'rnaseq')
 end
 
@@ -139,3 +150,4 @@ end
 json_file = File.join('www/data/json', 'data_file_links.json')
 
 File.open(json_file, 'w') { |f| f.puts results.to_json }
+https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P10.bam

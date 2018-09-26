@@ -1,0 +1,476 @@
+uk35C650,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/004/ERR1726424/ERR1726424_1.fastq.gz,WGS Fastq
+uk35C650,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/004/ERR1726424/ERR1726424_2.fastq.gz,WGS Fastq
+uk35C650,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961001.bam,WGS Bam
+uk35C650,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz,VCF
+uk35C650,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk35C650,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/ERZ389530.md5,VCF MD5
+uk35C650,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/008/ERR2359938/ERR2359938_1.fastq.gz,WGBS Fastq
+uk35C650,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/008/ERR2359938/ERR2359938_2.fastq.gz,WGBS Fastq
+uk35C650,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_101_S1_L001.bam,WGBS Bam
+uk35C650,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_101_S1_L001.bam.bai,WGBS Bam Index
+uk35C650,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R04C02_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk35C650,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R04C02_Red.idat,Methylation 450k Array Red Blood IDAT
+uk35C650,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R03C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk35C650,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R03C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk35C650,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk35C650,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk35C650,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P1.bam,Transcriptomic - RNAseq BAM
+uk35C650,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P1.bam.bai,Transcriptomic - RNAseq BAM index
+uk35C650,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322353/ERR2322353.fastq.gz,Transcriptomic - Amplicon Fastq
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/005/ERR1726425/ERR1726425_1.fastq.gz,WGS Fastq
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/005/ERR1726425/ERR1726425_2.fastq.gz,WGS Fastq
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961002.bam,WGS Bam
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389528/FR07961002.pass.recode.vcf.gz,VCF
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389528/FR07961002.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389528/ERZ389528.md5,VCF MD5
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/009/ERR2359939/ERR2359939_1.fastq.gz,WGBS Fastq
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/009/ERR2359939/ERR2359939_2.fastq.gz,WGBS Fastq
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_102_S2_L002.bam,WGBS Bam
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_102_S2_L002.bam.bai,WGBS Bam Index
+uk2E2AAE,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C02_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk2E2AAE,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C02_Red.idat,Methylation 450k Array Red Blood IDAT
+uk2E2AAE,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R03C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk2E2AAE,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R03C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/004/ERR2322364/ERR2322364_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/004/ERR2322364/ERR2322364_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk2E2AAE,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P2.bam,Transcriptomic - RNAseq BAM
+uk2E2AAE,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P2.bam.bai,Transcriptomic - RNAseq BAM index
+uk2E2AAE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/004/ERR2322354/ERR2322354.fastq.gz,Transcriptomic - Amplicon Fastq
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/006/ERR1726426/ERR1726426_1.fastq.gz,WGS Fastq
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/006/ERR1726426/ERR1726426_2.fastq.gz,WGS Fastq
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961003.bam,WGS Bam
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389525/FR07961003.pass.recode.vcf.gz,VCF
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389525/FR07961003.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389525/ERZ389525.md5,VCF MD5
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/000/ERR2359940/ERR2359940_1.fastq.gz,WGBS Fastq
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/000/ERR2359940/ERR2359940_2.fastq.gz,WGBS Fastq
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_103_S3_L003.bam,WGBS Bam
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_103_S3_L003.bam.bai,WGBS Bam Index
+uk2DF242,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R06C02_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk2DF242,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R06C02_Red.idat,Methylation 450k Array Red Blood IDAT
+uk2DF242,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R03C02_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk2DF242,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R03C02_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/005/ERR2322365/ERR2322365_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/005/ERR2322365/ERR2322365_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk2DF242,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P3.bam,Transcriptomic - RNAseq BAM
+uk2DF242,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P3.bam.bai,Transcriptomic - RNAseq BAM index
+uk2DF242,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/005/ERR2322355/ERR2322355.fastq.gz,Transcriptomic - Amplicon Fastq
+uk740176,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/007/ERR1726427/ERR1726427_1.fastq.gz,WGS Fastq
+uk740176,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/007/ERR1726427/ERR1726427_2.fastq.gz,WGS Fastq
+uk740176,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961004.bam,WGS Bam
+uk740176,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389531/FR07961004.pass.recode.vcf.gz,VCF
+uk740176,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389531/ERZ389531.md5,VCF MD5
+uk740176,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389531/FR07961004.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk740176,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/001/ERR2359941/ERR2359941_1.fastq.gz,WGBS Fastq
+uk740176,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/001/ERR2359941/ERR2359941_2.fastq.gz,WGBS Fastq
+uk740176,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_104_S4_L004.bam,WGBS Bam
+uk740176,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_104_S4_L004.bam.bai,WGBS Bam Index
+uk740176,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R06C02_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk740176,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R06C02_Red.idat,Methylation 450k Array Red Blood IDAT
+uk740176,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R06C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk740176,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R06C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk740176,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/006/ERR2322366/ERR2322366_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk740176,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/006/ERR2322366/ERR2322366_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk740176,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P4.bam,Transcriptomic - RNAseq BAM
+uk740176,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P4.bam.bai,Transcriptomic - RNAseq BAM index
+uk740176,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/006/ERR2322356/ERR2322356.fastq.gz,Transcriptomic - Amplicon Fastq
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/008/ERR1726428/ERR1726428_1.fastq.gz,WGS Fastq
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/008/ERR1726428/ERR1726428_2.fastq.gz,WGS Fastq
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961005.bam,WGS Bam
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389534/ERZ389534.md5,VCF MD5
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389534/FR07961005.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389534/FR07961005.pass.recode.vcf.gz,VCF
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/002/ERR2359942/ERR2359942_1.fastq.gz,WGBS Fastq
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/002/ERR2359942/ERR2359942_2.fastq.gz,WGBS Fastq
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_105_S5_L005.bam,WGBS Bam
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_105_S5_L005.bam.bai,WGBS Bam Index
+uk33D02F,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C02_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk33D02F,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C02_Red.idat,Methylation 450k Array Red Blood IDAT
+uk33D02F,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R04C02_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk33D02F,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R04C02_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/007/ERR2322367/ERR2322367_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/007/ERR2322367/ERR2322367_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk33D02F,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P5.bam,Transcriptomic - RNAseq BAM
+uk33D02F,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P5.bam.bai,Transcriptomic - RNAseq BAM index
+uk33D02F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/007/ERR2322357/ERR2322357.fastq.gz,Transcriptomic - Amplicon Fastq
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/009/ERR1726429/ERR1726429_1.fastq.gz,WGS Fastq
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/009/ERR1726429/ERR1726429_2.fastq.gz,WGS Fastq
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961006.bam,WGS Bam
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389524/ERZ389524.md5,VCF MD5
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389524/FR07961006.pass.recode.vcf.gz,VCF
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389524/FR07961006.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/003/ERR2359943/ERR2359943_1.fastq.gz,WGBS Fastq
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/003/ERR2359943/ERR2359943_2.fastq.gz,WGBS Fastq
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_106_S6_L006.bam,WGBS Bam
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_106_S6_L006.bam.bai,WGBS Bam Index
+uk0C72FF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R06C01_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk0C72FF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R06C01_Red.idat,Methylation 450k Array Red Blood IDAT
+uk0C72FF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R01C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk0C72FF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R01C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/008/ERR2322368/ERR2322368_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/008/ERR2322368/ERR2322368_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk0C72FF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P6.bam,Transcriptomic - RNAseq BAM
+uk0C72FF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P6.bam.bai,Transcriptomic - RNAseq BAM index
+uk0C72FF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/008/ERR2322358/ERR2322358.fastq.gz,Transcriptomic - Amplicon Fastq
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/000/ERR1726430/ERR1726430_1.fastq.gz,WGS Fastq
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/000/ERR1726430/ERR1726430_2.fastq.gz,WGS Fastq
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961007.bam,WGS Bam
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389526/FR07961007.pass.recode.vcf.gz,VCF
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389526/FR07961007.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389526/ERZ389526.md5,VCF MD5
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/004/ERR2359944/ERR2359944_1.fastq.gz,WGBS Fastq
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/004/ERR2359944/ERR2359944_2.fastq.gz,WGBS Fastq
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_107_S7_L007.bam,WGBS Bam
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_107_S7_L007.bam.bai,WGBS Bam Index
+uk1097F9,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R02C01_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk1097F9,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R02C01_Red.idat,Methylation 450k Array Red Blood IDAT
+uk1097F9,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R01C02_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk1097F9,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R01C02_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/009/ERR2322369/ERR2322369_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/009/ERR2322369/ERR2322369_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk1097F9,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P7.bam,Transcriptomic - RNAseq BAM
+uk1097F9,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P7.bam.bai,Transcriptomic - RNAseq BAM index
+uk1097F9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/009/ERR2322359/ERR2322359.fastq.gz,Transcriptomic - Amplicon Fastq
+uk174659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/001/ERR1726431/ERR1726431_1.fastq.gz,WGS Fastq
+uk174659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/001/ERR1726431/ERR1726431_2.fastq.gz,WGS Fastq
+uk174659,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961008.bam,WGS Bam
+uk174659,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389529/FR07961008.pass.recode.vcf.gz,VCF
+uk174659,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389529/FR07961008.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk174659,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389529/ERZ389529.md5,VCF MD5
+uk174659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/005/ERR2359945/ERR2359945_1.fastq.gz,WGBS Fastq
+uk174659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/005/ERR2359945/ERR2359945_2.fastq.gz,WGBS Fastq
+uk174659,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_108_S8_L008.bam,WGBS Bam
+uk174659,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_108_S8_L008.bam.bai,WGBS Bam Index
+uk174659,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C01_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk174659,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C01_Red.idat,Methylation 450k Array Red Blood IDAT
+uk174659,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk174659,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk174659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/000/ERR2322370/ERR2322370_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk174659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/000/ERR2322370/ERR2322370_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk174659,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P8.bam,Transcriptomic - RNAseq BAM
+uk174659,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P8.bam.bai,Transcriptomic - RNAseq BAM index
+uk174659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/000/ERR2322360/ERR2322360.fastq.gz,Transcriptomic - Amplicon Fastq
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/002/ERR1726432/ERR1726432_1.fastq.gz,WGS Fastq
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/002/ERR1726432/ERR1726432_2.fastq.gz,WGS Fastq
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961009.bam,WGS Bam
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389527/FR07961009.pass.recode.vcf.gz,VCF
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389527/FR07961009.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389527/ERZ389527.md5,VCF MD5
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/006/ERR2359946/ERR2359946_1.fastq.gz,WGBS Fastq
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/006/ERR2359946/ERR2359946_2.fastq.gz,WGBS Fastq
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_109_S1_L001.bam,WGBS Bam
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_109_S1_L001.bam.bai,WGBS Bam Index
+uk85AA3B,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R02C02_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk85AA3B,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R02C02_Red.idat,Methylation 450k Array Red Blood IDAT
+uk85AA3B,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R01C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk85AA3B,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R01C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/001/ERR2322371/ERR2322371_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/001/ERR2322371/ERR2322371_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk85AA3B,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P9.bam,Transcriptomic - RNAseq BAM
+uk85AA3B,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P9.bam.bai,Transcriptomic - RNAseq BAM index
+uk85AA3B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/001/ERR2322361/ERR2322361.fastq.gz,Transcriptomic - Amplicon Fastq
+uk481F67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/003/ERR1726433/ERR1726433_1.fastq.gz,WGS Fastq
+uk481F67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/003/ERR1726433/ERR1726433_2.fastq.gz,WGS Fastq
+uk481F67,ftp.sra.ebi.ac.uk/vol1/ERA763/ERA763569/bam/FR07961000.bam,WGS Bam
+uk481F67,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389532/ERZ389532.md5,VCF MD5
+uk481F67,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389532/FR07961000.pass.recode.vcf.gz,VCF
+uk481F67,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389532/FR07961000.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk481F67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/007/ERR2359947/ERR2359947_1.fastq.gz,WGBS Fastq
+uk481F67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/007/ERR2359947/ERR2359947_2.fastq.gz,WGBS Fastq
+uk481F67,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_110_S2_L002.bam,WGBS Bam
+uk481F67,ftp.sra.ebi.ac.uk/vol1/ERA123/ERA1231734/bam/P3255_110_S2_L002.bam.bai,WGBS Bam Index
+uk481F67,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R02C01_Grn.idat,Methylation 450k Array Green Blood IDAT
+uk481F67,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R02C01_Red.idat,Methylation 450k Array Red Blood IDAT
+uk481F67,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R02C02_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk481F67,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R02C02_Red.idat,Methylation 450k Array Red Saliva IDAT
+uk481F67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/002/ERR2322372/ERR2322372_1.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk481F67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/002/ERR2322372/ERR2322372_2.fastq.gz,Transcriptomic - Proton RNA Sequence Fastq
+uk481F67,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P10.bam,Transcriptomic - RNAseq BAM
+uk481F67,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P10.bam.bai,Transcriptomic - RNAseq BAM index
+uk481F67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/002/ERR2322362/ERR2322362.fastq.gz,Transcriptomic - Amplicon Fastq
+uk4CA868,ftp.sra.ebi.ac.uk/vol1/fastq/ERR176/006/ERR1762066/ERR1762066.fastq.gz,WGS Fastq
+uk4CA868,ftp.sra.ebi.ac.uk/vol1/fastq/ERR176/006/ERR1762066/ERR1762066_1.fastq.gz,WGS Fastq
+uk4CA868,ftp.sra.ebi.ac.uk/vol1/fastq/ERR176/006/ERR1762066/ERR1762066_2.fastq.gz,WGS Fastq
+uk4CA868,ftp.sra.ebi.ac.uk/vol1/ERA777/ERA777746/bam/PG0000894.bam,WGS Bam
+uk4CA868,ftp.sra.ebi.ac.uk/vol1/ERA777/ERA777746/bam/PG0000894.bam.bai,WGS Bam Index
+uk4CA868,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389533/PG0000894.pass.recode.vcf.gz.tbi,VCF Tabix Index
+uk4CA868,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389533/ERZ389533.md5,VCF MD5
+uk4CA868,ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389533/PG0000894.pass.recode.vcf.gz,VCF
+uk4CA868,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R05C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk4CA868,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R05C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+ukE3E2DF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R01C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+ukE3E2DF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R01C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+ukE3E2DF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R02C01_Grn.idat,Methylation 450k Array Green Blood IDAT
+ukE3E2DF,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R02C01_Red.idat,Methylation 450k Array Red Blood IDAT
+uk6D0CFA,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R06C01_Grn.idat,Methylation 450k Array Green Saliva IDAT
+uk6D0CFA,https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R06C01_Red.idat,Methylation 450k Array Red Saliva IDAT
+ukEAF940,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122553/ERR2122553_1.fastq.gz,WGS Fastq
+ukEAF940,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122553/ERR2122553_2.fastq.gz,WGS Fastq
+ukEAF940,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/20464_6#1.cram,WGS Cram
+ukF1A7A6,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122554/ERR2122554_1.fastq.gz,WGS Fastq
+ukF1A7A6,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122554/ERR2122554_2.fastq.gz,WGS Fastq
+ukF1A7A6,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/20464_7#1.cram,WGS Cram
+uk2B4EC7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122555/ERR2122555_1.fastq.gz,WGS Fastq
+uk2B4EC7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122555/ERR2122555_2.fastq.gz,WGS Fastq
+uk2B4EC7,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/20464_8#1.cram,WGS Cram
+uk58B97E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122556/ERR2122556_1.fastq.gz,WGS Fastq
+uk58B97E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122556/ERR2122556_2.fastq.gz,WGS Fastq
+uk58B97E,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/20904_7#1.cram,WGS Cram
+uk5EC8D0,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122557/ERR2122557_1.fastq.gz,WGS Fastq
+uk5EC8D0,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122557/ERR2122557_2.fastq.gz,WGS Fastq
+uk5EC8D0,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/20904_8#1.cram,WGS Cram
+ukDEA88B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122558/ERR2122558_1.fastq.gz,WGS Fastq
+ukDEA88B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122558/ERR2122558_2.fastq.gz,WGS Fastq
+ukDEA88B,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/20979_5.cram,WGS Cram
+uk9A677F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122559/ERR2122559_1.fastq.gz,WGS Fastq
+uk9A677F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122559/ERR2122559_2.fastq.gz,WGS Fastq
+uk9A677F,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/20979_6.cram,WGS Cram
+uk0AD39D,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122560/ERR2122560_1.fastq.gz,WGS Fastq
+uk0AD39D,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122560/ERR2122560_2.fastq.gz,WGS Fastq
+uk0AD39D,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/20979_7.cram,WGS Cram
+uk072667,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122561/ERR2122561_1.fastq.gz,WGS Fastq
+uk072667,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122561/ERR2122561_2.fastq.gz,WGS Fastq
+uk072667,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21022_1#1.cram,WGS Cram
+ukB367C8,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122562/ERR2122562_1.fastq.gz,WGS Fastq
+ukB367C8,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122562/ERR2122562_2.fastq.gz,WGS Fastq
+ukB367C8,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21041_1#1.cram,WGS Cram
+ukE3831E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122563/ERR2122563_1.fastq.gz,WGS Fastq
+ukE3831E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122563/ERR2122563_2.fastq.gz,WGS Fastq
+ukE3831E,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21041_2#1.cram,WGS Cram
+uk2C1EB9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122564/ERR2122564_1.fastq.gz,WGS Fastq
+uk2C1EB9,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122564/ERR2122564_2.fastq.gz,WGS Fastq
+uk2C1EB9,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21041_3#1.cram,WGS Cram
+uk247AEC,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122565/ERR2122565_1.fastq.gz,WGS Fastq
+uk247AEC,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122565/ERR2122565_2.fastq.gz,WGS Fastq
+uk247AEC,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21057_1.cram,WGS Cram
+uk39054D,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122566/ERR2122566_1.fastq.gz,WGS Fastq
+uk39054D,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122566/ERR2122566_2.fastq.gz,WGS Fastq
+uk39054D,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21057_2.cram,WGS Cram
+uk5C0AD5,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122567/ERR2122567_1.fastq.gz,WGS Fastq
+uk5C0AD5,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122567/ERR2122567_2.fastq.gz,WGS Fastq
+uk5C0AD5,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21057_3.cram,WGS Cram
+uk401869,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122568/ERR2122568_1.fastq.gz,WGS Fastq
+uk401869,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122568/ERR2122568_2.fastq.gz,WGS Fastq
+uk401869,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21057_4.cram,WGS Cram
+ukA66537,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122569/ERR2122569_1.fastq.gz,WGS Fastq
+ukA66537,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122569/ERR2122569_2.fastq.gz,WGS Fastq
+ukA66537,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21057_5.cram,WGS Cram
+uk64379B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122570/ERR2122570_1.fastq.gz,WGS Fastq
+uk64379B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122570/ERR2122570_2.fastq.gz,WGS Fastq
+uk64379B,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21057_6.cram,WGS Cram
+uk09D62F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122571/ERR2122571_1.fastq.gz,WGS Fastq
+uk09D62F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122571/ERR2122571_2.fastq.gz,WGS Fastq
+uk09D62F,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21057_7.cram,WGS Cram
+uk2FDC52,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122572/ERR2122572_1.fastq.gz,WGS Fastq
+uk2FDC52,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122572/ERR2122572_2.fastq.gz,WGS Fastq
+uk2FDC52,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21057_8.cram,WGS Cram
+uk655115,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122573/ERR2122573_1.fastq.gz,WGS Fastq
+uk655115,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122573/ERR2122573_2.fastq.gz,WGS Fastq
+uk655115,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21077_1.cram,WGS Cram
+uk1E5B60,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122574/ERR2122574_1.fastq.gz,WGS Fastq
+uk1E5B60,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122574/ERR2122574_2.fastq.gz,WGS Fastq
+uk1E5B60,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21077_2.cram,WGS Cram
+uk324659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122575/ERR2122575_1.fastq.gz,WGS Fastq
+uk324659,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122575/ERR2122575_2.fastq.gz,WGS Fastq
+uk324659,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21077_3.cram,WGS Cram
+ukC8A0B0,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122576/ERR2122576_1.fastq.gz,WGS Fastq
+ukC8A0B0,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122576/ERR2122576_2.fastq.gz,WGS Fastq
+ukC8A0B0,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21077_4.cram,WGS Cram
+ukA866BF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122577/ERR2122577_1.fastq.gz,WGS Fastq
+ukA866BF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122577/ERR2122577_2.fastq.gz,WGS Fastq
+ukA866BF,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21077_5.cram,WGS Cram
+uk9148F7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122578/ERR2122578_1.fastq.gz,WGS Fastq
+uk9148F7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122578/ERR2122578_2.fastq.gz,WGS Fastq
+uk9148F7,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21077_6.cram,WGS Cram
+uk496F0B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122579/ERR2122579_1.fastq.gz,WGS Fastq
+uk496F0B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122579/ERR2122579_2.fastq.gz,WGS Fastq
+uk496F0B,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21077_7.cram,WGS Cram
+ukDD3C78,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122580/ERR2122580_1.fastq.gz,WGS Fastq
+ukDD3C78,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122580/ERR2122580_2.fastq.gz,WGS Fastq
+ukDD3C78,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21077_8.cram,WGS Cram
+uk1115FE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122581/ERR2122581_1.fastq.gz,WGS Fastq
+uk1115FE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122581/ERR2122581_2.fastq.gz,WGS Fastq
+uk1115FE,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21096_7#1.cram,WGS Cram
+uk6C54D7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122582/ERR2122582_1.fastq.gz,WGS Fastq
+uk6C54D7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122582/ERR2122582_2.fastq.gz,WGS Fastq
+uk6C54D7,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21096_8#1.cram,WGS Cram
+uk5FABB5,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122583/ERR2122583_1.fastq.gz,WGS Fastq
+uk5FABB5,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122583/ERR2122583_2.fastq.gz,WGS Fastq
+uk5FABB5,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21108_1.cram,WGS Cram
+ukFCACC7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122584/ERR2122584_1.fastq.gz,WGS Fastq
+ukFCACC7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122584/ERR2122584_2.fastq.gz,WGS Fastq
+ukFCACC7,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21108_2.cram,WGS Cram
+ukDC29B8,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122585/ERR2122585_1.fastq.gz,WGS Fastq
+ukDC29B8,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122585/ERR2122585_2.fastq.gz,WGS Fastq
+ukDC29B8,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21108_3.cram,WGS Cram
+uk5F1C15,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122586/ERR2122586_1.fastq.gz,WGS Fastq
+uk5F1C15,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122586/ERR2122586_2.fastq.gz,WGS Fastq
+uk5F1C15,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21108_5.cram,WGS Cram
+uk0D2BB4,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122587/ERR2122587_1.fastq.gz,WGS Fastq
+uk0D2BB4,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122587/ERR2122587_2.fastq.gz,WGS Fastq
+uk0D2BB4,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21108_6.cram,WGS Cram
+ukA41CB7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122588/ERR2122588_1.fastq.gz,WGS Fastq
+ukA41CB7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122588/ERR2122588_2.fastq.gz,WGS Fastq
+ukA41CB7,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21108_7.cram,WGS Cram
+uk0A0D88,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122589/ERR2122589_1.fastq.gz,WGS Fastq
+uk0A0D88,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122589/ERR2122589_2.fastq.gz,WGS Fastq
+uk0A0D88,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21108_8.cram,WGS Cram
+uk0E6FFA,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122590/ERR2122590_1.fastq.gz,WGS Fastq
+uk0E6FFA,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122590/ERR2122590_2.fastq.gz,WGS Fastq
+uk0E6FFA,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21109_1.cram,WGS Cram
+ukBCED7A,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122591/ERR2122591_1.fastq.gz,WGS Fastq
+ukBCED7A,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122591/ERR2122591_2.fastq.gz,WGS Fastq
+ukBCED7A,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21109_2.cram,WGS Cram
+ukE80D96,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122592/ERR2122592_1.fastq.gz,WGS Fastq
+ukE80D96,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122592/ERR2122592_2.fastq.gz,WGS Fastq
+ukE80D96,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21109_3.cram,WGS Cram
+ukE8DC4E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122593/ERR2122593_1.fastq.gz,WGS Fastq
+ukE8DC4E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122593/ERR2122593_2.fastq.gz,WGS Fastq
+ukE8DC4E,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21109_4.cram,WGS Cram
+ukAC4950,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122594/ERR2122594_1.fastq.gz,WGS Fastq
+ukAC4950,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122594/ERR2122594_2.fastq.gz,WGS Fastq
+ukAC4950,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21109_5.cram,WGS Cram
+uk689863,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122595/ERR2122595_1.fastq.gz,WGS Fastq
+uk689863,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122595/ERR2122595_2.fastq.gz,WGS Fastq
+uk689863,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21109_6.cram,WGS Cram
+uk79373B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122596/ERR2122596_1.fastq.gz,WGS Fastq
+uk79373B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122596/ERR2122596_2.fastq.gz,WGS Fastq
+uk79373B,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21109_7.cram,WGS Cram
+ukD653EA,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122597/ERR2122597_1.fastq.gz,WGS Fastq
+ukD653EA,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122597/ERR2122597_2.fastq.gz,WGS Fastq
+ukD653EA,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21109_8.cram,WGS Cram
+uk1C9883,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122598/ERR2122598_1.fastq.gz,WGS Fastq
+uk1C9883,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122598/ERR2122598_2.fastq.gz,WGS Fastq
+uk1C9883,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21112_1.cram,WGS Cram
+ukAA8E38,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122599/ERR2122599_1.fastq.gz,WGS Fastq
+ukAA8E38,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122599/ERR2122599_2.fastq.gz,WGS Fastq
+ukAA8E38,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21112_2.cram,WGS Cram
+uk421E54,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122600/ERR2122600_1.fastq.gz,WGS Fastq
+uk421E54,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122600/ERR2122600_2.fastq.gz,WGS Fastq
+uk421E54,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21112_3.cram,WGS Cram
+ukBA4FF7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122601/ERR2122601_1.fastq.gz,WGS Fastq
+ukBA4FF7,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122601/ERR2122601_2.fastq.gz,WGS Fastq
+ukBA4FF7,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21112_4.cram,WGS Cram
+uk87BD26,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122602/ERR2122602_1.fastq.gz,WGS Fastq
+uk87BD26,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122602/ERR2122602_2.fastq.gz,WGS Fastq
+uk87BD26,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21112_5.cram,WGS Cram
+uk3CAFB3,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122603/ERR2122603_1.fastq.gz,WGS Fastq
+uk3CAFB3,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122603/ERR2122603_2.fastq.gz,WGS Fastq
+uk3CAFB3,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21112_6.cram,WGS Cram
+uk14F6AD,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_1.fastq.gz,WGS Fastq
+uk14F6AD,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_2.fastq.gz,WGS Fastq
+uk14F6AD,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21112_7.cram,WGS Cram
+uk55955C,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122605/ERR2122605_1.fastq.gz,WGS Fastq
+uk55955C,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122605/ERR2122605_2.fastq.gz,WGS Fastq
+uk55955C,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21112_8.cram,WGS Cram
+ukF6D075,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122606/ERR2122606_1.fastq.gz,WGS Fastq
+ukF6D075,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122606/ERR2122606_2.fastq.gz,WGS Fastq
+ukF6D075,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21113_1.cram,WGS Cram
+uk9F08CE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122607/ERR2122607_1.fastq.gz,WGS Fastq
+uk9F08CE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122607/ERR2122607_2.fastq.gz,WGS Fastq
+uk9F08CE,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21113_2.cram,WGS Cram
+uk48CE67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122608/ERR2122608_1.fastq.gz,WGS Fastq
+uk48CE67,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122608/ERR2122608_2.fastq.gz,WGS Fastq
+uk48CE67,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21113_3.cram,WGS Cram
+uk5E5B15,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122609/ERR2122609_1.fastq.gz,WGS Fastq
+uk5E5B15,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122609/ERR2122609_2.fastq.gz,WGS Fastq
+uk5E5B15,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21113_4.cram,WGS Cram
+ukE7EF69,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122610/ERR2122610_1.fastq.gz,WGS Fastq
+ukE7EF69,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122610/ERR2122610_2.fastq.gz,WGS Fastq
+ukE7EF69,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21113_5.cram,WGS Cram
+uk09B2EE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122611/ERR2122611_1.fastq.gz,WGS Fastq
+uk09B2EE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122611/ERR2122611_2.fastq.gz,WGS Fastq
+uk09B2EE,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21113_6.cram,WGS Cram
+uk39B2EB,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122612/ERR2122612_1.fastq.gz,WGS Fastq
+uk39B2EB,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122612/ERR2122612_2.fastq.gz,WGS Fastq
+uk39B2EB,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21113_7.cram,WGS Cram
+uk393BF2,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122613/ERR2122613_1.fastq.gz,WGS Fastq
+uk393BF2,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122613/ERR2122613_2.fastq.gz,WGS Fastq
+uk393BF2,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21113_8.cram,WGS Cram
+uk75E7BC,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122614/ERR2122614_1.fastq.gz,WGS Fastq
+uk75E7BC,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122614/ERR2122614_2.fastq.gz,WGS Fastq
+uk75E7BC,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21119_1.cram,WGS Cram
+ukB8CD68,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122615/ERR2122615_1.fastq.gz,WGS Fastq
+ukB8CD68,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122615/ERR2122615_2.fastq.gz,WGS Fastq
+ukB8CD68,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21119_2.cram,WGS Cram
+ukA2FF31,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122616/ERR2122616_1.fastq.gz,WGS Fastq
+ukA2FF31,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122616/ERR2122616_2.fastq.gz,WGS Fastq
+ukA2FF31,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21119_3.cram,WGS Cram
+uk4D2EA6,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122617/ERR2122617_1.fastq.gz,WGS Fastq
+uk4D2EA6,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122617/ERR2122617_2.fastq.gz,WGS Fastq
+uk4D2EA6,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21119_4.cram,WGS Cram
+ukBAF52F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122618/ERR2122618_1.fastq.gz,WGS Fastq
+ukBAF52F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122618/ERR2122618_2.fastq.gz,WGS Fastq
+ukBAF52F,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21119_5.cram,WGS Cram
+ukD768D4,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122619/ERR2122619_1.fastq.gz,WGS Fastq
+ukD768D4,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122619/ERR2122619_2.fastq.gz,WGS Fastq
+ukD768D4,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21119_6.cram,WGS Cram
+uk28996F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122620/ERR2122620_1.fastq.gz,WGS Fastq
+uk28996F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122620/ERR2122620_2.fastq.gz,WGS Fastq
+uk28996F,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21119_7.cram,WGS Cram
+ukC4864A,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122621/ERR2122621_1.fastq.gz,WGS Fastq
+ukC4864A,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122621/ERR2122621_2.fastq.gz,WGS Fastq
+ukC4864A,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21119_8.cram,WGS Cram
+uk2200DC,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122622/ERR2122622_1.fastq.gz,WGS Fastq
+uk2200DC,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122622/ERR2122622_2.fastq.gz,WGS Fastq
+uk2200DC,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21124_1.cram,WGS Cram
+ukDAC808,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122623/ERR2122623_1.fastq.gz,WGS Fastq
+ukDAC808,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122623/ERR2122623_2.fastq.gz,WGS Fastq
+ukDAC808,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21124_2.cram,WGS Cram
+uk58BACF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_1.fastq.gz,WGS Fastq
+uk58BACF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_2.fastq.gz,WGS Fastq
+uk58BACF,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21124_3.cram,WGS Cram
+uk92A44E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122625/ERR2122625_1.fastq.gz,WGS Fastq
+uk92A44E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122625/ERR2122625_2.fastq.gz,WGS Fastq
+uk92A44E,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21124_4.cram,WGS Cram
+ukD24C3E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122626/ERR2122626_1.fastq.gz,WGS Fastq
+ukD24C3E,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122626/ERR2122626_2.fastq.gz,WGS Fastq
+ukD24C3E,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21124_5.cram,WGS Cram
+uk31EDD4,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122627/ERR2122627_1.fastq.gz,WGS Fastq
+uk31EDD4,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122627/ERR2122627_2.fastq.gz,WGS Fastq
+uk31EDD4,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21128_1.cram,WGS Cram
+uk457688,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_1.fastq.gz,WGS Fastq
+uk457688,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_2.fastq.gz,WGS Fastq
+uk457688,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21128_2.cram,WGS Cram
+ukE52AAC,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122629/ERR2122629_1.fastq.gz,WGS Fastq
+ukE52AAC,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122629/ERR2122629_2.fastq.gz,WGS Fastq
+ukE52AAC,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21128_3.cram,WGS Cram
+uk2ABD6B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122630/ERR2122630_1.fastq.gz,WGS Fastq
+uk2ABD6B,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122630/ERR2122630_2.fastq.gz,WGS Fastq
+uk2ABD6B,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21128_4.cram,WGS Cram
+ukC97BE5,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122631/ERR2122631_1.fastq.gz,WGS Fastq
+ukC97BE5,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122631/ERR2122631_2.fastq.gz,WGS Fastq
+ukC97BE5,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21128_5.cram,WGS Cram
+ukB5E082,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122632/ERR2122632_1.fastq.gz,WGS Fastq
+ukB5E082,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122632/ERR2122632_2.fastq.gz,WGS Fastq
+ukB5E082,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21128_6.cram,WGS Cram
+uk486E45,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122633/ERR2122633_1.fastq.gz,WGS Fastq
+uk486E45,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/003/ERR2122633/ERR2122633_2.fastq.gz,WGS Fastq
+uk486E45,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21128_7.cram,WGS Cram
+ukE53A44,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122634/ERR2122634_1.fastq.gz,WGS Fastq
+ukE53A44,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122634/ERR2122634_2.fastq.gz,WGS Fastq
+ukE53A44,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21128_8.cram,WGS Cram
+uk7BD52F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122635/ERR2122635_1.fastq.gz,WGS Fastq
+uk7BD52F,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122635/ERR2122635_2.fastq.gz,WGS Fastq
+uk7BD52F,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21129_1.cram,WGS Cram
+ukB4A6DF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122636/ERR2122636_1.fastq.gz,WGS Fastq
+ukB4A6DF,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/006/ERR2122636/ERR2122636_2.fastq.gz,WGS Fastq
+ukB4A6DF,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21129_2.cram,WGS Cram
+uk305BA4,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122637/ERR2122637_1.fastq.gz,WGS Fastq
+uk305BA4,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/007/ERR2122637/ERR2122637_2.fastq.gz,WGS Fastq
+uk305BA4,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21129_3.cram,WGS Cram
+uk37D41A,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122638/ERR2122638_1.fastq.gz,WGS Fastq
+uk37D41A,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122638/ERR2122638_2.fastq.gz,WGS Fastq
+uk37D41A,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21129_4.cram,WGS Cram
+ukB66F1C,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122639/ERR2122639_1.fastq.gz,WGS Fastq
+ukB66F1C,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/009/ERR2122639/ERR2122639_2.fastq.gz,WGS Fastq
+ukB66F1C,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21129_5.cram,WGS Cram
+ukAED6EE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122640/ERR2122640_1.fastq.gz,WGS Fastq
+ukAED6EE,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/000/ERR2122640/ERR2122640_2.fastq.gz,WGS Fastq
+ukAED6EE,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21129_6.cram,WGS Cram
+ukAE0694,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122641/ERR2122641_1.fastq.gz,WGS Fastq
+ukAE0694,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/001/ERR2122641/ERR2122641_2.fastq.gz,WGS Fastq
+ukAE0694,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21129_7.cram,WGS Cram
+uk63112C,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122642/ERR2122642_1.fastq.gz,WGS Fastq
+uk63112C,ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/002/ERR2122642/ERR2122642_2.fastq.gz,WGS Fastq
+uk63112C,ftp.sra.ebi.ac.uk/vol1/ERA109/ERA1096965/cram/21129_8.cram,WGS Cram

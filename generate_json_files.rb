@@ -346,7 +346,10 @@ def parse_phenotype_csv(input_file)
       next if idx.zero? # header line
       next if csv_row.empty?
       pgp_id = normalize_hex_id(csv_row[0]).to_sym
-      r[pgp_id] = csv_row
+      keys = %w[gender date_of_birth age_at_sample_collection current_smoker
+                ex_smoker blood_type handedness weight height hair_colour
+                right_eye_colour left_eye_colour date]
+      r[pgp_id] = Hash[keys.zip(csv_row.drop(1))]
     end
   end
   r
@@ -376,7 +379,7 @@ RNASEQ_KEY = { 'Sample_1_PGPUK_B1' => 'uk35C650',
 TAPESTRY_URL = 'https://my.personalgenomes.org.uk/public_genetic_data.json'
 
 # parse SANGER keys for PGP100
-SANGER_KEY = {}
+SANGER_KEY = Hash.new
 CSV.foreach('sanger_ids_key.csv') do |r|
   SANGER_KEY[r[0]] = { pgp_id: r[1], sanger_id: r[2] }
 end

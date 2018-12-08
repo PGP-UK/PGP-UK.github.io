@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'json'
 
 def generate_urls(hash, keys, hash_is_arry = false)

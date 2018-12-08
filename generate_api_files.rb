@@ -20,7 +20,7 @@ def write_participants_files
 end
 
 def write_all_participants
-  outfile = API_DIR + 'all_participants'
+  outfile = API_DIR + 'all_participants.json'
   File.open(outfile, 'w') { |io| io.puts JSON.pretty_generate(JSON_DATA) }
 end
 
@@ -43,16 +43,6 @@ def write_subset_files(dir, key)
   end
 end
 
-def write_all_subset(fname, key)
-  outfile = API_DIR + fname
-  subset = {}
-  JSON_DATA.each do |hex_id, d|
-    next unless d.key? key
-    subset[hex_id] = d[key]
-  end
-  File.open(outfile, 'w') { |io| io.puts JSON.pretty_generate(subset) }
-end
-
 def write_all_subset_as_ndjson(fname, key)
   outfile = API_DIR + fname
   File.open(outfile, 'w') do |io|
@@ -61,6 +51,16 @@ def write_all_subset_as_ndjson(fname, key)
       io.puts({ hex_id => d[key] }.to_json)
     end
   end
+end
+
+def write_all_subset(fname, key)
+  outfile = API_DIR + "#{fname}.json"
+  subset = {}
+  JSON_DATA.each do |hex_id, d|
+    next unless d.key? key
+    subset[hex_id] = d[key]
+  end
+  File.open(outfile, 'w') { |io| io.puts JSON.pretty_generate(subset) }
 end
 
 # RUN ANALYSIS
@@ -84,10 +84,12 @@ clean_state
 
 write_participants_files
 write_all_participants_as_nd_json
+write_all_participants
 
 # get all possible keys in JSON_DATA
 key_types = JSON_DATA.values.map(&:keys).flatten.uniq
 key_types.each do |key|
   write_subset_files(key.to_s, key)
   write_all_subset_as_ndjson("all_#{key}", key)
+  write_all_subset("all_#{key}", key)
 end

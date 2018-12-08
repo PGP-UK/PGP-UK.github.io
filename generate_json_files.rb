@@ -1,6 +1,10 @@
+# frozen_string_literal: true
+
 require 'typhoeus'
 require 'csv'
+require 'fileutils'
 require 'json'
+require 'pathname'
 require 'uri'
 
 def init(project_accession, arrayexpress_accessions)
@@ -13,10 +17,10 @@ end
 
 def run(out_dir, responses)
   results = analyse_responses(responses)
-  write_to_json_file(File.join(out_dir, 'data.json'), results)
-  write_data_ndjson_file(File.join(out_dir, 'data.ndjson'), results)
+  write_to_json_file((out_dir + 'data.json'), results)
+  write_data_ndjson_file((out_dir + 'data.ndjson'), results)
   data = create_datatable_json(results)
-  write_to_json_file(File.join(out_dir, 'table.json'), data)
+  write_to_json_file((out_dir + 'table.json'), data)
 end
 
 def generate_urls(project_accession, arrayexpress_accessions)
@@ -66,11 +70,11 @@ def parse_tabular_results(body, request_url)
 end
 
 def determine_type(data_hash, url)
-  if url =~ /.sdrf.txt$/
+  if url.match?(/.sdrf.txt$/)
     determine_arrayexpress_type(url)
-  elsif url =~ /result=analysis$/
+  elsif url.match?(/result=analysis$/)
     { type: 'eva', meta_data_source: url }
-  elsif url =~ /result=read_run$/
+  elsif url.match?(/result=read_run$/)
     determine_ena_type(data_hash, url)
   end
 end
@@ -99,8 +103,7 @@ def determine_ena_type(data_hash, url)
 end
 
 def query_tapestry
-  tapestry_url = 'https://my.personalgenomes.org.uk/public_genetic_data.json'
-  json_string = Typhoeus::Request.new(tapestry_url).run.body
+  json_string = Typhoeus::Request.new(TAPESTRY_URL).run.body
   json = JSON.parse(json_string, symbolize_names: true)
   genome_report = json[:aaData].select { |e| e[:data_type] == 'Genome Report' }
   genome_report.each { |e| e.merge!(type: 'genome_report') }
@@ -175,12 +178,12 @@ end
 def parse_hex_id_using_key(h, convert_key)
   h_key = :sample_alias if h[:type] == 'wgbs'
   h_key = :sample_title if %w[amplicon proton_rna_seq].include? h[:type]
-  d = convert_key[ h[h_key] ]
+  d = convert_key[h[h_key]]
   normalize_hex_id(d)
 end
 
 def parse_pgp100_hex_id(h)
-  d = SANGER_KEY[ h[:sample_alias] ]
+  d = SANGER_KEY[h[:sample_alias]]
   return nil if h[:sample_title] != d[:sanger_id]
   normalize_hex_id(d[:pgp_id])
 end
@@ -370,6 +373,8 @@ RNASEQ_KEY = { 'Sample_1_PGPUK_B1' => 'uk35C650',
                'Sample_9_PGPUK_B9' => 'uk85AA3B',
                'Sample_10_PGPUK_B10' => 'uk481F67' }.freeze
 
+TAPESTRY_URL = 'https://my.personalgenomes.org.uk/public_genetic_data.json'
+
 # parse SANGER keys for PGP100
 SANGER_KEY = {}
 CSV.foreach('sanger_ids_key.csv') do |r|
@@ -382,7 +387,7 @@ PHENOTYPE_DATA = parse_phenotype_csv(phenotype_csv_file)
 
 project_accession = %w[PRJEB17529 PRJEB13150 PRJEB25139]
 arrayexpress_accessions = %w[E-MTAB-5377 E-MTAB-6523]
-out_dir = 'www/data/json'
+out_dir = Pathname.new('www/data/json')
 
 responses = init(project_accession, arrayexpress_accessions)
 run(out_dir, responses)

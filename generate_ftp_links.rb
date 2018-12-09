@@ -34,7 +34,13 @@ end
 
 def get_profile_links(id, pgp_profile)
   return if pgp_profile.nil?
-  links = pgp_profile[:files].map { |h| "#{h[:download_url]}?#{h[:data_type]}" }
+  links = pgp_profile[:files].map do |h|
+    if h[:data_type] != '23andMe'
+      "#{h[:download_url]}?#{h[:name]}"
+    else
+      "#{h[:download_url]}?#{h[:data_type]}"
+    end
+  end
   process_links(links, id, 'pgp_profile')
 end
 
@@ -120,14 +126,14 @@ def get_pgp_profile_type(url)
 end
 
 def get_proton_rna_seq_type(url)
-  return 'Transcriptomic - RNAseq BAM' if url.end_with? '.bam?download'
-  return 'Transcriptomic - RNAseq BAM index' if url.end_with? '.bam.bai?download'
+  return 'Transcriptomic - RNAseq Fastq (_1)' if url.end_with? '_1.fastq.gz'
+  return 'Transcriptomic - RNAseq Fastq (_2)' if url.end_with? '_2.fastq.gz'
+  return 'Transcriptomic - RNAseq Fastq' if url.end_with? '.fastq.gz'
 end
 
 def get_rnaseq_type(url)
-  return 'Transcriptomic - RNAseq Fastq' if url.end_with? '.fastq.gz'
-  return 'Transcriptomic - RNAseq Fastq (_1)' if url.end_with? '_1.fastq.gz'
-  return 'Transcriptomic - RNAseq Fastq (_2)' if url.end_with? '_2.fastq.gz'
+  return 'Transcriptomic - RNAseq BAM' if url.end_with? '.bam?download'
+  return 'Transcriptomic - RNAseq BAM index' if url.end_with? '.bam.bai?download'
 end
 
 def get_amplicon_type(url)
@@ -147,7 +153,7 @@ json_data.each do |id, data|
   results.push(*get_eva_links(id, data[:eva]))
   results.push(*get_wgbs_links(id, data[:wgbs]))
   results.push(*get_meth_array_links(id, data[:meth_450k_array]))
-  results.push(*get_profile_links(id, data[:profile]))
+  results.push(*get_profile_links(id, data[:pgp_profile]))
   results.push(*get_proton_rna_seq_links(id, data[:proton_rna_seq]))
   results.push(*get_rnaseq_links(id, data[:rnaseq]))
   results.push(*get_amplicon_links(id, data[:amplicon]))

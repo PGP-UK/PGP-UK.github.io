@@ -106,11 +106,11 @@ def query_tapestry
   json_string = Typhoeus::Request.new(TAPESTRY_URL).run.body
   json = JSON.parse(json_string, symbolize_names: true)
   genome_report = json[:aaData].select { |e| e[:data_type] == 'Genome Report' }
-  genome_report.each { |e| e.merge!(type: 'genome_report') }
+  genome_report.each { |e| e.merge!(type: 'genome_report') }.sort_by { |e| Date.strptime(e[:published], '%m/%d/%Y') }
   meth_report = json[:aaData].select { |e| e[:data_type] == 'Methylome Report' }
-  meth_report.each { |e| e.merge!(type: 'methylome_report') }
+  meth_report.each { |e| e.merge!(type: 'methylome_report') }.sort_by { |e| Date.strptime(e[:published], '%m/%d/%Y') }
   genotype = json[:aaData].select { |e| e[:data_type] == '23andMe' }
-  genotype.each { |e| e.merge!(type: 'genotype') }
+  genotype.each { |e| e.merge!(type: 'genotype') }.sort_by { |e| Date.strptime(e[:published], '%m/%d/%Y') }
   [genome_report, genotype, meth_report].flatten
 end
 
@@ -346,10 +346,13 @@ def parse_phenotype_csv(input_file)
       next if idx.zero? # header line
       next if csv_row.empty?
       pgp_id = normalize_hex_id(csv_row[0]).to_sym
-      keys = %w[gender date_of_birth age_at_sample_collection current_smoker
-                ex_smoker blood_type handedness weight height hair_colour
-                right_eye_colour left_eye_colour date]
-      r[pgp_id] = Hash[keys.zip(csv_row.drop(1))]
+      keys = ['Sex', 'Date of Birth', 'Age at Sample Collection',
+              'Current Smoker', 'Ex-Smoker?', 'Blood Type', 'Handedness',
+              'Weight', 'Height', 'Hair Colour', 'Right Eye Colour',
+              'Left Eye Colour', 'Survey Date']
+      zipped_data = keys.zip(csv_row.drop(1))
+      r[pgp_id] ||= []
+      r[pgp_id] << zipped_data.map { |e| { question: e[0], answer: e[1] } }
     end
   end
   r

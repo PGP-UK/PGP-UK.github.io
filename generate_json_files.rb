@@ -82,9 +82,9 @@ end
 def determine_arrayexpress_type(url)
   accession = File.basename(URI.parse(url).to_s, '.sdrf.txt')
   if accession == 'E-MTAB-5377'
-    { type: 'meth_450k_array', accession: accession, meta_data_source: url }
+    { type: 'meth_array', accession: accession, meta_data_source: url }
   elsif accession == 'E-MTAB-6523'
-    { type: 'rnaseq', accession: accession, meta_data_source: url }
+    { type: 'rna_seq', accession: accession, meta_data_source: url }
   end
 end
 
@@ -98,7 +98,7 @@ def determine_ena_type(data_hash, url)
   elsif data_hash[:library_strategy] == 'RNA-Seq'
     { type: 'proton_rna_seq', meta_data_source: url }
   elsif data_hash[:library_strategy] == 'AMPLICON'
-    { type: 'amplicon', meta_data_source: url }
+    { type: 'amplicon_rna_seq', meta_data_source: url }
   end
 end
 
@@ -138,9 +138,9 @@ def add_pgp_profile(pgp_id)
 end
 
 def get_pgp_id(result)
-  if %w[meth_450k_array rnaseq].include? result[:type]
+  if %w[meth_array rna_seq].include? result[:type]
     normalize_hex_id(result[:characteristicsindividual]).to_sym
-  elsif %w[eva wgs wxs wgbs amplicon proton_rna_seq].include? result[:type]
+  elsif %w[eva wgs wxs wgbs amplicon_rna_seq proton_rna_seq].include? result[:type]
     parse_hex_id(result).to_sym
   elsif %w[genome_report genotype methylome_report].include? result[:type]
     normalize_hex_id(result[:pgp_hex_id]).to_sym
@@ -152,11 +152,11 @@ def get_sample_id(h)
     next if h[type].nil?
     return h[type][0][:pgp_hex_id]
   end
-  %i[meth_450k_array rnaseq].each do |type|
+  %i[meth_array rna_seq].each do |type|
     next if h[type].nil?
     return h[type][0][:characteristicsindividual]
   end
-  %i[eva wgs wgbs wxs amplicon proton_rna_seq].each do |type|
+  %i[eva wgs wgbs wxs amplicon_rna_seq proton_rna_seq].each do |type|
     next if h[type].nil?
     return parse_hex_id(h[type][0])
   end
@@ -164,7 +164,7 @@ end
 
 def parse_hex_id(h)
   return parse_hex_id_using_key(h, WGBS_KEY) if h[:type] == 'wgbs'
-  if %w[amplicon proton_rna_seq].include? h[:type]
+  if %w[amplicon_rna_seq proton_rna_seq].include? h[:type]
     return parse_hex_id_using_key(h, RNASEQ_KEY)
   end
   # PGP10 use sample_alias; while PGP-donations uses library_name
@@ -177,7 +177,7 @@ end
 
 def parse_hex_id_using_key(h, convert_key)
   h_key = :sample_alias if h[:type] == 'wgbs'
-  h_key = :sample_title if %w[amplicon proton_rna_seq].include? h[:type]
+  h_key = :sample_title if %w[amplicon_rna_seq proton_rna_seq].include? h[:type]
   d = convert_key[h[h_key]]
   normalize_hex_id(d)
 end
@@ -280,7 +280,7 @@ def td3_genotype(h)
 end
 
 def td4_methylome_data(h)
-  td4_wgbs(h) + td4_meth_450k_array(h)
+  td4_wgbs(h) + td4_meth_array(h)
 end
 
 def td4_wgbs(h)
@@ -291,21 +291,21 @@ def td4_wgbs(h)
   title_tooltip(html, 'Whole Genome Bisulfite Sequencing')
 end
 
-def td4_meth_450k_array(h)
-  return '' if h[:meth_450k_array].nil?
-  display = h[:meth_450k_array][0][:accession]
+def td4_meth_array(h)
+  return '' if h[:meth_array].nil?
+  display = h[:meth_array][0][:accession]
   url = "https://www.ebi.ac.uk/arrayexpress/experiments/#{display}"
   html = "450k: <a href='#{url}' target='_blank'>#{display}</a><br>"
   title_tooltip(html, 'Methylation Array Data (450k)')
 end
 
 def td5_transcriptome(h)
-  td5_amplicon(h) + td5_proton_rna_seq(h) + td5_rnaseq(h)
+  td5_amplicon_rna_seq(h) + td5_proton_rna_seq(h) + td5_rna_seq(h)
 end
 
-def td5_amplicon(h)
-  return '' if h[:amplicon].nil?
-  display = h[:amplicon][0][:experiment_accession]
+def td5_amplicon_rna_seq(h)
+  return '' if h[:amplicon_rna_seq].nil?
+  display = h[:amplicon_rna_seq][0][:experiment_accession]
   url = "http://www.ebi.ac.uk/ena/data/view/#{display}"
   html = "Amplicon: <a href='#{url}' target='_blank'>#{display}</a><br>"
   title_tooltip(html, 'Targeted RNA-seq: Amplicon sequencing')
@@ -319,9 +319,9 @@ def td5_proton_rna_seq(h)
   title_tooltip(html, 'Targeted RNA-seq: Whole Transcriptome Shotgun Sequencing')
 end
 
-def td5_rnaseq(h)
-  return '' if h[:rnaseq].nil?
-  display = h[:rnaseq][0][:accession]
+def td5_rna_seq(h)
+  return '' if h[:rna_seq].nil?
+  display = h[:rna_seq][0][:accession]
   url = "https://www.ebi.ac.uk/arrayexpress/experiments/#{display}"
   html = "RNA-SEQ: <a href='#{url}' target='_blank'>#{display}</a><br>"
   title_tooltip(html, 'Whole RNA Sequencing')

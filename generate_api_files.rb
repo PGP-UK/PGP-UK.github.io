@@ -76,7 +76,7 @@ download_data = JSON.parse(download_data_content, symbolize_names: true)
 JSON_DATA = {}
 data.each do |hex_id, d|
   f_data = download_data[hex_id]
-  d[:download_urls] = f_data unless f_data.nil?
+  d[:download_url] = f_data unless f_data.nil?
   JSON_DATA[hex_id] = d
 end
 

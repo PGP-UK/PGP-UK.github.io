@@ -50,23 +50,23 @@ def get_proton_rna_seq_links(id, proton_rna_seq)
   process_links(links, id, 'proton_rna_seq')
 end
 
-def get_rnaseq_links(id, rnaseq)
-  return if rnaseq.nil?
+def get_rna_seq_links(id, rna_seq)
+  return if rna_seq.nil?
   ftp = 'ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB'
   html = 'https://www.ebi.ac.uk/arrayexpress/files'
-  links = rnaseq.map do |h|
+  links = rna_seq.map do |h|
     next if h[:comment_derived_arrayexpress_ftp_file].strip.empty?
     next if h[:derived_array_data_file].strip.empty?
     "#{h[:comment_derived_arrayexpress_ftp_file]}/" \
     "#{h[:derived_array_data_file]}?download".gsub(ftp, html)
   end.flatten.compact
-  process_links(links, id, 'rnaseq')
+  process_links(links, id, 'rna_seq')
 end
 
-def get_amplicon_links(id, amplicon)
-  return if amplicon.nil?
-  links = generate_urls(amplicon, %i[fastq_ftp], true)
-  process_links(links, id, 'amplicon')
+def get_amplicon_links(id, amplicon_rna_seq)
+  return if amplicon_rna_seq.nil?
+  links = generate_urls(amplicon_rna_seq, %i[fastq_ftp], true)
+  process_links(links, id, 'amplicon_rna_seq')
 end
 
 def generate_urls(hash, keys, is_array = false)
@@ -87,8 +87,8 @@ def get_type(type, url)
   return get_meth_array_type(url) if type == 'meth_array'
   return get_pgp_profile_type(url) if type == 'pgp_profile'
   return get_proton_rna_seq_type(url) if type == 'proton_rna_seq'
-  return get_rnaseq_type(url) if type == 'rnaseq'
-  return get_amplicon_type(url) if type == 'amplicon'
+  return get_rna_seq_type(url) if type == 'rna_seq'
+  return get_amplicon_type(url) if type == 'amplicon_rna_seq'
 end
 
 def get_wgs_type(url)
@@ -131,7 +131,7 @@ def get_proton_rna_seq_type(url)
   return 'Transcriptomic - RNAseq Fastq' if url.end_with? '.fastq.gz'
 end
 
-def get_rnaseq_type(url)
+def get_rna_seq_type(url)
   return 'Transcriptomic - RNAseq BAM' if url.end_with? '.bam?download'
   return 'Transcriptomic - RNAseq BAM index' if url.end_with? '.bam.bai?download'
 end
@@ -152,11 +152,11 @@ json_data.each do |id, data|
   results.push(*get_wgs_links(id, data[:wgs]))
   results.push(*get_eva_links(id, data[:eva]))
   results.push(*get_wgbs_links(id, data[:wgbs]))
-  results.push(*get_meth_array_links(id, data[:meth_450k_array]))
+  results.push(*get_meth_array_links(id, data[:meth_array]))
   results.push(*get_profile_links(id, data[:pgp_profile]))
   results.push(*get_proton_rna_seq_links(id, data[:proton_rna_seq]))
-  results.push(*get_rnaseq_links(id, data[:rnaseq]))
-  results.push(*get_amplicon_links(id, data[:amplicon]))
+  results.push(*get_rna_seq_links(id, data[:rna_seq]))
+  results.push(*get_amplicon_links(id, data[:amplicon_rna_seq]))
 end
 
 csv_file = data_dir + 'data_file_links.csv'

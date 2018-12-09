@@ -83,24 +83,7 @@
             </table>
         </div>
     </div>
-    <!-- templats -->
-    <div id="reports_template" style="display:none;">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
-        <div class="row">
-            <h3 class="text-left">PGP-UK Reports</h3>
-            <div style="margin-top: 3rem; margin-bottom:3rem;">
-                <p class="text-left">
-                    <a type="button" class="btn btn-lg btn-default genome_report" style="display:none;">
-                        <i class="fal fa-lg fa-file-alt"></i>&nbsp;Genome Report
-                    </a> &nbsp;&nbsp;
-                    <a type="button" class="btn btn-lg btn-default meth_report" style="display:none;">
-                        <i class="fal fa-lg fa-file-alt"></i>&nbsp;Methylome Report
-                    </a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- templats -->
+
     <div id="files_template" style="display:none;">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
         <div class="row">
@@ -159,65 +142,12 @@
             </div>
         </div>
     </div>
-    <!-- templats -->
-    <div id="traits_template" style="display:none;">
+    <!-- child template -->
+    <div id="child_template" style="display:none;">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 2.5rem">&times;</span></button>
         <div class="row">
-            <h3 class="text-left">Phenotype Data</h3>
-            <div style="margin-top: 3rem; margin-bottom:3rem;">
-                <table class="table info_table table-striped">
-                    <tbody>
-                        <tr>
-                            <td>Sex</td>
-                            <td class="survey_gender"></td>
-                        </tr>
-                        <tr>
-                            <td>Date of Birth</td>
-                            <td class="survey_date_of_birth"></td>
-                        </tr>
-                        <tr>
-                            <td>Age at Sample Collection</td>
-                            <td class="survey_age_at_sample_collection"></td>
-                        </tr>
-                        <tr>
-                            <td>Current Smoker</td>
-                            <td class="survey_current_smoker"></td>
-                        </tr>
-                        <tr>
-                            <td>Ex-Smoker?</td>
-                            <td class="survey_ex_smoker"></td>
-                        </tr>
-                        <tr>
-                            <td>Blood Type</td>
-                            <td class="survey_blood_type"></td>
-                        </tr>
-                        <tr>
-                            <td>Handedness</td>
-                            <td class="survey_handedness"></td>
-                        </tr>
-                        <tr>
-                            <td>Weight</td>
-                            <td class="survey_weight"></td>
-                        </tr>
-                        <tr>
-                            <td>Height</td>
-                            <td class="survey_height"></td>
-                        </tr>
-                        <tr>
-                            <td>Hair Colour</td>
-                            <td class="survey_hair_colour"></td>
-                        </tr>
-                        <tr>
-                            <td>Right Eye Colour</td>
-                            <td class="survey_right_eye_colour"></td>
-                        </tr>
-                        <tr>
-                            <td>Left Eye Colour</td>
-                            <td class="survey_left_eye_colour"></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3 class="pull-left" style="margin-left: 20px; margin-top:10px"><small class="survey_sub_text">*Survey taken on <span class="survey_date"></span></small></h3>
+            <h3 class="text-left" id="child_template_header"></h3>
+            <div class="text-left" style=" margin-top: 3rem; margin-bottom:3rem;" id="child_template_body">
             </div>
         </div>
     </div>

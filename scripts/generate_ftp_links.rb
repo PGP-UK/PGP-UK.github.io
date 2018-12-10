@@ -9,10 +9,10 @@ def get_wgs_links(id, wgs)
   process_links(links, id, 'wgs')
 end
 
-def get_eva_links(id, eva)
-  return if eva.nil?
-  links = generate_urls(eva, %i[submitted_ftp], true)
-  process_links(links, id, 'eva')
+def get_variant_links(id, variant)
+  return if variant.nil?
+  links = generate_urls(variant, %i[submitted_ftp], true)
+  process_links(links, id, 'variant')
 end
 
 def get_wgbs_links(id, wgbs)
@@ -85,7 +85,7 @@ end
 
 def get_type(type, url)
   return get_wgs_type(url) if type == 'wgs'
-  return get_eva_type(url) if type == 'eva'
+  return get_variant_type(url) if type == 'variant'
   return get_wgbs_type(url) if type == 'wgbs'
   return get_meth_array_type(url) if type == 'meth_array'
   return get_pgp_profile_type(url) if type == 'pgp_profile'
@@ -103,7 +103,7 @@ def get_wgs_type(url)
   return 'WGS Cram' if url.end_with? '.cram'
 end
 
-def get_eva_type(url)
+def get_variant_type(url)
   return 'VCF' if url.end_with? '.vcf.gz'
   return 'VCF Tabix Index' if url.end_with? '.vcf.gz.tbi'
   return 'VCF MD5' if url.end_with? '.md5'
@@ -153,7 +153,7 @@ json_data = JSON.parse(IO.read(filename), symbolize_names: true)
 results = []
 json_data.each do |id, data|
   results.push(*get_wgs_links(id, data[:wgs]))
-  results.push(*get_eva_links(id, data[:eva]))
+  results.push(*get_variant_links(id, data[:variant]))
   results.push(*get_wgbs_links(id, data[:wgbs]))
   results.push(*get_meth_array_links(id, data[:meth_array]))
   results.push(*get_profile_links(id, data[:pgp_profile]))

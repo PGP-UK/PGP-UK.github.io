@@ -1,12 +1,12 @@
 var ES; // define global ES (acronym for EBI_Search)  object
 if (!ES) { ES = {}; }
 
-(function() { // ES module
-  ES.init = function() {
-    $.getJSON('/data/json/table.json', function(json) {
+(function () { // ES module
+  ES.init = function () {
+    $.getJSON('/data/json/table.json', function (json) {
       ES.table_json = json;
       var datatable = ES.initializeTable(json, 'table');
-      $.getJSON('/api/v1/all_participants.json', function(data_json) {
+      $.getJSON('/api/v1/all_participants.json', function (data_json) {
         ES.data_json = data_json;
         ES.makePlotIconClickable(datatable, 'table', data_json, '.file_btn');
         ES.makePlotIconClickable(datatable, 'table', data_json, '.report_btn');
@@ -15,17 +15,15 @@ if (!ES) { ES = {}; }
     });
   };
 
-  ES.initializeTable = function(dataset, tableId) {
+  ES.initializeTable = function (dataset, tableId) {
     var dt = $('#' + tableId).DataTable({
       data: dataset,
       responsive: true,
       iDisplayLength: 10,
       pagingType: 'full',
-      order: [
-        [0, "asc"]
-      ],
+      order: [[0, "asc"]],
       bAutoWidth: false,
-         columnDefs: [
+      columnDefs: [
         {
           targets: 0, sType: 'numeric', render: function (data, type, row, meta) {
             // Sort by the default order in the dataset json with the first column
@@ -36,10 +34,10 @@ if (!ES) { ES = {}; }
             }
           }
         },
-        {targets: [1,2,3,4,5], orderable: false},
-        {width: "104px",target: 5}
+        { targets: [1, 2, 3, 4, 5], orderable: false },
+        { target: 5, width: "104px" }
       ],
-      drawCallback: function() {
+      drawCallback: function () {
         $('[data-toggle="tooltip"]').tooltip();
       }
     });
@@ -47,22 +45,22 @@ if (!ES) { ES = {}; }
     return dt;
   };
 
-  ES.makePlotIconClickable = function(datatable, tableId, dataset, type) {
-    $('#' + tableId).on('click', '.close', function() {
+  ES.makePlotIconClickable = function (datatable, tableId, dataset, type) {
+    $('#' + tableId).on('click', '.close', function () {
       var $tr = $(this).closest('tr').prev()[0];
-      var row = datatable.row( $tr );
+      var row = datatable.row($tr);
       row.child.hide();
       $tr.removeClass('shown');
     });
-    $('#' + tableId).on('click', type, function() {
-      var $tr  = $(this).closest('tr');
+    $('#' + tableId).on('click', type, function () {
+      var $tr = $(this).closest('tr');
       var id = $tr.find('.pgp_hex_id').text();
-      var row = datatable.row( $tr );
+      var row = datatable.row($tr);
       ES.openChildRow(row, $tr, dataset, id, type);
     });
   };
 
-  ES.openChildRow = function(row, $tr, dataset, id, type) {
+  ES.openChildRow = function (row, $tr, dataset, id, type) {
     var child_html;
     if (row.child.isShown() && $(row.child()).find(type.replace('.', '#') + id).length === 1) {
       // already open
@@ -82,7 +80,7 @@ if (!ES) { ES = {}; }
     }
   }
 
-  ES.openReportsChildRow = function(data, id, type) {
+  ES.openReportsChildRow = function (data, id, type) {
     var reports_html = $('#child_template').clone().attr('id', type.replace('.', '') + id).show();
     $(reports_html).find('#child_template_header').text('PGP-UK Reports')
     if (data.genome_report === undefined && data.methylome_report === undefined) {
@@ -106,11 +104,11 @@ if (!ES) { ES = {}; }
         .attr('href', data[type][i].download_url).append(
           $('<i class="fal fa-lg fa-file-alt">').css('margin-right', '5px'),
           data[type][i].name.replace('Released by PGP-UK on ', '')
-      ).appendTo($(child_html).find(wrapper_id))
+        ).appendTo($(child_html).find(wrapper_id))
     }
   }
 
-  ES.openTraitsChildRow = function(dataset, id, type) {
+  ES.openTraitsChildRow = function (dataset, id, type) {
     var data = dataset.phenotype[0];
     var traits_html = $('#child_template').clone().attr('id', type.replace('.', '') + id).show();
     $(traits_html).find('#child_template_header').text('Phenotype Data')
@@ -137,30 +135,29 @@ if (!ES) { ES = {}; }
     return traits_html;
   };
 
-  ES.openFilesChildRow = function(data, id, type) {
-    var data = data.download_urls;
+  ES.openFilesChildRow = function (data, id, type) {
     var file_html = $('#child_template').clone().attr('id', type.replace('.', '') + id).show();
     $(file_html).find('#child_template_header').text('PGP-UK Data')
     file_html = ES.addSection(file_html, 'Genome Data', 'genome')
     file_html = ES.addSection(file_html, 'Methylome Data', 'methylome')
     file_html = ES.addSection(file_html, 'Transcriptome Data', 'transcriptome')
     file_html = ES.addSection(file_html, 'User Uploaded Data', 'user_uploaded')
-    data = ES.add_section_info(data)
+    data = ES.add_section_info(data.download_url)
     file_html = ES.addFileButtonHtml(data, file_html)
     return file_html;
   }
 
   ES.addSection = function (file_html, title, klass) {
     $(file_html).find('#child_template_body').append(
-        $('<div>').addClass(klass + '_parent').css('display', 'none').append(
-          $('<h4>').text(title),
-          $('<p>').addClass(klass).css('line-height', '3em')
-        )
+      $('<div>').addClass(klass + '_parent').css('display', 'none').append(
+        $('<h4>').text(title),
+        $('<p>').addClass(klass).css('line-height', '3em')
+      )
     )
     return file_html;
   }
 
-  ES.add_section_info = function(data) {
+  ES.add_section_info = function (data) {
     for (var i = 0; i < data.length; i++) {
       type = data[i].type;
       if (type.indexOf('WGBS') !== -1 || type.indexOf('Methylation') !== -1) {
@@ -181,11 +178,11 @@ if (!ES) { ES = {}; }
       if (data[i].section === undefined) continue;
       $(file_html).find('.' + data[i].section).append(
         $('<a download="">').addClass('btn btn-default')
-        .css('margin-right', '10px').attr('type', 'button')
-        .attr('href', data[i].download_url).append(
-          $('<i class="fal fa-lg fa-file-alt">').css('margin-right', '5px'),
-          data[i].type
-        )
+          .css('margin-right', '10px').attr('type', 'button')
+          .attr('href', data[i].download_url).append(
+            $('<i class="fal fa-lg fa-file-alt">').css('margin-right', '5px'),
+            data[i].type
+          )
       )
       $(file_html).find('.' + data[i].section + '_parent').show()
     }

@@ -57,8 +57,11 @@ def get_rna_seq_links(id, rna_seq)
   links = rna_seq.map do |h|
     next if h[:comment_derived_arrayexpress_ftp_file].strip.empty?
     next if h[:derived_array_data_file].strip.empty?
-    "#{h[:comment_derived_arrayexpress_ftp_file]}/" \
-    "#{h[:derived_array_data_file]}?download".gsub(ftp, html)
+    bai = "#{h[:comment_derived_arrayexpress_ftp_file]}/" \
+          "#{h[:derived_array_data_file]}?download".gsub(ftp, html)
+    bam = html + '/' + h[:accession] + "/#{h[:accession]}." +
+          h[:derived_array_data_file].gsub('.bam.bai', '.bam') + '?download'
+    [bam, bai]
   end.flatten.compact
   process_links(links, id, 'rna_seq')
 end

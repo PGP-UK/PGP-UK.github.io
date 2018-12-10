@@ -65,12 +65,13 @@ end
 
 # RUN ANALYSIS
 API_DIR = Pathname.new('www/api/v1/')
-json_dir = Pathname.new('www/data/json')
 
-data_content = IO.read(json_dir + 'data.json')
+data_dir = Pathname.new(__dir__).parent + 'data'
+
+data_content = IO.read(data_dir + 'data.json')
 data = JSON.parse(data_content, symbolize_names: true)
 
-download_data_content = IO.read(json_dir + 'data_file_links.json')
+download_data_content = IO.read(data_dir + 'data_file_links.json')
 download_data = JSON.parse(download_data_content, symbolize_names: true)
 
 JSON_DATA = {}

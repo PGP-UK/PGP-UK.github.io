@@ -2,6 +2,7 @@ www/_site
 www/api/*
 !www/api/v*/.gitkeep
 www/data/json/*
+www/data/phenotype.csv
 !www/data/json/.gitkeep
 data/*
 !data/phenotype.csv

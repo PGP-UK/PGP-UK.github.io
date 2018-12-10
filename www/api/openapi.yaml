@@ -1,0 +1,659 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Personal Genome Project UK
+  termsOfService: 'https://www.personalgenomes.org.uk/tos'
+  contact:
+    email: pgp-uk@ucl.ac.uk
+  license:
+    name: Creative Commons 0 (CC0)
+    url: 'https://creativecommons.org/share-your-work/public-domain/cc0/'
+  x-logo:
+    url: 'https://apis.guru/openapi-template/logo.png'
+  description: |
+    # Introduction
+
+    PGP-UK data (viewable at [here](https://www.personalgenomes.org.uk/data)) can also be accessed using an API, which has been documented below.
+tags:
+  - name: Participants
+    description: Operations about PGP-UK participants
+  - name: Whole Genome Sequencing
+    description: Operations about Whole Genome Sequencing Data
+  - name: Variant Data
+    description: Operations about Whole Genome/Exome Sequencing Variant Data
+  - name: Genotype Data
+    description: Operations about Genotype Data
+  - name: Whole Genome Bisulfite Data
+    description: Operations about Whole Genome Bisulfite Data
+  - name: Methylation Array Data
+    description: Operations about Methylation Array Data
+  - name: RNA-Seq
+    description: Operations about RNA seq data
+  - name: Amplicon RNA-Seq
+    description: Operations about RNA seq data (Amplicon RNA-seq)
+  - name: Proton RNA-Seq
+    description: Operations about RNA seq data (Proton RNA-seq)
+  - name: Data Direct Urls
+    description: Direct links to all data
+  - name: PGP-UK profile
+    description: Operations about Whole Genome Bisulfite Data
+  - name: Genome Reports
+    description: Operations about the participant's Genome Reports
+  - name: Methylome Reports
+    description: Operations about the participant's Methylation Reports
+  - name: Phenotype Data
+    description: Operations about the participant's phenotype data
+servers:
+  - url: 'https://www.personalgenomes.org.uk/api/v1'
+paths:
+  /all_participants:
+    get:
+      tags:
+        - Participants
+      summary: Get all data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllParicipants
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/participant/{pgp_hex_id}':
+    get:
+      tags:
+        - Participants
+      summary: Get all data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getParicipantByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_wgs:
+    get:
+      tags:
+        - Whole Genome Sequencing
+      summary: Get all whole genome sequencing data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllWgs
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/wgs/{pgp_hex_id}':
+    get:
+      tags:
+        - Whole Genome Sequencing
+      summary: Get all whole genome sequencing data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getWgsByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_eva:
+    get:
+      tags:
+        - Variant Data
+      summary: Get all variant data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllEva
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/eva/{pgp_hex_id}':
+    get:
+      tags:
+        - Variant Data
+      summary: Get all variant data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getEvaByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_genotype:
+    get:
+      tags:
+        - Genotype Data
+      summary: Get all genotype data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllGenotype
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/genotype/{pgp_hex_id}':
+    get:
+      tags:
+        - Genotype Data
+      summary: Get all genotype data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getGenotypeByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_wgbs:
+    get:
+      tags:
+        - Whole Genome Bisulfite Data
+      summary: Get all whole genome bisulfite data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllWbgs
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/wgbs/{pgp_hex_id}':
+    get:
+      tags:
+        - Whole Genome Bisulfite Data
+      summary: Get all whole genome bisulfite data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getWgbsByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_meth_array:
+    get:
+      tags:
+        - Methylation Array Data
+      summary: Get all methylation array data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllMethArray
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/meth_array/{pgp_hex_id}':
+    get:
+      tags:
+        - Methylation Array Data
+      summary: Get all methylation array data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getMethArrayByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_rna_seq:
+    get:
+      tags:
+        - RNA-Seq
+      summary: Get all RNA-seq data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllRnaSeq
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/rna_seq/{pgp_hex_id}':
+    get:
+      tags:
+        - RNA-Seq
+      summary: Get all RNA-seq data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getRnaSeqByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_amplicon_rna_seq:
+    get:
+      tags:
+        - Amplicon RNA-Seq
+      summary: Get all amplicon RNA-seq data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllAmpliconRnaSeq
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/amplicon_rna_seq/{pgp_hex_id}':
+    get:
+      tags:
+        - Amplicon RNA-Seq
+      summary: Get all amplicon RNA-seq data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAmpliconRnaSeqByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_proton_rna_seq:
+    get:
+      tags:
+        - Proton RNA-Seq
+      summary: Get all proton RNA-seq data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getAllProtonRnaSeq
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/proton_rna_seq/{pgp_hex_id}':
+    get:
+      tags:
+        - Proton RNA-Seq
+      summary: Get all proton RNA-seq data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getProtonRnaSeqByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_download_url:
+    get:
+      tags:
+        - Data Direct Urls
+      summary: Get all file download URL
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getDownloadUrl
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/download_url/{pgp_hex_id}':
+    get:
+      tags:
+        - Data Direct Urls
+      summary: Get all file download URL by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getDownloadUrlByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_pgp_profile:
+    get:
+      tags:
+        - PGP-UK profile
+      summary: Get all PGP-UK profile meta data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getPgpProfile
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/pgp_profile/{pgp_hex_id}':
+    get:
+      tags:
+        - PGP-UK profile
+      summary: Get all PGP-UK profile meta data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getPgpProfileByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_genome_report:
+    get:
+      tags:
+        - Genome Reports
+      summary: Get all genome reports
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getGenomeReport
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/genome_report/{pgp_hex_id}':
+    get:
+      tags:
+        - Genome Reports
+      summary: Get all genome reports by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getGenomeReportByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_methylome_report:
+    get:
+      tags:
+        - Methylome Reports
+      summary: Get all methylome reports
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getMethylomeReports
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/methylome_report/{pgp_hex_id}':
+    get:
+      tags:
+        - Methylome Reports
+      summary: Get all methylome reports by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getMethylomeReportsByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+  /all_phenotype_data:
+    get:
+      tags:
+        - Phenotype Data
+      summary: Get all phenotype data
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getPhenotypeData
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Data not found
+  '/phenotype_data/{pgp_hex_id}':
+    get:
+      tags:
+        - Phenotype Data
+      summary: Get all phenotype data by PGP-UK hex id
+      description: |
+        This will return an object containing all the data associated with this participant. 
+      operationId: getPhenotypeDataByHexId
+      parameters:
+        - name: pgp_hex_id
+          in: path
+          description: The hex id for the PGP-UK participant for whom the data needs to be fetched
+          required: true
+          schema:
+            $ref: '#/components/schemas/HexId'
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          description: Participant not found
+components:
+  schemas:
+    HexId:
+      description: PGP-UK unique participant id
+      type: string
+      example: uk35C650
+    Email:
+      description: User email address
+      type: string
+      format: test
+      example: john.smith@example.com
+    User:
+      type: object
+      properties:
+        username:
+          description: User supplied username
+          type: string
+          minLength: 4
+          example: John78
+        firstName:
+          description: User first name
+          type: string
+          minLength: 1
+          example: John
+        lastName:
+          description: User last name
+          type: string
+          minLength: 1
+          example: Smith
+        email:
+          $ref: '#/components/schemas/Email'
+  headers:
+    ExpiresAfter:
+      description: date in UTC when token expires
+      schema:
+        type: string
+        format: date-time

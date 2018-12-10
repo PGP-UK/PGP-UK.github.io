@@ -1,5 +1,5 @@
 www/_site
-www/api/*
+www/api/v*/*
 !www/api/v*/.gitkeep
 www/data/json/*
 www/data/phenotype.csv

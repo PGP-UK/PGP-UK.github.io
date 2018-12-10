@@ -3,7 +3,7 @@
   command = "bash deploy.sh"
 
 [[headers]]
-  for = "/api/v*/"
+  for = "/api/v1/*"
   [headers.values]
   X-PGP-UK-API-DOCS = "https://personalgenomes.org.uk/api"
   X-PGP-UK-API = "https://personalgenomes.org.uk/data"

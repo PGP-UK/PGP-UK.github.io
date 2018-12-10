@@ -7,7 +7,7 @@ bundle install
 # generate the json files
 bundle exec ruby scripts/generate_json_files.rb
 bundle exec ruby scripts/generate_ftp_links.rb
-bundle exec ruby scripts/generate_api_files.rb
+bundle exec ruby scripts/generate_api_files.rb www/api/v1/
 
 # Copy the original files
 cp data/table.json www/data/json/table.json

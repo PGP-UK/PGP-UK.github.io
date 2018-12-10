@@ -64,7 +64,7 @@ def write_all_subset(fname, key)
 end
 
 # RUN ANALYSIS
-API_DIR = Pathname.new('www/api/v1/')
+API_DIR = Pathname.new(ARGV[0])
 
 data_dir = Pathname.new(__dir__).parent + 'data'
 

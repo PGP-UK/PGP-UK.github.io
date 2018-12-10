@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Personal Genome Project: United Kingdom</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="PersonalGenomes.org.uk">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/css/local.css" rel="stylesheet">
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/swagger-ui/swagger-ui.css">
+  <link href="/static/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+  <style>
+    html {
+      box-sizing: border-box;
+      overflow: -moz-scrollbars-vertical;
+      overflow-y: scroll;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      background: #fafafa;
+    }
+    .topbar{
+      display:none;
+    }
+    pre {
+      padding: initial;
+      margin: initial;
+      font-size: initial;
+      line-height: initial;
+      color: initial;
+      word-break: initial;
+      word-wrap: initial;
+      background-color: initial;
+      border: initial;
+      border-radius: initial;
+    }
+    #swagger-ui {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            <img alt="Brand" class="pull-left" src="/static/img/uk/uk-flag.jpg" style="max-height:16px;">&nbsp; Personal
+            Genome Project: UK
+          </a>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/people">Team</a>
+          </li>
+          <li>
+            <a href="/sign-up">Volunteer</a>
+          </li>
+          <li>
+            <a href="/data">Data</a>
+          </li>
+          <li>
+            <a href="/news">News</a>
+          </li>
+          <li>
+            <a href="https://pgpukblog.wordpress.com/" target="_blank">Blog</a>
+          </li>
+          <li>
+            <p class="navbar-btn">
+              <a href="https://my.personalgenomes.org.uk" class="btn btn-success">Participant Log in</a>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <div id="swagger-ui"></div>
+
+
+
+  <script src="/static/swagger-ui/swagger-ui-bundle.js"> </script>
+  <script src="/static/swagger-ui/swagger-ui-standalone-preset.js"> </script>
+  <script>
+    window.onload = function () {
+      // Build a system
+      const ui = SwaggerUIBundle({
+        url: "./openapi.json",
+        dom_id: '#swagger-ui',
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        layout: "StandaloneLayout"
+      })
+      window.ui = ui
+    }
+  </script>
+  <!-- Required for navbar -->
+  <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

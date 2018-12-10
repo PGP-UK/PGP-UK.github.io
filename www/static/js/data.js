@@ -5,7 +5,7 @@ if (!ES) { ES = {}; }
   ES.init = function () {
     $.getJSON('/data/json/table.json', function (json) {
       ES.table_json = json;
-      var datatable = ES.initializeTable(json, 'table');
+      var datatable = ES.initializeTable(json, 'data_table');
       $.getJSON('/api/v1/all_participants.json', function (data_json) {
         ES.data_json = data_json;
         ES.makePlotIconClickable(datatable, 'table', data_json, '.file_btn');

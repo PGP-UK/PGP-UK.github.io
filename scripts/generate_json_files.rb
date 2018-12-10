@@ -72,7 +72,7 @@ def determine_type(data_hash, url)
   if url.match?(/.sdrf.txt$/)
     determine_arrayexpress_type(url)
   elsif url.match?(/result=analysis$/)
-    { type: 'eva', meta_data_source: url }
+    { type: 'variant', meta_data_source: url }
   elsif url.match?(/result=read_run$/)
     determine_ena_type(data_hash, url)
   end
@@ -139,7 +139,7 @@ end
 def get_pgp_id(result)
   if %w[meth_array rna_seq].include? result[:type]
     normalize_hex_id(result[:characteristicsindividual]).to_sym
-  elsif %w[eva wgs wxs wgbs amplicon_rna_seq proton_rna_seq].include? result[:type]
+  elsif %w[variant wgs wxs wgbs amplicon_rna_seq proton_rna_seq].include? result[:type]
     parse_hex_id(result).to_sym
   elsif %w[genome_report genotype methylome_report].include? result[:type]
     normalize_hex_id(result[:pgp_hex_id]).to_sym
@@ -155,7 +155,7 @@ def get_sample_id(h)
     next if h[type].nil?
     return h[type][0][:characteristicsindividual]
   end
-  %i[eva wgs wgbs wxs amplicon_rna_seq proton_rna_seq].each do |type|
+  %i[variant wgs wgbs wxs amplicon_rna_seq proton_rna_seq].each do |type|
     next if h[type].nil?
     return parse_hex_id(h[type][0])
   end
@@ -254,8 +254,8 @@ def td3_wxs(h)
 end
 
 def td3_vcf(h)
-  return '' if h[:eva].nil?
-  display = h[:eva][0][:analysis_accession]
+  return '' if h[:variant].nil?
+  display = h[:variant][0][:analysis_accession]
   url = "http://www.ebi.ac.uk/ena/data/view/#{display}&display=html"
   html = "VCF: <a href='#{url}' target='_blank'>#{display}</a><br>"
   title_tooltip(html, 'Variant Call Format')

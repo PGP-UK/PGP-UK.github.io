@@ -1,0 +1,12 @@
+[build]
+  publish = "www"
+  command = "bash deploy.sh"
+
+[[headers]]
+  for = "/api/v*/"
+  [headers.values]
+  X-PGP-UK-API-DOCS = "https://personalgenomes.org.uk/api"
+  X-PGP-UK-API = "https://personalgenomes.org.uk/data"
+  Accept = "application/json"
+  Access-Control-Allow-Origin = "*"
+  Access-Control-Allow-Methods = "GET"

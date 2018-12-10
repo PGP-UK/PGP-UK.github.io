@@ -1,9 +1,8 @@
 www/_site
 www/api/*
 !www/api/v*/.gitkeep
-www/data/json/data.json
-www/data/json/data.ndjson
-www/data/json/table.json
-www/data/json/data_file_links.json
-www/data/data_file_links.csv
-www/data/phenotype.csv
+www/data/json/*
+!www/data/json/.gitkeep
+data/*
+!data/phenotype.csv
+!data/sanger_ids_key.csv

@@ -18,7 +18,6 @@ end
 def run(out_dir, responses)
   results = analyse_responses(responses)
   write_to_json_file((out_dir + 'data.json'), results)
-  write_data_ndjson_file((out_dir + 'data.ndjson'), results)
   data = create_datatable_json(results)
   write_to_json_file((out_dir + 'table.json'), data)
 end
@@ -194,15 +193,6 @@ end
 
 def write_to_json_file(outfile, data)
   File.open(outfile, 'w') { |io| io.puts data.to_json }
-end
-
-def write_data_ndjson_file(outfile, data)
-  File.open(outfile, 'w') do |io|
-    data.each do |hex, d|
-      h = { hex_id: hex, data: d }
-      io.puts h.to_json
-    end
-  end
 end
 
 def create_datatable_json(results)
@@ -381,19 +371,21 @@ RNASEQ_KEY = { 'Sample_1_PGPUK_B1' => 'uk35C650',
 
 TAPESTRY_URL = 'https://my.personalgenomes.org.uk/public_genetic_data.json'
 
+data_dir = Pathname.new(__dir__).parent + 'data'
+phenotype_csv_file = data_dir + 'phenotype.csv'
+sanger_ids_file = data_dir + 'sanger_ids_key.csv'
+
 # parse SANGER keys for PGP100
 SANGER_KEY = Hash.new
-CSV.foreach('sanger_ids_key.csv') do |r|
+CSV.foreach(sanger_ids_file) do |r|
   SANGER_KEY[r[0]] = { pgp_id: r[1], sanger_id: r[2] }
 end
 
 ## Parse Phenotype data
-phenotype_csv_file = 'phenotype.csv'
 PHENOTYPE_DATA = parse_phenotype_csv(phenotype_csv_file)
 
 project_accession = %w[PRJEB17529 PRJEB13150 PRJEB25139]
 arrayexpress_accessions = %w[E-MTAB-5377 E-MTAB-6523]
-out_dir = Pathname.new('www/data/json')
 
 responses = init(project_accession, arrayexpress_accessions)
-run(out_dir, responses)
+run(data_dir, responses)

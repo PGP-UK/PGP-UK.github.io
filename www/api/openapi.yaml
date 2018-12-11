@@ -52,7 +52,7 @@ paths:
         - Participants
       summary: Get all data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getAllParicipants
       responses:
         '200':
@@ -60,7 +60,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/Participant'
         '404':
           description: Data not found
   '/participant/{pgp_hex_id}':
@@ -69,7 +75,7 @@ paths:
         - Participants
       summary: Get all data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getParicipantByHexId
       parameters:
         - name: pgp_hex_id
@@ -84,7 +90,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/Participant'
         '404':
           description: Participant not found
   /all_wgs:
@@ -93,7 +99,7 @@ paths:
         - Whole Genome Sequencing
       summary: Get all whole genome sequencing data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getAllWgs
       responses:
         '200':
@@ -101,7 +107,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/WGS'
         '404':
           description: Data not found
   '/wgs/{pgp_hex_id}':
@@ -110,7 +122,7 @@ paths:
         - Whole Genome Sequencing
       summary: Get all whole genome sequencing data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getWgsByHexId
       parameters:
         - name: pgp_hex_id
@@ -125,34 +137,40 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/WGS'
         '404':
           description: Participant not found
-  /all_eva:
+  /all_variant:
     get:
       tags:
         - Variant Data
       summary: Get all variant data
       description: |
-        This will return an object containing all the data associated with this participant. 
-      operationId: getAllEva
+        This will return an object containing all the data for all PGP-UK participants.
+      operationId: getAllVariant
       responses:
         '200':
           description: Success
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/Variant'
         '404':
           description: Data not found
-  '/eva/{pgp_hex_id}':
+  '/variant/{pgp_hex_id}':
     get:
       tags:
         - Variant Data
       summary: Get all variant data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
-      operationId: getEvaByHexId
+        This will return an object containing all the data associated with this PGP-UK participant
+      operationId: getVariantByHexId
       parameters:
         - name: pgp_hex_id
           in: path
@@ -166,7 +184,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/Variant'
         '404':
           description: Participant not found
   /all_genotype:
@@ -175,7 +193,7 @@ paths:
         - Genotype Data
       summary: Get all genotype data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getAllGenotype
       responses:
         '200':
@@ -183,7 +201,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/Genotype'
         '404':
           description: Data not found
   '/genotype/{pgp_hex_id}':
@@ -192,7 +216,7 @@ paths:
         - Genotype Data
       summary: Get all genotype data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getGenotypeByHexId
       parameters:
         - name: pgp_hex_id
@@ -207,7 +231,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/Genotype'
         '404':
           description: Participant not found
   /all_wgbs:
@@ -216,7 +240,7 @@ paths:
         - Whole Genome Bisulfite Data
       summary: Get all whole genome bisulfite data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getAllWbgs
       responses:
         '200':
@@ -224,7 +248,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/WGBS'
         '404':
           description: Data not found
   '/wgbs/{pgp_hex_id}':
@@ -233,7 +263,7 @@ paths:
         - Whole Genome Bisulfite Data
       summary: Get all whole genome bisulfite data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getWgbsByHexId
       parameters:
         - name: pgp_hex_id
@@ -248,7 +278,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/WGBS'
         '404':
           description: Participant not found
   /all_meth_array:
@@ -257,7 +287,7 @@ paths:
         - Methylation Array Data
       summary: Get all methylation array data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getAllMethArray
       responses:
         '200':
@@ -265,7 +295,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/MethylationArrayData'
         '404':
           description: Data not found
   '/meth_array/{pgp_hex_id}':
@@ -274,7 +310,7 @@ paths:
         - Methylation Array Data
       summary: Get all methylation array data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getMethArrayByHexId
       parameters:
         - name: pgp_hex_id
@@ -289,7 +325,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/MethylationArrayData'
         '404':
           description: Participant not found
   /all_rna_seq:
@@ -298,7 +334,7 @@ paths:
         - RNA-Seq
       summary: Get all RNA-seq data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getAllRnaSeq
       responses:
         '200':
@@ -306,7 +342,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/RnaSeq'
         '404':
           description: Data not found
   '/rna_seq/{pgp_hex_id}':
@@ -315,7 +357,7 @@ paths:
         - RNA-Seq
       summary: Get all RNA-seq data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getRnaSeqByHexId
       parameters:
         - name: pgp_hex_id
@@ -330,7 +372,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/RnaSeq'
         '404':
           description: Participant not found
   /all_amplicon_rna_seq:
@@ -339,7 +381,7 @@ paths:
         - Amplicon RNA-Seq
       summary: Get all amplicon RNA-seq data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getAllAmpliconRnaSeq
       responses:
         '200':
@@ -347,7 +389,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/AmpliconRNAseq'
         '404':
           description: Data not found
   '/amplicon_rna_seq/{pgp_hex_id}':
@@ -356,7 +404,7 @@ paths:
         - Amplicon RNA-Seq
       summary: Get all amplicon RNA-seq data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getAmpliconRnaSeqByHexId
       parameters:
         - name: pgp_hex_id
@@ -371,7 +419,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/AmpliconRNAseq'
         '404':
           description: Participant not found
   /all_proton_rna_seq:
@@ -380,7 +428,7 @@ paths:
         - Proton RNA-Seq
       summary: Get all proton RNA-seq data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getAllProtonRnaSeq
       responses:
         '200':
@@ -388,7 +436,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/ProtonRnaSeq'
         '404':
           description: Data not found
   '/proton_rna_seq/{pgp_hex_id}':
@@ -397,7 +451,7 @@ paths:
         - Proton RNA-Seq
       summary: Get all proton RNA-seq data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getProtonRnaSeqByHexId
       parameters:
         - name: pgp_hex_id
@@ -412,7 +466,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/ProtonRnaSeq'
         '404':
           description: Participant not found
   /all_download_url:
@@ -421,7 +475,7 @@ paths:
         - Data Direct Urls
       summary: Get all file download URL
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getDownloadUrl
       responses:
         '200':
@@ -429,7 +483,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/DataURLs'
         '404':
           description: Data not found
   '/download_url/{pgp_hex_id}':
@@ -438,7 +498,7 @@ paths:
         - Data Direct Urls
       summary: Get all file download URL by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getDownloadUrlByHexId
       parameters:
         - name: pgp_hex_id
@@ -453,7 +513,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/DataURLs'
         '404':
           description: Participant not found
   /all_pgp_profile:
@@ -462,7 +522,7 @@ paths:
         - PGP-UK profile
       summary: Get all PGP-UK profile meta data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getPgpProfile
       responses:
         '200':
@@ -470,7 +530,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/PGPUKProfile'
         '404':
           description: Data not found
   '/pgp_profile/{pgp_hex_id}':
@@ -479,7 +545,7 @@ paths:
         - PGP-UK profile
       summary: Get all PGP-UK profile meta data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getPgpProfileByHexId
       parameters:
         - name: pgp_hex_id
@@ -494,7 +560,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/PGPUKProfile'
         '404':
           description: Participant not found
   /all_genome_report:
@@ -503,7 +569,7 @@ paths:
         - Genome Reports
       summary: Get all genome reports
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getGenomeReport
       responses:
         '200':
@@ -511,7 +577,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: ALL DATA TODO
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/GenomeReport'
         '404':
           description: Data not found
   '/genome_report/{pgp_hex_id}':
@@ -520,7 +592,7 @@ paths:
         - Genome Reports
       summary: Get all genome reports by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getGenomeReportByHexId
       parameters:
         - name: pgp_hex_id
@@ -535,7 +607,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/GenomeReport'
         '404':
           description: Participant not found
   /all_methylome_report:
@@ -544,7 +616,7 @@ paths:
         - Methylome Reports
       summary: Get all methylome reports
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getMethylomeReports
       responses:
         '200':
@@ -552,7 +624,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: Methylome Report Data for all PGP-UK participants
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/MethylomeReport'
         '404':
           description: Data not found
   '/methylome_report/{pgp_hex_id}':
@@ -561,7 +639,7 @@ paths:
         - Methylome Reports
       summary: Get all methylome reports by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data associated with this PGP-UK participant
       operationId: getMethylomeReportsByHexId
       parameters:
         - name: pgp_hex_id
@@ -576,16 +654,16 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/MethylomeReport'
         '404':
           description: Participant not found
-  /all_phenotype_data:
+  /all_phenotype:
     get:
       tags:
         - Phenotype Data
       summary: Get all phenotype data
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data for all PGP-UK participants.
       operationId: getPhenotypeData
       responses:
         '200':
@@ -593,16 +671,22 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                description: Phenotype question and answer obtained through a participant-filled questionnaire for all PGP-UK participants
+                type: object
+                properties:
+                  hex_id:
+                    $ref: '#/components/schemas/HexId'
+                  data:
+                    $ref: '#/components/schemas/Phenotype'
         '404':
           description: Data not found
-  '/phenotype_data/{pgp_hex_id}':
+  '/phenotype/{pgp_hex_id}':
     get:
       tags:
         - Phenotype Data
       summary: Get all phenotype data by PGP-UK hex id
       description: |
-        This will return an object containing all the data associated with this participant. 
+        This will return an object containing all the data all the data associated with this PGP-UK participant
       operationId: getPhenotypeDataByHexId
       parameters:
         - name: pgp_hex_id
@@ -617,7 +701,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/User'
+                $ref: '#/components/schemas/Phenotype'
         '404':
           description: Participant not found
 components:
@@ -626,31 +710,173 @@ components:
       description: PGP-UK unique participant id
       type: string
       example: uk35C650
-    Email:
-      description: User email address
-      type: string
-      format: test
-      example: john.smith@example.com
-    User:
-      type: object
-      properties:
-        username:
-          description: User supplied username
-          type: string
-          minLength: 4
-          example: John78
-        firstName:
-          description: User first name
-          type: string
-          minLength: 1
-          example: John
-        lastName:
-          description: User last name
-          type: string
-          minLength: 1
-          example: Smith
-        email:
-          $ref: '#/components/schemas/Email'
+    Participant:
+      description: All data associated with PGP participant
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    WGS:
+      description: Whole Genome Sequencing data
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    Variant:
+      description: Variant data
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    Genotype:
+      description: Genotype data
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    WGBS:
+      description: Whole Genome Bisulfite Sequencing data
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    MethylationArrayData:
+      description: Methylation Array data
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    RnaSeq:
+      description: RNA-Seq data
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    AmpliconRNAseq:
+      description: Amplicon RNA-Seq data
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    ProtonRnaSeq:
+      description: Proton RNA-Seq data
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    DataURLs:
+      description: Data containing direct URLs for all data associated with the PGP-UK participant
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    PGPUKProfile:
+      description: Meta data from PGP-UK profile
+      type: array
+      items:
+        type: object
+        properties:
+          test:
+            type: string
+            example: example
+    GenomeReport:
+      description: Genome Report Data
+      type: array
+      items:
+        type: object
+        properties:
+          published:
+            type: string
+            example: 03/08/2018
+            format: DD/MM/YYYY
+          file_source:
+            type: string
+            example: PGP
+          download_url:
+            type: string
+            example: 'https://my.personalgenomes.org.uk/datasets/183/download'
+          data_type:
+            type: string
+            example: Methylome Report
+          name:
+            type: string
+            example: Methylome Report (Released by PGP-UK on 8th March 2018)
+          pgp_hex_id:
+            type: string
+            example: uk35C650
+          type:
+            type: string
+            example: methylome_report
+    MethylomeReport:
+      description: Methylome Report
+      type: array
+      items:
+        type: object
+        properties:
+          published:
+            type: string
+            example: 03/08/2018
+            format: DD/MM/YYYY
+          file_source:
+            type: string
+            example: PGP
+          download_url:
+            type: string
+            example: 'https://my.personalgenomes.org.uk/datasets/183/download'
+          data_type:
+            type: string
+            example: Methylome Report
+          name:
+            type: string
+            example: Methylome Report (Released by PGP-UK on 8th March 2018)
+          pgp_hex_id:
+            type: string
+            example: uk35C650
+          type:
+            type: string
+            example: methylome_report
+    Phenotype:
+      description: Phenotype question and answer obtained through a participant-filled questionnaire
+      type: array
+      items:
+        type: object
+        properties:
+          question:
+            type: string
+            example: Age at Sample Collection
+          answer:
+            type: string
+            example: 60
   headers:
     ExpiresAfter:
       description: date in UTC when token expires

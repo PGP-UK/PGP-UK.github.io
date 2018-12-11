@@ -16,8 +16,7 @@
     },
     "description": "# Introduction\n\nPGP-UK data (viewable at [here](https://www.personalgenomes.org.uk/data)) can also be accessed using an API, which has been documented below.\n"
   },
-  "tags": [
-    {
+  "tags": [{
       "name": "Participants",
       "description": "Operations about PGP-UK participants"
     },
@@ -74,11 +73,9 @@
       "description": "Operations about the participant's phenotype data"
     }
   ],
-  "servers": [
-    {
-      "url": "https://www.personalgenomes.org.uk/api/v1"
-    }
-  ],
+  "servers": [{
+    "url": "https://www.personalgenomes.org.uk/api/v1"
+  }],
   "paths": {
     "/all_participants": {
       "get": {
@@ -122,17 +119,15 @@
         "summary": "Get all data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getParicipantByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -192,17 +187,15 @@
         "summary": "Get all whole genome sequencing data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getWgsByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -262,17 +255,15 @@
         "summary": "Get all variant data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getVariantByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -332,17 +323,15 @@
         "summary": "Get all genotype data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getGenotypeByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -402,17 +391,15 @@
         "summary": "Get all whole genome bisulfite data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getWgbsByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -472,17 +459,15 @@
         "summary": "Get all methylation array data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getMethArrayByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -542,17 +527,15 @@
         "summary": "Get all RNA-seq data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getRnaSeqByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -612,17 +595,15 @@
         "summary": "Get all amplicon RNA-seq data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getAmpliconRnaSeqByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -682,17 +663,15 @@
         "summary": "Get all proton RNA-seq data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getProtonRnaSeqByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -752,17 +731,15 @@
         "summary": "Get all file download URL by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getDownloadUrlByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -822,17 +799,15 @@
         "summary": "Get all PGP-UK profile meta data by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getPgpProfileByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -892,17 +867,15 @@
         "summary": "Get all genome reports by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getGenomeReportByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -962,17 +935,15 @@
         "summary": "Get all methylome reports by PGP-UK hex id",
         "description": "This will return an object containing all the data associated with this PGP-UK participant\n",
         "operationId": "getMethylomeReportsByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -1032,17 +1003,15 @@
         "summary": "Get all phenotype data by PGP-UK hex id",
         "description": "This will return an object containing all the data all the data associated with this PGP-UK participant\n",
         "operationId": "getPhenotypeDataByHexId",
-        "parameters": [
-          {
-            "name": "pgp_hex_id",
-            "in": "path",
-            "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
-            "required": true,
-            "schema": {
-              "$ref": "#/components/schemas/HexId"
-            }
+        "parameters": [{
+          "name": "pgp_hex_id",
+          "in": "path",
+          "description": "The hex id for the PGP-UK participant for whom the data needs to be fetched",
+          "required": true,
+          "schema": {
+            "$ref": "#/components/schemas/HexId"
           }
-        ],
+        }],
         "responses": {
           "200": {
             "description": "Success",
@@ -1074,9 +1043,44 @@
         "items": {
           "type": "object",
           "properties": {
-            "test": {
-              "type": "string",
-              "example": "example"
+            "wgs": {
+              "$ref": "#/components/schemas/WGS"
+            },
+            "variant": {
+              "$ref": "#/components/schemas/Variant"
+            },
+            "genotype": {
+              "$ref": "#/components/schemas/Genotype"
+            },
+            "wgbs": {
+              "$ref": "#/components/schemas/WGBS"
+            },
+            "meth_array": {
+              "$ref": "#/components/schemas/MethylationArrayData"
+            },
+            "rna_seq": {
+              "$ref": "#/components/schemas/RnaSeq"
+            },
+            "amplicon_rna_seq": {
+              "$ref": "#/components/schemas/AmpliconRNAseq"
+            },
+            "proton_rna_seq": {
+              "$ref": "#/components/schemas/ProtonRnaSeq"
+            },
+            "download_url": {
+              "$ref": "#/components/schemas/DataURLs"
+            },
+            "pgp_profile": {
+              "$ref": "#/components/schemas/PGPUKProfile"
+            },
+            "genome_report": {
+              "$ref": "#/components/schemas/GenomeReport"
+            },
+            "methylome_report": {
+              "$ref": "#/components/schemas/MethylomeReport"
+            },
+            "phenotype": {
+              "$ref": "#/components/schemas/Phenotype"
             }
           }
         }
@@ -1113,9 +1117,41 @@
         "items": {
           "type": "object",
           "properties": {
-            "test": {
+            "published": {
               "type": "string",
-              "example": "example"
+              "example": "06/08/2017"
+            },
+            "file_source": {
+              "type": "string",
+              "example": "Participant"
+            },
+            "date": {
+              "type": "string",
+              "example": "2014-05-15"
+            },
+            "description": {
+              "type": "string",
+              "example": "Genotyping data"
+            },
+            "download_url": {
+              "type": "string",
+              "example": "https://my.personalgenomes.org.uk/user_file/download/166"
+            },
+            "data_type": {
+              "type": "string",
+              "example": "23andMe"
+            },
+            "name": {
+              "type": "string",
+              "example": "uk35C650_23andMe"
+            },
+            "pgp_hex_id": {
+              "type": "string",
+              "example": "uk35C650"
+            },
+            "type": {
+              "type": "string",
+              "example": "genotype"
             }
           }
         }
@@ -1191,9 +1227,13 @@
         "items": {
           "type": "object",
           "properties": {
-            "test": {
+            "type": {
               "type": "string",
-              "example": "example"
+              "example": "WGS Bam"
+            },
+            "download_url": {
+              "type": "string",
+              "example": "ftp.sra.ebi.ac.uk/vol1/run/ERR172/ERR1726424/FR07961001.bam"
             }
           }
         }
@@ -1204,9 +1244,61 @@
         "items": {
           "type": "object",
           "properties": {
-            "test": {
+            "public_profile_url": {
               "type": "string",
-              "example": "example"
+              "example": "https://my.personalgenomes.org.uk/profile/uk35C650"
+            },
+            "deceased": {
+              "type": "boolean",
+              "example": false
+            },
+            "zip": {
+              "type": "string",
+              "example": "CB22 4NZ"
+            },
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "file_source": {
+                    "type": "string",
+                    "example": "PGP"
+                  },
+                  "download_url": {
+                    "type": "string",
+                    "example": "https://my.personalgenomes.org.uk/datasets/193/download"
+                  },
+                  "data_type": {
+                    "type": "string",
+                    "example": "Genome Report"
+                  },
+                  "name": {
+                    "type": "string",
+                    "example": "Genome Report (Released by PGP-UK on 23rd October 2018)"
+                  },
+                  "description": {
+                    "type": "string",
+                    "example": "Genotyping data"
+                  },
+                  "data": {
+                    "type": "string",
+                    "example": "2014-05-15"
+                  }
+                }
+              }
+            },
+            "hex": {
+              "type": "string",
+              "example": "uk35C650"
+            },
+            "real_name": {
+              "type": "string",
+              "example": "Stephan Beck"
+            },
+            "type": {
+              "type": "string",
+              "example": "pgp_profile"
             }
           }
         }

@@ -8,9 +8,9 @@ if (!ES) { ES = {}; }
       var datatable = ES.initializeTable(json, 'data_table');
       $.getJSON('/api/v1/all_participants.json', function (data_json) {
         ES.data_json = data_json;
-        ES.makePlotIconClickable(datatable, 'table', data_json, '.file_btn');
-        ES.makePlotIconClickable(datatable, 'table', data_json, '.report_btn');
-        ES.makePlotIconClickable(datatable, 'table', data_json, '.trait_btn');
+        ES.makePlotIconClickable(datatable, 'data_table', data_json, '.file_btn');
+        ES.makePlotIconClickable(datatable, 'data_table', data_json, '.report_btn');
+        ES.makePlotIconClickable(datatable, 'data_table', data_json, '.trait_btn');
       });
     });
   };

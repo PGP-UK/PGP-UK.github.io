@@ -1,47 +1,45 @@
 openapi: 3.0.0
 info:
-  version: '1.0.0'
-
-  title: Personal Genome Project UK # Replace with your API title
-
+  version: 1.0.0
+  title: Personal Genome Project UK
   termsOfService: 'https://www.personalgenomes.org.uk/tos'
   contact:
+    name: PGP-UK
     email: pgp-uk@ucl.ac.uk
-    # url: 'http://example.com/contact'
   license:
     name: Creative Commons 0 (CC0)
     url: 'https://creativecommons.org/share-your-work/public-domain/cc0/'
   x-logo:
     url: 'https://apis.guru/openapi-template/logo.png'
-
   description: |
     # Introduction
 
-    PGP-UK data (viewable at [here](https://www.personalgenomes.org.uk/data)) can also be accessed using an API, which has been documented below.
+    Below is the documentation for the [PGP-UK data](https://www.personalgenomes.org.uk/data) restful API, which is compliant with the [OpenAPI 3.0 Specifications](https://swagger.io/specification/) (a language-agnostic standard for RESTful APIs).
 
+    The API simply provides access to the meta data (including download links etc.) associated with the PGP-UK data. As the PGP-UK data are stored at various databases at EBI (e.g. ENA, EVA, ArrayExpress etc.) and the PGP-UK Participant Portal (e.g. Phenotype data and generated reports), this API provides an easy way to bring everything together.
+
+    Clicking on an endpoint below will provide further information on the format of paramaters (if any) together with information on the expected result format.
+
+    Additionally, it is possible to test the API endpoint on this page by clicking on the "Try it out" button, and subsequently clicking on the "Execute" button that appears. This will display the server response (body and headers) for the respective endpoint. Furthermore, a curl command will also be displayed that can be run in a terminal.
 tags:
   - name: Participants
     description: Operations about PGP-UK participants
-
   - name: Whole Genome Sequencing
     description: Operations about Whole Genome Sequencing Data
   - name: Variant Data
     description: Operations about Whole Genome/Exome Sequencing Variant Data
   - name: Genotype Data
     description: Operations about Genotype Data
-
   - name: Whole Genome Bisulfite Data
     description: Operations about Whole Genome Bisulfite Data
   - name: Methylation Array Data
     description: Operations about Methylation Array Data
-
   - name: RNA-Seq
     description: Operations about RNA seq data
   - name: Amplicon RNA-Seq
     description: Operations about RNA seq data (Amplicon RNA-seq)
   - name: Proton RNA-Seq
     description: Operations about RNA seq data (Proton RNA-seq)
-
   - name: Data Direct Urls
     description: Direct links to all data
   - name: PGP-UK profile
@@ -50,16 +48,12 @@ tags:
     description: Operations about the participant's Genome Reports
   - name: Methylome Reports
     description: Operations about the participant's Methylation Reports
-
   - name: Phenotype Data
     description: Operations about the participant's phenotype data
-
-
 servers:
   - url: 'https://www.personalgenomes.org.uk/api/v1'
-
 paths:
-  '/all_participants': # path parameter in curly braces
+  /all_participants:
     get:
       tags:
         - Participants
@@ -73,7 +67,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -106,10 +100,7 @@ paths:
                 $ref: '#/components/schemas/Participant'
         '404':
           description: Participant not found
-
-
-
-  '/all_wgs': # path parameter in curly braces
+  /all_wgs:
     get:
       tags:
         - Whole Genome Sequencing
@@ -123,7 +114,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Whole Genome Sequencing data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -156,10 +147,7 @@ paths:
                 $ref: '#/components/schemas/WGS'
         '404':
           description: Participant not found
-
-
-
-  '/all_variant': # path parameter in curly braces
+  /all_variant:
     get:
       tags:
         - Variant Data
@@ -173,7 +161,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Variant data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -206,10 +194,7 @@ paths:
                 $ref: '#/components/schemas/Variant'
         '404':
           description: Participant not found
-
-
-
-  '/all_genotype': # path parameter in curly braces
+  /all_genotype:
     get:
       tags:
         - Genotype Data
@@ -223,7 +208,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Genotype data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -256,10 +241,7 @@ paths:
                 $ref: '#/components/schemas/Genotype'
         '404':
           description: Participant not found
-
-
-
-  '/all_wgbs': # path parameter in curly braces
+  /all_wgbs:
     get:
       tags:
         - Whole Genome Bisulfite Data
@@ -273,7 +255,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Whole Genome Bisulfite Sequencing data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -306,10 +288,7 @@ paths:
                 $ref: '#/components/schemas/WGBS'
         '404':
           description: Participant not found
-
-
-
-  '/all_meth_array': # path parameter in curly braces
+  /all_meth_array:
     get:
       tags:
         - Methylation Array Data
@@ -323,7 +302,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Methylation Array data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -356,10 +335,7 @@ paths:
                 $ref: '#/components/schemas/MethylationArrayData'
         '404':
           description: Participant not found
-
-
-
-  '/all_rna_seq': # path parameter in curly braces
+  /all_rna_seq:
     get:
       tags:
         - RNA-Seq
@@ -373,7 +349,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: RNA-Seq data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -406,10 +382,7 @@ paths:
                 $ref: '#/components/schemas/RnaSeq'
         '404':
           description: Participant not found
-
-
-
-  '/all_amplicon_rna_seq': # path parameter in curly braces
+  /all_amplicon_rna_seq:
     get:
       tags:
         - Amplicon RNA-Seq
@@ -423,7 +396,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Amplicon RNA-Seq data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -456,10 +429,7 @@ paths:
                 $ref: '#/components/schemas/AmpliconRNAseq'
         '404':
           description: Participant not found
-
-
-
-  '/all_proton_rna_seq': # path parameter in curly braces
+  /all_proton_rna_seq:
     get:
       tags:
         - Proton RNA-Seq
@@ -473,7 +443,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Proton RNA-Seq data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -506,10 +476,7 @@ paths:
                 $ref: '#/components/schemas/ProtonRnaSeq'
         '404':
           description: Participant not found
-
-
-
-  '/all_download_url': # path parameter in curly braces
+  /all_download_url:
     get:
       tags:
         - Data Direct Urls
@@ -523,7 +490,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Data containing direct URLs for all data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -556,11 +523,7 @@ paths:
                 $ref: '#/components/schemas/DataURLs'
         '404':
           description: Participant not found
-
-
-
-
-  '/all_pgp_profile': # path parameter in curly braces
+  /all_pgp_profile:
     get:
       tags:
         - PGP-UK profile
@@ -574,7 +537,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Meta data from PGP-UK profile for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -607,11 +570,7 @@ paths:
                 $ref: '#/components/schemas/PGPUKProfile'
         '404':
           description: Participant not found
-
-
-
-
-  '/all_genome_report': # path parameter in curly braces
+  /all_genome_report:
     get:
       tags:
         - Genome Reports
@@ -625,7 +584,7 @@ paths:
           content:
             application/json:
               schema:
-                description: ALL DATA TODO
+                description: Genome Report Data for all PGP-UK participants
                 type: object
                 properties:
                   hex_id:
@@ -658,11 +617,7 @@ paths:
                 $ref: '#/components/schemas/GenomeReport'
         '404':
           description: Participant not found
-
-
-
-
-  '/all_methylome_report': # path parameter in curly braces
+  /all_methylome_report:
     get:
       tags:
         - Methylome Reports
@@ -683,7 +638,6 @@ paths:
                     $ref: '#/components/schemas/HexId'
                   data:
                     $ref: '#/components/schemas/MethylomeReport'
-
         '404':
           description: Data not found
   '/methylome_report/{pgp_hex_id}':
@@ -710,11 +664,7 @@ paths:
                 $ref: '#/components/schemas/MethylomeReport'
         '404':
           description: Participant not found
-
-
-
-
-  '/all_phenotype': # path parameter in curly braces
+  /all_phenotype:
     get:
       tags:
         - Phenotype Data
@@ -735,7 +685,6 @@ paths:
                     $ref: '#/components/schemas/HexId'
                   data:
                     $ref: '#/components/schemas/Phenotype'
-
         '404':
           description: Data not found
   '/phenotype/{pgp_hex_id}':
@@ -762,18 +711,12 @@ paths:
                 $ref: '#/components/schemas/Phenotype'
         '404':
           description: Participant not found
-
-
-
-
-# An object to hold reusable parts that can be used across the spec
 components:
   schemas:
     HexId:
       description: PGP-UK unique participant id
       type: string
-      example: 'uk35C650'
-
+      example: uk35C650
     Participant:
       description: All data associated with PGP participant
       type: array
@@ -782,10 +725,8 @@ components:
         properties:
           wgs:
             $ref: '#/components/schemas/WGS'
-            
           variant:
             $ref: '#/components/schemas/Variant'
-
           genotype:
             $ref: '#/components/schemas/Genotype'
           wgbs:
@@ -794,7 +735,6 @@ components:
             $ref: '#/components/schemas/MethylationArrayData'
           rna_seq:
             $ref: '#/components/schemas/RnaSeq'
-
           amplicon_rna_seq:
             $ref: '#/components/schemas/AmpliconRNAseq'
           proton_rna_seq:
@@ -809,17 +749,171 @@ components:
             $ref: '#/components/schemas/MethylomeReport'
           phenotype:
             $ref: '#/components/schemas/Phenotype'
-
     WGS:
       description: Whole Genome Sequencing data
       type: array
       items:
         type: object
         properties:
-          test:
+          study_accession:
             type: string
-            example: example
-
+            example: PRJEB17529
+          secondary_study_accession:
+            type: string
+            example: ERP019394
+          sample_accession:
+            type: string
+            example: SAMEA4545245
+          secondary_sample_accession:
+            type: string
+            example: ERS1444424
+          experiment_accession:
+            type: string
+            example: ERX1796409
+          run_accession:
+            type: string
+            example: ERR1726424
+          submission_accession:
+            type: string
+            example: ERA763569
+          tax_id:
+            type: string
+            example: '9606'
+          scientific_name:
+            type: string
+            example: Homo sapiens
+          instrument_platform:
+            type: string
+            example: ILLUMINA
+          instrument_model:
+            type: string
+            example: HiSeq X Ten
+          library_name:
+            type: string
+            example: unspecified
+          nominal_length:
+            type: string
+            example: '350'
+          library_layout:
+            type: string
+            example: PAIRED
+          library_strategy:
+            type: string
+            example: WGS
+          library_source:
+            type: string
+            example: GENOMIC
+          library_selection:
+            type: string
+            example: unspecified
+          read_count:
+            type: string
+            example: '421675357'
+          base_count:
+            type: string
+            example: '122196048169'
+          center_name:
+            type: string
+            example: UNIVERSITY COLLEGE LONDON
+          first_public:
+            type: string
+            example: '2016-11-14'
+          last_updated:
+            type: string
+            example: '2018-11-16'
+          experiment_title:
+            type: string
+            example: HiSeq X Ten paired end sequencing
+          study_title:
+            type: string
+            example: Personal Genome Project - United Kingdom
+          study_alias:
+            type: string
+            example: 'ena-STUDY-UNIVERSITY COLLEGE LONDON-31-10-2016-15:46:14:765-442'
+          experiment_alias:
+            type: string
+            example: 'ena-EXPERIMENT-UNIVERSITY COLLEGE LONDON-11-11-2016-16:52:13:609-1'
+          run_alias:
+            type: string
+            example: 'ena-RUN-UNIVERSITY COLLEGE LONDON-11-11-2016-16:52:13:609-1'
+          fastq_bytes:
+            type: string
+            example: 34749676071;39793159517
+          fastq_md5:
+            type: string
+            example: 4251226f83e65e79547998e9f6508125;763cd21e39a58b16ea51229c25ed549d
+          fastq_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/004/ERR1726424/ERR1726424_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/004/ERR1726424/ERR1726424_2.fastq.gz
+          fastq_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/fastq/ERR172/004/ERR1726424/ERR1726424_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR172/004/ERR1726424/ERR1726424_2.fastq.gz'
+          fastq_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/004/ERR1726424/ERR1726424_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/004/ERR1726424/ERR1726424_2.fastq.gz
+          submitted_bytes:
+            type: string
+            example: '99613921671'
+          submitted_md5:
+            type: string
+            example: 400cb05ddf9204980c407a0870584d53
+          submitted_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/run/ERR172/ERR1726424/FR07961001.bam
+          submitted_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/run/ERR172/ERR1726424/FR07961001.bam'
+          submitted_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/run/ERR172/ERR1726424/FR07961001.bam
+          submitted_format:
+            type: string
+            example: BAM
+          sra_bytes:
+            type: string
+            example: '54785787176'
+          sra_md5:
+            type: string
+            example: 3fee48d335865149260ef98f6d32dd06
+          sra_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/err/ERR172/004/ERR1726424
+          sra_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/err/ERR172/004/ERR1726424'
+          sra_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/err/ERR172/004/ERR1726424
+          cram_index_ftp:
+            type: string
+            example: null
+          cram_index_aspera:
+            type: string
+            example: null
+          cram_index_galaxy:
+            type: string
+            example: null
+          sample_alias:
+            type: string
+            example: uk35C650
+          broker_name:
+            type: string
+            example: null
+          sample_title:
+            type: string
+            example: Personal Genomes Project UK Sample
+          nominal_sdev:
+            type: string
+            example: '0'
+          first_created:
+            type: string
+            example: '2016-11-11'
+          type:
+            type: string
+            example: wgs
+          meta_data_source:
+            type: string
+            example: 'https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB17529&result=read_run'
     Variant:
       description: Variant data
       type: array
@@ -829,7 +923,81 @@ components:
           test:
             type: string
             example: example
-
+          analysis_accession:
+            type: string
+            example: ERZ389530
+          study_accession:
+            type: string
+            example: PRJEB17529
+          secondary_study_accession:
+            type: string
+            example: ERP019394
+          sample_accession:
+            type: string
+            example: SAMEA4545245
+          secondary_sample_accession:
+            type: string
+            example: ERS1444424
+          analysis_title:
+            type: string
+            example: Variants from sample FR07961001 from the PGP_UK project
+          analysis_type:
+            type: string
+            example: SEQUENCE_VARIATION
+          center_name:
+            type: string
+            example: UCL Cancer Institute
+          first_public:
+            type: string
+            example: '2017-02-07'
+          last_updated:
+            type: string
+            example: '2017-05-19'
+          study_title:
+            type: string
+            example: Personal Genome Project - United Kingdom
+          tax_id:
+            type: string
+            example: '9606'
+          scientific_name:
+            type: string
+            example: Homo sapiens
+          analysis_alias:
+            type: string
+            example: FR07961001_PGP_UK
+          study_alias:
+            type: string
+            example: 'ena-STUDY-UNIVERSITY COLLEGE LONDON-31-10-2016-15:46:14:765-442'
+          submitted_bytes:
+            type: string
+            example: 1540561;132;86497812
+          submitted_md5:
+            type: string
+            example: 737122c594f8ed045d930d13dc6aa1a5;9c30fb152058bd5e61bab4a5f1d7e568;746fe08cd1ea28b79382b68a3418172c
+          submitted_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz.tbi;ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/ERZ389530.md5;ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz
+          submitted_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz.tbi;fasp.sra.ebi.ac.uk:/vol1/ERZ389/ERZ389530/ERZ389530.md5;fasp.sra.ebi.ac.uk:/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz'
+          submitted_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz.tbi;ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/ERZ389530.md5;ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz
+          sample_alias:
+            type: string
+            example: uk35C650
+          broker_name:
+            type: string
+            example: EBI
+          sample_title:
+            type: string
+            example: Personal Genomes Project UK Sample
+          type:
+            type: string
+            example: variant
+          meta_data_source:
+            type: string
+            example: 'https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB17529&result=analysis'
     Genotype:
       description: Genotype data
       type: array
@@ -863,70 +1031,735 @@ components:
           type:
             type: string
             example: genotype
-
     WGBS:
       description: Whole Genome Bisulfite Sequencing data
       type: array
       items:
         type: object
         properties:
-          test:
+          study_accession:
             type: string
-            example: example
-
+            example: PRJEB17529
+          secondary_study_accession:
+            type: string
+            example: ERP019394
+          sample_accession:
+            type: string
+            example: SAMEA104569288
+          secondary_sample_accession:
+            type: string
+            example: ERS2180572
+          experiment_accession:
+            type: string
+            example: ERX2408504
+          run_accession:
+            type: string
+            example: ERR2359938
+          submission_accession:
+            type: string
+            example: ERA1231734
+          tax_id:
+            type: string
+            example: '9606'
+          scientific_name:
+            type: string
+            example: Homo sapiens
+          instrument_platform:
+            type: string
+            example: ILLUMINA
+          instrument_model:
+            type: string
+            example: HiSeq X Ten
+          library_name:
+            type: string
+            example: WGBS_PGP-UK1
+          nominal_length:
+            type: string
+            example: '200'
+          library_layout:
+            type: string
+            example: PAIRED
+          library_strategy:
+            type: string
+            example: Bisulfite-Seq
+          library_source:
+            type: string
+            example: GENOMIC
+          library_selection:
+            type: string
+            example: unspecified
+          read_count:
+            type: string
+            example: '331458549'
+          base_count:
+            type: string
+            example: '100100481798'
+          center_name:
+            type: string
+            example: UNIVERSITY COLLEGE LONDON
+          first_public:
+            type: string
+            example: '2018-03-02'
+          last_updated:
+            type: string
+            example: '2018-11-16'
+          experiment_title:
+            type: string
+            example: HiSeq X Ten paired end sequencing
+          study_title:
+            type: string
+            example: Personal Genome Project - United Kingdom
+          study_alias:
+            type: string
+            example: 'ena-STUDY-UNIVERSITY COLLEGE LONDON-31-10-2016-15:46:14:765-442'
+          experiment_alias:
+            type: string
+            example: 'ena-EXPERIMENT-UNIVERSITY COLLEGE LONDON-02-03-2018-11:09:49:265-1'
+          run_alias:
+            type: string
+            example: 'ena-RUN-UNIVERSITY COLLEGE LONDON-02-03-2018-11:09:49:265-1'
+          fastq_bytes:
+            type: string
+            example: 24038102709;30691271584
+          fastq_md5:
+            type: string
+            example: 61a8c3a3eb4996f154ecd2affd5b37c9;5af7635bc077d3927badf7549bf68145
+          fastq_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/008/ERR2359938/ERR2359938_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/008/ERR2359938/ERR2359938_2.fastq.gz
+          fastq_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/fastq/ERR235/008/ERR2359938/ERR2359938_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR235/008/ERR2359938/ERR2359938_2.fastq.gz'
+          fastq_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/008/ERR2359938/ERR2359938_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/008/ERR2359938/ERR2359938_2.fastq.gz
+          submitted_bytes:
+            type: string
+            example: 67859734776;9225496
+          submitted_md5:
+            type: string
+            example: a4c151ee46fffc4a2c627416b7d75724;de36e8391912baf4ab781c57b62c7023
+          submitted_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/run/ERR235/ERR2359938/P3255_101_S1_L001.bam;ftp.sra.ebi.ac.uk/vol1/run/ERR235/ERR2359938/P3255_101_S1_L001.bam.bai
+          submitted_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/run/ERR235/ERR2359938/P3255_101_S1_L001.bam;fasp.sra.ebi.ac.uk:/vol1/run/ERR235/ERR2359938/P3255_101_S1_L001.bam.bai'
+          submitted_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/run/ERR235/ERR2359938/P3255_101_S1_L001.bam;ftp.sra.ebi.ac.uk/vol1/run/ERR235/ERR2359938/P3255_101_S1_L001.bam.bai
+          submitted_format:
+            type: string
+            example: BAM;BAI
+          sra_bytes:
+            type: string
+            example: '53481571970'
+          sra_md5:
+            type: string
+            example: 3d71cf685fe26ebd019bc50aadb08fd1
+          sra_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/err/ERR235/008/ERR2359938
+          sra_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/err/ERR235/008/ERR2359938'
+          sra_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/err/ERR235/008/ERR2359938
+          cram_index_ftp:
+            type: string
+            example: null
+          cram_index_aspera:
+            type: string
+            example: null
+          cram_index_galaxy:
+            type: string
+            example: null
+          sample_alias:
+            type: string
+            example: WGBS_PGP-UK1
+          broker_name:
+            type: string
+            example: null
+          sample_title:
+            type: string
+            example: PGP-UK Whole Genome Bissulfide Sequencing Data
+          nominal_sdev:
+            type: string
+            example: '0'
+          first_created:
+            type: string
+            example: '2018-03-02'
+          type:
+            type: string
+            example: wgbs
+          meta_data_source:
+            type: string
+            example: 'https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB17529&result=read_run'
     MethylationArrayData:
       description: Methylation Array data
       type: array
       items:
         type: object
         properties:
-          test:
+          source_name:
             type: string
-            example: example
-
+            example: Sample 1_PGPUK_B1
+          characteristicsorganism:
+            type: string
+            example: Homo sapiens
+          characteristicsindividual:
+            type: string
+            example: uk35C650
+          commentbiosd_sample:
+            type: string
+            example: SAMEA4545245
+          characteristicsorganism_part:
+            type: string
+            example: blood
+          characteristicsage:
+            type: string
+            example: '59.67'
+          unittime_unit:
+            type: string
+            example: year
+          term_source_ref:
+            type: string
+            example: EFO
+          term_accession_number:
+            type: string
+            example: UO_0000036
+          characteristicssex:
+            type: string
+            example: male
+          characteristicssmoking_status:
+            type: string
+            example: smoked in the past
+          commentupdate_information:
+            type: string
+            example: '  '
+          material_type:
+            type: string
+            example: organism part
+          protocol_ref:
+            type: string
+            example: P-MTAB-53554
+          extract_name:
+            type: string
+            example: Sample 1_PGPUK_B1
+          labeled_extract_name:
+            type: string
+            example: 'Sample 1_PGPUK_B1:Cy3'
+          label:
+            type: string
+            example: Cy3
+          assay_name:
+            type: string
+            example: 101130760050_R04C02
+          technology_type:
+            type: string
+            example: array assay
+          array_design_ref:
+            type: string
+            example: A-GEOD-18809
+          array_data_file:
+            type: string
+            example: 101130760050_R04C02_Grn.idat
+          comment_arrayexpress_ftp_file:
+            type: string
+            example: 'ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-5377/E-MTAB-5377.raw.1.zip'
+          factor_valueage:
+            type: string
+            example: '59.67'
+          factor_value_organism_part:
+            type: string
+            example: blood
+          factor_value_smoking_status:
+            type: string
+            example: smoked in the past
+          factor_value_individual:
+            type: string
+            example: uk35C650
+          type:
+            type: string
+            example: meth_array
+          accession:
+            type: string
+            example: E-MTAB-5377
+          meta_data_source:
+            type: string
+            example: 'https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.sdrf.txt'
     RnaSeq:
       description: RNA-Seq data
       type: array
       items:
         type: object
         properties:
-          test:
+          source_name:
             type: string
-            example: example
-
+            example: Sample_1_PGPUK_B1
+          commentena_sample:
+            type: string
+            example: ERS2220941
+          commentbiosd_sample:
+            type: string
+            example: SAMEA4545245
+          characteristicsorganism:
+            type: string
+            example: Homo sapiens
+          characteristicsdisease:
+            type: string
+            example: normal
+          characteristicssex:
+            type: string
+            example: male
+          characteristicsindividual:
+            type: string
+            example: uk35C650
+          characteristicsage:
+            type: string
+            example: '59.67'
+          unittime_unit:
+            type: string
+            example: year
+          term_source_ref:
+            type: string
+            example: EFO
+          term_accession_number:
+            type: string
+            example: UO_0000036
+          characteristicsclinical_history:
+            type: string
+            example: smoked in the past
+          characteristicsorganism_part:
+            type: string
+            example: blood
+          material_type:
+            type: string
+            example: RNA
+          protocol_ref:
+            type: string
+            example: '  '
+          extract_name:
+            type: string
+            example: Sample_1_PGPUK_B1
+          commentlibrary_layout:
+            type: string
+            example: PAIRED
+          commentlibrary_selection:
+            type: string
+            example: PolyA
+          commentlibrary_source:
+            type: string
+            example: TRANSCRIPTOMIC
+          commentlibrary_strategy:
+            type: string
+            example: RNA-Seq
+          commentnominal_length:
+            type: string
+            example: '150'
+          commentnominal_sdev:
+            type: string
+            example: '1.92'
+          commentorientation:
+            type: string
+            example: 5'-3'-3'-5'
+          performer:
+            type: string
+            example: UCL
+          assay_name:
+            type: string
+            example: Sample_1_PGPUK_B1
+          technology_type:
+            type: string
+            example: sequencing assay
+          commentena_experiment:
+            type: string
+            example: ERX2373316
+          scan_name:
+            type: string
+            example: PGP_UK_RNAseq_P5_R1.fastq.gz
+          commentsubmitted_file_name:
+            type: string
+            example: PGP_UK_RNAseq_P5_R1.fastq.gz
+          commentena_run:
+            type: string
+            example: ERR2322363
+          commentfastq_uri:
+            type: string
+            example: 'ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_1.fastq.gz'
+          commentspot_length:
+            type: string
+            example: '302'
+          commentread_index_1_base_coord:
+            type: string
+            example: '152'
+          derived_array_data_file:
+            type: string
+            example: '  '
+          comment_derived_arrayexpress_ftp_file:
+            type: string
+            example: '  '
+          factor_valueclinical_history:
+            type: string
+            example: smoked in the past
+          factor_valueindividual:
+            type: string
+            example: uk2E2AAE
+          factor_valueprotocol:
+            type: string
+            example: RNA-seq
+          type:
+            type: string
+            example: rna_seq
+          accession:
+            type: string
+            example: E-MTAB-6523
+          meta_data_source:
+            type: string
+            example: 'https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.sdrf.txt'
     AmpliconRNAseq:
       description: Amplicon RNA-Seq data
       type: array
       items:
         type: object
         properties:
-          test:
+          study_accession:
             type: string
-            example: example
-
+            example: PRJEB25139
+          secondary_study_accession:
+            type: string
+            example: ERP107030
+          sample_accession:
+            type: string
+            example: SAMEA104609659
+          secondary_sample_accession:
+            type: string
+            example: ERS2220941
+          experiment_accession:
+            type: string
+            example: ERX2373326
+          run_accession:
+            type: string
+            example: ERR2322353
+          submission_accession:
+            type: string
+            example: ERA1221153
+          tax_id:
+            type: string
+            example: '9606'
+          scientific_name:
+            type: string
+            example: Homo sapiens
+          instrument_platform:
+            type: string
+            example: ION_TORRENT
+          instrument_model:
+            type: string
+            example: Ion Torrent Proton
+          library_name:
+            type: string
+            example: Sample_1_PGPUK_B1_targeted_s
+          nominal_length:
+            type: string
+            example: null
+          library_layout:
+            type: string
+            example: SINGLE
+          library_strategy:
+            type: string
+            example: AMPLICON
+          library_source:
+            type: string
+            example: TRANSCRIPTOMIC
+          library_selection:
+            type: string
+            example: other
+          read_count:
+            type: string
+            example: '48318330'
+          base_count:
+            type: string
+            example: '5401783388'
+          center_name:
+            type: string
+            example: UCL Cancer Institute
+          first_public:
+            type: string
+            example: '2018-03-04'
+          last_updated:
+            type: string
+            example: '2018-11-16'
+          experiment_title:
+            type: string
+            example: 'Ion Torrent Proton sequencing; RNA-seq data from the pilot study of the &apos;Personal Genome Project UK&apos;: PGP-UK10'
+          study_title:
+            type: string
+            example: 'RNA-seq data from the pilot study of the ''Personal Genome Project UK'': PGP-UK10'
+          study_alias:
+            type: string
+            example: E-MTAB-6523
+          experiment_alias:
+            type: string
+            example: 'E-MTAB-6523:Sample_1_PGPUK_B1_targeted_s'
+          run_alias:
+            type: string
+            example: 'E-MTAB-6523:Sample_1_PGPUK_B1_targeted'
+          fastq_bytes:
+            type: string
+            example: '3243673089'
+          fastq_md5:
+            type: string
+            example: cbceea7c037751116150b07cebf70bbe
+          fastq_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322353/ERR2322353.fastq.gz
+          fastq_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/fastq/ERR232/003/ERR2322353/ERR2322353.fastq.gz'
+          fastq_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322353/ERR2322353.fastq.gz
+          submitted_bytes:
+            type: string
+            example: '3234931107'
+          submitted_md5:
+            type: string
+            example: c1353f0fd28a51877c8c942f7a1e839b
+          submitted_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/run/ERR232/ERR2322353/PGP_UK_Targeted_RNAseq_P1.fastq.gz
+          submitted_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/run/ERR232/ERR2322353/PGP_UK_Targeted_RNAseq_P1.fastq.gz'
+          submitted_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/run/ERR232/ERR2322353/PGP_UK_Targeted_RNAseq_P1.fastq.gz
+          submitted_format:
+            type: string
+            example: FASTQ
+          sra_bytes:
+            type: string
+            example: '3536769595'
+          sra_md5:
+            type: string
+            example: ae69b02bc7859285cc2eee164bd776c9
+          sra_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/err/ERR232/003/ERR2322353
+          sra_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/err/ERR232/003/ERR2322353'
+          sra_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/err/ERR232/003/ERR2322353
+          cram_index_ftp:
+            type: string
+            example: null
+          cram_index_aspera:
+            type: string
+            example: null
+          cram_index_galaxy:
+            type: string
+            example: null
+          sample_alias:
+            type: string
+            example: 'E-MTAB-6523:Sample_1_PGPUK_B1'
+          broker_name:
+            type: string
+            example: ArrayExpress
+          sample_title:
+            type: string
+            example: Sample_1_PGPUK_B1
+          nominal_sdev:
+            type: string
+            example: null
+          first_created:
+            type: string
+            example: '2018-02-22'
+          type:
+            type: string
+            example: amplicon_rna_seq
+          meta_data_source:
+            type: string
+            example: 'https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB25139&result=read_run'
     ProtonRnaSeq:
       description: Proton RNA-Seq data
       type: array
       items:
         type: object
         properties:
-          test:
+          study_accession:
             type: string
-            example: example
-
+            example: PRJEB25139
+          secondary_study_accession:
+            type: string
+            example: ERP107030
+          sample_accession:
+            type: string
+            example: SAMEA104609659
+          secondary_sample_accession:
+            type: string
+            example: ERS2220941
+          experiment_accession:
+            type: string
+            example: ERX2373316
+          run_accession:
+            type: string
+            example: ERR2322363
+          submission_accession:
+            type: string
+            example: ERA1221153
+          tax_id:
+            type: string
+            example: '9606'
+          scientific_name:
+            type: string
+            example: Homo sapiens
+          instrument_platform:
+            type: string
+            example: ILLUMINA
+          instrument_model:
+            type: string
+            example: Illumina HiSeq 4000
+          library_name:
+            type: string
+            example: Sample_1_PGPUK_B1_p
+          nominal_length:
+            type: string
+            example: '150'
+          library_layout:
+            type: string
+            example: PAIRED
+          library_strategy:
+            type: string
+            example: RNA-Seq
+          library_source:
+            type: string
+            example: TRANSCRIPTOMIC
+          library_selection:
+            type: string
+            example: PolyA
+          read_count:
+            type: string
+            example: '37396432'
+          base_count:
+            type: string
+            example: '11293722464'
+          center_name:
+            type: string
+            example: UCL Cancer Institute
+          first_public:
+            type: string
+            example: '2018-03-04'
+          last_updated:
+            type: string
+            example: '2018-11-16'
+          experiment_title:
+            type: string
+            example: 'Illumina HiSeq 4000 paired end sequencing; RNA-seq data from the pilot study of the &apos;Personal Genome Project UK&apos;: PGP-UK10'
+          study_title:
+            type: string
+            example: 'RNA-seq data from the pilot study of the ''Personal Genome Project UK'': PGP-UK10'
+          study_alias:
+            type: string
+            example: E-MTAB-6523
+          experiment_alias:
+            type: string
+            example: 'E-MTAB-6523:Sample_1_PGPUK_B1_p'
+          run_alias:
+            type: string
+            example: 'E-MTAB-6523:PGP_UK_RNAseq_P5_R'
+          fastq_bytes:
+            type: string
+            example: 2974710855;3291128705
+          fastq_md5:
+            type: string
+            example: ea8ffd28a6aa15f9d99b0eea7a6794a9;a950a80003e3cf2439079741d377c0c7
+          fastq_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_2.fastq.gz
+          fastq_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_2.fastq.gz'
+          fastq_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_2.fastq.gz
+          submitted_bytes:
+            type: string
+            example: 3378020402;3716035107
+          submitted_md5:
+            type: string
+            example: ab4d907b998e5cbe8074b818ea2d75bf;9f821e099bd0cbcd70846586cd12aff9
+          submitted_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/run/ERR232/ERR2322363/PGP_UK_RNAseq_P5_R1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR232/ERR2322363/PGP_UK_RNAseq_P5_R2.fastq.gz
+          submitted_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/run/ERR232/ERR2322363/PGP_UK_RNAseq_P5_R1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/run/ERR232/ERR2322363/PGP_UK_RNAseq_P5_R2.fastq.gz'
+          submitted_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/run/ERR232/ERR2322363/PGP_UK_RNAseq_P5_R1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/run/ERR232/ERR2322363/PGP_UK_RNAseq_P5_R2.fastq.gz
+          submitted_format:
+            type: string
+            example: FASTQ;FASTQ
+          sra_bytes:
+            type: string
+            example: '4859258720'
+          sra_md5:
+            type: string
+            example: 1f4963be0f7b479578ca539bd9e42288
+          sra_ftp:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/err/ERR232/003/ERR2322363
+          sra_aspera:
+            type: string
+            example: 'fasp.sra.ebi.ac.uk:/vol1/err/ERR232/003/ERR2322363'
+          sra_galaxy:
+            type: string
+            example: ftp.sra.ebi.ac.uk/vol1/err/ERR232/003/ERR2322363
+          cram_index_ftp:
+            type: string
+            example: null
+          cram_index_aspera:
+            type: string
+            example: null
+          cram_index_galaxy:
+            type: string
+            example: null
+          sample_alias:
+            type: string
+            example: 'E-MTAB-6523:Sample_1_PGPUK_B1'
+          broker_name:
+            type: string
+            example: ArrayExpress
+          sample_title:
+            type: string
+            example: Sample_1_PGPUK_B1
+          nominal_sdev:
+            type: string
+            example: '2'
+          first_created:
+            type: string
+            example: '2018-02-22'
+          type:
+            type: string
+            example: proton_rna_seq
+          meta_data_source:
+            type: string
+            example: 'https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB25139&result=read_run'
     DataURLs:
       description: Data containing direct URLs for all data associated with the PGP-UK participant
       type: array
       items:
         type: object
         properties:
-          type: 
+          type:
             type: string
             example: WGS Bam
-          download_url: 
+          download_url:
             type: string
             example: ftp.sra.ebi.ac.uk/vol1/run/ERR172/ERR1726424/FR07961001.bam
-
     PGPUKProfile:
       description: Meta data from PGP-UK profile
       type: array
@@ -936,10 +1769,10 @@ components:
           public_profile_url:
             type: string
             example: 'https://my.personalgenomes.org.uk/profile/uk35C650'
-          deceased: 
+          deceased:
             type: boolean
             example: false
-          zip: 
+          zip:
             type: string
             example: CB22 4NZ
           files:
@@ -951,30 +1784,29 @@ components:
                   type: string
                   example: PGP
                 download_url:
-                  type: string 
+                  type: string
                   example: 'https://my.personalgenomes.org.uk/datasets/193/download'
                 data_type:
                   type: string
                   example: Genome Report
                 name:
-                  type: string 
+                  type: string
                   example: Genome Report (Released by PGP-UK on 23rd October 2018)
                 description:
-                  type: string 
+                  type: string
                   example: Genotyping data
                 data:
-                  type: string 
+                  type: string
                   example: '2014-05-15'
-          hex: 
+          hex:
             type: string
             example: uk35C650
-          real_name: 
-            type: string 
+          real_name:
+            type: string
             example: Stephan Beck
-          type: 
+          type:
             type: string
             example: pgp_profile
-
     GenomeReport:
       description: Genome Report Data
       type: array
@@ -990,7 +1822,7 @@ components:
             example: PGP
           download_url:
             type: string
-            example: https://my.personalgenomes.org.uk/datasets/183/download
+            example: 'https://my.personalgenomes.org.uk/datasets/183/download'
           data_type:
             type: string
             example: Methylome Report
@@ -1003,7 +1835,6 @@ components:
           type:
             type: string
             example: methylome_report
-
     MethylomeReport:
       description: Methylome Report
       type: array
@@ -1019,7 +1850,7 @@ components:
             example: PGP
           download_url:
             type: string
-            example: https://my.personalgenomes.org.uk/datasets/183/download
+            example: 'https://my.personalgenomes.org.uk/datasets/183/download'
           data_type:
             type: string
             example: Methylome Report
@@ -1032,7 +1863,6 @@ components:
           type:
             type: string
             example: methylome_report
-
     Phenotype:
       description: Phenotype question and answer obtained through a participant-filled questionnaire
       type: array
@@ -1045,7 +1875,6 @@ components:
           answer:
             type: string
             example: 60
-
   headers:
     ExpiresAfter:
       description: date in UTC when token expires

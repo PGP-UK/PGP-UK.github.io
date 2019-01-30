@@ -125,7 +125,7 @@ def restructure_results(results)
     if r[pgp_id][:pgp_profile].nil?
       r[pgp_id][:pgp_profile] = add_pgp_profile(pgp_id)
     end
-    r[pgp_id][:phenotype] = [PHENOTYPE_DATA[pgp_id]] if r[pgp_id][:phenotype].nil?
+    r[pgp_id][:phenotype] = PHENOTYPE_DATA[pgp_id] if r[pgp_id][:phenotype].nil?
   end
   r
 end

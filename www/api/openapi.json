@@ -2619,15 +2619,21 @@
         "description": "Phenotype question and answer obtained through a participant-filled questionnaire",
         "type": "array",
         "items": {
-          "type": "object",
-          "properties": {
-            "question": {
-              "type": "string",
-              "example": "Age at Sample Collection"
-            },
-            "answer": {
-              "type": "string",
-              "example": 60
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string",
+                  "example": "Age at Sample Collection"
+                },
+                "answer": {
+                  "type": "string",
+                  "example": 60
+                }
+              }
             }
           }
         }

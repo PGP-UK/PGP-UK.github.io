@@ -177,7 +177,7 @@ end
 def parse_hex_id_using_key(h, convert_key)
   h_key = :sample_alias if h[:type] == 'wgbs'
   h_key = :sample_title if %w[amplicon_rna_seq proton_rna_seq].include? h[:type]
-  d = convert_key[h[h_key]]
+  d = h[h_key] =~ /uk\S{6}/ ? h[h_key] : convert_key[h[h_key]]
   normalize_hex_id(d)
 end
 

@@ -2,11 +2,12 @@ var ES; // define global ES (acronym for EBI_Search)  object
 if (!ES) { ES = {}; }
 
 (function () { // ES module
+  ES.API_VERSION = 'v1.1'
   ES.init = function () {
     $.getJSON('/data/json/table.json', function (json) {
       ES.table_json = json;
       var datatable = ES.initializeTable(json, 'data_table');
-      $.getJSON('/api/v1/all_participants.json', function (data_json) {
+      $.getJSON('/api/' + ES.API_VERSION  + '/all_participants.json', function (data_json) {
         ES.data_json = data_json;
         ES.makePlotIconClickable(datatable, 'data_table', data_json, '.file_btn');
         ES.makePlotIconClickable(datatable, 'data_table', data_json, '.report_btn');

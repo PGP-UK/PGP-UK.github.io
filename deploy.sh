@@ -4,7 +4,7 @@ set -ex # exit immediately with nonzero exit code if anything fails
 # Install dependencies
 bundle install
 
-LATEST_API_VERSION="v1.0"
+LATEST_API_VERSION="v1.1"
 
 # generate the json files
 bundle exec ruby scripts/generate_json_files.rb

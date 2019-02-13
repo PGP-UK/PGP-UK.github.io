@@ -1,0 +1,25 @@
+{
+  "hex": "uk481F67",
+  "zip": "W91NN",
+  "deceased": false,
+  "confirmed_family_relations": [
+
+  ],
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk481F67",
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Methylome Report",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/182/download",
+      "name": "Methylome Report (Released by PGP-UK on 8th March 2018)"
+    },
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/80/download",
+      "name": "Genome Report (Released by PGP-UK on 21 July 2017)"
+    }
+  ],
+  "real_name": "Momodou B Semega-Janneh",
+  "type": "pgp_profile"
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "file_source": "Participant",
+    "published": "03/23/2016",
+    "data_type": "23andMe",
+    "pgp_hex_id": "uk65E564",
+    "description": "",
+    "download_url": "https://my.personalgenomes.org.uk/user_file/download/113",
+    "name": "23andMe",
+    "date": "2013-05-04",
+    "type": "genotype"
+  }
+]

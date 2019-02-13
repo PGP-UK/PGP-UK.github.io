@@ -1,0 +1,13 @@
+[
+  {
+    "file_source": "Participant",
+    "published": "06/08/2017",
+    "data_type": "23andMe",
+    "pgp_hex_id": "uk35C650",
+    "description": "Genotyping data",
+    "download_url": "https://my.personalgenomes.org.uk/user_file/download/166",
+    "name": "uk35C650_23andMe",
+    "date": "2014-05-15",
+    "type": "genotype"
+  }
+]

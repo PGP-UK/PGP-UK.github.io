@@ -1,0 +1,58 @@
+[
+  [
+    [
+      {
+        "question": "Sex",
+        "answer": "Male"
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "06/01/1977"
+      },
+      {
+        "question": "Age at Sample Collection",
+        "answer": "39"
+      },
+      {
+        "question": "Current Smoker",
+        "answer": "No"
+      },
+      {
+        "question": "Ex-Smoker?",
+        "answer": "Yes, I stopped in 2001"
+      },
+      {
+        "question": "Blood Type",
+        "answer": "Don't know"
+      },
+      {
+        "question": "Handedness",
+        "answer": "Right"
+      },
+      {
+        "question": "Weight",
+        "answer": "103"
+      },
+      {
+        "question": "Height",
+        "answer": "184"
+      },
+      {
+        "question": "Hair Colour",
+        "answer": "Black"
+      },
+      {
+        "question": "Right Eye Colour",
+        "answer": "-"
+      },
+      {
+        "question": "Left Eye Colour",
+        "answer": "-"
+      },
+      {
+        "question": "Survey Date",
+        "answer": "14-08-2017"
+      }
+    ]
+  ]
+]

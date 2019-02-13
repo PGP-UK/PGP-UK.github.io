@@ -1,0 +1,58 @@
+[
+  [
+    [
+      {
+        "question": "Sex",
+        "answer": "Male"
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "28/03/1958"
+      },
+      {
+        "question": "Age at Sample Collection",
+        "answer": "57"
+      },
+      {
+        "question": "Current Smoker",
+        "answer": "No"
+      },
+      {
+        "question": "Ex-Smoker?",
+        "answer": "Yes, 6-10 years ago"
+      },
+      {
+        "question": "Blood Type",
+        "answer": "O-"
+      },
+      {
+        "question": "Handedness",
+        "answer": "Right, there are a large number of left handed people in my family but I don't believe I ever was"
+      },
+      {
+        "question": "Weight",
+        "answer": "93 kg"
+      },
+      {
+        "question": "Height",
+        "answer": "200 cm"
+      },
+      {
+        "question": "Hair Colour",
+        "answer": "Black"
+      },
+      {
+        "question": "Right Eye Colour",
+        "answer": "Brown"
+      },
+      {
+        "question": "Left Eye Colour",
+        "answer": "Brown"
+      },
+      {
+        "question": "Survey Date",
+        "answer": "11-11-2016"
+      }
+    ]
+  ]
+]

@@ -176,10 +176,14 @@ if (!ES) { ES = {}; }
   ES.addFileButtonHtml = function (data, file_html) {
     for (var i = 0; i < data.length; i++) {
       if (data[i].section === undefined) continue;
+      var download_url = data[i].download_url
+      if (download_url.startsWith("ftp.")) {
+        download_url = 'ftp://' + data[i].download_url
+      }
       $(file_html).find('.' + data[i].section).append(
         $('<a download="">').addClass('btn btn-default')
           .css('margin-right', '10px').attr('type', 'button')
-          .attr('href', data[i].download_url).append(
+          .attr('href', download_url).append(
             $('<i class="fal fa-lg fa-file-alt">').css('margin-right', '5px'),
             data[i].type
           )

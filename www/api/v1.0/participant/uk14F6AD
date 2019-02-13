@@ -1,0 +1,109 @@
+{
+  "wgs": [
+    {
+      "study_accession": "PRJEB13150",
+      "secondary_study_accession": "ERP014689",
+      "sample_accession": "SAMEA4005485",
+      "secondary_sample_accession": "ERS1176595",
+      "experiment_accession": "ERX2179512",
+      "run_accession": "ERR2122604",
+      "submission_accession": "ERA1096965",
+      "tax_id": "9606",
+      "scientific_name": "Homo sapiens",
+      "instrument_platform": "ILLUMINA",
+      "instrument_model": "HiSeq X Ten",
+      "library_name": "DN459287E:C6",
+      "nominal_length": "438",
+      "library_layout": "PAIRED",
+      "library_strategy": "WGS",
+      "library_source": "GENOMIC",
+      "library_selection": "RANDOM",
+      "read_count": "867902062",
+      "base_count": "131053211362",
+      "center_name": "UNIVERSITY COLLEGE LONDON",
+      "first_public": "2017-09-15",
+      "last_updated": "2018-11-16",
+      "experiment_title": "HiSeq X Ten paired end sequencing",
+      "study_title": "PGP_UK_samples_for_demographic_analysis",
+      "study_alias": "PGP_UK_samples_for_demographic_analysis-sc-4154",
+      "experiment_alias": "SC_EXP_21112_7",
+      "run_alias": "SC_RUN_21112_7",
+      "fastq_bytes": "26172846859;33397044873",
+      "fastq_md5": "bba193137df536bf25fce386d2b07e5e;ce056241da96e1336dfde3beae0b7491",
+      "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_2.fastq.gz",
+      "fastq_aspera": "fasp.sra.ebi.ac.uk:/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_2.fastq.gz",
+      "fastq_galaxy": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_2.fastq.gz",
+      "submitted_bytes": "42806718557",
+      "submitted_md5": "44afd65002cb780b7f364871d54f62a7",
+      "submitted_ftp": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122604/21112_7.cram",
+      "submitted_aspera": "fasp.sra.ebi.ac.uk:/vol1/run/ERR212/ERR2122604/21112_7.cram",
+      "submitted_galaxy": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122604/21112_7.cram",
+      "submitted_format": "CRAM",
+      "sra_bytes": null,
+      "sra_md5": null,
+      "sra_ftp": null,
+      "sra_aspera": null,
+      "sra_galaxy": null,
+      "cram_index_ftp": "ftp.sra.ebi.ac.uk/vol1/null",
+      "cram_index_aspera": "fasp.sra.ebi.ac.uk:/vol1/null",
+      "cram_index_galaxy": "ftp.sra.ebi.ac.uk/vol1/null",
+      "sample_alias": "f6c34c80-f19a-11e5-a70d-3c4a9275d6c8",
+      "broker_name": null,
+      "sample_title": "pgp-uk6373291",
+      "nominal_sdev": "97",
+      "first_created": "2017-09-15",
+      "type": "wgs",
+      "meta_data_source": "https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB13150&result=read_run"
+    }
+  ],
+  "pgp_profile": {
+    "hex": "uk14F6AD",
+    "zip": "ST180UA",
+    "deceased": null,
+    "confirmed_family_relations": [
+
+    ],
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk14F6AD",
+    "files": [
+      {
+        "file_source": "PGP",
+        "data_type": "Genome Report",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/103/download",
+        "name": "Genome Report (Released by PGP-UK on 2nd August 2017)"
+      }
+    ],
+    "type": "pgp_profile"
+  },
+  "phenotype": [
+    null
+  ],
+  "genome_report": [
+    {
+      "file_source": "PGP",
+      "published": "08/03/2017",
+      "data_type": "Genome Report",
+      "pgp_hex_id": "uk14F6AD",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/103/download",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "type": "genome_report"
+    }
+  ],
+  "download_url": [
+    {
+      "type": "WGS Fastq (_1)",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_1.fastq.gz"
+    },
+    {
+      "type": "WGS Fastq (_2)",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122604/ERR2122604_2.fastq.gz"
+    },
+    {
+      "type": "WGS Cram",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122604/21112_7.cram"
+    },
+    {
+      "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/103/download"
+    }
+  ]
+}

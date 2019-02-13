@@ -1,0 +1,18 @@
+{
+  "hex": "ukA866BF",
+  "zip": null,
+  "deceased": null,
+  "confirmed_family_relations": [
+
+  ],
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukA866BF",
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/131/download",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)"
+    }
+  ],
+  "type": "pgp_profile"
+}

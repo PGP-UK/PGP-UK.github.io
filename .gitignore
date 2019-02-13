@@ -7,4 +7,5 @@ data/*
 !data/phenotype.csv
 !data/sanger_ids_key.csv
 www/api/v*/*
+!www/api/v1.0/*
 !www/api/v*/.gitkeep

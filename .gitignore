@@ -1,11 +1,11 @@
+!www/data/json/.gitkeep
+!data/phenotype.csv
+!data/sanger_ids_key.csv
+!www/api/v1.0/*
+!www/api/v*/.gitkeep
 www/_site
 www/data/json/*
 www/data/phenotype.csv
 www/data/data_file_links.csv
-!www/data/json/.gitkeep
 data/*
-!data/phenotype.csv
-!data/sanger_ids_key.csv
 www/api/v*/*
-!www/api/v1.0/*
-!www/api/v*/.gitkeep

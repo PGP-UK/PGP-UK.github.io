@@ -1,5 +1,8 @@
 # Live Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b7d6e478-386b-4843-9ee5-d4aa9302925e/deploy-status)](https://app.netlify.com/sites/pgp/deploys)
+
+
 Static website running: https://www.personalgenomes.org.uk
 
 This is the live branch that is built and hosted on Netlify.

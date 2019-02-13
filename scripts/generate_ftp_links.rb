@@ -2,6 +2,7 @@
 
 require 'json'
 require 'pathname'
+require 'uri'
 
 def get_wgs_links(id, wgs)
   return if wgs.nil?
@@ -73,9 +74,10 @@ def get_amplicon_links(id, amplicon_rna_seq)
 end
 
 def generate_urls(hash, keys, is_array = false)
-  keys.map do |k|
+  urls = keys.map do |k|
     is_array ? hash.map { |h| h[k].split(';') } : hash[k].split(';')
   end.flatten.compact
+  urls.map { |e| URI.encode(e) }
 end
 
 def process_links(links, id, type)

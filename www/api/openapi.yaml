@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  version: 1.0.0
+  version: 1.1.0
   title: Personal Genome Project UK
   termsOfService: 'https://www.personalgenomes.org.uk/tos'
   contact:
@@ -51,7 +51,7 @@ tags:
   - name: Phenotype Data
     description: Operations about the participant's phenotype data
 servers:
-  - url: 'https://www.personalgenomes.org.uk/api/v1'
+  - url: 'https://www.personalgenomes.org.uk/api/v1.1'
 paths:
   /all_participants:
     get:
@@ -1869,16 +1869,14 @@ components:
       items:
         type: array
         items:
-          type: array
-          items:
-            type: object
-            properties:
-              question:
-                type: string
-                example: Age at Sample Collection
-              answer:
-                type: string
-                example: 60
+          type: object
+          properties:
+            question:
+              type: string
+              example: Age at Sample Collection
+            answer:
+              type: string
+              example: 60
   headers:
     ExpiresAfter:
       description: date in UTC when token expires

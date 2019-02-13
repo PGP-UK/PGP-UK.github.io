@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "title": "Personal Genome Project UK",
     "termsOfService": "https://www.personalgenomes.org.uk/tos",
     "contact": {
@@ -77,7 +77,7 @@
   ],
   "servers": [
     {
-      "url": "https://www.personalgenomes.org.uk/api/v1"
+      "url": "https://www.personalgenomes.org.uk/api/v1.1"
     }
   ],
   "paths": {
@@ -2621,18 +2621,15 @@
         "items": {
           "type": "array",
           "items": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "properties": {
-                "question": {
-                  "type": "string",
-                  "example": "Age at Sample Collection"
-                },
-                "answer": {
-                  "type": "string",
-                  "example": 60
-                }
+            "type": "object",
+            "properties": {
+              "question": {
+                "type": "string",
+                "example": "Age at Sample Collection"
+              },
+              "answer": {
+                "type": "string",
+                "example": 60
               }
             }
           }

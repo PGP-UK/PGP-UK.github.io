@@ -335,9 +335,11 @@ def parse_phenotype_csv(input_file)
     CSV.foreach(f, headers: true, :converters => [:all]).each_with_index do |csv_row, idx|
       next if csv_row.empty?
       pgp_id = normalize_hex_id(csv_row[0]).to_sym
-      zipped_data = csv_row.to_a.map { |r| [r].to_h }
       r[pgp_id] ||= []
-      r[pgp_id] << zipped_data.map { |e| { question: e[0], answer: e[1] } }
+      r[pgp_id] << csv_row.to_a.map do |e|
+        e[1] ||= ''
+        { question: e[0], answer: e[1] }
+      end
     end
   end
   r

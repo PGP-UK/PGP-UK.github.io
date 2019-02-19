@@ -332,15 +332,10 @@ end
 def parse_phenotype_csv(input_file)
   r = {}
   File.open(input_file) do |f|
-    CSV.foreach(f).each_with_index do |csv_row, idx|
-      next if idx.zero? # header line
+    CSV.foreach(f, headers: true, :converters => [:all]).each_with_index do |csv_row, idx|
       next if csv_row.empty?
       pgp_id = normalize_hex_id(csv_row[0]).to_sym
-      keys = ['Sex', 'Date of Birth', 'Age at Sample Collection',
-              'Current Smoker', 'Ex-Smoker?', 'Blood Type', 'Handedness',
-              'Weight', 'Height', 'Hair Colour', 'Right Eye Colour',
-              'Left Eye Colour', 'Survey Date']
-      zipped_data = keys.zip(csv_row.drop(1))
+      zipped_data = csv_row.to_a.map { |r| [r].to_h }
       r[pgp_id] ||= []
       r[pgp_id] << zipped_data.map { |e| { question: e[0], answer: e[1] } }
     end

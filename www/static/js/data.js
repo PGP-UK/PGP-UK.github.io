@@ -118,20 +118,19 @@ if (!ES) { ES = {}; }
   };
 
   ES.updateTraitsHtml = function (data, traits_html) {
-    for (var i = 0; i < data.length; i++) {
-      if (data[i] == null) {
-        $(traits_html).find('#child_template_body').text('There is no trait data currently associated with this participant.');
-      } else {
-        $('<table>').addClass('table info_table table-striped').append(
-          $('<tbody>').addClass('phenotype_table_body')
+    if (data == null) {
+      $(traits_html).find('#child_template_body').text('There is no trait data currently associated with this participant.');
+    } else {
+      for (var i = 0; i < data.length; i++) {
+        $('<div>').addClass('question').append(
+          $('<p>').append(
+            $('<strong>').text( (i+1) + '. ' + data[i].question),
+            $('<br>'),
+            $('<span>').text(data[i].answer),
+            $('<br>'),
+          )
         ).appendTo($(traits_html).find('#child_template_body'))
-        for (var j = 0; j < data[i].length; j++) {
-          $('<tr>').append(
-            $('<td>').text(data[i][j].question),
-            $('<td>').text(data[i][j].answer)
-          ).appendTo($(traits_html).find('.phenotype_table_body'))
-        };
-      }
+      };
     }
     return traits_html;
   };

@@ -118,6 +118,7 @@ def restructure_results(results)
   r = {}
   results.each do |result|
     pgp_id = get_pgp_id(result)
+    next if pgp_id.to_s == 'ukD24C3E' # withdrawn participant
     type   = result[:type].to_sym
     r[pgp_id] ||= {}
     r[pgp_id][type] ||= []

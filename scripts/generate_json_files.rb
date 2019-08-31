@@ -117,7 +117,12 @@ end
 # make the sample accession the key of the results hash...
 def restructure_results(results)
   r = {}
-  results.each do |result|
+  results.compact.each do |result|
+    # skip the PGP100 VCF - because they have been uploaded badly...
+    if result[:type] == 'variant' && result[:analysis_accession] == 'ERZ1065952'
+      next
+    end
+
     pgp_id = get_pgp_id(result)
     next if pgp_id.to_s == 'ukD24C3E' # withdrawn participant
 
@@ -169,6 +174,7 @@ end
 
 def parse_hex_id(h)
   return parse_hex_id_using_key(h, WGBS_KEY) if h[:type] == 'wgbs'
+
   if %w[amplicon_rna_seq proton_rna_seq].include? h[:type]
     return parse_hex_id_using_key(h, RNASEQ_KEY)
   end

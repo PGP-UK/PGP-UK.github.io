@@ -27,6 +27,7 @@ if (!ES) {
       iDisplayLength: 10,
       pagingType: 'full',
       order: [[0, 'asc']],
+      search: ES.checkForDefaultSearch(),
       bAutoWidth: false,
       columnDefs: [
         {
@@ -50,6 +51,17 @@ if (!ES) {
     });
     $('.dataTables_filter').addClass('pull-right');
     return dt;
+  };
+
+  ES.checkForDefaultSearch = function() {
+    var urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('hex_id')) {
+      var hex_id = urlParams.get('hex_id');
+      $('#data_table_filter input[type=search]').val(hex_id);
+      return { search: hex_id };
+    } else {
+      return { search: '' };
+    }
   };
 
   ES.makePlotIconClickable = function(datatable, tableId, dataset, type) {

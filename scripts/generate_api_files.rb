@@ -28,7 +28,7 @@ def write_all_participants_as_nd_json
   outfile = API_DIR + 'all_participants'
   File.open(outfile, 'w') do |io|
     JSON_DATA.each do |hex_id, data|
-      io.puts({hex_id: hex_id, data: data }.to_json) unless data.nil?
+      io.puts({ hex_id: hex_id, data: data }.to_json) unless data.nil?
     end
   end
 end
@@ -38,6 +38,7 @@ def write_subset_files(dir, key)
   FileUtils.mkdir_p dir
   JSON_DATA.each do |hex_id, d|
     next unless d.key? key
+
     outfile = dir + hex_id.to_s
     File.open(outfile, 'w') { |io| io.puts JSON.pretty_generate(d[key]) }
   end
@@ -48,6 +49,7 @@ def write_all_subset_as_ndjson(fname, key)
   File.open(outfile, 'w') do |io|
     JSON_DATA.each do |hex_id, d|
       next unless d.key? key
+
       io.puts({ hex_id: hex_id, data: d[key] }.to_json) unless d[key].nil?
     end
   end
@@ -58,6 +60,7 @@ def write_all_subset(fname, key)
   subset = []
   JSON_DATA.each do |hex_id, d|
     next unless d.key? key
+
     subset << { hex_id: hex_id, data: d[key] } unless d[key].nil?
   end
   File.open(outfile, 'w') { |io| io.puts JSON.pretty_generate(subset) }

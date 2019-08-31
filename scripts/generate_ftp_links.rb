@@ -6,24 +6,28 @@ require 'uri'
 
 def get_wgs_links(id, wgs)
   return if wgs.nil?
+
   links = generate_urls(wgs, %i[fastq_ftp submitted_ftp], true)
   process_links(links, id, 'wgs')
 end
 
 def get_variant_links(id, variant)
   return if variant.nil?
+
   links = generate_urls(variant, %i[submitted_ftp], true)
   process_links(links, id, 'variant')
 end
 
 def get_wgbs_links(id, wgbs)
   return if wgbs.nil?
+
   links = generate_urls(wgbs, %i[fastq_ftp submitted_ftp], true)
   process_links(links, id, 'wgbs')
 end
 
 def get_meth_array_links(id, meth_array)
   return if meth_array.nil?
+
   ftp = 'ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB'
   html = 'https://www.ebi.ac.uk/arrayexpress/files'
   links = meth_array.map do |h|
@@ -35,6 +39,7 @@ end
 
 def get_profile_links(id, pgp_profile)
   return if pgp_profile.nil?
+
   links = pgp_profile[:files].map do |h|
     if h[:data_type] != '23andMe'
       "#{h[:download_url]}?#{h[:name]}"
@@ -47,17 +52,20 @@ end
 
 def get_proton_rna_seq_links(id, proton_rna_seq)
   return if proton_rna_seq.nil?
+
   links = generate_urls(proton_rna_seq, %i[fastq_ftp], true)
   process_links(links, id, 'proton_rna_seq')
 end
 
 def get_rna_seq_links(id, rna_seq)
   return if rna_seq.nil?
+
   ftp = 'ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB'
   html = 'https://www.ebi.ac.uk/arrayexpress/files'
   links = rna_seq.map do |h|
     next if h[:comment_derived_arrayexpress_ftp_file].strip.empty?
     next if h[:derived_array_data_file].strip.empty?
+
     bai = "#{h[:comment_derived_arrayexpress_ftp_file]}/" \
           "#{h[:derived_array_data_file]}?download".gsub(ftp, html)
     bam = html + '/' + h[:accession] + "/#{h[:accession]}." +
@@ -69,6 +77,7 @@ end
 
 def get_amplicon_links(id, amplicon_rna_seq)
   return if amplicon_rna_seq.nil?
+
   links = generate_urls(amplicon_rna_seq, %i[fastq_ftp], true)
   process_links(links, id, 'amplicon_rna_seq')
 end
@@ -82,6 +91,7 @@ end
 
 def process_links(links, id, type)
   return [] if links.nil? || links.empty?
+
   links.map { |url| [id.to_s, url.gsub(/\?.*/, ''), get_type(type, url)] }
 end
 

@@ -53,6 +53,7 @@ end
 def analyse_responses(responses)
   results = responses.map do |request|
     next unless request.response.success?
+
     parse_tabular_results(request.response.body, request.base_url)
   end
   results += query_tapestry
@@ -119,7 +120,8 @@ def restructure_results(results)
   results.each do |result|
     pgp_id = get_pgp_id(result)
     next if pgp_id.to_s == 'ukD24C3E' # withdrawn participant
-    type   = result[:type].to_sym
+
+    type = result[:type].to_sym
     r[pgp_id] ||= {}
     r[pgp_id][type] ||= []
     r[pgp_id][type] << result
@@ -150,14 +152,17 @@ end
 def get_sample_id(h)
   %i[genome_report genotype methylome_report].each do |type|
     next if h[type].nil?
+
     return h[type][0][:pgp_hex_id]
   end
   %i[meth_array rna_seq].each do |type|
     next if h[type].nil?
+
     return h[type][0][:characteristicsindividual]
   end
   %i[variant wgs wgbs wxs amplicon_rna_seq proton_rna_seq].each do |type|
     next if h[type].nil?
+
     return parse_hex_id(h[type][0])
   end
 end
@@ -167,6 +172,7 @@ def parse_hex_id(h)
   if %w[amplicon_rna_seq proton_rna_seq].include? h[:type]
     return parse_hex_id_using_key(h, RNASEQ_KEY)
   end
+
   # PGP10 use sample_alias; while PGP-donations uses library_name
   %i[sample_alias library_name].each do |key|
     return normalize_hex_id(h[key]) if h[key] =~ /uk\S{6}/
@@ -185,6 +191,7 @@ end
 def parse_pgp100_hex_id(h)
   d = SANGER_KEY[h[:sample_alias]]
   return nil if h[:sample_title] != d[:sanger_id]
+
   normalize_hex_id(d[:pgp_id])
 end
 
@@ -218,6 +225,7 @@ end
 def td2_reports_btn(h)
   num = number_of_reports(h)
   return '' if num.nil? || num.zero?
+
   '<span class=report_btn aria-label="PGP-UK Reports"' \
     ' data-toggle=tooltip data-trigger=hover data-placement=bottom' \
     ' title="PGP-UK Reports">' \
@@ -231,6 +239,7 @@ def number_of_reports(h)
   return if h[:methylome_report].nil? && h[:genome_report].nil?
   return h[:genome_report].size if h[:methylome_report].nil?
   return h[:methylome_report].size if h[:genome_report].nil?
+
   h[:genome_report].size + h[:methylome_report].size
 end
 
@@ -240,6 +249,7 @@ end
 
 def td3_wgs(h)
   return '' if h[:wgs].nil?
+
   display = h[:wgs][0][:experiment_accession]
   url = "http://www.ebi.ac.uk/ena/data/view/#{display}"
   html = "WGS: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -248,6 +258,7 @@ end
 
 def td3_wxs(h)
   return '' if h[:wxs].nil?
+
   display = h[:wxs][0][:experiment_accession]
   url = "http://www.ebi.ac.uk/ena/data/view/#{display}"
   html = "WXS: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -256,6 +267,7 @@ end
 
 def td3_vcf(h)
   return '' if h[:variant].nil?
+
   display = h[:variant][0][:analysis_accession]
   url = "http://www.ebi.ac.uk/ena/data/view/#{display}&display=html"
   html = "VCF: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -264,6 +276,7 @@ end
 
 def td3_genotype(h)
   return '' if h[:genotype].nil?
+
   url = h[:genotype][0][:download_url]
   display = '23andMe Data'
   html = "GT: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -276,6 +289,7 @@ end
 
 def td4_wgbs(h)
   return '' if h[:wgbs].nil?
+
   display = h[:wgbs][0][:experiment_accession]
   url = "http://www.ebi.ac.uk/ena/data/view/#{display}"
   html = "WGBS: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -284,6 +298,7 @@ end
 
 def td4_meth_array(h)
   return '' if h[:meth_array].nil?
+
   display = h[:meth_array][0][:accession]
   url = "https://www.ebi.ac.uk/arrayexpress/experiments/#{display}"
   html = "450k: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -296,6 +311,7 @@ end
 
 def td5_amplicon_rna_seq(h)
   return '' if h[:amplicon_rna_seq].nil?
+
   display = h[:amplicon_rna_seq][0][:experiment_accession]
   url = "http://www.ebi.ac.uk/ena/data/view/#{display}"
   html = "Amplicon: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -304,6 +320,7 @@ end
 
 def td5_proton_rna_seq(h)
   return '' if h[:proton_rna_seq].nil?
+
   display = h[:proton_rna_seq][0][:experiment_accession]
   url = "http://www.ebi.ac.uk/ena/data/view/#{display}"
   html = "WTSS: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -312,6 +329,7 @@ end
 
 def td5_rna_seq(h)
   return '' if h[:rna_seq].nil?
+
   display = h[:rna_seq][0][:accession]
   url = "https://www.ebi.ac.uk/arrayexpress/experiments/#{display}"
   html = "RNA-SEQ: <a href='#{url}' target='_blank'>#{display}</a><br>"
@@ -333,8 +351,9 @@ end
 def parse_phenotype_csv(input_file)
   r = {}
   File.open(input_file) do |f|
-    CSV.foreach(f, headers: true, :converters => [:all]).each_with_index do |csv_row, idx|
+    CSV.foreach(f, headers: true, converters: [:all]).each_with_index do |csv_row, _idx|
       next if csv_row.empty?
+
       pgp_id = normalize_hex_id(csv_row[0]).to_sym
       r[pgp_id] ||= []
       r[pgp_id] << csv_row.to_a.map do |e|
@@ -374,7 +393,7 @@ phenotype_csv_file = data_dir + 'phenotype.csv'
 sanger_ids_file = data_dir + 'sanger_ids_key.csv'
 
 # parse SANGER keys for PGP100
-SANGER_KEY = Hash.new
+SANGER_KEY = {}
 CSV.foreach(sanger_ids_file) do |r|
   SANGER_KEY[r[0]] = { pgp_id: r[1], sanger_id: r[2] }
 end

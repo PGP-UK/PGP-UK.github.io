@@ -179,8 +179,10 @@ def parse_hex_id(h)
     return parse_hex_id_using_key(h, RNASEQ_KEY)
   end
 
-  # PGP10 use sample_alias; while PGP-donations uses library_name
-  %i[sample_alias library_name].each do |key|
+  # PGP10 use sample_alias
+  # while PGP-donations uses library_name
+  # And PGP 2019 participants use sample_title
+  %i[sample_alias library_name sample_title].each do |key|
     return normalize_hex_id(h[key]) if h[key] =~ /uk\S{6}/
   end
   parse_pgp100_hex_id(h) if h[:sample_alias] =~ /\S{8}-\S{9}-\S{4}-\S{12}/

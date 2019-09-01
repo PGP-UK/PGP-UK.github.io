@@ -183,8 +183,8 @@ def parse_hex_id(h)
   %i[sample_alias library_name].each do |key|
     return normalize_hex_id(h[key]) if h[key] =~ /uk\S{6}/
   end
-  # if not in correct format assume PGP100
-  parse_pgp100_hex_id(h)
+  parse_pgp100_hex_id(h) if h[:sample_alias] =~ /\S{8}-\S{9}-\S{4}-\S{12}/
+  raise StandardError, 'Unable to parse PGP HEX id'
 end
 
 def parse_hex_id_using_key(h, convert_key)

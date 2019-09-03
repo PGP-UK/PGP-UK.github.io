@@ -84,7 +84,7 @@ end
 
 def generate_urls(hash, keys, is_array = false)
   urls = keys.map do |k|
-    is_array ? hash.map { |h| h[k].split(';') } : hash[k].split(';')
+    is_array ? hash.map { |h| h[k]&.split(';') } : hash[k]&.split(';')
   end.flatten.compact
   urls.map { |e| URI.encode(e) }
 end

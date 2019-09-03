@@ -97,8 +97,10 @@ if (!ES) {
       } else if (type == '.file_btn') {
         child_html = ES.openFilesChildRow(data, id, type);
       }
-      row.child(child_html).show();
-      $tr.addClass('shown');
+      if (child_html != undefined) {
+        row.child(child_html).show();
+        $tr.addClass('shown');
+      }
     }
   };
 
@@ -151,6 +153,7 @@ if (!ES) {
   };
 
   ES.openTraitsChildRow = function(dataset, id, type) {
+    if (data == undefined) return;
     var data = dataset.phenotype[0];
     var traits_html = $('#child_template')
       .clone()
@@ -223,6 +226,7 @@ if (!ES) {
   };
 
   ES.add_section_info = function(data) {
+    if (data == undefined) return
     for (var i = 0; i < data.length; i++) {
       type = data[i].type;
       if (type.indexOf('WGBS') !== -1 || type.indexOf('Methylation') !== -1) {
@@ -239,6 +243,7 @@ if (!ES) {
   };
 
   ES.addFileButtonHtml = function(data, file_html) {
+    if (data == undefined) return;
     for (var i = 0; i < data.length; i++) {
       if (data[i].section === undefined) continue;
       var download_url = data[i].download_url;

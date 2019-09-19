@@ -12,13 +12,12 @@ if (!ES) {
       var datatable = ES.initializeTable(json, 'data_table');
       $.getJSON('/api/' + ES.API_VERSION + '/all_participants.json', function(data_json) {
         ES.data_json = data_json;
-        ES.makePlotIconClickable(datatable, 'data_table', data_json, '.file_btn');
-        ES.makePlotIconClickable(datatable, 'data_table', data_json, '.report_btn');
-        ES.makePlotIconClickable(datatable, 'data_table', data_json, '.trait_btn');
+        ES.makeIconClickable(datatable, 'data_table', data_json, '.file_btn');
+        ES.makeIconClickable(datatable, 'data_table', data_json, '.report_btn');
+        ES.makeIconClickable(datatable, 'data_table', data_json, '.trait_btn');
       });
     });
   };
-
 
   ES.initializeTable = function(dataset, tableId) {
     var dt = $('#' + tableId).DataTable({
@@ -64,7 +63,7 @@ if (!ES) {
     }
   };
 
-  ES.makePlotIconClickable = function(datatable, tableId, dataset, type) {
+  ES.makeIconClickable = function(datatable, tableId, dataset, type) {
     $('#' + tableId).on('click', '.close', function() {
       var $tr = $(this).closest('tr').prev()[0];
       var row = datatable.row($tr);
@@ -118,20 +117,13 @@ if (!ES) {
     ) {
       $(reports_html)
         .find('#child_template_body')
-        .text(
-          'There is no PGP-UK reports currently associated with this participant.'
-        );
+        .text('There is no PGP-UK reports currently associated with this participant.');
     } else {
       $(reports_html)
         .find('#child_template_body')
         .append($('<p id="genome_reports">'), $('<p id="methylome_reports">'));
       ES.addReports(data, reports_html, 'genome_report', '#genome_reports');
-      ES.addReports(
-        data,
-        reports_html,
-        'methylome_report',
-        '#methylome_reports'
-      );
+      ES.addReports(data, reports_html, 'methylome_report', '#methylome_reports');
     }
     return reports_html;
   };

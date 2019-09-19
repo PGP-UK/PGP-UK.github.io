@@ -65,10 +65,10 @@ if (!ES) {
 
   ES.makeIconClickable = function(datatable, tableId, dataset, type) {
     $('#' + tableId).on('click', '.close', function() {
-      var $tr = $(this).closest('tr').prev()[0];
-      var row = datatable.row($tr);
+      var tr = $(this).closest('tr').prev()[0];
+      var row = datatable.row(tr);
       row.child.hide();
-      $tr.removeClass('shown');
+      $(tr).removeClass('shown');
     });
     $('#' + tableId).on('click', type, function() {
       var $tr = $(this).closest('tr');

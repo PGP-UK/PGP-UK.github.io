@@ -145,8 +145,7 @@ if (!ES) {
   };
 
   ES.openTraitsChildRow = function(dataset, id, type) {
-    if (data == undefined) return;
-    var data = dataset.phenotype[0];
+    var data;
     var traits_html = $('#child_template')
       .clone()
       .attr('id', type.replace('.', '') + id)
@@ -154,6 +153,11 @@ if (!ES) {
     $(traits_html)
       .find('#child_template_header')
       .text('Phenotype Data');
+    if (dataset.phenotype == undefined) {
+      data = null
+    } else {
+      data = dataset.phenotype[0];
+    }
     traits_html = ES.updateTraitsHtml(data, traits_html);
     return traits_html;
   };

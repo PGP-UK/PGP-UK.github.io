@@ -1,0 +1,28 @@
+---
+label: Data
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: data
+  hidden: true
+- type: text
+  name: header
+  label: Header
+  description: This is the page header
+- type: text
+  name: subheader
+  label: subheader
+  description: This is the page sub-header
+- type: textarea
+  name: lead_paragraph
+  label: Lead Paragraph
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: This text is found at the top of the page and is slightly larger than
+    the text size of the main body
+pages:
+- www/content/data.md

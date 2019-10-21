@@ -1,0 +1,98 @@
+//
+// Modals
+// --------------------------------------------------
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+
+  // When fading in the modal, animate it to slide down
+  &.fade .modal-dialog {
+    @include translate(0, -40%);
+    @include transition-transform(0.3s ease-out);
+  }
+  &.in .modal-dialog { @include translate(0, 0) }
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  width: auto;
+  width: 100%;
+  max-width: $modal-width;
+  margin: 100px auto 50px auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  // Close button
+  .close-btn {
+    font-size: $font-size-h3;
+    font-weight: 300;
+    position: absolute;
+    top: -45px;
+    right: 15px;
+    color: #fff;
+  }
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  width: 100%;
+  background-color: $modal-content-bg;
+  background-clip: padding-box;
+  outline: 0;
+  padding: floor($line-height-computed * 1.5);
+
+  .form-control { margin-bottom: floor($line-height-computed / 1.5); }
+  form {
+    a { border-bottom-style: dotted; }
+    .btn { margin: 0; }
+  }
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal-background;
+  background-color: $modal-backdrop-bg;
+  @include transition(opacity .3s);
+  // Fade for backdrop
+  &.fade { @include opacity(0); }
+  &.in { @include opacity($modal-backdrop-opacity); }
+}
+// Close icon
+.modal .close {
+  margin-top: -2px;
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}

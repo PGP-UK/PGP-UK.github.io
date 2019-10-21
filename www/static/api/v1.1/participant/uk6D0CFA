@@ -1,0 +1,302 @@
+{
+  "wxs": [
+    {
+      "study_accession": "PRJEB17529",
+      "secondary_study_accession": "ERP019394",
+      "sample_accession": "SAMEA104651849",
+      "secondary_sample_accession": "ERS2253232",
+      "experiment_accession": "ERX2399611",
+      "run_accession": "ERR2348725",
+      "submission_accession": "ERA1228601",
+      "tax_id": "9606",
+      "scientific_name": "Homo sapiens",
+      "instrument_platform": "ILLUMINA",
+      "instrument_model": "Illumina HiSeq 2000",
+      "library_name": "uk6D0CFA",
+      "nominal_length": "200",
+      "library_layout": "PAIRED",
+      "library_strategy": "WXS",
+      "library_source": "GENOMIC",
+      "library_selection": "other",
+      "read_count": "15527873",
+      "base_count": "2789587620",
+      "center_name": "UNIVERSITY COLLEGE LONDON",
+      "first_public": "2018-02-26",
+      "last_updated": "2018-11-16",
+      "experiment_title": "Illumina HiSeq 2000 paired end sequencing",
+      "study_title": "Personal Genome Project - United Kingdom",
+      "study_alias": "ena-STUDY-UNIVERSITY COLLEGE LONDON-31-10-2016-15:46:14:765-442",
+      "experiment_alias": "ena-EXPERIMENT-UNIVERSITY COLLEGE LONDON-26-02-2018-12:32:31:304-2",
+      "run_alias": "ena-RUN-UNIVERSITY COLLEGE LONDON-26-02-2018-12:32:31:304-2",
+      "fastq_bytes": "6214515;1205328911;1216623383",
+      "fastq_md5": "c233d4b304b409fd3928c0d2a1e9597c;7825a3d21eb8cf9a98460b2cfd65fe2f;ee7315d2c995cf1721d7c83389a0b911",
+      "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/005/ERR2348725/ERR2348725.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/005/ERR2348725/ERR2348725_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/005/ERR2348725/ERR2348725_2.fastq.gz",
+      "fastq_aspera": "fasp.sra.ebi.ac.uk:/vol1/fastq/ERR234/005/ERR2348725/ERR2348725.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR234/005/ERR2348725/ERR2348725_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR234/005/ERR2348725/ERR2348725_2.fastq.gz",
+      "fastq_galaxy": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/005/ERR2348725/ERR2348725.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/005/ERR2348725/ERR2348725_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR234/005/ERR2348725/ERR2348725_2.fastq.gz",
+      "submitted_bytes": "4313560006;6022400",
+      "submitted_md5": "99abb81ec3000452436c7b1591bab9b0;1ae6ab0d9c4ea5fab2e248b484cd094b",
+      "submitted_ftp": "ftp.sra.ebi.ac.uk/vol1/run/ERR234/ERR2348725/uk6D0CFA.bam;ftp.sra.ebi.ac.uk/vol1/run/ERR234/ERR2348725/uk6D0CFA.bam.bai",
+      "submitted_aspera": "fasp.sra.ebi.ac.uk:/vol1/run/ERR234/ERR2348725/uk6D0CFA.bam;fasp.sra.ebi.ac.uk:/vol1/run/ERR234/ERR2348725/uk6D0CFA.bam.bai",
+      "submitted_galaxy": "ftp.sra.ebi.ac.uk/vol1/run/ERR234/ERR2348725/uk6D0CFA.bam;ftp.sra.ebi.ac.uk/vol1/run/ERR234/ERR2348725/uk6D0CFA.bam.bai",
+      "submitted_format": "BAM;BAI",
+      "sra_bytes": "2421291117",
+      "sra_md5": "d865085f2a4b83692255523fdbe73d53",
+      "sra_ftp": "ftp.sra.ebi.ac.uk/vol1/err/ERR234/005/ERR2348725",
+      "sra_aspera": "fasp.sra.ebi.ac.uk:/vol1/err/ERR234/005/ERR2348725",
+      "sra_galaxy": "ftp.sra.ebi.ac.uk/vol1/err/ERR234/005/ERR2348725",
+      "cram_index_ftp": null,
+      "cram_index_aspera": null,
+      "cram_index_galaxy": null,
+      "sample_alias": "PGP-UK-ExomeDonation2",
+      "broker_name": null,
+      "sample_title": "Genome Donation from the PGP-UK project",
+      "nominal_sdev": "0",
+      "first_created": "2018-02-26",
+      "type": "wxs",
+      "meta_data_source": "https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB17529&result=read_run"
+    }
+  ],
+  "pgp_profile": {
+    "deceased": null,
+    "confirmed_family_relations": [
+
+    ],
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk6D0CFA",
+    "zip": null,
+    "real_name": "Manuel Corpas",
+    "files": [
+      {
+        "file_source": "PGP",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/181/download",
+        "data_type": "Methylome Report",
+        "name": "Methylome Report (Released by PGP-UK on 8th March 2018)"
+      },
+      {
+        "file_source": "PGP",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/174/download",
+        "data_type": "Genome Report",
+        "name": "Genome Report (Released by PGP-UK on 26th February 2018)"
+      },
+      {
+        "file_source": "Participant",
+        "date": "2012-07-16",
+        "description": "23andMe genotype data for Son in the Corpasome dataset, version 2 of the SNP array used by the genetic testing provider. ",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/169",
+        "data_type": "23andMe",
+        "report_url": null,
+        "name": "Son.txt"
+      }
+    ],
+    "hex": "uk6D0CFA",
+    "type": "pgp_profile"
+  },
+  "phenotype": [
+    [
+      {
+        "question": "PGP-UK ID",
+        "answer": "uk6D0CFA"
+      },
+      {
+        "question": "Sex (from birth)",
+        "answer": "Male"
+      },
+      {
+        "question": "Gender",
+        "answer": ""
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "06/01/1977"
+      },
+      {
+        "question": "Have you ever smoked?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Do you currently smoke?",
+        "answer": "No"
+      },
+      {
+        "question": "If you are an ex-smoker, at what age did you give up smoking?",
+        "answer": 24
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+        "answer": ""
+      },
+      {
+        "question": "What is your blood type?",
+        "answer": "Unknown"
+      },
+      {
+        "question": "What is your blood Rh (Rhesus) factor?",
+        "answer": "Unknown"
+      },
+      {
+        "question": "Are you left- or right-handed?",
+        "answer": "Right"
+      },
+      {
+        "question": "What is your weight in kg?",
+        "answer": 103
+      },
+      {
+        "question": "What is your height in cm?",
+        "answer": 184
+      },
+      {
+        "question": "What is your main natural hair colour?",
+        "answer": "Black"
+      },
+      {
+        "question": "Please, provide details about your hair colour",
+        "answer": ""
+      },
+      {
+        "question": "What is your right eye main colour?",
+        "answer": "-"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your right eye colour.",
+        "answer": ""
+      },
+      {
+        "question": "What is your left eye main colour?",
+        "answer": "-"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your left eye colour.",
+        "answer": ""
+      },
+      {
+        "question": "Please, use this field to add any extra information about yourself",
+        "answer": ""
+      }
+    ]
+  ],
+  "meth_array": [
+    {
+      "source_name": "Sample 22_PGPUK_S12",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsindividual": "uk6D0CFA",
+      "commentbiosd_sample": "  ",
+      "characteristicsorganism_part": "saliva",
+      "characteristicsage": "39.77",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicssex": "male",
+      "characteristicssmoking_status": "smoked in the past",
+      "commentupdate_information": "sample added 2018-02-19",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-53554",
+      "extract_name": "Sample 22_PGPUK_S12",
+      "labeled_extract_name": "Sample 22_PGPUK_S12:Cy3",
+      "label": "Cy3",
+      "assay_name": "200069280184_R06C01",
+      "technology_type": "array assay",
+      "array_design_ref": "A-GEOD-18809",
+      "array_data_file": "200069280184_R06C01_Grn.idat",
+      "comment_arrayexpress_ftp_file": "ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-5377/E-MTAB-5377.raw.1.zip",
+      "factor_valueage": "39.77",
+      "factor_value_organism_part": "saliva",
+      "factor_value_smoking_status": "smoked in the past",
+      "factor_value_individual": "uk6D0CFA",
+      "type": "meth_array",
+      "accession": "E-MTAB-5377",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.sdrf.txt"
+    },
+    {
+      "source_name": "Sample 22_PGPUK_S12",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsindividual": "uk6D0CFA",
+      "commentbiosd_sample": "  ",
+      "characteristicsorganism_part": "saliva",
+      "characteristicsage": "39.77",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicssex": "male",
+      "characteristicssmoking_status": "smoked in the past",
+      "commentupdate_information": "sample added 2018-02-19",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-53554",
+      "extract_name": "Sample 22_PGPUK_S12",
+      "labeled_extract_name": "Sample 22_PGPUK_S12:Cy5",
+      "label": "Cy5",
+      "assay_name": "200069280184_R06C01",
+      "technology_type": "array assay",
+      "array_design_ref": "A-GEOD-18809",
+      "array_data_file": "200069280184_R06C01_Red.idat",
+      "comment_arrayexpress_ftp_file": "ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-5377/E-MTAB-5377.raw.1.zip",
+      "factor_valueage": "39.77",
+      "factor_value_organism_part": "saliva",
+      "factor_value_smoking_status": "smoked in the past",
+      "factor_value_individual": "uk6D0CFA",
+      "type": "meth_array",
+      "accession": "E-MTAB-5377",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.sdrf.txt"
+    }
+  ],
+  "genome_report": [
+    {
+      "published": "02/26/2018",
+      "file_source": "PGP",
+      "pgp_hex_id": "uk6D0CFA",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/174/download",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 26th February 2018)",
+      "type": "genome_report"
+    }
+  ],
+  "genotype": [
+    {
+      "published": "01/28/2018",
+      "file_source": "Participant",
+      "pgp_hex_id": "uk6D0CFA",
+      "date": "2012-07-16",
+      "description": "23andMe genotype data for Son in the Corpasome dataset, version 2 of the SNP array used by the genetic testing provider. ",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/169",
+      "data_type": "23andMe",
+      "name": "Son.txt",
+      "type": "genotype"
+    }
+  ],
+  "methylome_report": [
+    {
+      "published": "03/08/2018",
+      "file_source": "PGP",
+      "pgp_hex_id": "uk6D0CFA",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/181/download",
+      "data_type": "Methylome Report",
+      "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "type": "methylome_report"
+    }
+  ],
+  "download_url": [
+    {
+      "type": "Methylation 450k Array Green Saliva IDAT",
+      "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R06C01_Grn.idat"
+    },
+    {
+      "type": "Methylation 450k Array Red Saliva IDAT",
+      "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R06C01_Red.idat"
+    },
+    {
+      "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/181/download"
+    },
+    {
+      "type": "Genome Report (Released by PGP-UK on 26th February 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/174/download"
+    },
+    {
+      "type": "23andMe",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/169"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+---
+label: Single Template
+hide_body: true
+fields:
+- type: text
+  name: header
+  label: header
+  description: The Page Header
+- type: text
+  name: subheader
+  label: subheader
+  description: The Page Subheader
+- type: textarea
+  name: lead_paragraph
+  label: lead_paragraph
+  description: This appears at the top of the page in a slightly larger font
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+- type: textarea
+  name: body
+  label: body
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: 'This is the main text of the page '
+pages:
+- www/content/about.md
+- www/content/analysis.md

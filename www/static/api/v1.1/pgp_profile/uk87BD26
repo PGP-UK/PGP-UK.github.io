@@ -1,0 +1,19 @@
+{
+  "deceased": null,
+  "confirmed_family_relations": [
+
+  ],
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk87BD26",
+  "zip": null,
+  "real_name": "Andrew Scott Robertson",
+  "files": [
+    {
+      "file_source": "PGP",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/83/download",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)"
+    }
+  ],
+  "hex": "uk87BD26",
+  "type": "pgp_profile"
+}

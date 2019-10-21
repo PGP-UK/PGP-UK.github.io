@@ -1,0 +1,85 @@
+<!-- Footer -->
+<footer class="footer" {{ if eq .Params.title "Home" }} style="margin-top: 0" {{ end }} style="background-color: #FBFCFD; ">
+  <div class="bottom-footer padding-bottom padding-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <section class="widget widget_text">
+            <a href="/" class="site-logo" style="width:100%">
+              {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/logo.svg" ) }}
+                <img src="{{.Permalink}}" alt="Personal Genome Project" style="width: 55px; max-height: initial;display: inline-block; margin-right:10px;"class="left">
+              {{end}}
+              <span style="font-size: 2rem;font-weight: 400; line-height: 55px; vertical-align: middle;">Personal Genome Project UK</span>
+            </a>
+            {{ with .Site.GetPage "/" }}
+              <div style="color:#97A6B0; margin-left: 71px">
+                {{.Params.footer.summary | markdownify}}
+              </div>
+            {{end}}
+          </section>
+        </div>
+        <div class="col-md-7 col-sm-12">
+          <div class="row">
+            <div class="col-sm-4">
+              <section class="widget widget_text" style="margin-top: 18px;">
+                {{ with .Site.GetPage "/" }}
+                  <h3 class="widget-title">{{.Params.menu_1_title}}</h3>
+                {{end}}
+                <ul>
+                  {{ $url := .RelPermalink }}
+                  {{ range .Site.Menus.footer1 }}
+                    <li class="{{ if eq $url .URL }}current-menu-item{{ end }}">
+                      <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </section>
+            </div>
+            <div class="col-sm-4 ">
+              <section class="widget widget_text" style="margin-top: 18px;">
+                {{ with .Site.GetPage "/" }}
+                  <h3 class="widget-title">{{.Params.menu_2_title}}</h3>
+                {{end}}
+                <ul>
+                  {{ $url := .RelPermalink }}
+                  {{ range .Site.Menus.footer2 }}
+                    <li class="{{ if eq $url .URL }}current-menu-item{{ end }}">
+                      <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+                    </li>
+                  {{ end }}
+                </ul>
+              </section>
+            </div>
+            <div class="col-sm-4">
+              <section class="widget widget_text" style="margin-top: 18px;">
+                <h3 class="widget-title"></h3>
+                {{ with .Site.GetPage "/" }}
+                  {{with .Params.social_media.twitter}}
+                    <a href="{{.}}" target="_blank" style="color:#6F797F;margin-right:13px; border-bottom: none;"><i class="icon-fa fab fa-2x fa-twitter"></i></a>
+                  {{end}}
+                  {{with .Params.social_media.youtube}}
+                    <a href="{{.}}" target="_blank" style="color:#6F797F;margin-right:13px; border-bottom: none;"><i class="icon-fa fab fa-2x fa-youtube"></i></a>
+                  {{end}}
+                  {{with .Params.social_media.wordpress}}
+                    <a href="{{.}}" target="_blank" style="color:#6F797F;margin-right:13px; border-bottom: none;"><i class="icon-fa fab fa-2x fa-wordpress"></i></a>
+                  {{end}}
+                  {{with .Params.social_media.linkedin}}
+                    <a href="{{.}}" target="_blank" style="color:#6F797F;border-bottom: none;"><i class="icon-fa fab fa-2x fa-linkedin-in"></i></a>
+                  {{end}}
+                  <div class="clearfix" style="padding-bottom:20px"></div>
+                  {{with .Params.social_media.email}}
+                    <a href="mailto:{{.}}" style="color:#6F797F; border-bottom: none;">
+                      <i class="icon-fa fas fa-2x fa-envelope"></i>
+                      <span style="vertical-align: super;"> &nbsp;{{.}}</span>
+                    </a>
+                  {{end}}
+                {{end}}
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+

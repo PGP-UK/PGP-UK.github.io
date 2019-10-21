@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk92A44E"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Male"
+    },
+    {
+      "question": "Gender",
+      "answer": "Male"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "04/10/1965"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": "No"
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": 45
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": 15
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": 20
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "O"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "+"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 100
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 179
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "Blonde baby, brown from 5 to 19 then started greying. Fully grey at 40. Very thick almost curly."
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Hazel"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": ""
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Hazel"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": ""
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": ""
+    }
+  ]
+]

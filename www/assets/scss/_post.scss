@@ -1,0 +1,203 @@
+//
+// Blog Post Styles
+// --------------------------------------------------
+
+  
+// Post Meta
+.post-meta {
+  display: table;
+  width: 100%;
+  margin-bottom: $line-height-computed;
+  .column {
+    display: table-cell;
+    vertical-align: top;
+    text-align: left;
+    &:last-child {
+      text-align: right;
+      padding-left: 25px;
+    }
+  }
+  span, a {
+    display: inline-block;
+    font-size: $post-meta-font-size;
+    font-weight: normal;
+    > i {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: $post-meta-icon-size;
+      color: $post-meta-icon-color;
+      margin-top: -5px;
+      margin-right: 1px;
+    }
+  }
+  span {
+    color: $post-meta-color;
+    margin-right: 5px;
+    margin-bottom: 6px;
+    &.post-comments {
+      > i { padding-left: 2px; }
+      > a { border-bottom: 0; }
+    } 
+  }
+}
+
+// Post Item
+.post-item {
+  display: block;
+  width: 100%;
+  background-color: $post-tile-bg;
+  border: $post-tile-border;
+  margin-bottom: 30px;
+
+  // Post Thumbnail
+  .post-thumb {
+    display: block;
+    padding-bottom: 0;
+    border: none; 
+  }
+  
+  // Post Body
+  .post-body {
+    text-align: center;
+    padding: floor($line-height-computed / 1.4) $line-height-computed floor($line-height-computed * 1.5) $line-height-computed;
+    p {
+      color: $gray;
+      margin-bottom: floor($line-height-computed / 2);
+    }
+  }
+
+  // Post Meta
+  .post-meta {
+    padding-bottom: floor($line-height-computed / 2.5);
+    border-bottom: $post-tile-border;
+  }
+
+  // Post Title
+  .post-title {
+    display: block;
+    color: $headings-color;
+    padding-bottom: 0;
+    border: none;
+    padding-top: 5px;
+    margin-bottom: $line-height-computed;
+    > h3 {
+      font-size: $post-title-font-size;
+      margin-bottom: 0;
+      @include transition(color .3s);
+    }
+    &:hover > h2, &:hover > h3,
+    &:hover > h4, &:hover > h4 { color: $link-hover-color; }
+  }
+}
+.grid-item {
+  .post-item { margin-bottom: 0; }
+}
+
+// Post Formats
+.sticky { border-color: $brand-primary; }
+.sticky,
+.format-image,
+.format-gallery,
+.format-video,
+.format-audio,
+.format-quote,
+.format-link,
+.format-chat {
+  .post-meta .post-format {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "feather";
+    font-size: floor(($font-size-base * 1.5)); // ~24px
+    color: $post-meta-icon-color;
+    margin-top: 2px;
+    margin-right: 7px;
+    line-height: 1;
+  }
+}
+.format-standard {
+  .post-meta .post-format { display: none; }
+  &.sticky .post-meta .post-format { display: inline-block; }
+}
+.sticky .post-meta .post-format:before {
+  content: "\e007";
+}
+.format-image .post-meta .post-format:before {
+  content: "\e010";
+}
+.format-gallery .post-meta .post-format:before {
+  content: "\e033";
+}
+.format-video .post-meta .post-format:before {
+  content: "\e018";
+}
+.format-audio .post-meta .post-format:before {
+  content: "\e098";
+}
+.format-quote .post-meta .post-format:before {
+  content: "\e025";
+}
+.format-link .post-meta .post-format:before {
+  content: "\e005";
+}
+.format-chat .post-meta .post-format:before {
+  content: "\e076";
+}
+
+// Post Tools
+.post-tools {
+  display: table;
+  width: 100%;
+  padding-top: floor($line-height-computed / 1.2);
+  border-top: 1px solid $hr-border; 
+  .column {
+    display: table-cell;
+    vertical-align: middle;
+    &:first-child { width: 60%; }
+    &:last-child {
+      width: 40%;
+      text-align: right;
+    }
+  }
+  @media #{$tablet-port} {
+    display: block;
+    .column {
+      display: block;
+      width: 100% !important;
+      margin-bottom: $line-height-computed;
+      &:last-child {
+        text-align: left;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// Post Pagination
+.pagination {
+  padding-top: 6px;
+  border-top: 1px solid $hr-border;
+  margin-top: floor($line-height-computed * 1.2);
+  .nav-links {
+    a, span {
+      display: inline-block;
+      font-size: $font-size-small;
+      color: $post-pagination-color;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      padding: 8px 15px 8px 15px;
+      word-wrap: no-wrap;
+      overflow-wrap: no-wrap;
+      margin: 0 0 10px -2px;
+      &.current {
+        color: #fff;
+        background-color: $post-pagination-active-bg;
+      }
+    }
+    span { cursor: default; }
+    a {
+      @include transition(color .3s);
+      &:hover { color: $post-pagination-hover-color; }
+    }
+  }
+}

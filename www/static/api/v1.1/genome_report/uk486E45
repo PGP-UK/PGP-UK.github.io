@@ -1,0 +1,11 @@
+[
+  {
+    "published": "09/07/2017",
+    "file_source": "PGP",
+    "pgp_hex_id": "uk486E45",
+    "download_url": "https://my.personalgenomes.org.uk/datasets/93/download",
+    "data_type": "Genome Report",
+    "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+    "type": "genome_report"
+  }
+]

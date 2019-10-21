@@ -1,0 +1,19 @@
+{
+  "deceased": null,
+  "confirmed_family_relations": [
+
+  ],
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukAED6EE",
+  "zip": "BA5 2QS",
+  "real_name": "Nigel R Seel",
+  "files": [
+    {
+      "file_source": "PGP",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/158/download",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)"
+    }
+  ],
+  "hex": "ukAED6EE",
+  "type": "pgp_profile"
+}

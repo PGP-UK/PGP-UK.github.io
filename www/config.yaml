@@ -1,0 +1,55 @@
+---
+baseURL: https://pgp-uk-dev.netlify.com/
+languageCode: en-us
+menu:
+  main:
+  - url: "/"
+    name: Home
+    weight: 1
+    identifier: home
+  - url: "/about/"
+    name: About
+    weight: 2
+    identifier: about
+  - url: "/team/"
+    name: Team
+    weight: 3
+    identifier: team
+  - url: "/volunteer/"
+    name: Volunteer
+    weight: 4
+    identifier: volunteer
+  - url: "/data/"
+    name: Data
+    weight: 5
+    identifier: data
+  - url: "/api/"
+    name: API
+    weight: 6
+    identifier: api
+  - url: "/analysis/"
+    name: Analysis
+    weight: 7
+    identifier: analysis
+  - url: "/news/"
+    name: News
+    weight: 8
+    identifier: news
+  - url: "https://pgpukblog.wordpress.com/"
+    name: Blog
+    weight: 9
+    identifier: blog
+  footer1:
+  - url: /about
+    name: About Us
+  - url: https://pgpukblog.wordpress.com/
+    name: Blog
+  - url: /volunteer
+    name: Join PGP-UK
+  footer2:
+  - url: /data
+    name: PGP-UK Data
+  - url: https://www.ebi.ac.uk/ena/data/view/PRJEB17529
+    name: EBI PGP data warehouse
+  - url: https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5377/
+    name: ArrayExpress

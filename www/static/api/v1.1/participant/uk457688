@@ -1,0 +1,194 @@
+{
+  "wgs": [
+    {
+      "study_accession": "PRJEB13150",
+      "secondary_study_accession": "ERP014689",
+      "sample_accession": "SAMEA4005494",
+      "secondary_sample_accession": "ERS1176604",
+      "experiment_accession": "ERX2179536",
+      "run_accession": "ERR2122628",
+      "submission_accession": "ERA1096965",
+      "tax_id": "9606",
+      "scientific_name": "Homo sapiens",
+      "instrument_platform": "ILLUMINA",
+      "instrument_model": "HiSeq X Ten",
+      "library_name": "DN459287E:D7",
+      "nominal_length": "459",
+      "library_layout": "PAIRED",
+      "library_strategy": "WGS",
+      "library_source": "GENOMIC",
+      "library_selection": "RANDOM",
+      "read_count": "963608222",
+      "base_count": "145504841522",
+      "center_name": "UNIVERSITY COLLEGE LONDON",
+      "first_public": "2017-09-15",
+      "last_updated": "2018-11-16",
+      "experiment_title": "HiSeq X Ten paired end sequencing",
+      "study_title": "PGP_UK_samples_for_demographic_analysis",
+      "study_alias": "PGP_UK_samples_for_demographic_analysis-sc-4154",
+      "experiment_alias": "SC_EXP_21128_2",
+      "run_alias": "SC_RUN_21128_2",
+      "fastq_bytes": "24929717924;31985549112",
+      "fastq_md5": "c471f8c18ae69d69458768f244cac2c8;32005a3e58f0af9727ec2f2f1d59bb35",
+      "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_2.fastq.gz",
+      "fastq_aspera": "fasp.sra.ebi.ac.uk:/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_2.fastq.gz",
+      "fastq_galaxy": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_2.fastq.gz",
+      "submitted_bytes": "40156211873",
+      "submitted_md5": "e5d77acd2750d75a0d1eea1e09101a5d",
+      "submitted_ftp": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122628/21128_2.cram",
+      "submitted_aspera": "fasp.sra.ebi.ac.uk:/vol1/run/ERR212/ERR2122628/21128_2.cram",
+      "submitted_galaxy": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122628/21128_2.cram",
+      "submitted_format": "CRAM",
+      "sra_bytes": null,
+      "sra_md5": null,
+      "sra_ftp": null,
+      "sra_aspera": null,
+      "sra_galaxy": null,
+      "cram_index_ftp": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122628/21128_2.cram.crai",
+      "cram_index_aspera": "fasp.sra.ebi.ac.uk:/vol1/run/ERR212/ERR2122628/21128_2.cram.crai",
+      "cram_index_galaxy": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122628/21128_2.cram.crai",
+      "sample_alias": "f89cc770-f19a-11e5-a70d-3c4a9275d6c8",
+      "broker_name": null,
+      "sample_title": "pgp-uk6373300",
+      "nominal_sdev": "98",
+      "first_created": "2017-09-15",
+      "type": "wgs",
+      "meta_data_source": "https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB13150&result=read_run"
+    }
+  ],
+  "pgp_profile": {
+    "deceased": null,
+    "confirmed_family_relations": [
+
+    ],
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk457688",
+    "zip": null,
+    "files": [
+      {
+        "file_source": "PGP",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/124/download",
+        "data_type": "Genome Report",
+        "name": "Genome Report (Released by PGP-UK on 2nd August 2017)"
+      }
+    ],
+    "hex": "uk457688",
+    "type": "pgp_profile"
+  },
+  "phenotype": [
+    [
+      {
+        "question": "PGP-UK ID",
+        "answer": "uk457688"
+      },
+      {
+        "question": "Sex (from birth)",
+        "answer": "Female"
+      },
+      {
+        "question": "Gender",
+        "answer": "Female"
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "11/07/1990"
+      },
+      {
+        "question": "Have you ever smoked?",
+        "answer": "Yes"
+      },
+      {
+        "question": "Do you currently smoke?",
+        "answer": "No"
+      },
+      {
+        "question": "If you are an ex-smoker, at what age did you give up smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+        "answer": ""
+      },
+      {
+        "question": "What is your blood type?",
+        "answer": "A"
+      },
+      {
+        "question": "What is your blood Rh (Rhesus) factor?",
+        "answer": "+"
+      },
+      {
+        "question": "Are you left- or right-handed?",
+        "answer": "Right"
+      },
+      {
+        "question": "What is your weight in kg?",
+        "answer": 65
+      },
+      {
+        "question": "What is your height in cm?",
+        "answer": 163
+      },
+      {
+        "question": "What is your main natural hair colour?",
+        "answer": "Blonde"
+      },
+      {
+        "question": "Please, provide details about your hair colour",
+        "answer": "When I was born I had black hair then it turned ash blonde when I was a child. The older I got the darker it went again so I have dark blonde hair now. My hair is thick & naturally wavy."
+      },
+      {
+        "question": "What is your right eye main colour?",
+        "answer": "Green"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your right eye colour.",
+        "answer": "My eye is a green colour on the outside with khaki in the middle"
+      },
+      {
+        "question": "What is your left eye main colour?",
+        "answer": "Green"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your left eye colour.",
+        "answer": "My eye is a green colour on the outside with khaki in the middle"
+      },
+      {
+        "question": "Please, use this field to add any extra information about yourself",
+        "answer": ""
+      }
+    ]
+  ],
+  "genome_report": [
+    {
+      "published": "08/02/2017",
+      "file_source": "PGP",
+      "pgp_hex_id": "uk457688",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/124/download",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "type": "genome_report"
+    }
+  ],
+  "download_url": [
+    {
+      "type": "WGS Fastq (_1)",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_1.fastq.gz"
+    },
+    {
+      "type": "WGS Fastq (_2)",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/008/ERR2122628/ERR2122628_2.fastq.gz"
+    },
+    {
+      "type": "WGS Cram",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122628/21128_2.cram"
+    },
+    {
+      "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/124/download"
+    }
+  ]
+}

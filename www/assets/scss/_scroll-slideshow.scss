@@ -1,0 +1,163 @@
+/* -------------------------------- 
+
+Scroll Slideshow
+
+-------------------------------- */
+
+body {
+
+	&.scroll-slideshow {
+		background-color: #f2f2f2;
+		.navbar { position: absolute; top: 0; }
+	}
+
+	&::before {
+		/* never visible - this is used in jQuery to check the current MQU */ 
+		content: 'mobile';
+		display: none;
+	}
+
+	@include MQU(LG) {
+		
+		&::before {
+			/* never visible - this is used in jQuery to check the current MQU */ 
+			content: 'desktop';
+		}
+	}
+}
+
+body[data-hijacking="on"] {
+	
+	@include MQU(LG) {
+		overflow: hidden;
+	}
+}
+
+.cd-section {
+	height: 100vh;
+
+	.content {
+		position: relative;
+		height: 100vh;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		.inner {
+			position: absolute;
+			width: 100%;
+			left: 0;
+			top: 50%;
+			@include transform(translateY(-50%));
+		}
+	}
+
+	@include MQU(LG) {
+
+		h2 {
+			font-size: 4rem;
+			font-weight: 300;
+		}
+
+		[data-hijacking="on"] & {
+			opacity: 0;
+			visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+
+			> div {
+				visibility: visible;
+			}
+		}
+
+		[data-hijacking="off"] & > div {
+			opacity: 0;
+		}
+
+		[data-animation="rotate"] & {
+			/* enable a 3D-space for children elements */
+			@include perspective(1800px);
+		}
+
+		[data-hijacking="on"][data-animation="rotate"] &:not(:first-of-type) {
+			@include perspective-origin(center 0);
+		}
+
+		[data-animation="scaleDown"] & > div,
+		[data-animation="gallery"] & > div,
+		[data-animation="catch"] & > div {
+			//box-shadow: 0 0 0 rgba($gray-darker, .4);
+		}
+
+		[data-animation="opacity"] &.visible > div {
+			z-index: 1;
+		}
+	}
+}
+
+@include MQU(LG) {
+	.cd-section:first-of-type > div::before {
+		display: none;
+	}
+}
+
+.cd-section > div {
+
+	@include MQU(LG) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		
+		/* Force Hardware Acceleration */
+		@include transform(translateZ(0));
+		@include backface-visibility(hidden);
+
+		[data-hijacking="on"] & {
+			position: absolute;
+		}
+
+		[data-animation="rotate"] & {
+			@include transform-origin(center bottom);
+		}
+	}
+}
+
+.cd-vertical-nav {
+	position: fixed;
+	z-index: 1;
+	list-style: none;
+	padding: 0;
+	right: 3%;
+	@include center(y);
+	display: none;
+	a {
+		display: block;
+		height: 40px;
+		width: 40px;
+		text-align: center;
+		border: none;
+		color: #fff;
+		background-color: $brand-default;
+		> i {
+			font-size: 1.1em;
+			line-height: 40px;
+		}
+
+		&.cd-prev {
+			margin-bottom: 10px;
+		}
+
+		&.inactive {
+			visibility: hidden;
+			opacity: 0;
+			@include transition(opacity 0.2s 0s, visibility 0s 0.2s);
+		}
+	}
+
+	@include MQU(LG) {
+		display: block;
+	}
+}

@@ -1,0 +1,14 @@
+{{define "main"}}
+<div class="container text-center padding-top-3x">
+  <div class="row">
+    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+      <h2 class="text-thin space-top">404 Page not found</h2>
+      <p class="text-xs text-muted text-uppercase space-bottom-2x">You may want to head back to the homepage. If you think something is broken, please do not hesitate to report a problem.</p>
+      <a href="/" class="btn btn-default waves-effect waves-light">Back to Homepage</a>
+      {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/404.png" ) }}
+        <img class="block-center space-top-2x" src="{{.Permalink}}" alt="404">
+      {{end}}
+    </div>
+  </div>
+</div>
+{{end}}

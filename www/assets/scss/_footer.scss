@@ -1,0 +1,200 @@
+//
+// Footer
+// --------------------------------------------------
+
+.footer {
+  width: 100%;
+  background-color: $footer-light-bg;
+  margin-top: floor($line-height-computed * 3.5);
+
+  // Top Footer
+  .top-footer {
+  	width: 100%;
+  	border-top: $footer-border;
+  	border-bottom: $footer-border;
+  	> .container { display: table; }
+  	.tools {
+  		display: table-cell;
+  		vertical-align: middle;
+	  	.cell {
+	  		display: table-cell;
+	  		vertical-align: middle;
+	  		padding: 30px $line-height-computed 25px $line-height-computed;
+	  		&:first-child { padding-left: 0; }
+	  		&:last-child { padding-right: 10px; }
+	  		i, span {
+	  			display: table-cell;
+	  			vertical-align: middle;
+	  		}
+	  		i {
+	  			width: 88px;
+	  			padding-right: 20px;
+					> img { width: 100%; }
+	  		}
+	  	}
+  	}
+  	.subscribe {
+			display: table-cell;
+			vertical-align: middle;
+			width: 50%;
+			padding: 0;
+			> .subscribe-form {
+				display: table;
+  			width: 100%;
+  			padding: 30px $line-height-computed 25px $line-height-computed;
+  			background-color: $footer-subscribe-bg;
+  			> i, form {
+	  			display: table-cell;
+	  			vertical-align: middle;
+  			}
+	  		i {
+	  			width: 88px;
+	  			padding-right: 20px;
+	  			> img { width: 100%; }
+	  		}
+	  		> form {
+	  			position: relative;
+	  		}
+  			.form-control {
+  				margin-bottom: 0;
+  				padding-right: 46px;
+  			}
+				button[type="submit"] {
+					display: block;
+					position: absolute;
+					top: 11px;
+					right: 6px;
+					width: $footer-subscribe-btn-size;
+					height: $footer-subscribe-btn-size;
+					font-size: $footer-subscribe-btn-icon-size;
+					color: $footer-subscribe-btn-color;
+					text-align: center;
+					border: none;
+					background-color: $footer-subscribe-btn-bg;
+					padding-bottom: 5px;
+					> i {
+						display: inline;
+						width: auto;
+						padding: 0;
+						margin-top: -2px;
+					}
+					&:focus { outline: none; }
+				}
+			}
+		}
+		@media #{$desktop} {
+			.tools {
+				display: table;
+				width: 100%;
+			}
+			.subscribe {
+				display: block;
+				width: 100%;
+			}
+		}
+		@media #{$tablet-port} {
+			> .container { display: block; }
+			.tools {
+				display: block;
+				.cell {
+					display: table;
+					width: 100%;
+					padding: 20px 0;
+					&:last-child { padding-right: 0; }
+				}
+			}
+		}
+		@media #{$mobile-land} {
+			.subscribe {
+				> .subscribe-form {
+					padding-left: floor($line-height-computed / 2);
+					padding-right: floor($line-height-computed / 2);
+		  		i {
+		  			width: 75px;
+		  			padding-right: 10px;
+		  		}
+		  		button[type="submit"] { top: 10px; }
+				}
+			}
+		}
+  }
+
+  // Bottom Footer
+  .bottom-footer {
+		padding-top: floor($line-height-computed * 1.5);
+  }
+
+	// Widgets inside footer
+	.widget {
+		border: none;
+		&.widget_text {
+			padding-left: 0;
+		}
+	}
+	.site-logo { margin-bottom: $line-height-computed; }
+
+	// Copyright
+	.copyright {
+		display: table;
+		width: 100%;
+		font-size: $footer-copyright-font-size;
+		padding-bottom: floor($line-height-computed / 1.5);
+		.column	{
+			display: table-cell;
+			vertical-align: middle;
+			width: 50%;
+			&:last-child { text-align: right; }
+		}
+		p {
+			font-weight: 600;
+			margin-bottom: 0;
+			> a {
+				padding: 0;
+				border: none;
+			}
+		}
+		.cards {
+			display: inline-block;
+			width: 187px;
+			> img { width: 100%; }
+		}
+	}
+
+  // Dark Footer
+  &.footer-dark {
+  	.bottom-footer { background-color: $footer-dark-bg; }
+    .widget_text,
+    .copyright, .copyright p,
+    .copyright a, .copyright p > a, {
+    	color: #fff;
+    	font-weight: normal;
+    }
+    .copyright a:hover,
+    .copyright p > a:hover { color: $link-hover-color; }
+		.widget_archive,
+		.widget_categories,
+		.widget_pages {
+			> ul li a {
+	    	color: #fff;
+	    	font-weight: normal;
+			}
+		}
+  }
+
+  @media #{$desktop} {
+  	.widget {
+  		padding-left: 0;
+  		padding-right: 0;
+  		padding-bottom: 0;
+  	}
+  	.copyright {
+  		padding-top: floor($line-height-computed / 1.5);
+  	}
+  }
+  @media #{$tablet-land} {
+  	margin-top: floor($line-height-computed * 3);
+  }
+  @media #{$mobile-land} {
+  	margin-top: floor($line-height-computed * 2.5);
+  }
+}

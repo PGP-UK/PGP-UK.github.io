@@ -1,0 +1,283 @@
+---
+label: Home
+hide_body: true
+fields:
+- type: field_group_list
+  name: slider
+  label: Slider
+  fields:
+  - type: file
+    name: img
+    label: Image
+    description: Select an image here. This should be in the wide format
+  - type: text
+    name: header
+    label: Header
+    description: This is the slider header - it is displayed on top of the image
+  - type: text
+    name: subheader
+    label: Subheader
+    description: This is the slider subheader - it is displayed on top of the image,
+      under the slider header
+  - type: field_group_list
+    name: btns
+    label: Buttons
+    fields:
+    - type: text
+      name: text
+      label: Text
+      description: This is what goes inside the button
+    - type: text
+      name: link
+      label: Link
+      description: This is the link that the button opens.
+    - type: text
+      name: class
+      label: HTML Class
+      description: Add additional HTML classes to the button
+    description: Add action buttons on the slide
+    config:
+      labelField: text
+  description: This is the page slider
+  config:
+    labelField: header
+- type: field_group
+  name: intro_section
+  label: Intro Section
+  fields:
+  - type: text
+    name: header
+    label: Header
+    description: This is the section header
+  - type: text
+    name: subheader
+    label: subheader
+    description: This is the section sub-header
+  - type: textarea
+    name: intro
+    label: intro
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+    description: Enter the Introduction text
+  - type: field_group
+    name: btn
+    label: Buttons
+    fields:
+    - type: text
+      name: text
+      label: text
+      description: The text to display in the button
+    - type: text
+      name: link
+      label: link
+      description: The link the button should open
+    description: ADD BUTTONS UNDER THE MAIN TEXT AREA
+  - type: file
+    name: img
+    label: Image
+    description: Add an Image
+  description: This is the initial section under the slider
+- type: field_group
+  name: main_section
+  label: Main Section
+  fields:
+  - type: text
+    name: header
+    label: header
+    description: The main header for the section
+  - type: text
+    name: subheader
+    label: subheader
+    description: The subheader for the section
+  - type: file
+    name: background_image
+    label: Background Image
+    description: A background image for this section. Parallax effects will applied
+      to this image
+  - type: field_group_list
+    name: sections
+    label: Sections
+    fields:
+    - type: file
+      name: img
+      label: Image
+      description: Add an image - the image size be should squared.
+    - type: text
+      name: header
+      label: header
+      description: The section part header
+    - type: textarea
+      name: text
+      label: Text
+      config:
+        wysiwyg: true
+        schema:
+          format: markdown
+      description: The section part description (ideally should be kept as short as
+        possible)
+    - type: field_group_list
+      name: btns
+      label: Buttons
+      fields:
+      - type: text
+        name: text
+        label: Text
+        description: The text to display in the button
+      - type: text
+        name: link
+        label: Link
+        description: The link the button should open
+      - type: text
+        name: class
+        label: class
+        hidden: true
+        description: Add extra HTML classes
+      description: Add a button under the section part
+      config:
+        labelField: text
+    description: Add a section part here
+    config:
+      labelField: header
+  description: This is the 'Open. Personal. Research.' Section
+- type: field_group
+  name: ambassadors_section
+  label: Ambassadors Section
+  fields:
+  - type: text
+    name: header
+    label: header
+    description: The section header
+  - type: text
+    name: subheader
+    label: subheader
+    description: The section subheader
+  - type: field_group_list
+    name: ambassadors
+    label: Ambassadors
+    fields:
+    - type: file
+      name: img
+      label: Image
+      description: Add an image here
+    - type: text
+      name: header
+      label: header
+      description: The Ambassador's header
+    - type: text
+      name: subheader
+      label: subheader
+      description: The Ambassador's subheader
+    - type: field_group
+      name: video
+      label: Video
+      description: Shown on hover
+      fields:
+      - type: text
+        name: link
+        label: Video Link
+        description: This should be a youtube link
+        default: https://www.youtube.com/watch?v=4Mmd2B8vQSU
+      - type: text
+        name: button_text
+        label: Button text
+        description: Add the text to go in the button.
+        default: Watch Intro Video
+    description: Add an ambassador here
+    config:
+      labelField: header
+  - type: field_group
+    name: action_btn
+    label: Action Buttons
+    fields:
+    - type: text
+      name: link
+      label: link
+      description: The link the button should open
+    - type: text
+      name: icon
+      label: icon
+      hidden: true
+    - type: text
+      name: text
+      label: text
+      description: The text to display in the button
+  description: This is the Ambassador's Section
+- type: field_group
+  name: genome_section
+  label: GenoME section
+  fields:
+  - type: text
+    name: header
+    label: header
+    description: The section header
+  - type: text
+    name: subheader
+    label: subheader
+    description: The section sub-header
+  - type: textarea
+    name: body
+    label: body
+    description: Enter the main section text
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: apple_store_link
+    label: Apple Store App Link
+    description: Enter the direct link to the app
+  description: This is the section advertising the app.
+- type: field_group
+  name: social_media
+  label: Social Media
+  description: Add Social Media Links (used throughout the website)
+  fields:
+  - type: text
+    name: wordpress
+    label: Wordpress
+    description: Add a Wordpress Blog Link
+  - type: text
+    name: youtube
+    label: Youtube
+    description: Add a youtube link
+  - type: text
+    name: twitter
+    label: Twitter
+    description: Add a twitter link
+  - type: text
+    name: email
+    label: email
+    description: Add a contact email address
+- type: field_group
+  name: footer
+  label: Footer
+  description: Config for the Footer
+  fields:
+  - type: textarea
+    name: summary
+    label: summary
+    description: Add the short summary that goes under the logo
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: text
+    name: menu_1_title
+    label: Menu 1 Title
+    description: The title of the first menu section
+  - type: text
+    name: menu_2_title
+    label: Menu 2 Title
+    description: The title of the second menu section
+  - type: text
+    description: The title of the second menu section
+    label: Menu 3 Section
+    name: menu_3_section
+  - type: text
+    name: email_title
+    label: Email Title
+    description: Add the title above the email link
+pages:
+- www/content/_index.md

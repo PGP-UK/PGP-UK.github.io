@@ -1,0 +1,146 @@
+---
+label: Volunteer
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: volunteer
+  hidden: true
+- type: text
+  name: header
+  label: header
+  description: This is the page header
+- type: text
+  name: subheader
+  label: subheader
+  description: This is the page subheader
+- type: textarea
+  name: lead_paragraph
+  label: lead_paragraph
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: This text is found at the top of the page and is slightly larger than
+    the text size of the main body
+- type: textarea
+  name: secondary_lead_paragraph
+  label: secondary_lead_paragraph
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: This text is found at the top of the page and is slightly larger than
+    the text size of the main body
+- type: field_group
+  name: requirement_box
+  label: Requirements Box
+  fields:
+  - type: text
+    name: title
+    label: title
+    description: Enter the Box Title
+  - type: list
+    name: list_text
+    label: list_text
+    default: []
+    description: Add a requirement
+  - type: field_group
+    name: btns
+    label: Buttons
+    fields:
+    - type: text
+      name: text
+      label: text
+      description: The text to display in the button
+    - type: text
+      name: link
+      label: link
+      description: The link the button should open
+    description: Add a button
+  description: The blue box listing the PGP enrolment requirements
+- type: field_group
+  name: documents
+  label: Documents
+  fields:
+  - type: text
+    name: title
+    label: title
+    description: Enter the section title
+  - type: text
+    name: subheader
+    label: subheader
+    description: Enter the section subheader
+  - type: textarea
+    name: lead_paragraph
+    label: lead_paragraph
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+    description: This text is found at the top of the page and is slightly larger
+      than the text size of the main body
+  - type: textarea
+    name: note_text
+    label: note_text
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+    description: Enter the "Please Note" text that goes inside the alert box
+  description: This is the initial section of the PGP-UK Participation Documents
+- type: field_group
+  name: enrollment_procedure
+  label: Enrolment Process
+  fields:
+  - type: text
+    name: title
+    label: title
+    description: Enter the section title
+  - type: textarea
+    name: intro_text
+    label: Intro Section
+    description: Enter the section's intro text
+  - type: textarea
+    name: details
+    label: Enrolment Process details
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+    description: Detail the enrolment process here
+  description: The Enrolment Process Section
+- type: field_group_list
+  name: sections
+  label: Sections
+  fields:
+  - type: text
+    name: header
+    label: header
+    description: The section header
+  - type: textarea
+    name: content
+    label: content
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+  - type: field_group
+    name: btn
+    label: Button
+    fields:
+    - type: text
+      name: text
+      label: text
+      description: The text to display in the button
+    - type: file
+      name: link
+      label: File
+      description: Select a file here
+    description: Add a button
+  description: Here add sections at the bottom of the page
+  config:
+    labelField: header
+pages:
+- www/content/volunteer.md

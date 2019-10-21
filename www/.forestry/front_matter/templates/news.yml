@@ -1,0 +1,66 @@
+---
+label: News
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: news
+- type: text
+  name: header
+  label: header
+  description: This is the page header
+- type: text
+  name: subheader
+  label: subheader
+  description: This is the page subheader
+- type: textarea
+  name: lead_paragraph
+  label: Lead Paragraph
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  description: This text is found at the top of the page and is slightly larger than
+    the text size of the main body
+- type: field_group_list
+  name: news_items
+  label: News Items
+  fields:
+  - type: text
+    name: date
+    label: date
+    description: Enter the date here
+  - type: textarea
+    name: details
+    label: Details
+    config:
+      wysiwyg: true
+      schema:
+        format: markdown
+    description: Provide further details about the news item
+  - type: textarea
+    name: link
+    label: Link
+    description: Add a link to the news item
+  - type: select
+    name: type
+    config:
+      source:
+        type: simple
+      options:
+      - News Article
+      - News Video
+      - News Audio
+      - Youtube Video
+      - PDF Presentation
+      - Research Paper
+      - Important Announcement
+    label: Type
+    description: Select the news item type
+  config:
+    labelField: details
+  description: Add news items here
+pages:
+- www/content/news.md

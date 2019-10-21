@@ -1,0 +1,83 @@
+//
+// Comments
+// --------------------------------------------------
+
+.comments-area h4 {
+	margin-bottom: floor($line-height-computed * 1.4) !important;
+}
+.comment {
+	margin-bottom: floor($line-height-computed * 1.5);
+	&.depth-2 {
+		margin-top: floor(($line-height-computed * 1.2));
+		padding-left: $comment-author-ava-size + 20;
+	}
+	.comment-body {
+		border-bottom: 1px solid $hr-border;
+	}
+	.comment-meta {
+		display: table;
+		width: 100%;
+		font-size: $font-size-small;
+		color: $post-meta-color;
+		margin-bottom: floor($line-height-computed / 1.2);
+		.column {
+			display: table-cell;
+			vertical-align: middle;
+			&:last-child { text-align: right; }
+		}
+		.comment-autor,
+		.comment-date,
+		.comment-reply {
+	    display: inline-block;
+	    font-size: $post-meta-font-size;
+	    margin-right: 18px;
+	    > i {
+	      display: inline-block;
+	      vertical-align: middle;
+	      font-size: $post-meta-icon-size;
+	      color: $post-meta-icon-color;
+	      margin-top: -5px;
+	      margin-right: 4px;
+	      &.icon-reply {
+	      	font-size: floor($post-meta-icon-size * 1.2);
+	      }
+	    }
+		}
+		.comment-date { margin-right: 0; }
+	}
+
+	@media screen and (max-width: 600px) {
+		&.depth-2 {
+			padding-left: 25px;
+		}
+	}
+}
+
+.comment-respond {
+	padding: $line-height-computed;
+	border: 1px solid $hr-border;
+	margin-top: floor($line-height-computed * 2.5);
+	.logged-in-as {
+		font-size: $font-size-xs;
+		padding-bottom: 10px;
+	}
+	.form-submit {
+		margin-bottom: 0;
+		> .btn { margin-bottom: 0; }
+	}
+}
+.comment-reply-title small {
+  font-size: $font-size-xs;
+  font-style: normal;
+}
+.comment-navigation a,
+.comment-navigation span {
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.comment-navigation span {
+  color: $link-hover-color;
+  font-weight: bold;
+}

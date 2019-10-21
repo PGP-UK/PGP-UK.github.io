@@ -1,0 +1,13 @@
+[
+  {
+    "published": "05/19/2015",
+    "file_source": "Participant",
+    "pgp_hex_id": "ukB08E17",
+    "date": "2011-02-24",
+    "description": "",
+    "download_url": "https://my.personalgenomes.org.uk/user_file/download/101",
+    "data_type": "23andMe",
+    "name": "23andMe raw genotype data for Stuart Harris",
+    "type": "genotype"
+  }
+]

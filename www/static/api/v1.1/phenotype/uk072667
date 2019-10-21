@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk072667"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Male"
+    },
+    {
+      "question": "Gender",
+      "answer": "Male"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "11/02/1987"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": "No"
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": 25
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": 3
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "O"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "+"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Ambidextrous"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 88
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 187
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "Very blonde at birth, at age two hair turned brown and went from straight to curly"
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Hazel"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "Multicoloured, light grey outer ring with very prominant amber center. Amber pattern is not spherical or symetrical"
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Hazel"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "Multicoloured, light grey outer ring with very prominant amber center. Amber pattern is not spherical or symetrical"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": ""
+    }
+  ]
+]

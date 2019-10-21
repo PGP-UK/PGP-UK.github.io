@@ -1,0 +1,419 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Colors
+//
+//## Gray and brand colors for use across Theme.
+
+$gray-darker:            #000;
+$gray-dark:            	 #333;
+$gray:                   #666;
+$gray-light:             #808080;
+$gray-lighter:           #d9d9d9;
+
+$brand-default:         #2895f1;
+$brand-primary:         #1bdb68;
+$brand-info:		        #62b7ff;
+$brand-success:         #19c55e;
+$brand-warning:         #d2a052;
+$brand-danger:          #e97961;
+
+$default-bg: 						#e7f3fd;
+$primary-bg: 						#ddfae8;
+$gray-bg: 							#f6f6f6;
+
+$body-bg: 							#fff;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-base: 			"Source Sans Pro", Helvetica, Arial, sans-serif;
+$text-color: 						$gray-darker;
+
+$font-size-base:          16px;
+$font-size-lead:          floor(($font-size-base * 1.25)); // ~20px
+$font-size-large: 				floor(($font-size-base * 1.125)); // ~18px
+$font-size-small: 				floor(($font-size-base * 0.875)); // ~14px
+$font-size-xs:         		floor(($font-size-base * 0.75)); // ~12px
+$font-size-h1:            floor(($font-size-base * 3.5)); // ~56px
+$font-size-h2:            floor(($font-size-base * 3)); // ~48px
+$font-size-h3:            floor(($font-size-base * 2.25)); // ~36px
+$font-size-h4:            floor(($font-size-base * 1.5)); // ~24px
+$font-size-h5:            $font-size-lead; // ~18px
+$font-size-h6:            $font-size-base; // ~16px
+
+$headings-color:	 				$gray-dark;
+
+$font-weight-h1:          600;
+$font-weight-h2:          600;
+$font-weight-h3:          600;
+$font-weight-h4:          600;
+$font-weight-h5:          600;
+$font-weight-h6:          600;
+
+$font-style-h1:          normal;
+$font-style-h2:          normal;
+$font-style-h3:          normal;
+$font-style-h4:          normal;
+$font-style-h5:          normal;
+$font-style-h6:          normal;
+
+$text-transform-h1:      none;
+$text-transform-h2:      none;
+$text-transform-h3:      none;
+$text-transform-h4:      none;
+$text-transform-h5:      none;
+$text-transform-h6:      none;
+
+$quote-font-size: 				$font-size-lead;
+$quote-text-transform: 		none;
+$quote-font-weight: 			600;
+$quote-font-style: 				italic;
+$quote-font-color:				$gray-darker;
+$quote-bg-color: 					$primary-bg;
+$quote-author-font-color: $gray-light;
+$quote-share-btn-size: 		48px;
+$quote-share-font-size: 	24px;
+$quote-share-btn-bg: 			#55acee;
+$quote-share-btn-color: 	#fff;
+
+$line-height-base:        1.5;
+$headings-line-height:   	1.3;
+$line-height-computed:    ceil(($font-size-base * $line-height-base)); // ~24px
+
+$link-color: 							$gray-darker;
+$link-hover-color: 				$brand-default;
+
+$text-gray: 							$gray;
+$text-muted: 							$gray-light;
+
+$hr-border: 							$gray-lighter;
+
+
+//== Forms
+//
+
+$input-height:								48px;
+$input-sm-height:							36px;
+$input-font-size: 						$font-size-base;
+$input-sm-font-size: 					$font-size-small;
+$input-bg: 										#fff;
+$input-focus-bg: 							#faffbd;
+$input-color: 								$gray-dark;
+$input-border-color: 					$hr-border;
+$input-color-placeholder: 		$gray;
+$checkbox-radio-color: 				$brand-default;
+$checkbox-radio-label-color:  $gray-dark;
+$disabled-color: 							darken($gray-lighter, 10%);
+
+//== Buttons
+//
+
+$btn-font-size: 							$font-size-base;
+$btn-sm-font-size: 						$font-size-small; // 13px;
+$btn-font-weight: 						600;
+$btn-font-color: 							#fff;
+
+$btn-height: 									48px;
+$btn-sm-height: 							36px;
+
+$btn-default-bg: 							$brand-default;
+$btn-primary-bg: 							$brand-primary;
+$btn-success-bg: 							$brand-success;
+$btn-info-bg: 								$brand-info;
+$btn-warning-bg: 							$brand-warning;
+$btn-danger-bg: 							$brand-danger;
+$btn-light-bg: 								#fff;
+
+$btn-3d-font-size:		 				floor($font-size-base * 0.9375); //15px;
+$btn-3d-border-radius: 				6px;
+
+$scroll-top-btn-size: 				48px;
+$scroll-top-btn-color: 				$brand-default;
+$scroll-top-btn-bg: 					$body-bg;
+$scroll-top-btn-border: 			1px solid $hr-border;
+$scroll-top-btn-hover-color: 	#fff;
+$scroll-top-btn-hover-bg:			$scroll-top-btn-color;
+
+$market-btn-appstore-bg: 			#454545;
+$market-btn-google-bg: 				#f4b400;
+$market-btn-windows-bg: 			#00bcf2;
+
+
+//== Modals
+//
+
+$zindex-modal: 								9999;
+$zindex-modal-background: 		9990;
+$modal-width: 								410px;
+$modal-content-bg: 						#fff;
+$modal-backdrop-bg: 					$brand-default;
+$modal-backdrop-opacity:			.9;
+
+
+//== Social Buttons
+//
+
+$social-btn-size: 						36px;
+$social-bar-zindex: 					$zindex-modal - 50;
+
+
+//== Tables
+//
+
+$table-border-color: 					$hr-border;
+$table-cell-padding:					14px 15px;
+$table-bg-accent: 						$gray-bg ;
+
+
+//== Widgets
+//
+
+$widget-border: 										1px solid $gray-lighter;
+$widget-title-font-size: 						$font-size-small;
+$widget-title-color: 								$gray-light;
+$widget-title-icon-font-size: 			floor($font-size-base * 0.6875); // 11px
+$widget-title-icon-color: 					$brand-default;
+
+$widget-link-font-size: 						$font-size-small; // 14px;
+$widget-link-color:									$gray-darker;
+$widget-link-hover-color:						#fff;
+$widget-link-border-color:					$brand-primary;
+$widget-link-hover-bg:							$brand-primary;
+$widget-count-color: 								$gray-light;
+
+$widget-search-height: 							69px;
+$widget-search-bg: 									$default-bg;
+
+$widget-posts-thumb-width: 					60px;
+$widget-posts-title-font-size: 			$font-size-small;
+
+$widget-tags-font-size: 						$font-size-small;
+$widget-tags-height: 								$line-height-computed;
+$widget-tags-color: 								#fff;
+$widget-tags-bg: 										$brand-default;
+$widget-tags-hover-bg:							darken($widget-tags-bg, 10%);
+
+
+//== Navbar / Logo
+//
+
+$navbar-zindex: 					$zindex-modal - 100;
+$navbar-bg: 							#fff;
+$navbar-tool-btn-size: 		$btn-sm-height;
+$navbar-tool-btn-color: 	$brand-default;
+$navbar-tool-btn-border:  1px solid $hr-border;
+
+$logo-width: 							450px;
+
+$navi-border: 							1px solid $hr-border;
+$navi-bg: 									#fff;
+$navi-link-font-size: 			$font-size-base; // 16px;
+$navi-link-color: 					$link-color;
+$navi-link-icon-size: 			47px;
+$navi-link-icon-color:  		$brand-default;
+$navi-link-hover-bg: 				$brand-default;
+$navi-link-hover-color: 		#fff;
+
+$submenu-width: 						265px;
+$megamenu-width: 						700px;
+$submenu-bg: 								$navi-link-hover-bg;
+$submenu-link-font-size: 		$font-size-small; // 14px;
+$submenu-link-color:				#fff;
+$submenu-link-border-color:	$brand-primary;
+$submenu-link-hover-bg:			$brand-primary;
+
+$navi-toggle-width: 				36px;
+$navi-toggle-height: 				47px;
+$navi-toggle-color: 				$brand-default;
+
+
+//== Page Title / Breadcrumbs
+//
+
+$page-title-bg:   						$brand-default;
+$page-title-color:					 	#fff;
+$breadcrumb-border: 					1px solid $hr-border;
+$breadcrumb-delimiter-color:  $brand-default;
+
+
+//== Sidebar
+//
+
+$sidebar-max-width: 					300px;
+
+
+//== Tabs
+//
+
+$nav-tabs-font-size:								$font-size-base;
+$nav-tabs-link-color: 							$gray-darker;
+$nav-tabs-link-hover-color: 				$brand-primary;
+$nav-tabs-border-color:       			$gray-lighter;
+$nav-tabs-link-active-border-color: $brand-primary;
+
+
+//== Filters
+//
+
+$nav-filters-color: 				$brand-default;
+$nav-filters-border-color:  $nav-filters-color;
+$nav-filters-bg: 						$nav-filters-color;
+
+
+//== Panels and Accordions
+//
+
+$panel-heading-font-size:  	$font-size-base;
+$panel-heading-font-color:  $brand-default;
+$panel-default-border: 			$gray-lighter;
+
+
+// == Shortcodes
+//
+
+// Box with icon
+$bwi-max-width: 								380px;
+$bwi-bg: 												#fff;
+$bwi-icon-width: 								96px;
+
+// Image Box
+$image-box-max-width: 					300px;
+$image-box-border-hover-color: 	$brand-primary;
+
+// Testimonials
+$testimonial-max-width:					380px;
+$testimonial-bg: 								#fff;
+$testimonial-author-ava-size:		96px;
+
+// Pricing Plans
+$pricing-max-width: 						400px;
+$pricing-border-color: 					$brand-primary;
+$pricing-icon-size: 						68px;
+
+// Full Width Sections
+$fw-section-bg: 									#fff;
+$fw-section-overlay-color:   			$gray-dark;
+$fw-section-overlay-light-color:  #fff;
+$fw-section-border-color:   			$gray-lighter;
+
+// Video Popup Button
+$video-popup-btn-size: 					150px;
+$video-popup-btn-sm-size: 			84px;
+
+// Progress Bars
+$pb-height: 						48px;
+$pb-bg: 								rgba($brand-default, .1);
+
+// Logo Carousel
+$logo-carousel-item-width: 			170px;
+
+// Team
+$teamate-max-width: 						300px;
+
+// Countdown
+$countdown-item-max-width: 			170px;
+
+// Counters (Animated Digits)
+$counter-max-width: 						400px;
+$counter-icon-width: 						60px;
+
+// Video Tile
+$video-tile-max-width: 					300px;
+$video-tile-btn-size: 					120px;
+
+// Gallery
+$gallery-border-color: 					$brand-primary;
+$gallery-overlay-color: 				$brand-default;
+$gallery-icon-size: 						36px;
+
+// Portfolio
+$portfolio-border-color: 				$brand-primary;
+$portfolio-overlay-color: 			$brand-default;
+
+
+//== Shop
+//
+
+$shop-tile-bg: 					#fff;
+$shop-tile-border: 			$gray-lighter;
+
+
+//== Tooltips
+//
+
+$tooltip-opacity:    		1;
+$tooltip-max-width:  		200px;
+$tooltip-bg: 				 		$gray-darker;
+$tooltip-arrow-color: 	$tooltip-bg;
+
+
+//== Comments
+//
+
+$comment-author-ava-size: 	70px;
+
+
+//== Footer
+//
+
+$footer-light-bg: 								#fff;
+$footer-dark-bg: 									#111f2b;
+$footer-border: 									1px solid $gray-lighter;
+$footer-subscribe-bg:							$default-bg;
+$footer-subscribe-btn-size: 			36px;
+$footer-subscribe-btn-icon-size:	$font-size-base;
+$footer-subscribe-btn-color: 			#fff;
+$footer-subscribe-btn-bg: 				$brand-primary;
+$footer-subscribe-btn-hover-bg: 	darken($brand-primary, 10%);
+$footer-copyright-font-size:			$font-size-small;
+
+
+//== Posts
+//
+
+$post-tile-bg: 												#fff;
+$post-tile-border: 										1px solid $gray-lighter;
+$post-title-font-size: 								$font-size-h4;
+$post-meta-font-size: 								$font-size-small;
+$post-meta-color: 										$gray-light;
+$post-meta-icon-color: 								$link-hover-color;
+$post-meta-icon-size: 								floor($font-size-base * 0.6875); // 11px
+$post-pagination-color: 							$gray-darker;
+$post-pagination-hover-color:  				$brand-default;
+$post-pagination-active-bg:  					$brand-default;
+
+
+//== Portfolio
+//
+
+$tile-overlay-color: 									$brand-success;
+$tile-overlay-opacity: 								.5;
+$tile-content-bg: 										$gray-darker;
+$tile-gallery-icon-size: 							34px;
+$tile-gallery-icon-color: 						#fff;
+$tile-title-font-size: 								floor(($font-size-base * 2)); // ~ 32px
+
+
+//== Carousel
+//
+
+$carousel-navs-size: 			36px;
+$carousel-navs-color: 		$brand-default;
+$carousel-dots-size: 			12px;
+$carousel-dots-color: 		$brand-default;
+$carousel-dots-opacity: 	.3;
+
+
+//== Media queries (responsive breackpoints)
+//## Descktop, Tablet, Mobile
+
+$desktop:   		   "screen and (max-width: 1200px)";
+$tablet-land:      "screen and (max-width: 991px)";
+$tablet-port:    	 "screen and (max-width: 768px)";
+$mobile-land:		 	 "screen and (max-width: 480px)";
+$mobile-port:		 	 "screen and (max-width: 360px)";
+$nav-collapse: 		 $tablet-land;

@@ -1,0 +1,310 @@
+## PGP-UK Entrance Questions
+
+### Human Subjects Research Literacy
+
+1. Which of the following best defines the "informed consent process"? (choose the best answer)
+
+  - [ ] A one-time-event when the potential subject considers information necessary to make an informed decision about whether to participate.
+  - [ ] A written confirmation of an agreement about the content and terms of the proposed activity.
+  - [ ] A binding contract that permits the investigator to use the subjects as a "guinea pig" indefinitely.
+  - [ ] A process permitting the subject to assess whether to participate, before a study starts, and revisited as needed to reassess willingness to continue.
+  - [ ] c and d are correct.
+    <br>
+    <br>
+2. What are the ethical principles espoused in the Belmont Report? (choose the best answer)
+
+  - [ ] Liberty, equality, and fraternity
+  - [ ] Informed consent, IRB approval, and continuing review
+  - [ ] Beneficence, respect for persons, and justice
+  - [ ] Justice, autonomy, and liberty.
+  - [ ] Beneficence, non-maleficence, and the Hippocratic Oath.
+
+
+
+
+
+
+### PGP Protocols Literacy
+
+####  Enrollment Procedures
+
+1. In order to enroll in the PGP individuals may need to travel to a designated medical center where a trained health professional will collect tissue samples including skin or blood. (choose the best answer)
+
+  - [ ] True
+
+  - [ ] False
+    <br>
+    <br>
+
+2. Your participation in the Personal Genome Project is: (choose the best answer)
+
+  -[ ] Required by law
+  -[ ] Voluntary
+  -[ ] Automatic as long as you are able to pass the entrance exam
+    <br>
+    <br>
+
+3. If you are enrolled, you can withdraw from the study: (choose the best answer)
+
+  -[ ] after you receive permission from the Principal Investigator
+  -[ ] at any time
+  -[ ] never
+  -[ ] after 5 years
+    <br>
+    <br>
+
+4. The PGP staff may decide to end your participation in this study: (choose the best answer)
+
+  -[ ] At any time
+  -[ ] Never
+  -[ ] Only after obtaining your permission
+
+
+####  Risks And Benefits
+
+1. Which of the following are potential risks of participation? (choose all that apply)
+
+  - [ ] Loss of employment or employability
+
+  - [ ] Synthetic DNA identical to yours could be made and planted at a crime scene
+
+  - [ ] Inferences of your paternity or genealogy
+
+  - [ ] Claims about your propensity for traits or diseases (including diseases without cures or treatments)
+
+  - [ ] Potential financial costs of medical care, such as seeking diagnostic tests or medical advice, motivated by participation in this project
+
+  - [ ] Not all potential risks of participation are known
+    <br>
+    <br>
+
+2. Even though participants are not provided with either clinical data or medical advice as part of their participation in the PGP, under what circumstances might participants be exposed to medical advice or interpretations based on their PGP data? (choose the best answer)
+
+  - [ ] People unaffiliated with the PGP use the PGP's public data to generate medical advice or recommendations, which may or may not be based on scientifically demonstrated associations between genes and traits.
+  - [ ] A scientist, researcher, physician, PGP staff member, or other persons are quoted in a newspaper or magazine about genetic variations that are generally associated with certain medical conditions or traits.
+  - [ ] Claims about medical conditions, such as predisposition to disease, and/or advice or recommendations about medical care are made by third parties about specific PGP participants in an online forum, blog or other context.
+  - [ ] All of the above are correct.
+    <br>
+    <br>
+
+3. The genetic, trait, and medical information posted on the study website may have relevance to your family members. The PGP recommends that you discuss risks associated with your participation in the PGP with immediate family members: (choose the best answer)
+
+  - [ ] Prior to enrollment
+  - [ ] Never
+  - [ ] Only after a problem arises due to your participation in this study
+    <br>
+    <br>
+
+4. True or False: DNA sequences posted on the study website, including yours if you enroll, may contain errors. (choose the best answer)
+
+  - [ ] True
+  - [ ] False
+    <br>
+    <br>
+
+5. True or False: If you request to have your data removed from the study after your data are posted on the internet or shared with the research community, it is possible to ensure that your data will be fully removed from all research (PGP and/or third party) and from the public domain. (choose the best answer)
+
+  - [ ] True
+  - [ ] False
+    <br>
+    <br>
+
+6. True or False: Participants will not be receiving clinical data from the PGP and the DNA sequences you receive may not have any useful medical purposes for you. (choose the best answer)
+
+  - [ ] True
+  - [ ] False
+    <br>
+    <br>
+
+7. The PGP will provide the following medical services to all participants: (choose the best answer)
+
+  - [ ] medical advice
+  - [ ] consultation with medical staff about your personal health or medical issues
+  - [ ] a and b are correct.
+  - [ ] None of the above. The PGP will not provide medical services to participants.
+    <br>
+    <br>
+
+8. True or false: It is possible that someone could use your DNA or cells to falsely implicate you in improper activities or pursue unexpected reproductive uses of your cells including production of human clones.
+
+  - [ ] True
+  - [ ] False
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+9. All of the following statements are TRUE except one. (choose the statement that is FALSE)
+
+  - [ ] By participating in this study I can expect to find that I am a carrier for several recessive genetic disorders which may lead me to seek confirmatory testing for myself and genetic carrier testing of my partner, future partners, and family members for assessment of reproductive risk and family planning.
+  - [ ] In general, when two partners are carriers for the same recessive genetic disorder, the risk of being affected for each pregnancy is 25%.
+  - [ ] No results from the PGP, including carrier status, should be used for medical decision making unless results are verified with repeat clinical sequencing through consultation with a health care professional.
+  - [ ] Follow up medical costs for myself, my partner, or family members, resulting from participation in the PGP are not covered by the PGP and may not be covered by my health insurance provider.
+  - [ ] Healthy participants with no significant family history of disease are unlikely to find they are carriers for any genetic disorder.
+
+
+<br>
+
+### Genetic Literacy Description
+
+#### Nature of Genetic Material
+
+1. What is the relationship among genes, DNA, and chromosomes in humans? (choose the best answer)
+
+  - [ ] Chromosomes are found within both genes and DNA.
+  - [ ] Genes are composed of DNA and lie within chromosomes.
+  - [ ] There are no differences between genes, DNA, and chromosomes.
+  - [ ] Genes are found only in DNA and not chromosomes.
+  - [ ] Chromosomes are composed of genes but not DNA.
+    <br>
+    <br>
+
+2. An individual is found to have an inherited mutation in a gene associated with breast cancer. In which cells is this form of the gene located? (choose the best answer)
+
+  - [ ] Only in cells of the breast where cancer occurred.
+  - [ ] Only in cells of both breasts.
+  - [ ] Only in those cells found in females.
+  - [ ] Only in the cells of the breast and ovaries.
+  - [ ] All the cells of the individual.
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+3. Which of the following is a characteristic of mutations in DNA? (choose the best answer)
+
+  - [ ] They are usually expressed and result in positive changes for the individual.
+  - [ ] They are usually expressed and cause significant problems for the individual.
+  - [ ] Those that occur in the somatic cells of a parent are usually passed on to their children.
+  - [ ] They usually occur at very high rates in most genes.
+  - [ ] They result in different versions of a gene within the population.
+    <br>
+    <br>
+
+4. Your muscle cells, nerve cells, and skin cells have different functions because: (choose the best answer)
+
+  - [ ] each kind of cell contains different kinds of genes.
+  - [ ] these cells are located in different areas of the body.
+  - [ ] different genes are active in different cells.
+  - [ ] each kind of cell contains different numbers of genes.
+  - [ ] each kind of cell has experienced different mutations.
+    <br>
+    <br>
+
+5. How much genomic material exists in a typical human cell? (choose the best answer)
+
+  - [ ] About 6 billion base pairs
+  - [ ] About 3 billion base pairs from the mother and 3 billion base pairs from the father
+  - [ ] About 20,500 protein coding genes, a copy from each parent.
+  - [ ] 23 chromosome pairs plus mitochondrial DNA
+  - [ ] All of the above are correct.
+
+  ​
+
+
+#### Transmission
+
+1. Cystic fibrosis (CF) is a recessive disorder, meaning that an individual must have two copies of an abnormal CF gene to be affected. What is the probability that a child of two individuals who each have one copy of the abnormal gene will be affected with CF? (choose the best answer)
+
+  - [ ] 0%
+  - [ ] 25%
+  - [ ] 50%
+  - [ ] 66%
+  - [ ] 75%
+    <br>
+    <br>
+
+2. Which of the following is proof that at least one parent is NOT the biological parent? (choose the best answer)
+
+  - [ ] The child has blue iris color while both parents have dark brown.
+  - [ ] The child's DNA differs from the father's DNA at more positions than from the mother's DNA.
+  - [ ] Out of a dozen variable positions in the genome assayed the child has 3 or more which differ from both the maternal and paternal types.
+  - [ ] Over the whole genome the child has thousands of differences relative to the father's DNA.
+    <br>
+    <br>
+
+
+#### Gene Expression and Regulation
+
+1. Adult height in humans is partially determined by our genes. When environmental conditions are held constant, humans have a wide variety of heights (not just short, medium, and tall). Height is probably influenced by: (choose the best answer)
+
+  - [ ] one gene with two alleles.
+  - [ ] a single recessive gene.
+  - [ ] a single dominant gene.
+  - [ ] several genes.
+  - [ ] only paternal genes.
+    <br>
+    <br>
+
+2. Our understanding of how genes function indicates that: (choose the best answer)
+
+  - [ ] there are no interactions among genes in producing individual traits.
+  - [ ] gene products can be carbohydrates, fats, or proteins.
+  - [ ] genes do not produce specific products but code directly for individual traits.
+  - [ ] genes code for proteins, which in turn produce individual traits.
+    <br>
+    <br>
+
+3. At what times during an individual's life does the environment influence the expression of his or her genes? (choose the best answer)
+
+  - [ ] Beginning at conception and lasting throughout life.
+  - [ ] Beginning at birth and lasting throughout life.
+  - [ ] Beginning at birth and lasting until adulthood.
+  - [ ] Occurring only during key stages of life such as puberty and menopause.
+  - [ ] Environment has little or no effect on how genes are expressed.
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+4. If an individual has a genetic test for a mutation causing a particular disease, and the result is positive, what will that most likely mean? (choose the best answer)
+
+  - [ ] The individual will definitely exhibit the disease, regardless of whether it is due to a dominant or recessive mutation.
+
+  - [ ] The individual will definitely exhibit the disease only if it is due to a dominant mutation.
+
+  - [ ] A positive test for the mutation indicates that the individual already has the disease.
+
+  - [ ] It depends upon the disease involved, as testing positive for some mutations only indicates a higher risk for getting the disease.
+
+  - [ ] The environment during the individual's development will be the primary determinant of whether the individual exhibits the disease.
+
+
+
+#### Genetics & Society
+
+1. Which of the following is a current benefit of the application of genetics and genetic technology to health care? (choose the best answer)
+
+  - [ ] The ability to significantly increase human life expectancy.
+  - [ ] The ability to eliminate complex diseases like cancer.
+  - [ ] The creation of inexpensive and easily administered drugs.
+  - [ ] The ability to identify individuals and groups who are at increased risk of disease.
+  - [ ] The ability to routinely use gene therapy to cure genetic diseases.
+    <br>
+    <br>
+
+2. Huntington's disease is a genetic disorder caused by a dominant gene. Symptoms begin in adulthood and the disease is ultimately fatal. What is an ethical dilemma presented by Huntington's disease when a parent is diagnosed with the disease? (choose the best answer)
+
+  - [ ] Whether that parent should be tested for the gene.
+  - [ ] Whether the other parent should be tested for the gene.
+  - [ ] Whether and when any of the children should be tested for the gene.
+  - [ ] Whether the parent should be treated for the disease.
+  - [ ] Whether that parent should be told s/he has Huntington's disease.
+    <br>
+    <br>
+
+3. What is an example of an unintended consequence when current genetic technologies are used? (choose the best answer)
+
+  - [ ] Determining the genetic make-up of an early embryo through preimplantation genetic diagnosis.
+  - [ ] Determining the genetic make-up of a new baby through newborn genetic screening program.
+  - [ ] Learning about a different paternity of a child upon testing for a genetic disorder.
+  - [ ] Learning the carrier status of individuals who request adult genetic screening.
+  - [ ] Finding a chromosome abnormality in a fetus where the mother has sought prenatal diagnosis.
+
+
+

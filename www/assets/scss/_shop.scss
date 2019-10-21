@@ -1,0 +1,304 @@
+//
+// Shop Styles
+// --------------------------------------------------
+
+// Tile
+.shop-tile {
+  display: table;
+  width: 100%;
+  background-color: $shop-tile-bg;
+  border: 1px solid $shop-tile-border;
+  margin-bottom: 30px;
+  .thumbnail,
+  .description {
+		display: table-cell;
+		vertical-align: top;
+  }
+  .thumbnail {
+    position: relative;
+  	width: 30%;
+    padding: 20px;
+    border: none;
+    border-right: 1px solid $shop-tile-border;
+    > img {
+      display: block;
+      width: 100%;
+      max-width: 128px;
+      margin: auto;
+    }
+  }
+  .description {
+  	width: 70px;
+  	padding: 0 $line-height-computed 10px $line-height-computed;
+		.shop-meta {
+			display: table;
+			width: 100%;
+	  	border-bottom: 1px solid $shop-tile-border;
+	  	margin-bottom: $line-height-computed;
+			.column {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: right;
+				padding: 12px 0 12px 18px;
+				&:first-child {
+					text-align: left;
+					padding-left: 0;
+				}
+				.btn { margin: 0; }
+			}
+		  span:not(.btn), a:not(.btn) {
+		    display: inline-block;
+		    font-size: $post-meta-font-size;
+		    font-weight: normal;
+		    > i {
+		      display: inline-block;
+		      vertical-align: middle;
+		      font-size: $post-meta-icon-size;
+		      color: $post-meta-icon-color;
+		      margin-top: -5px;
+		      margin-right: 1px;
+		    }
+		  }
+		  span {
+		    color: $post-meta-color;
+		    margin-right: 5px;
+		  }
+		}
+    .price,
+    .subtotal {
+      color: $text-color !important;
+      font-size: $font-size-large !important;
+      font-weight: 600 !important;
+      margin: 0 !important;
+      > span {
+        font-size: $font-size-large !important;
+        color: $gray;
+        font-weight: normal !important;
+      }
+    }
+    .old-price {
+      font-size: $font-size-large !important;
+      color: $gray;
+      text-decoration: line-through;
+    }
+  }
+  .shop-title {
+  	font-size: $font-size-h4;
+  	margin-bottom: floor($line-height-computed / 1.5);
+  	> a { border: none; }
+  }
+  p { color: $gray; }
+  .count {
+    margin-top: floor($line-height-computed / 1.5);
+    > .label {
+      margin-right: 10px;
+    }
+  }
+  @media screen and(max-width: 520px) {
+  	display: block;
+	  .thumbnail,
+	  .description {
+			display: block;
+			width: 100% !important;
+      text-align: center;
+			border: none;
+	  }
+	  .description .shop-meta {
+	  	display: block;
+	  	.column {
+	  		display: block;
+	  		width: 100% !important;
+	  		text-align: center !important;
+	  		padding: 0 0 12px 0!important;
+	  	}
+	  }
+  }
+}
+
+// Cart
+.shopping-cart {
+  .shop-tile .thumbnail {
+    width: 28%;
+    > img {
+      max-width: 110px;
+      margin: auto;
+    }
+  }
+  .shop-tile .shop-meta .column:last-child {
+    width: 50px;
+  }
+}
+
+// Shop Labels
+.shop-label {
+  position: absolute !important;
+  top: 12px;
+  left: 12px;
+  margin: 0 !important;
+  &.label-default {
+    @include shop-label-variant($brand-default);
+  }
+  &.label-primary {
+    @include shop-label-variant($brand-primary);
+  }
+  &.label-infp {
+    @include shop-label-variant($brand-info);
+  }
+  &.label-success {
+    @include shop-label-variant($brand-success);
+  }
+  &.label-warning {
+    @include shop-label-variant($brand-warning);
+  }
+  &.label-danger {
+    @include shop-label-variant(#f12853);
+  }
+}
+
+// shop Single
+.shop-single {
+  .image-carousel {
+    border: 1px solid $gray-lighter;
+    .owl-carousel .owl-controls .owl-nav {
+      .owl-prev, .owl-next {
+        top: auto;
+        margin-top: 0;
+        bottom: 0;
+        width: floor($carousel-navs-size * 1.8);
+        height: floor($carousel-navs-size * 1.8);
+        font-size: $font-size-large;
+        opacity: .5;
+        @include transition(opacity .3s ease-out);
+        &:before {
+          line-height: floor($carousel-navs-size * 1.7);
+        }
+        &:hover {
+          opacity: 1;
+          background-color: $carousel-navs-color;
+        }
+      }
+      .owl-prev { left: 0; }
+      .owl-next { right: 0; }
+    }
+  }
+  .shop-meta {
+    span:not(.btn), a:not(.btn) {
+      display: inline-block;
+      font-size: $post-meta-font-size;
+      font-weight: normal;
+      > i {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: $post-meta-icon-size;
+        color: $post-meta-icon-color;
+        margin-top: -5px;
+        margin-right: 1px;
+      }
+    }
+    span {
+      color: $post-meta-color;
+      margin-right: 5px;
+    }
+  }
+  .shop-title {
+  	font-size: $font-size-h4;
+  	margin-bottom: floor($line-height-computed / 1.5);
+  	> a { border: none; }
+  }
+}
+.shop-tools {
+  .count {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-right: 10px;
+    > .label {
+      margin-right: 10px;
+    }
+  }
+}
+
+// Shop Filters
+.shop-filters-wrap {
+  position: relative;
+  z-index: 10;
+  display: table;
+  width: 100%;
+  margin-bottom: 30px;
+  .shop-filters,
+  .shop-search {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .shop-filters {
+    width: 74%;
+    padding: 5px;
+    border: 1px solid $gray-lighter;
+    > .inner {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+      .shop-filter {
+        position: relative;
+        z-index: 10;
+        display: table-cell;
+        padding-right: 5px;
+        &:first-child { z-index: 12; }
+        &:last-child {
+          z-index: 8;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .shop-search {
+    width: 26%;
+    padding-left: 20px;
+    .widget { margin: 0; }
+  }
+  @media #{$tablet-port} {
+    .shop-filters,
+    .shop-search {
+      display: block;
+      width: 100%;
+    }
+    .shop-search {
+      padding: 0;
+      margin-top: 12px;
+    }
+  }
+  @media screen and (max-width: 680px) {
+    .shop-filters {
+      > .inner {
+        .shop-filter {
+          display: block;;
+          padding-right: 0;
+          margin-top: 5px;
+          &:first-child { margin-top: 0; }
+        }
+      }
+    }
+  }
+}
+
+// Item delete button
+.delete-item {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  line-height: 18px;
+  text-align: center;
+  font-size: $font-size-large !important;
+  color: $brand-danger !important;
+  background-color: transparent;
+  border: 2px solid $brand-danger;
+  border-radius: $border-radius-base;
+  margin-right: 0 !important;
+  cursor: pointer;
+  @include user-select(none);
+  @include transition(all .3s);
+  &:hover {
+    color: #fff !important;
+    background-color: $brand-danger;
+  }
+}

@@ -1,0 +1,94 @@
+{{define "main"}}
+<section id="enrollment_page" class=" fw-section padding-top-2x ">
+  <div class="container">
+    <h2 class="block-title text-center">
+      {{.Params.header}}
+      <small>{{.Params.subheader}}</small>
+    </h2>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <p class="text-center lead">{{.Params.lead_paragraph}}</p>
+        <p class="text-center lead">{{.Params.secondary_lead_paragraph}}</p>
+      </div>
+    </div>
+    {{with .Params.requirement_box}}
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel" style="background-color: #e7f3fd; color: #31708f;border-color: #bce8f1;">
+          <div class="panel-heading">
+            <h2 class="panel-title" style="color: #31708f">{{.title | markdownify}}</h2>
+          </div>
+          <div class="panel-body">
+            <ul style="margin-bottom: 0">
+              {{range.list_text}}
+              <li>{{.}}</li>
+              {{end}}
+            </ul>
+            <a class="btn btn-primary btn-icon-right waves-effect waves-light pull-right" data-toggle="modal" data-target=".enrollment_modal">
+              {{.btns.text}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{end}}
+    <hr>
+    <div class="row">
+      {{with .Params.documents}}
+      <div class="col-lg-10 col-lg-offset-1">
+        <h3 class="block-title text-center">
+          {{.title}}
+          <small>{{.subheader}}</small>
+        </h3>
+        <p class="text-center lead">{{.lead_paragraph| markdownify}}</p>
+        <div class="panel" style="color: #8a6d3b;background-color: #fcf8e3;border-color: #faebcc;">
+          <div class="panel-body">
+            {{.note_text | markdownify }}
+          </div>
+        </div>
+      </div>
+      {{end}}
+      {{with .Params.enrollment_procedure}}
+        <div class="col-lg-10 col-lg-offset-1">
+          <h3>{{.title}}</h3>
+          {{.intro_text | markdownify}}
+          <div id="pre_box">{{.details | markdownify}}</div>
+          <hr>
+        </div>
+      {{end}}
+      <div class="col-lg-10 col-lg-offset-1">
+        {{ range .Params.sections}}
+            <a href="{{.btn.link}}" download role="button" target="_blank" class="btn btn-primary btn-icon-right waves-effect waves-light pull-right">{{.btn.text}}</a>
+            <h3>{{.header}}</h3>
+            {{.content | markdownify}}
+            <hr>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade enrollment_modal" tabindex="-1" role="dialog" aria-labelledby="enrollment_title">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="social-bar pull-right">
+          <a class="sb-bitbucket close" data-dismiss="modal" aria-label="Close">
+            <i aria-hidden="true" class="far fa-times"></i>
+          </a>
+        </div>
+        <h4 class="modal-title" id="enrollment_title">PGP-UK Enrollment </h4>
+      </div>
+      <div class="modal-body">
+        <p class="lead">PGP-UK enrollment has been temporarily closed.</p>
+        <p>The response to our recent request for enrolment has been fantastic and the first available 1,000 slots have now all
+        been assigned. To help us establish a smooth running of the entire process, we have temporarily paused the enrolment to
+        focus our limited resources on the first 1000 volunteers.</p>
+        <p>We will open the enrolment again as soon as we can. In the meantime, you can follow our progress on our website and our social media.</p>
+        <p>Thank you for your patience and continued support,</p>
+        <p>PGP-UK Team</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{end}}

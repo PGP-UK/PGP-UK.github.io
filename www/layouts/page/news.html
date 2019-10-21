@@ -1,0 +1,50 @@
+{{define "main"}}
+
+<section class="fw-section padding-top-2x ">
+  <div class="container">
+    <h2 class="block-title text-center">
+      {{.Params.header}}
+      <small>{{.Params.subheader}}</small>
+    </h2>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <p class="text-center lead">{{.Params.lead_paragraph}} </p>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range .Params.news_items}}
+              <tr>
+                <td>{{ .date }}</td>
+                <td>
+                  <a  target="_blank" href="{{.link}}" >{{ .details |markdownify }}</a>
+                  <br>
+                  {{if eq .type "News Article"}}
+                    <span class="btn btn-sm btn-default waves-effect waves-light news_btn">News Article</span>
+                  {{else if eq .type "News Video"}}
+                    <span class="btn btn-sm btn-info waves-effect waves-light news_btn">News Video</span>
+                  {{else if eq .type "News Audio"}}
+                    <span class="btn btn-sm btn-warning waves-effect waves-light news_btn">News Audio</span>
+                  {{else if eq .type "Youtube Video"}}
+                    <span class="btn btn-sm btn-info waves-effect waves-light news_btn">YouTube Video</span>
+                  {{else if eq .type "PDF Presentation"}}
+                    <span class="btn btn-sm btn-primary waves-effect waves-light news_btn">PDF Presentation</span>
+                  {{else if eq .type "Research Paper"}}
+                    <span class="btn btn-sm btn-success waves-effect waves-light news_btn">Research Paper</span>
+                  {{else if eq .type "Important Announcement"}}
+                    <span class="btn btn-sm btn-danger waves-effect waves-light news_btn">Important Announcement</span>
+                  {{end}}
+                </td>
+              </tr>
+            {{end}}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

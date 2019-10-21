@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150319346-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-150319346-1');
+  </script>
+  <meta charset="utf-8">
+  <title>Personal Genome Project UK {{ with .Params.title }}- {{.}}{{end}}</title>
+
+  <meta name="description" content="Personal Genome Project - UK" />
+  <meta name="keywords" content="Personal Genome Project - UK" />
+  <meta name="author" content="Ismail Moghul" />
+  {{if or .IsHome (hasPrefix .RelPermalink "/api/")}}
+  <meta name="turbolinks-visit-control" content="reload">
+  {{end}}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicon.ico" ) }}
+    <link rel="shortcut icon" href="{{.Permalink}}">
+  {{end}}
+  {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicons-apple-touch-icon.png" ) }}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{.Permalink}}">
+  {{end}}
+  {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicon-32x32.png" ) }}
+    <link rel="icon" type="image/png" sizes="32x32" href="{{.Permalink}}">
+  {{end}}
+  {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicon-16x16.png" ) }}
+    <link rel="icon" type="image/png" sizes="16x16" href="{{.Permalink}}">
+  {{end}}
+  {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicons-manifest.json" ) }}
+    <link rel="manifest" href="{{.Permalink}}">
+  {{end}}
+  {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicons-safari-pinned-tab.svg" ) }}
+    <link rel="mask-icon" color="#5bbad5" href="{{.Permalink}}">
+  {{end}}
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,600i,700" rel="stylesheet">
+
+  {{ $masterslider := resources.Get "scss/masterslider.css"}}
+  {{ $style := resources.Get "scss/styles.scss" | toCSS }}
+  {{ $css := slice $masterslider $style | resources.Concat "css/bundle.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+
+  {{ $swagger := resources.Get "scss/swagger-ui/swagger-ui.css" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $swagger.Permalink }}" integrity="{{ $swagger.Data.Integrity }}">
+
+
+  {{ $modernizr := resources.Get "js/vendor/modernizr.custom.js" }}
+  {{ $detectizr := resources.Get "js/vendor/detectizr.min.js" }}
+  {{ $jquery := resources.Get "js/vendor/jquery-2.1.4.min.js" }}
+  {{ $preloader := resources.Get "js/vendor/preloader.min.js" }}
+  {{ $bootstrap := resources.Get "js/vendor/bootstrap.min.js" }}
+  {{ $waves := resources.Get "js/vendor/waves.min.js" }}
+  {{ $waypoints := resources.Get "js/vendor/waypoints.min.js" }}
+  {{ $velocity := resources.Get "js/vendor/velocity.min.js" }}
+  {{ $magnific_popup := resources.Get "js/vendor/magnific-popup.min.js" }}
+  {{ $jquery_stellar := resources.Get "js/vendor/jquery.stellar.min.js" }}
+  {{ $masterslider := resources.Get "js/vendor/masterslider.js"}}
+  {{ $scrollreveal := resources.Get "js/vendor/scrollreveal.min.js"}}
+  {{ $jquery_dataTables := resources.Get "js/vendor/jquery.dataTables.min.js"}}
+  {{ $dataTables_bootstrap := resources.Get "js/vendor/dataTables.bootstrap.min.js"}}
+  {{ $data := resources.Get "js/data.js"}}
+  {{ $turbolinks := resources.Get "js/vendor/turbolinks.js"}}
+
+  {{ $js := slice $modernizr $detectizr $jquery $preloader $bootstrap $waves $waypoints $velocity $magnific_popup $jquery_stellar $masterslider $scrollreveal $jquery_dataTables $dataTables_bootstrap $data $turbolinks | resources.Concat "js/bundle.js" | minify | fingerprint }}
+  <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  <script src="https://kit.fontawesome.com/764f5a3290.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->
+<!--
+  Adding/Removing class ".parallax" is enabling/disabling background parallax effect on
+  elements with background images and attributes data-stellar-background-ratio applied
+  to them. Make sure you also added/removed link to stellar.js script before </body>.
+-->
+<body class="is-preloader preloading">
+
+  <!-- Preloader -->
+  <!--
+      Data API:
+      data-spinner - Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+      data-screenbg - Screen background color. Hex, RGB or RGBA colors
+   -->
+  <div id="preloader" data-spinner="spinner1" data-screenbg="#fff"></div>
+
+  <div class="page-wrapper">
+
+    <!-- Change modifier class to ".bar-fixed-left" to position social bar on the left side of the page. -->
+    <div class="social-bar bar-fixed-right">
+      {{ with .Site.GetPage "/" }}
+        {{with .Params.social_media.wordpress}}
+          <a href="{{.}}" target="_blank" class="sb-facebook">
+            <i class="fab fa-wordpress"></i>
+          </a>
+        {{end}}
+        {{with .Params.social_media.youtube}}
+          <a href="{{.}}" target="_blank" class="sb-youtube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        {{end}}
+        {{with .Params.social_media.twitter}}
+          <a href="{{.}}" target="_blank" class="sb-twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        {{end}}
+      {{end}}
+    </div>
+
+    {{ partial "navbar" . }}
+
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+
+    <a href="#" class="scroll-to-top-btn">
+      <i class="far fa-arrow-up"></i>
+    </a>
+
+  </div>
+
+  {{ partial "footer" . }}
+
+  {{ $globaljs := resources.Get "js/scripts.js" | minify | fingerprint}}
+  <script src="{{$globaljs.Permalink}}" integrity="{{ $globaljs.Data.Integrity }}"></script>
+
+  {{ if eq .RelPermalink "/data/" }}
+    <script>
+      $(window).on('turbolinks:load', function () {
+        PGP.init();
+      });
+    </script>
+  {{ end }}
+
+  <script>
+    document.addEventListener("turbolinks:load", function () {
+      $('body').removeClass('preloading');
+    });
+  </script>
+</body>
+</html>

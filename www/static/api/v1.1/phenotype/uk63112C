@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk63112C"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Male"
+    },
+    {
+      "question": "Gender",
+      "answer": "Male"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "12/02/1945"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "No"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": ""
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": ""
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "A"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 86
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 176
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Black"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "My hair was light blond when born and it turned black in my teens, after 50 it gradually turned grey and is currently 95% grey/white. My hair has always been straight."
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "nothing to add here"
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "nothing to add here"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": "I am 50% Irish and 50% English (by paper trail). I suspect (but don't know for certain that) they may be a small percentage of Welsh and Scottish blood in addition to the main groups. I plan to add to this section some health details over time"
+    }
+  ]
+]

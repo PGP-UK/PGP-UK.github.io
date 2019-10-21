@@ -1,0 +1,11 @@
+[
+  {
+    "published": "03/08/2018",
+    "file_source": "PGP",
+    "pgp_hex_id": "uk481F67",
+    "download_url": "https://my.personalgenomes.org.uk/datasets/182/download",
+    "data_type": "Methylome Report",
+    "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+    "type": "methylome_report"
+  }
+]

@@ -1,0 +1,171 @@
+{{define "main"}}
+
+<section class="master-slider fw-slider ms-skin-default" id="conference-slider">
+  {{ range $slider := .Params.slider}}
+    <div class="ms-slide" data-delay="107" data-fill-mode="stretch">
+        {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $slider.img ) }}
+          {{ $image2560x := (.Resize "2560x") }}
+          {{ $image1920x := (.Resize "1920x") }}
+          {{ $image1600x := (.Resize "1600x") }}
+          {{ $image1366x := (.Resize "1366x") }}
+          {{ $image1024x := (.Resize "1024x") }}
+          {{ $image768x := (.Resize "768x") }}
+          {{ $image640x := (.Resize "640x") }}
+          <img src="{{$image2560x.Permalink}}" data-src="{{$image2560x.Permalink}}" alt="Slide image"
+              srcset="{{$image640x.Permalink}} 640w, {{$image768x.Permalink}} 768w, {{$image1024x.Permalink}} 1024w, {{$image1366x.Permalink}} 1366w, {{$image1600x.Permalink}} 1600w, {{$image1920x.Permalink}} 1920w"
+              sizes="(max-width: 640px) 620px, (max-width: 768px) 748px, (max-width: 1024px) 1004px, (max-width: 1366px) 1346px, (max-width: 1600px) 1580px, 1900px">
+        {{end}}
+      <div class="container padding-top-3x padding-bottom-3x ms-layer" data-delay="0">
+        <div class="row padding-top-3x padding-bottom-2x">
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            <h1 class="text-light">{{$slider.header}}</h1>
+            <h4 class="text-light">{{$slider.subheader}}</h4>
+            <div class="padding-top">
+              {{range $slider.btns}}
+              <a href="{{.link}}" class="btn {{.class}} waves-effect ">
+                {{.text}}
+                <i class="{{.icon}}"></i>
+              </a>
+              {{end}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{end}}
+</section>
+
+<section class="fw-section bg-default border-top padding-top-3x padding-bottom-3x">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 mobile-center padding-bottom scrollReveal sr-left">
+        <h2 class="block-title"> {{.Params.intro_section.header}}
+          <small>{{.Params.intro_section.subheader}}</small>
+        </h2>
+        <div class="text-gray text-lg">
+          {{.Params.intro_section.intro | markdownify}}
+        </div>
+        <a href="{{.Params.intro_section.btn.link}}" class="btn btn-default waves-effect waves-light btn-icon-right">
+          {{.Params.intro_section.btn.text}}
+          <i class="icon-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-lg-5 col-md-5 scrollReveal sr-right">
+        {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" .Params.intro_section.img ) }}
+          <img src="{{.Permalink}}" style="max-height:350px; float:right; margin-top: 40px">
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{with .Params.main_section}}
+<section class=" border-bottom fw-section arrow-top padding-top-3x padding-bottom-3x">
+  <div class="container">
+    <h2 class="block-title text-center scrollReveal sr-bottom">
+      {{.header}}
+      <small>{{.subheader}}</small>
+    </h2>
+    <div class="row padding-top">
+      {{ range $i, $section := .sections}}
+        <div class="col-md-4 col-sm-6 text-center space-bottom scrollReveal sr-scaleUp sr-ease-in-out-back
+        {{if ne $i 0 }} sr-delay-{{$i}} {{end}} ">
+          {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $section.img ) }}
+            <img src="{{.Permalink}}" style="height:250px;" class="block-center" alt="PGP Open Research">
+          {{end}}
+          <h4 style="padding-top:10px;">{{ $section.header }}</h4>
+          <p class="text-gray text-lg main_section_text">{{ $section.text | markdownify }}</p>
+          {{range $section.btns}}
+          <a href="{{.link}}" class="btn {{.class}} waves-effect ">
+            {{.text}}
+            <i class="{{.icon}}"></i>
+          </a>
+          {{end}}
+        </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+
+
+{{with .Params.ambassadors_section}}
+<section class="fw-section padding-top-3x padding-bottom-3x" style="background-color: #FBFCFD">
+  <div class="container">
+    <h2 class="block-title text-center scrollReveal sr-bottom sr-ease-in-out-back">
+      {{.header}}
+      <small>{{.subheader}}</small>
+    </h2>
+    <div class="row padding-top">
+      {{ range $i, $ambassador := .ambassadors}}
+      <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-ease-in-out-back
+        {{if ne $i 0 }} sr-delay-{{$i}} {{end}} ">
+        <div class="teammate-2 mobile-center">
+          <div class="thumbnail" onclick="$('.pgp_participant_{{$i}}_modal').modal('show');" style="cursor: pointer;">
+            {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.img ) }}
+              <img src="{{.Permalink}}" alt="PGP Ambassador">
+            {{end}}
+            <div class="social-bar">
+              <a class="btn btn-default waves-effect waves-light btn-icon-left">
+                <i class="far fa-video"></i>&nbsp;&nbsp;View Intro Videos
+              </a>
+            </div>
+          </div>
+          <h3 class="teammate-name" style="text-align:center;">{{$ambassador.header}}</h3>
+          <span class="teammate-position" style="text-align:center;">{{$ambassador.subheader}}</span>
+        </div>
+      </div>
+      {{end}}
+    </div>
+
+    <div class="text-center scrollReveal sr-bottom sr-ease-in-out-back">
+      <p>Click on an ambassador for videos on their PGP-UK story!</p>
+      <a href="{{.action_btn.link}}" class="btn btn-default btn-icon-right waves-effect waves-light">
+        {{.action_btn.text}}
+        <i class="{{.action_btn.icon}}"></i>
+      </a>
+    </div>
+  </div>
+</section>
+{{end}}
+
+{{ partial "video_modal" . }}
+
+<!-- Download GenoME App -->
+{{with .Params.genome_section}}
+
+<section id="gemome_section" class=" border-top fw-section next-to-footer padding-top-3x padding-bottom-2x">
+  <div class="container text-center">
+    <h2 class="block-title scrollReveal sr-bottom sr-ease-in-out-back">{{.header}}
+      <small>{{.subheader}}</small>
+    </h2>
+    <div class="scrollReveal sr-bottom sr-delay-1 sr-ease-in-out-back">
+      <video width="100%" autoplay="true" muted="true">
+        {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/genome_logo.mp4" ) }}
+          <source src="{{.Permalink}}" type="video/mp4" />
+        {{end}}
+      </video>
+      <div class="text-gray text-lg text-center mobile-center">
+        {{.body | markdownify}}
+      </div>
+      <div class="clearfix"></div>
+      <a href="{{.apple_store_link}}" class="btn-app-store" style="margin-top:4rem;">
+        {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/app-store.png" ) }}
+          <img src="{{.Permalink}}">
+        {{end}}
+      </a>
+      <div class="clearfix"></div>
+      <a href="{{.intro_video.link}}" class="btn btn-default waves-effect waves-light play-btn btn-icon-left">
+        <i class="far fa-video"></i>&nbsp;&nbsp;{{.intro_video.btn_text}}
+      </a>
+    </div>
+  </div>
+</section>
+{{end}}
+
+<script>
+  $(document).on("ready", function () {
+    PGP.equalizeMainSectionText();
+  });
+</script>
+{{end}}

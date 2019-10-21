@@ -1,0 +1,86 @@
+[
+  {
+    "type": "WGS Fastq (_1)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/005/ERR1726425/ERR1726425_1.fastq.gz"
+  },
+  {
+    "type": "WGS Fastq (_2)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR172/005/ERR1726425/ERR1726425_2.fastq.gz"
+  },
+  {
+    "type": "WGS Bam",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR172/ERR1726425/FR07961002.bam"
+  },
+  {
+    "type": "VCF",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389528/FR07961002.pass.recode.vcf.gz"
+  },
+  {
+    "type": "VCF Tabix Index",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389528/FR07961002.pass.recode.vcf.gz.tbi"
+  },
+  {
+    "type": "VCF MD5",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389528/ERZ389528.md5"
+  },
+  {
+    "type": "WGBS Fastq (_1)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/009/ERR2359939/ERR2359939_1.fastq.gz"
+  },
+  {
+    "type": "WGBS Fastq (_2)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR235/009/ERR2359939/ERR2359939_2.fastq.gz"
+  },
+  {
+    "type": "WGBS Bam",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR235/ERR2359939/P3255_102_S2_L002.bam"
+  },
+  {
+    "type": "WGBS Bam Index",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR235/ERR2359939/P3255_102_S2_L002.bam.bai"
+  },
+  {
+    "type": "Methylation 450k Array Green Blood IDAT",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C02_Grn.idat"
+  },
+  {
+    "type": "Methylation 450k Array Red Blood IDAT",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C02_Red.idat"
+  },
+  {
+    "type": "Methylation 450k Array Green Saliva IDAT",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R03C01_Grn.idat"
+  },
+  {
+    "type": "Methylation 450k Array Red Saliva IDAT",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R03C01_Red.idat"
+  },
+  {
+    "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+    "download_url": "https://my.personalgenomes.org.uk/datasets/186/download"
+  },
+  {
+    "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+    "download_url": "https://my.personalgenomes.org.uk/datasets/73/download"
+  },
+  {
+    "type": "Transcriptomic - RNAseq Fastq (_1)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/004/ERR2322364/ERR2322364_1.fastq.gz"
+  },
+  {
+    "type": "Transcriptomic - RNAseq Fastq (_2)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/004/ERR2322364/ERR2322364_2.fastq.gz"
+  },
+  {
+    "type": "Transcriptomic - RNAseq BAM",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P2.bam"
+  },
+  {
+    "type": "Transcriptomic - RNAseq BAM index",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.processed.2.zip/PGP_Targeted_RNAseq_P2.bam.bai"
+  },
+  {
+    "type": "Transcriptomic - Amplicon Fastq",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/004/ERR2322354/ERR2322354.fastq.gz"
+  }
+]

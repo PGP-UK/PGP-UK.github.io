@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "ukB4A6DF"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Female"
+    },
+    {
+      "question": "Gender",
+      "answer": "Female"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "05/09/1957"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "No"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": ""
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": ""
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 65.4
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 162.56
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "I am a mousey brown. Was probably lighter when born. Going darker/greyish with old age."
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "Black centre with brownish deep ring around it then blue/gray then a dark blue ring."
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "Black centre with a brownish deep ring around it then blue/gray surrounded by a dark blue ring"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": ""
+    }
+  ]
+]

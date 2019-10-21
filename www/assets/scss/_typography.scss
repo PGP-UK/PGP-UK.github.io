@@ -1,0 +1,415 @@
+//
+// Typography
+// --------------------------------------------------
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: $headings-line-height;
+  color: $headings-color;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+h1 { line-height: 1.1; }
+h1, h2 {
+  margin-bottom: ($line-height-computed * 1.5);
+}
+h3, h4 {
+  margin-bottom: $line-height-computed;
+}
+h5, h6 {
+  margin-bottom: floor($line-height-computed / 1.5);
+}
+h1 {
+  font-size: $font-size-h1;
+  font-weight: $font-weight-h1;
+  font-style: $font-style-h1;
+  text-transform: $text-transform-h1;
+}
+h2 {
+  font-size: $font-size-h2;
+  font-weight: $font-weight-h2;
+  font-style: $font-style-h2;
+  text-transform: $text-transform-h2;
+}
+h3 {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-h3;
+  font-style: $font-style-h3;
+  text-transform: $text-transform-h3;
+}
+h4 {
+  font-size: $font-size-h4;
+  font-weight: $font-weight-h4;
+  font-style: $font-style-h4;
+  text-transform: $text-transform-h4;
+}
+h5 {
+  font-size: $font-size-h5;
+  font-weight: $font-weight-h5;
+  font-style: $font-style-h5;
+  text-transform: $text-transform-h5;
+}
+h6 {
+  font-size: $font-size-h6;
+  font-weight: $font-weight-h6;
+  font-style: $font-style-h6;
+  text-transform: $text-transform-h6;
+}
+
+// Responsive Headings
+@media #{$desktop} {
+  h1 { font-size: floor($font-size-h1 * 0.95); }
+}
+@media #{$tablet-land} {
+  h1 { font-size: floor($font-size-h1 * 0.9); }
+  h2 { font-size: floor($font-size-h2 * 0.9); }
+}
+@media #{$tablet-port} {
+  h1 { font-size: floor($font-size-h1 * 0.85); }
+  h2 { font-size: floor($font-size-h2 * 0.85); }
+}
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 $line-height-computed;
+}
+.lead {
+  font-size: $font-size-lead;
+  font-weight: 600;
+  margin-bottom: $line-height-computed;
+}
+.text-lg {
+  font-size: $font-size-large;
+}
+.text-sm {
+  font-size: $font-size-small;
+}
+.text-xs {
+  font-size: $font-size-xs;
+}
+small,
+.small { font-size: 90%; }
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+.text-notransform     { text-transform: none; }
+
+// Font Weight
+.text-semibold { font-weight: 600; }
+.text-bold { font-weight: bold; }
+.text-normal { font-weight: normal; }
+.text-thin { font-weight: 300; }
+
+// Contextual colors
+.text-gray { color: $text-gray !important; }
+.text-muted { color: $text-muted !important; }
+.text-gray-light { color: darken($gray-lighter, 8%); }
+.text-light,
+.text-white {
+  color: #fff !important;
+  h1, h2, h3, h4, h5, h6 { color: #fff !important; }
+}
+
+// Contextual colors
+.text-default { color: $brand-default !important; }
+@include text-emphasis-variant('.text-primary', $brand-primary);
+@include text-emphasis-variant('.text-success', $brand-success);
+@include text-emphasis-variant('.text-info', $brand-info);
+@include text-emphasis-variant('.text-warning', $brand-warning);
+@include text-emphasis-variant('.text-danger', $brand-danger);
+
+// Contextual backgrounds
+.bg-default,
+.bg-primary,
+.bg-success,
+.bg-info,
+.bg-warning,
+.bg-danger {
+  color: #fff;
+}
+@include bg-variant('.bg-default', $brand-default);
+@include bg-variant('.bg-primary', $brand-primary);
+@include bg-variant('.bg-success', $brand-success);
+@include bg-variant('.bg-info', $brand-info);
+@include bg-variant('.bg-warning', $brand-warning);
+@include bg-variant('.bg-danger', $brand-danger);
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul, ol {
+  padding-left: 18px;
+  margin-top: 0;
+  margin-bottom: $line-height-computed;
+  line-height: 1.8;
+  ul, ol { margin-bottom: 0; }
+  li { margin-bottom: 4px; }
+}
+ol { padding-left: 22px; }
+
+// List options
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-unstyled {
+  @include list-unstyled;
+}
+.list-featured {
+  list-style: none;
+  padding: 0;
+  li {
+    position: relative;
+    padding-left: 18px;
+    &:before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      left: 0;
+      top: 13px;
+      background-color: $brand-default;
+      margin-right: 15px; 
+    }
+  }
+  &.text-light {
+    li {
+      color: #fff;
+      &:before { background-color: #fff; }
+    }
+  }
+}
+.text-light {
+  .list-featured li {
+    color: #fff;
+    &:before { background-color: #fff; }
+  }
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Icon list
+.list-icon {
+  list-style: none;
+  padding: 0;
+  > li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 4px;
+    > i {
+      display: block;
+      position: absolute;
+      font-size: 1.25em;
+      color: $brand-default;
+      top: 6px;
+      left: 0;
+      &.fa-envelope { font-size: 1.1em; }
+    }
+    > a { text-decoration: none; }
+  }
+}
+.text-light {
+  .list-icon li i,
+  &.list-icon li i { color: #fff; }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: $line-height-computed;
+}
+dt,
+dd {
+  line-height: $line-height-base;
+}
+dt {
+  color: $headings-color;
+  font-weight: bold;
+}
+dd {
+  margin-left: 0; // Undo browser default
+  margin-bottom: 15px; 
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+.dl-horizontal {
+  dd {
+    @include clearfix; // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: $grid-float-breakpoint) {
+    dt {
+      float: left;
+      width: ($dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      @include text-overflow;
+    }
+    dd {
+      margin-left: $dl-horizontal-offset;
+    }
+  }
+}
+
+
+// Misc
+// -------------------------
+// Abbreviations and acronyms
+abbr[title],
+// Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted $abbr-border-color;
+}
+.initialism {
+  font-size: 90%;
+  @extend .text-uppercase;
+}
+
+// Blockquotes
+blockquote {
+  position: relative;
+  z-index: 10;
+  padding: 0 0 0 75px;
+  margin: 0;
+  margin-bottom: $line-height-computed;
+  text-transform: $quote-text-transform;
+  font-style: $quote-font-style;
+  color: $quote-font-color;
+  font-weight: $quote-font-weight;
+
+  cite {
+    display: block;
+    font-size: $font-size-small;
+    color: $quote-author-font-color;
+    font-style: normal;
+    margin-top: floor($line-height-computed / 1.5);
+    margin-left: -10px;
+  }
+  p {
+    display: inline;
+    font-size: $quote-font-size;
+    background-color: $quote-bg-color;
+    margin-bottom: floor($line-height-computed / 1.5);
+    padding: 3px;
+    padding-left: 0;
+    padding-right: 0;
+    line-height: 1.75;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: 
+      10px 0 0 $quote-bg-color, 
+      -10px 0 0 $quote-bg-color;
+  }
+  &:before {
+    position: absolute;
+    display: block;
+    content: "\201C";
+    color: $brand-default;
+    font-size: 120px;
+    line-height: 1;
+    margin-top: -15px;
+    left: 0;
+  }
+  @media #{$mobile-land} {
+   padding: 0 0 0 70px;
+   &:before { font-size: 100px; }
+  }
+
+  // Shareable Quotation
+  &.quote-shareable {
+    cursor: pointer;
+
+    .share-btn {
+      position: absolute;
+      z-index: 15;
+      width: $quote-share-btn-size;
+      height: $quote-share-btn-size - 4;
+      line-height: $quote-share-btn-size - 4;
+      text-align: center;
+      background-color: $quote-share-btn-bg;
+      color: $quote-share-btn-color;
+      font-size: $quote-share-font-size;
+      cursor: default;
+      left: 48%;
+      margin: -($quote-share-btn-size + 12) 0 0 -(floor($quote-share-btn-size / 2));
+      opacity: 0;
+      @include transform(translateY(20px));
+      @include transition(all .3s);
+
+      // arrow
+      &:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba($quote-share-btn-bg, 0);
+        border-top-color: $quote-share-btn-bg;
+        border-width: 6px;
+        margin-left: -6px;
+      }
+    }
+    &:hover .share-btn {
+      opacity: 1;
+      @include transform(translateY(0));
+    }
+  }
+
+  // Light Skin
+  &.light-skin {
+    cite {
+      color: #fff;
+      opacity: .9;
+    }
+  }
+}
+
+// Addresses
+address {
+  margin-bottom: $line-height-computed;
+  font-style: normal;
+  line-height: $line-height-base;
+}
+.fa-ul > li {
+  margin-bottom: 5px;
+}
+.fa-li {
+  top: 0.44444em !important;
+}

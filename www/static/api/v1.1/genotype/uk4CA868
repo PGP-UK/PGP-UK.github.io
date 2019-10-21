@@ -1,0 +1,13 @@
+[
+  {
+    "published": "02/06/2018",
+    "file_source": "Participant",
+    "pgp_hex_id": "uk4CA868",
+    "date": "2018-01-28",
+    "description": "My raw 23andMe genotyping data",
+    "download_url": "https://my.personalgenomes.org.uk/user_file/download/170",
+    "data_type": "23andMe",
+    "name": "Genome_Colin_P_Smith_v4_Full_20180128.txt",
+    "type": "genotype"
+  }
+]

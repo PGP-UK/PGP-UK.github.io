@@ -1,0 +1,89 @@
+---
+label: Team
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+  hidden: true
+  default: team
+- type: text
+  name: header
+  label: header
+  description: This is the page header
+- type: text
+  name: subheader
+  label: subheader
+  description: This is the page sub-header
+- type: field_group_list
+  name: team_members
+  label: Team Members
+  fields:
+  - type: file
+    name: image
+    label: Image
+    description: Select an image here - this should roughly be a square (ideally larger
+      than 400x400px)
+  - type: text
+    name: name
+    label: name
+    description: Enter the member's name
+  - type: text
+    name: text
+    label: Title
+    description: This is the member's title
+  - type: textarea
+    name: hover_text
+    label: hover_text
+    description: This is the text that shown when hovering over the individual. This
+      should be very short.
+    config:
+      wysiwyg: false
+      schema:
+        format: markdown
+  - type: field_group
+    name: social
+    label: Social Media Link
+    description: Add Social Media Links
+    fields:
+    - type: text
+      name: linkedin
+      label: LinkedIn
+      description: Add a link to the LinkedIn Profile
+    - type: text
+      name: twitter
+      label: twitter
+      description: Add a twitter link
+  description: Add the team members here
+  config:
+    labelField: name
+- type: field_group
+  name: alumni
+  label: Alumni
+  fields:
+  - type: text
+    name: header
+    label: header
+    description: This is the section header.
+  - type: field_group_list
+    name: team_members
+    label: Alumni Member
+    fields:
+    - type: text
+      name: name
+      label: name
+      description: Add the individual's name here
+    - type: text
+      name: title
+      label: title
+      description: Add their title here
+    - type: text
+      name: time
+      label: time
+      description: Add the years that they were part of PGP-UK
+    description: Add an alumni here
+    config:
+      labelField: name
+  description: Add alumni here
+pages:
+- www/content/team.md

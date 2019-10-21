@@ -1,0 +1,121 @@
+//
+// Panels & Accordions
+// --------------------------------------------------
+
+
+// Base class
+.panel {
+  margin-bottom: $line-height-computed;
+  background-color: $body-bg;
+  border: 1px solid transparent;
+  border-radius: 0;
+  @include panel-variant($panel-default-border, $panel-default-text, $panel-default-heading-bg, $panel-default-border);
+  > .panel-heading { background: none; }
+}
+
+// Panel contents
+.panel-body {
+  padding: 20px $line-height-computed 25px $line-height-computed;
+  @include clearfix;
+}
+
+// Optional heading
+.panel-heading {
+  border-bottom: 0;
+  border-radius: 0;
+  padding: 0 $line-height-computed;
+  .panel-title {
+    display: block;
+    font-size: $panel-heading-font-size;
+    font-weight: 600;
+    margin: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $panel-default-border;
+    @include transition(border-color .25s);
+  }
+  .panel-title:not(a) { padding: 15px 0; }
+  > a {
+    position: relative;
+    color: $panel-heading-font-color;
+    padding: 14px 30px 14px 0;
+    text-decoration: none;
+    &:before {
+      position: absolute;
+      display: block;
+      font-family: "feather";
+      content: "\e096";
+      top: 50%;
+      right: 0;
+      margin-top: -12px;
+      font-weight: normal;
+      @include transform(rotate(0deg));
+      @include transition(all .3s);
+    }
+    &.collapsed:before {
+      @include transform(rotate(-180deg));
+    }
+  }
+}
+
+// Collapsable panels (aka, accordion)
+.panel-group {
+  border-top: 1px solid $panel-default-border;
+  border-bottom: 1px solid $panel-default-border;
+
+  // Tighten up margin so it's only between panels
+  .panel {
+    margin-bottom: 0;
+    border-radius: 0;
+    border-top: 0;
+    border-bottom: 0;
+
+    + .panel {
+      margin-top: 0;
+    }
+    .panel-collapse {
+       padding: 0 $line-height-computed; 
+    }
+    .panel-body {
+      padding: 12px 0 30px 0;
+    }
+  }
+
+  .panel-heading {
+    border-bottom: 0;
+    > .panel-title {
+      border-bottom: 1px solid transparent;
+      &.collapsed {
+        border-bottom: 1px solid $panel-default-border;
+      }
+    }
+
+    + .panel-collapse {
+      > .panel-body {
+        border-top: 0;
+        border-bottom: 1px solid $panel-default-border;
+      }
+    }
+  }
+  .panel:last-child {
+    .panel-heading > .panel-title {
+      border-bottom: 0;
+    }
+  }
+}
+.panel:last-child {
+  .panel-collapse > .panel-body {
+    border-bottom: 0;
+  }
+}
+
+// Component Animation
+.collapse {
+  display: none;
+  &.in { display: block; }
+}
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  @include transition(height .35s ease, visibility .35s ease);
+}

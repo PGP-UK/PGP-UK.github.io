@@ -1,0 +1,51 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: "/www/static/admin"
+webhook_url: 
+sections:
+- type: heading
+  label: Pages
+- type: document
+  path: www/content/_index.md
+  label: Home
+- type: document
+  path: www/content/about.md
+  label: About
+- type: document
+  path: www/content/team.md
+  label: Team
+- type: document
+  path: www/content/volunteer.md
+  label: Volunteer
+- type: document
+  path: www/content/data.md
+  label: Data
+- type: document
+  path: www/content/analysis.md
+  label: Analysis
+- type: document
+  path: www/content/news.md
+  label: News
+upload_dir: www/content/uploads
+public_path: "/images"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":year:_:month:_:day:_:filename:"
+instant_preview: true
+build:
+  preview_command: hugo -E -F -D -b $DEPLOY_URL -d public
+  publish_command: hugo -d public
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.54.0
+  publish_env:
+  - HUGO_ENV=production
+  - HUGO_VERSION=0.54.0
+  preview_output_directory: www/public
+  output_directory: public
+  instant_preview_command: cp -r www/content/uploads/ www/static/images && hugo server
+    -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk -d www/public -s www --disableLiveReload
+  preview_docker_image: forestryio/build:latest
+  mount_path: "/opt/buildhome/repo"
+version: 0.54.0

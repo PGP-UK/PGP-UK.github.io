@@ -1,0 +1,18 @@
+{
+  "hex": "uk9F08CE",
+  "zip": "SG90NT",
+  "deceased": null,
+  "confirmed_family_relations": [
+
+  ],
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk9F08CE",
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/168/download",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)"
+    }
+  ],
+  "type": "pgp_profile"
+}

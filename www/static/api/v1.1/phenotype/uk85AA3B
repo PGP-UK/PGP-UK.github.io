@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk85AA3B"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Female"
+    },
+    {
+      "question": "Gender",
+      "answer": ""
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "06/02/1965"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "No"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": "No"
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": ""
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "A"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "+"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 92
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 164
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "Mousey brown, straight, thick"
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": ""
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "with outside & inside dark (blue/grey) ring with dark blue fleck"
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": ""
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "with outside & inside dark (blue/grey) ring"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": ""
+    }
+  ]
+]

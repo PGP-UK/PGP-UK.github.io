@@ -1,0 +1,86 @@
+
+{{ range $i, $ambassador := .Params.ambassadors_section.ambassadors}}
+  <div class="modal fade ambassador_models pgp_participant_{{$i}}_modal" tabindex="-1" role="dialog" aria-labelledby="modal_ambassador_{{$i}}_label">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="social-bar pull-right">
+            <a class="sb-bitbucket close" data-dismiss="modal" aria-label="Close">
+              <i aria-hidden="true" class="far fa-times"></i>
+            </a>
+          </div>
+          {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.img ) }}
+            <img src="{{.Permalink}}" alt="PGP Ambassador" style="height:95px;float:left;margin-right:15px;">
+          {{end}}
+          <h3 class="modal-title" id="modal_ambassador_{{$i}}_label" style="margin-bottom:0">Meet PGP Ambassador: {{$ambassador.header}}</h3>
+          <h5 style="color: #2895f1;">({{$ambassador.subheader}})</h5>
+        </div>
+        <div class="modal-body">
+          <div class="tab-content">
+            <div id="ambassador_{{$i}}_tab1" class="tab-pane transition fade scaledown active in" role="tabpanel">
+              <video width="100%" controls>
+                {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.intro ) }}
+                  <source src="{{.Permalink}}" type="video/mp4" />
+                {{end}}
+              </video>
+            </div>
+            <div id="ambassador_{{$i}}_tab2" class="tab-pane transition fade scaledown" role="tabpanel">
+              <video width="100%" controls>
+                {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.ancestry ) }}
+                  <source src="{{.Permalink}}" type="video/mp4" />
+                {{end}}
+              </video>
+            </div>
+            <div id="ambassador_{{$i}}_tab3" class="tab-pane transition fade scaledown" role="tabpanel">
+              <video width="100%" controls>
+                {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.age ) }}
+                  <source src="{{.Permalink}}" type="video/mp4" />
+                {{end}}
+              </video>
+            </div>
+            <div id="ambassador_{{$i}}_tab4" class="tab-pane transition fade scaledown" role="tabpanel">
+              <video width="100%" controls>
+                {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.eye_colour ) }}
+                  <source src="{{.Permalink}}" type="video/mp4" />
+                {{end}}
+              </video>
+            </div>
+            <div id="ambassador_{{$i}}_tab5" class="tab-pane transition fade scaledown" role="tabpanel">
+              <video width="100%" style="max-height:80vh" controls>
+                {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.smoking ) }}
+                  <source src="{{.Permalink}}" type="video/mp4" />
+                {{end}}
+              </video>
+            </div>
+            <div id="ambassador_{{$i}}_tab6" class="tab-pane transition fade scaledown" role="tabpanel">
+              <video width="100%" controls>
+                {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.health ) }}
+                  <source src="{{.Permalink}}" type="video/mp4" />
+                {{end}}
+              </video>
+            </div>
+          </div>
+          <ul class="nav-tabs" role="tablist">
+            <li class="active"><a href="#ambassador_{{$i}}_tab1" role="tab" data-toggle="tab" aria-expanded="false">Intro</a></li>
+            <li><a href="#ambassador_{{$i}}_tab2" role="tab" data-toggle="tab" aria-expanded="false">Ancestry</a></li>
+            <li><a href="#ambassador_{{$i}}_tab3" role="tab" data-toggle="tab" aria-expanded="true">Biological Age</a></li>
+            <li><a href="#ambassador_{{$i}}_tab4" role="tab" data-toggle="tab" aria-expanded="true">Eye Colour</a></li>
+            <li><a href="#ambassador_{{$i}}_tab5" role="tab" data-toggle="tab" aria-expanded="true">Smoking Exposure</a></li>
+            <li><a href="#ambassador_{{$i}}_tab6" role="tab" data-toggle="tab" aria-expanded="true">Health</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{{end}}
+
+
+<script>
+  $(function () {
+    $('.ambassador_models').modal({
+      show: false
+    }).on('hidden.bs.modal', function () {
+      $(this).find('video')[0].pause();
+    });
+  });
+</script>

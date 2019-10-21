@@ -1,0 +1,43 @@
+{
+  "genotype": [
+    {
+      "published": "03/23/2016",
+      "file_source": "Participant",
+      "pgp_hex_id": "uk65E564",
+      "date": "2013-05-04",
+      "description": "",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/113",
+      "data_type": "23andMe",
+      "name": "23andMe",
+      "type": "genotype"
+    }
+  ],
+  "pgp_profile": {
+    "deceased": null,
+    "confirmed_family_relations": [
+
+    ],
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk65E564",
+    "zip": "CM7 2NX",
+    "files": [
+      {
+        "file_source": "Participant",
+        "date": "2013-05-04",
+        "description": "",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/113",
+        "data_type": "23andMe",
+        "report_url": null,
+        "name": "23andMe"
+      }
+    ],
+    "hex": "uk65E564",
+    "type": "pgp_profile"
+  },
+  "phenotype": null,
+  "download_url": [
+    {
+      "type": "23andMe",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/113"
+    }
+  ]
+}

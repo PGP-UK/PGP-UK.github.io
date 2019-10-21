@@ -1,0 +1,92 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Normal Button Variants
+@mixin button-variant($bg-color) {
+  background-color: $bg-color;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+// Ghost Button Variants
+@mixin ghost-button-variant($color, $border-color) {
+  background-color: transparent;
+  color: $color;
+  border-color: $border-color;
+  &:hover {
+    color: #fff;
+    background-color: $border-color;
+  }
+}
+
+// Shop Label Variant
+@mixin shop-label-variant($bg-color) {
+  background-color: $bg-color;
+  &:before { border-left-color: $bg-color; }
+  &:hover {
+    color: #fff;
+    background-color: $bg-color;
+    &:before { border-left-color: $bg-color; }
+  }
+}
+
+// Placeholder text
+@mixin placeholder($color: $input-color-placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  } // Internet Explorer 10+
+  &::-webkit-input-placeholder  {
+    color: $color;
+  } // Safari and Chrome
+}
+
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// breakpoints
+$SM:     480px;
+$MD:     768px;
+$LG:     1050px;
+
+// media queries
+@mixin MQU($canvas) {
+  @if $canvas == SM {
+   @media only screen and (min-width: $SM) { @content; }
+  }
+  @else if $canvas == MD {
+   @media only screen and (min-width: $MD) { @content; }
+  }
+  @else if $canvas == LG {
+   @media only screen and (min-width: $LG) { @content; }
+  }
+}
+
+// center vertically and/or horizontally an absolute positioned element
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}

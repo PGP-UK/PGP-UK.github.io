@@ -1,0 +1,448 @@
+.turbolinks-progress-bar {
+  height: 5px;
+  background-color: green;
+}
+
+#data_table_filter {
+  width: 100%;
+}
+
+#data_table_filter .form-control {
+  width: 99%;
+}
+
+#enrollment_page #pre_box {
+  margin-bottom: 24px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 0;
+  border-color: #d9d9d9;
+  display: block;
+  padding: 9.5px;
+  margin: 20px 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+
+.teammate-2 {
+  .social-bar {
+    bottom: 100px;
+
+    a {
+      width: initial;
+    }
+  }
+
+  .thumbnail>img {
+    max-height: 300px;
+  }
+
+  &:hover .thumbnail>img {
+    opacity: 0.2;
+  }
+
+  .teammate-name {
+    margin-bottom: 4px;
+  }
+}
+
+.dataTables_paginate.paging_full {
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  float: right;
+}
+
+ul.pagination {
+  display: inline-block;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  margin: initial;
+  white-space: initial;
+  text-align: initial;
+
+  &:after,
+  &:before {
+    content: " ";
+    display: table;
+  }
+}
+
+.paginate_button {
+  position: relative;
+  display: block;
+  z-index: 1;
+  float: left;
+  background-color: rgb(255, 255, 255);
+
+  a {
+    position: relative;
+    z-index: 0;
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-right: -1px;
+    user-select: none;
+    text-decoration: none;
+    padding: 5px 18px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-radius: 0px;
+    transition: all 0.3s;
+    box-shadow: rgb(27, 219, 104) 0px 0px 0px 1px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(27, 219, 104);
+    border-image: initial;
+  }
+
+  &.disabled a {
+    color: rgb(128, 128, 128);
+    user-select: none;
+    border-color: rgb(217, 217, 217);
+    box-shadow: none;
+    cursor: default;
+  }
+
+  &.disabled {
+    z-index: 0;
+  }
+}
+
+.dataTables_wrapper {
+  .dataTables_paginate {
+    padding-right: 2px;
+  }
+
+  .dataTables_filter {
+    input {
+      margin-left: 0 !important;
+      display: block !important;
+      padding: 0;
+    }
+  }
+
+  th:last-child,
+  td:last-child {
+    text-align: right;
+  }
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/webfonts/glyphicons-halflings-regular.eot');
+  src: url('/assets/webfonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/webfonts/glyphicons-halflings-regular.woff') format('woff'), url('/assets/webfonts/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/webfonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+.about_us_content {
+  p {
+    text-align: center;
+  }
+
+  h3 {
+    color: gray !important;
+  }
+}
+
+
+.master-slider {
+  .btn {
+    font-weight: 900;
+  }
+
+  .ms-layer {
+    width: 100%;
+  }
+
+  .ms-inner-controls-cont {
+    max-height: 500px !important;
+
+    @media #{$desktop} {
+      max-height: 500px !important;
+    }
+
+    @media #{$tablet-land} {
+      max-height: 400px !important;
+    }
+
+    @media #{$tablet-port} {
+      max-width: initial;
+    }
+
+    @media #{$mobile-land} {
+      max-width: initial;
+      max-height: 600px !important;
+    }
+  }
+
+  .padding-top-3x {
+    @media #{$tablet-land} {
+      padding-top: 48px !important;
+    }
+
+    @media #{$mobile-land} {
+      padding-top: 18px !important;
+    }
+  }
+
+  .padding-bottom-2x {
+    @media #{$tablet-land} {
+      padding-bottom: 36px !important;
+    }
+
+    @media #{$mobile-land} {
+      padding-bottom: 18px !important;
+    }
+  }
+
+  .ms-slide-bgcont {
+
+    // This should be equal to the height specified in: .navbar.navbar-sticky.navbar-fullwidth
+    img {
+      margin-top: -25%;
+      padding-top: 140px;
+
+      @media #{$tablet-land} {
+        padding-top: 75px !important;
+      }
+    }
+  }
+
+  h1 {
+    @media #{$mobile-land} {
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+  }
+
+  h4 {
+    font-size: 2.8rem;
+
+    @media #{$mobile-land} {
+      font-size: 22px;
+    }
+  }
+
+}
+
+.navbar.navbar-sticky.navbar-fullwidth {
+  height: 147px;
+
+  @media #{$tablet-land} {
+    height: 81px;
+  }
+}
+
+
+.block-title small {
+  font-size: 15px;
+}
+
+.news_btn {
+  cursor: initial;
+  padding: 0 5px;
+  margin-bottom: 0;
+  line-height: 27px;
+  height: 30px;
+}
+
+.widget {
+  margin-bottom: 10px;
+
+}
+
+.widget_text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li>a {
+    border: none;
+    padding: initial;
+    color: #6F797F;
+    font-weight: 500;
+
+    &:hover {
+      color: initial;
+      background-color: initial;
+    }
+  }
+}
+
+.widget-title {
+  font-size: 17px;
+  color: black;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.footer .site-logo {
+  margin-bottom: 10px;
+}
+
+.subscribe {
+  margin-left: 71px;
+
+  button[type="submit"] {
+    display: block;
+    position: absolute;
+    top: 66px;
+    right: 41px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    color: #3074B9;
+    text-align: center;
+    border: none;
+    padding-bottom: 5px;
+
+    i {
+      display: inline;
+      width: auto;
+      padding: 0;
+      margin-top: -2px;
+    }
+  }
+}
+
+.tooltip {
+  z-index: 1000;
+}
+
+.footer .bottom-footer {
+  padding-top: 10px;
+}
+
+.panel {
+  margin-bottom: 0;
+}
+
+#data_table {
+
+  .report_btn,
+  .trait_btn,
+  .file_btn {
+    cursor: pointer;
+  }
+}
+
+.ms-skin-default .ms-nav-next,
+.ms-skin-default .ms-nav-prev {
+  &:before {
+    content: "";
+  }
+
+  svg,
+  i {
+    line-height: 66px;
+    height: 66px;
+  }
+}
+
+.scroll-to-top-btn {
+  &:hover {
+
+    svg,
+    i {
+      color: #fff;
+    }
+  }
+}
+
+#swagger-ui {
+  .topbar {
+    display: none;
+  }
+
+  pre {
+    padding: initial;
+    margin: initial;
+    font-size: initial;
+    line-height: initial;
+    color: initial;
+    word-break: initial;
+    word-wrap: initial;
+    background-color: initial;
+    border: initial;
+    border-radius: initial;
+  }
+
+  .servers {
+    label {
+      display: inline-block;
+    }
+
+    select {
+      width: unset;
+      height: unset;
+    }
+  }
+
+  .renderedMarkdown {
+    p {
+      margin: unset;
+    }
+  }
+}
+
+.image_caption {
+  display: block;
+  font-size: 14px;
+  color: gray;
+  font-style: normal;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.modal-backdrop {
+  background-color: rgba(40, 149, 241, 0.6)
+}
+
+.modal-lg {
+  max-width: 900px;
+}
+
+.title.not_active {
+  background-color: rgba(40, 149, 241, 0.62)
+}
+
+.teammate-1 .thumbnail .flipper .back p {
+  margin-bottom: 15px;
+  padding-top: 55px !important;
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,450 @@
+//
+// Social Buttons
+// --------------------------------------------------
+
+/* Base class */
+.social-bar {
+	a {
+		display: inline-block;
+		height: $social-btn-size;
+		width: $social-btn-size;
+		font-size: $font-size-base;
+		line-height: $social-btn-size;
+		text-align: center;
+		text-decoration: none;
+		letter-spacing: 0;
+		margin-right: 2px;
+		margin-bottom: 6px;
+		border: none;
+		@include transition(all .3s);
+	}
+	&.text-center {
+		a {
+			margin-left: 1px;
+			margin-right: 1px;
+		}
+	}
+	&.text-right {
+		a {
+			margin-left: 2px;
+			margin-right: 0;
+		}
+	}
+
+	// Fixed Bar
+	&.bar-fixed-right,
+	&.bar-fixed-left {
+		position: fixed;
+		z-index: $social-bar-zindex;
+		background-color: $body-bg;
+		border: 1px solid $hr-border;
+		top: 50%;
+		padding: 5px;
+		right: 16px;
+		top: 50%;
+		@include transform(translateY(-50%));
+		a {
+			display: block;
+			margin-right: 0;
+			&:last-child { margin-bottom: 0; }
+		}
+
+		@media #{$nav-collapse} { display: none; }
+	}
+	&.bar-fixed-left {
+		right: auto;
+		left: 16px;
+	}
+}
+.text-center {
+	.social-bar a {
+		margin-left: 1px;
+		margin-right: 1px;
+	}
+}
+.text-right {
+	.social-bar a {
+		margin-left: 2px;
+		margin-right: 0;
+	}
+}
+
+/* Email */
+.sb-email {
+	color: $brand-default;
+	background-color: rgba($brand-default, .1);
+	&:hover {
+		color: #fff;
+		background-color: rgba($brand-default, 1);
+	}
+}
+
+/* Behance */
+.sb-behance {
+	color: #1769ff;
+	background-color: rgba(#1769ff, .1);
+	&:hover {
+		color: #fff;
+		background-color: #1769ff;
+	}
+}
+
+/* Bitbucket */
+.sb-bitbucket {
+	color: #205081;
+	background-color: rgba(#205081, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #205081;
+	}
+}
+
+/* CodePen */
+.sb-codepen {
+	color: #76daff;
+	background-color: rgba(#76daff, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #76daff;
+	}
+}
+
+/* DeviantArt */
+.sb-deviantart {
+	color: #4e6252;
+	background-color: rgba(#4e6252, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #4e6252;
+	}
+}
+
+/* Digg */
+.sb-digg {
+	color: #000;
+	background-color: rgba(#000, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #000;
+	}
+}
+
+/* Dribbble */
+.sb-dribbble {
+	color: #ea4c89;
+	background-color: rgba(#ea4c89, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #ea4c89;
+	}
+}
+
+/* Dropbox */
+.sb-dropbox {
+	color: #007ee5;
+	background-color: rgba(#007ee5, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #007ee5;
+	}
+}
+
+/* Facebook */
+.sb-facebook {
+	color: #3b5998;
+	background-color: rgba(#3b5998, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #3b5998;
+	}
+}
+
+/* Flickr */
+.sb-flickr {
+	color: #0063dc;
+	background-color: rgba(#0063dc, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #0063dc;
+	}
+}
+
+/* Foursquare */
+.sb-foursquare {
+	color: #ef4b78;
+	background-color: rgba(#ef4b78, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #ef4b78;
+	}
+}
+
+/* GitHub */
+.sb-github {
+	color: #4183c4;
+	background-color: rgba(#4183c4, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #4183c4;
+	}
+}
+
+/* Google+ */
+.sb-google-plus {
+	color: #dd4b39;
+	background-color: rgba(#dd4b39, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #dd4b39;
+	}
+}
+
+/* Instagram */
+.sb-instagram {
+	color: #3f729b;
+	background-color: rgba(#3f729b, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #3f729b;
+	}
+}
+
+/* Jsfiddle */
+.sb-jsfiddle {
+	color: #4679bd;
+	background-color: rgba(#4679bd, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #4679bd;
+	}
+}
+
+/* LastFM */
+.sb-lastfm {
+	color: #e31b23;
+	background-color: rgba(#e31b23, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #e31b23;
+	}
+}
+
+/* LinkedIn */
+.sb-linkedin {
+	color: #0976b4;
+	background-color: rgba(#0976b4, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #0976b4;
+	}
+}
+
+/* PayPal */
+.sb-paypal {
+	color: #253b80;
+	background-color: rgba(#253b80, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #253b80;
+	}
+}
+
+/* Pinterest */
+.sb-pinterest {
+	color: #cc2127;
+	background-color: rgba(#cc2127, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #cc2127;
+	}
+}
+
+/* Reddit */
+.sb-reddit {
+	color: #ff4500;
+	background-color: rgba(#ff4500, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #ff4500;
+	}
+}
+
+/* Skype */
+.sb-skype {
+	color: #00aff0;
+	background-color: rgba(#00aff0, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #00aff0;
+	}
+}
+
+/* SoundCloud */
+.sb-soundcloud {
+	color: #f80;
+	background-color: rgba(#f80, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #f80;
+	}
+}
+
+/* Stack Overflow */
+.sb-stackoverflow {
+	color: #fe7a15;
+	background-color: rgba(#fe7a15, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #fe7a15;
+	}
+}
+
+/* Steam */
+.sb-steam {
+	color: #7da10e;
+	background-color: rgba(#7da10e, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #7da10e;
+	}
+}
+
+/* StumbleUpon */
+.sb-stumbleupon {
+	color: #eb4924;
+	background-color: rgba(#eb4924, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #eb4924;
+	}
+}
+
+/* Trello */
+.sb-trello {
+	color: #256a92;
+	background-color: rgba(#256a92, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #256a92;
+	}
+}
+
+/* Tumblr */
+.sb-tumblr {
+	color: #35465c;
+	background-color: rgba(#35465c, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #35465c;
+	}
+}
+
+/* Twitch */
+.sb-twitch {
+	color: #6441a5;
+	background-color: rgba(#6441a5, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #6441a5;
+	}
+}
+
+/* Twitter */
+.sb-twitter {
+	color: #55acee;
+	background-color: rgba(#55acee, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #55acee;
+	}
+}
+
+/* Vimeo */
+.sb-vimeo {
+	color: #1ab7ea;
+	background-color: rgba(#1ab7ea, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #1ab7ea;
+	}
+}
+
+/* Vine */
+.sb-vine {
+	color: #00b488;
+	background-color: rgba(#00b488, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #00b488;
+	}
+}
+
+/* VKontakte */
+.sb-vk {
+	color: #45668e;
+	background-color: rgba(#45668e, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #45668e;
+	}
+}
+
+/* WeChat */
+.sb-wechat {
+	color: #98d11c;
+	background-color: rgba(#98d11c, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #98d11c;
+	}
+}
+
+/* WordPress */
+.sb-wordpress {
+	color: #21759b;
+	background-color: rgba(#21759b, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #21759b;
+	}
+}
+
+/* XING */
+.sb-xing {
+	color: #026466;
+	background-color: rgba(#026466, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #026466;
+	}
+}
+
+/* Yahoo! */
+.sb-yahoo {
+	color: #400191;
+	background-color: rgba(#400191, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #400191;
+	}
+}
+
+/* Yelp */
+.sb-yelp {
+	color: #af0606;
+	background-color: rgba(#af0606, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #af0606;
+	}
+}
+
+/* YouTube */
+.sb-youtube {
+	color: #e52d27;
+	background-color: rgba(#e52d27, .1);
+	&:hover, &:focus {
+		color: #fff;
+		background-color: #e52d27;
+	}
+}

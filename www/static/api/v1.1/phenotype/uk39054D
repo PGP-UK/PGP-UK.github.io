@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk39054D"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Male"
+    },
+    {
+      "question": "Gender",
+      "answer": "Male"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "03/12/2017"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "No"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": ""
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": ""
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "B"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "+"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 92
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 188
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Black"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "always black always been curly when long very thick"
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "changes from blue to green"
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "changes from blue to green"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": ""
+    }
+  ]
+]

@@ -1,0 +1,53 @@
+{{define "main"}}
+
+{{if and (.Parent) (.Parent.Params.header)}}
+  <div class="container padding-top-2x">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <a href="{{.Parent.RelPermalink}}" style="border-bottom:none;">
+          <i class="fal fa-arrow-left"></i>
+          <span>&nbsp;&nbsp;Back to the {{.Parent.Params.header}} Page</span>
+        </a>
+      </div>
+    </div>
+  </div>
+{{end}}
+
+<section class="fw-section padding-top-3x padding-bottom-3x">
+  <div class="container">
+    <h2 class="block-title text-center">
+      {{.Params.header}}
+      <small>{{.Params.subheader}}</small>
+    </h2>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="text-center lead sr-right">
+          {{.Params.lead_paragraph | markdownify }}
+        </div>
+        {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" .Params.image.src ) }}
+          {{ if eq .ResourceType "image"}}
+            <image class="sr-right" src="{{.Permalink}}" style="width:{{$.Params.image.width}}; float:{{$.Params.image.direction}}; margin:15px;"></image>
+          {{else if eq .ResourceType "mp4"}}
+            <video class="sr-right" controls loop="true" autoplay="true" style="width:{{$.Params.image.width}}; float:{{$.Params.image.direction}}; margin:15px;">
+              <source src="{{.Permalink}}" type="{{.MediaType}}">
+              <p>Your browser doesn't support HTML5 video. Here is a <a href="{{.Permalink}}">link to the video</a> instead.</p>
+            </video>
+          {{end}}
+        {{end}}
+        <div class="sr-left" style="text-align: left; padding-top:15px;">
+          {{ with .Params.body }}
+            {{. | markdownify }}
+          {{else}}
+            {{$.Params.summary | markdownify }}
+          {{end}}
+        </div>
+        <div style="margin-top:2rem;">
+          {{range .Params.btns}}
+            <a href="{{.link}}" class="btn btn-default waves-effect waves-light">{{.text}}</a>
+          {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

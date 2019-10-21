@@ -1,0 +1,324 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("/assets/fonts/flaticon.eot");
+	src: url("/assets/fonts/flaticon.eot#iefix") format("embedded-opentype"),
+	url("/assets/fonts/flaticon.woff") format("woff"),
+	url("/assets/fonts/flaticon.ttf") format("truetype"),
+	url("/assets/fonts/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+	display: inline-block;
+	font-family: Flaticon;
+  content: attr(data-icon);
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.flaticon-antenna16:before {
+	content: "\e000";
+}
+.flaticon-batteries16:before {
+	content: "\e001";
+}
+.flaticon-battery34:before {
+	content: "\e002";
+}
+.flaticon-calculate12:before {
+	content: "\e003";
+}
+.flaticon-cd-player:before {
+	content: "\e004";
+}
+.flaticon-cellphone101:before {
+	content: "\e005";
+}
+.flaticon-chatting:before {
+	content: "\e006";
+}
+.flaticon-chips1:before {
+	content: "\e007";
+}
+.flaticon-cinema69:before {
+	content: "\e008";
+}
+.flaticon-cinema70:before {
+	content: "\e009";
+}
+.flaticon-cinema71:before {
+	content: "\e00a";
+}
+.flaticon-clean12:before {
+	content: "\e00b";
+}
+.flaticon-clock243:before {
+	content: "\e00c";
+}
+.flaticon-cloud-computing2:before {
+	content: "\e00d";
+}
+.flaticon-coffee-shop21:before {
+	content: "\e00e";
+}
+.flaticon-communication10:before {
+	content: "\e00f";
+}
+.flaticon-computer-monitor3:before {
+	content: "\e010";
+}
+.flaticon-computer-mouse29:before {
+	content: "\e011";
+}
+.flaticon-computers34:before {
+	content: "\e012";
+}
+.flaticon-controllers:before {
+	content: "\e013";
+}
+.flaticon-disc39:before {
+	content: "\e014";
+}
+.flaticon-document239:before {
+	content: "\e015";
+}
+.flaticon-drawing33:before {
+	content: "\e016";
+}
+.flaticon-earphones21:before {
+	content: "\e017";
+}
+.flaticon-earphones22:before {
+	content: "\e018";
+}
+.flaticon-energies:before {
+	content: "\e019";
+}
+.flaticon-energy44:before {
+	content: "\e01a";
+}
+.flaticon-eyeglasses28:before {
+	content: "\e01b";
+}
+.flaticon-fans9:before {
+	content: "\e01c";
+}
+.flaticon-flash6:before {
+	content: "\e01d";
+}
+.flaticon-game-controller7:before {
+	content: "\e01e";
+}
+.flaticon-game-controller8:before {
+	content: "\e01f";
+}
+.flaticon-gamepad21:before {
+	content: "\e020";
+}
+.flaticon-internet78:before {
+	content: "\e021";
+}
+.flaticon-keyboards9:before {
+	content: "\e022";
+}
+.flaticon-laptop-computer17:before {
+	content: "\e023";
+}
+.flaticon-levels4:before {
+	content: "\e024";
+}
+.flaticon-light-bulbs8:before {
+	content: "\e025";
+}
+.flaticon-light128:before {
+	content: "\e026";
+}
+.flaticon-light129:before {
+	content: "\e027";
+}
+.flaticon-mail111:before {
+	content: "\e028";
+}
+.flaticon-map-pointer10:before {
+	content: "\e029";
+}
+.flaticon-microphone121:before {
+	content: "\e02a";
+}
+.flaticon-microphone122:before {
+	content: "\e02b";
+}
+.flaticon-monitor101:before {
+	content: "\e02c";
+}
+.flaticon-monitor102:before {
+	content: "\e02d";
+}
+.flaticon-music-player38:before {
+	content: "\e02e";
+}
+.flaticon-music-player40:before {
+	content: "\e02f";
+}
+.flaticon-musical161:before {
+	content: "\e030";
+}
+.flaticon-musical162:before {
+	content: "\e031";
+}
+.flaticon-networking7:before {
+	content: "\e032";
+}
+.flaticon-nintendo15:before {
+	content: "\e033";
+}
+.flaticon-office-material3:before {
+	content: "\e034";
+}
+.flaticon-office-material4:before {
+	content: "\e035";
+}
+.flaticon-office-material5:before {
+	content: "\e036";
+}
+.flaticon-padlock107:before {
+	content: "\e037";
+}
+.flaticon-phone-call10:before {
+	content: "\e038";
+}
+.flaticon-phone-call12:before {
+	content: "\e039";
+}
+.flaticon-photo-camera19:before {
+	content: "\e03a";
+}
+.flaticon-photo-camera21:before {
+	content: "\e03b";
+}
+.flaticon-photography46:before {
+	content: "\e03c";
+}
+.flaticon-positive:before {
+	content: "\e03d";
+}
+.flaticon-printer29:before {
+	content: "\e03e";
+}
+.flaticon-printing31:before {
+	content: "\e03f";
+}
+.flaticon-projection10:before {
+	content: "\e040";
+}
+.flaticon-radio-box1:before {
+	content: "\e041";
+}
+.flaticon-radio-waves:before {
+	content: "\e042";
+}
+.flaticon-satellites3:before {
+	content: "\e043";
+}
+.flaticon-skating6:before {
+	content: "\e044";
+}
+.flaticon-smartphone160:before {
+	content: "\e045";
+}
+.flaticon-smartphone161:before {
+	content: "\e046";
+}
+.flaticon-sony2:before {
+	content: "\e047";
+}
+.flaticon-space-ship2:before {
+	content: "\e048";
+}
+.flaticon-stars67:before {
+	content: "\e049";
+}
+.flaticon-storage-device1:before {
+	content: "\e04a";
+}
+.flaticon-supermarket31:before {
+	content: "\e04b";
+}
+.flaticon-tablet29:before {
+	content: "\e04c";
+}
+.flaticon-technological:before {
+	content: "\e04d";
+}
+.flaticon-technological1:before {
+	content: "\e04e";
+}
+.flaticon-technology44:before {
+	content: "\e04f";
+}
+.flaticon-technology45:before {
+	content: "\e050";
+}
+.flaticon-technology46:before {
+	content: "\e051";
+}
+.flaticon-technology47:before {
+	content: "\e052";
+}
+.flaticon-telephone167:before {
+	content: "\e053";
+}
+.flaticon-telephone169:before {
+	content: "\e054";
+}
+.flaticon-transport264:before {
+	content: "\e055";
+}
+.flaticon-transport277:before {
+	content: "\e056";
+}
+.flaticon-tv-screen11:before {
+	content: "\e057";
+}
+.flaticon-usb48:before {
+	content: "\e058";
+}
+.flaticon-video-camera18:before {
+	content: "\e059";
+}
+.flaticon-video-camera19:before {
+	content: "\e05a";
+}
+.flaticon-video-game15:before {
+	content: "\e05b";
+}
+.flaticon-video-player24:before {
+	content: "\e05c";
+}
+.flaticon-video-player25:before {
+	content: "\e05d";
+}
+.flaticon-video-player26:before {
+	content: "\e05e";
+}
+.flaticon-vigilance:before {
+	content: "\e05f";
+}
+.flaticon-wireless-connectivity13:before {
+	content: "\e060";
+}
+.flaticon-wireless-internet6:before {
+	content: "\e061";
+}
+.flaticon-wristwatch3:before {
+	content: "\e062";
+}
+.flaticon-writing50:before {
+	content: "\e063";
+}

@@ -1,0 +1,58 @@
+[
+  [
+    [
+      {
+        "question": "Sex",
+        "answer": "Male"
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "15/08/1964"
+      },
+      {
+        "question": "Age at Sample Collection",
+        "answer": "51"
+      },
+      {
+        "question": "Current Smoker",
+        "answer": "No"
+      },
+      {
+        "question": "Ex-Smoker?",
+        "answer": "No"
+      },
+      {
+        "question": "Blood Type",
+        "answer": "A-"
+      },
+      {
+        "question": "Handedness",
+        "answer": "Right"
+      },
+      {
+        "question": "Weight",
+        "answer": "82 kg"
+      },
+      {
+        "question": "Height",
+        "answer": "175 cm "
+      },
+      {
+        "question": "Hair Colour",
+        "answer": "Brown"
+      },
+      {
+        "question": "Right Eye Colour",
+        "answer": "Blue"
+      },
+      {
+        "question": "Left Eye Colour",
+        "answer": "Blue"
+      },
+      {
+        "question": "Survey Date",
+        "answer": "11-11-2016"
+      }
+    ]
+  ]
+]

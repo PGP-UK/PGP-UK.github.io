@@ -1,0 +1,58 @@
+[
+  [
+    [
+      {
+        "question": "Sex",
+        "answer": "Female"
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "06/02/1965"
+      },
+      {
+        "question": "Age at Sample Collection",
+        "answer": "51"
+      },
+      {
+        "question": "Current Smoker",
+        "answer": "No"
+      },
+      {
+        "question": "Ex-Smoker?",
+        "answer": "No"
+      },
+      {
+        "question": "Blood Type",
+        "answer": "A+"
+      },
+      {
+        "question": "Handedness",
+        "answer": "Right"
+      },
+      {
+        "question": "Weight",
+        "answer": "92 kg"
+      },
+      {
+        "question": "Height",
+        "answer": "164 cm"
+      },
+      {
+        "question": "Hair Colour",
+        "answer": "Brown, mousey"
+      },
+      {
+        "question": "Right Eye Colour",
+        "answer": "with outside & inside dark (blue/grey) ring with dark blue fleck"
+      },
+      {
+        "question": "Left Eye Colour",
+        "answer": "with outside & inside dark (blue/grey) ring "
+      },
+      {
+        "question": "Survey Date",
+        "answer": "15-11-2016"
+      }
+    ]
+  ]
+]

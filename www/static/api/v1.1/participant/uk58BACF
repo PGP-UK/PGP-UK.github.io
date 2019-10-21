@@ -1,0 +1,194 @@
+{
+  "wgs": [
+    {
+      "study_accession": "PRJEB13150",
+      "secondary_study_accession": "ERP014689",
+      "sample_accession": "SAMEA4005521",
+      "secondary_sample_accession": "ERS1176631",
+      "experiment_accession": "ERX2179532",
+      "run_accession": "ERR2122624",
+      "submission_accession": "ERA1096965",
+      "tax_id": "9606",
+      "scientific_name": "Homo sapiens",
+      "instrument_platform": "ILLUMINA",
+      "instrument_model": "HiSeq X Ten",
+      "library_name": "DN459287E:G10",
+      "nominal_length": "450",
+      "library_layout": "PAIRED",
+      "library_strategy": "WGS",
+      "library_source": "GENOMIC",
+      "library_selection": "RANDOM",
+      "read_count": "897498554",
+      "base_count": "135522281654",
+      "center_name": "UNIVERSITY COLLEGE LONDON",
+      "first_public": "2017-09-15",
+      "last_updated": "2018-11-16",
+      "experiment_title": "HiSeq X Ten paired end sequencing",
+      "study_title": "PGP_UK_samples_for_demographic_analysis",
+      "study_alias": "PGP_UK_samples_for_demographic_analysis-sc-4154",
+      "experiment_alias": "SC_EXP_21124_3",
+      "run_alias": "SC_RUN_21124_3",
+      "fastq_bytes": "27717971244;36258278543",
+      "fastq_md5": "50b936eec1123a3e13064ec4d0384f8f;73cf39b75c0792b5805bd2cd3fd92f87",
+      "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_2.fastq.gz",
+      "fastq_aspera": "fasp.sra.ebi.ac.uk:/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_2.fastq.gz",
+      "fastq_galaxy": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_2.fastq.gz",
+      "submitted_bytes": "45566147067",
+      "submitted_md5": "67fd53a342b2aada7ca81c977af41c9a",
+      "submitted_ftp": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122624/21124_3.cram",
+      "submitted_aspera": "fasp.sra.ebi.ac.uk:/vol1/run/ERR212/ERR2122624/21124_3.cram",
+      "submitted_galaxy": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122624/21124_3.cram",
+      "submitted_format": "CRAM",
+      "sra_bytes": null,
+      "sra_md5": null,
+      "sra_ftp": null,
+      "sra_aspera": null,
+      "sra_galaxy": null,
+      "cram_index_ftp": "ftp.sra.ebi.ac.uk/vol1/null",
+      "cram_index_aspera": "fasp.sra.ebi.ac.uk:/vol1/null",
+      "cram_index_galaxy": "ftp.sra.ebi.ac.uk/vol1/null",
+      "sample_alias": "fd58a1d0-f19a-11e5-a70d-3c4a9275d6c8",
+      "broker_name": null,
+      "sample_title": "pgp-uk6373327",
+      "nominal_sdev": "95",
+      "first_created": "2017-09-15",
+      "type": "wgs",
+      "meta_data_source": "https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB13150&result=read_run"
+    }
+  ],
+  "pgp_profile": {
+    "deceased": null,
+    "confirmed_family_relations": [
+
+    ],
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk58BACF",
+    "zip": "YO243NF",
+    "files": [
+      {
+        "file_source": "PGP",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/92/download",
+        "data_type": "Genome Report",
+        "name": "Genome Report (Released by PGP-UK on 2nd August 2017)"
+      }
+    ],
+    "hex": "uk58BACF",
+    "type": "pgp_profile"
+  },
+  "phenotype": [
+    [
+      {
+        "question": "PGP-UK ID",
+        "answer": "uk58BACF"
+      },
+      {
+        "question": "Sex (from birth)",
+        "answer": "Female"
+      },
+      {
+        "question": "Gender",
+        "answer": "Female"
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "17/01/1965"
+      },
+      {
+        "question": "Have you ever smoked?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you currently smoke?",
+        "answer": ""
+      },
+      {
+        "question": "If you are an ex-smoker, at what age did you give up smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+        "answer": ""
+      },
+      {
+        "question": "What is your blood type?",
+        "answer": "O"
+      },
+      {
+        "question": "What is your blood Rh (Rhesus) factor?",
+        "answer": "+"
+      },
+      {
+        "question": "Are you left- or right-handed?",
+        "answer": "Right"
+      },
+      {
+        "question": "What is your weight in kg?",
+        "answer": 73
+      },
+      {
+        "question": "What is your height in cm?",
+        "answer": 178
+      },
+      {
+        "question": "What is your main natural hair colour?",
+        "answer": "Brown"
+      },
+      {
+        "question": "Please, provide details about your hair colour",
+        "answer": "It was light brown curly hair when as was born which got darker brown as i got older.  It also was straight after about 2 years.  I started to go grey/white at about 25 after my first child and I am now almost 80% grey"
+      },
+      {
+        "question": "What is your right eye main colour?",
+        "answer": "Blue"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your right eye colour.",
+        "answer": "My eye is blue/green with brown specs  I have a darker blue/grey ring on the outside of the iris"
+      },
+      {
+        "question": "What is your left eye main colour?",
+        "answer": "Blue"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your left eye colour.",
+        "answer": "My eye is blue/green with brown specs  I have a darker blue/grey ring on the outside of the iris"
+      },
+      {
+        "question": "Please, use this field to add any extra information about yourself",
+        "answer": "I am short sighted since 18 and have had depression over many years of my life with limited response to anti depressants.  My parents are alcoholics and I know I have a strong urge to drink too much so am very careful about how often I drink.  I have had a bone scan recently and was told my scores are as follows BUA 97  %Exp 135  Zu 1.51  Tu 0.45     I suffer from asthma.    I hope this extra data is useful"
+      }
+    ]
+  ],
+  "genome_report": [
+    {
+      "published": "08/02/2017",
+      "file_source": "PGP",
+      "pgp_hex_id": "uk58BACF",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/92/download",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "type": "genome_report"
+    }
+  ],
+  "download_url": [
+    {
+      "type": "WGS Fastq (_1)",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_1.fastq.gz"
+    },
+    {
+      "type": "WGS Fastq (_2)",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/004/ERR2122624/ERR2122624_2.fastq.gz"
+    },
+    {
+      "type": "WGS Cram",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122624/21124_3.cram"
+    },
+    {
+      "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/92/download"
+    }
+  ]
+}

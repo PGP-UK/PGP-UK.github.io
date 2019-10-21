@@ -1,0 +1,494 @@
+//
+// Buttons
+// --------------------------------------------------
+
+// Base styles
+// --------------------------------------------------
+.btn {
+  display: inline-block;
+  height: $btn-height;
+  line-height: $btn-height - 3;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  color: $btn-font-color;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 0 25px;
+  margin: 10px 0;
+  margin-right: 10px;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  @include user-select(none);
+  @include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+  @include button-variant($btn-default-bg);
+
+  &:hover {
+    color: $btn-font-color;
+    text-decoration: none;
+    outline: none;
+  }
+  &:focus { outline: none; }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled] {
+    cursor: $cursor-disabled;
+    background-color: $gray-light !important;
+    &:hover { background-color: $gray-light !important; }
+  }
+
+  i, i:before {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-top: -2px;
+    font-size: floor($btn-font-size * 1.2);
+  }
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    opacity: .5;
+    pointer-events: none;
+    pointer: not-allowed;
+  }
+}
+
+// Alternate buttons
+// --------------------------------------------------
+.btn-default, .btn-default:hover,
+.btn-primary, .btn-primary:hover,
+.btn-primary:active, .btn-primary:focus,
+.btn-success, .btn-success:hover,
+.btn-success:active, .btn-success:focus,
+.btn-info, .btn-info:hover,
+.btn-info:active, .btn-info:focus,
+.btn-warning, .btn-warning:hover,
+.btn-warning:active, .btn-warning:focus,
+.btn-danger, .btn-danger:hover,
+.btn-danger:active, .btn-danger:focus {
+  color: $btn-font-color;
+}
+.btn-default {
+  @include button-variant($btn-default-bg);
+}
+.btn-primary {
+  @include button-variant($btn-primary-bg);
+}
+.btn-success {
+  @include button-variant($btn-success-bg);
+}
+.btn-info {
+  @include button-variant($btn-info-bg);
+}
+.btn-warning {
+  @include button-variant($btn-warning-bg);
+}
+.btn-danger {
+  @include button-variant($btn-danger-bg);
+}
+.btn-light {
+  background-color: #fff;
+  color: $gray-darker;
+  &:hover {
+    color: $gray-darker;
+    background-color: #fff;
+  }
+  &.btn-default,
+  &.btn-default:hover { color: $brand-default; }
+  &.btn-primary,
+  &.btn-primary:hover { color: $brand-primary; }
+  &.btn-info,
+  &.btn-info:hover { color: $brand-info; }
+  &.btn-successt,
+  &.btn-success:hover { color: $brand-success; }
+  &.btn-warning,
+  &.btn-warning:hover { color: $brand-warning; }
+  &.btn-danger,
+  &.btn-danger:hover { color: $brand-danger; }
+}
+
+// Ghost Buttons
+// --------------------------------------------------
+.btn-ghost {
+  @include ghost-button-variant($btn-default-bg, $btn-default-bg);
+  &.btn-default {
+    @include ghost-button-variant($btn-default-bg, $btn-default-bg);
+  }
+  &.btn-primary {
+    @include ghost-button-variant($btn-primary-bg, $btn-primary-bg);
+  }
+  &.btn-success {
+    @include ghost-button-variant($btn-success-bg, $btn-success-bg);
+  }
+  &.btn-info {
+    @include ghost-button-variant($btn-info-bg, $btn-info-bg);
+  }
+  &.btn-warning {
+    @include ghost-button-variant($btn-warning-bg, $btn-warning-bg);
+  }
+  &.btn-danger {
+    @include ghost-button-variant($btn-danger-bg, $btn-danger-bg);
+  }
+  &.btn-light {
+    @include ghost-button-variant(#fff, #fff);
+    &:hover { color: $gray-darker; }
+  }
+}
+
+// Small Button
+// --------------------------------------------------
+.btn-sm {
+  height: $btn-sm-height;
+  font-size: $btn-sm-font-size;
+  line-height: $btn-sm-height - 3;
+  padding: 0 20px;
+}
+
+// Alternative Buttons
+// --------------------------------------------------
+.btn-alt { border-radius: $border-radius-base; }
+
+// Inline Buttons
+// --------------------------------------------------
+.btn-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// Button icons alignment
+// --------------------------------------------------
+.btn {
+  i, i:before {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: floor($btn-sm-font-size * 1.2);
+  }
+}
+.btn-icon-left {
+  padding-left: 21px;
+  i { margin-right: 7px; }
+  &.btn-sm { padding-left: 16px; }
+}
+.btn-icon-right {
+  padding-right: 21px;
+  i {
+    margin-left: 7px;
+    margin-top: -4px;
+  }
+  &.btn-sm { padding-right: 16px; }
+}
+
+// Block button
+// --------------------------------------------------
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 0;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 12px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+// Buttons alignment
+.text-center .btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  &.btn-block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.text-right .btn {
+  margin-left: 10px;
+  margin-right: 0;
+  &.btn-block { margin-left: 0; }
+}
+
+// Scroll to Top Button
+.scroll-to-top-btn {
+  display: block;
+  position: fixed;
+  width: $scroll-top-btn-size;
+  height: $scroll-top-btn-size;
+  line-height: $scroll-top-btn-size - 2;
+  text-align: center;
+  text-decoration: none;
+  z-index: $navbar-zindex;
+  right: 16px;
+  bottom: -($scroll-top-btn-size * 2);
+  font-size: $font-size-lead;
+  background-color: $scroll-top-btn-bg;
+  border: $scroll-top-btn-border;
+  padding-left: 1px;
+  opacity: 0;
+  -webkit-transition: bottom 400ms $ease-in-out-back, opacity .3s, background-color .3s, border-color .3s;
+  -webkit-transition: bottom 400ms $ease-in-out-back, opacity .3s, background-color .3s, border-color .3s;
+  -moz-transition: bottom 400ms $ease-in-out-back, opacity .3s, background-color .3s, border-color .3s;
+  transition: bottom 400ms $ease-in-out-back, opacity .3s, background-color .3s, border-color .3s;
+
+  i {
+    color: $scroll-top-btn-color;
+    @include transform(translateY(0));
+    @include transition(all .35s);
+  }
+
+  &:hover {
+    background-color: $scroll-top-btn-hover-bg;
+    border-color: $scroll-top-btn-hover-bg;
+    i {
+      color: $scroll-top-btn-hover-color;
+      @include transform(translateY(-8px));
+    }
+  }
+
+  &.visible {
+    bottom: 14px;
+    opacity: 1;
+  }
+}
+
+// 3D Buttons
+.btn-3d {
+  text-transform: uppercase;
+  border-radius: $btn-3d-border-radius;
+  font-weight: bold;
+  font-size: $btn-3d-font-size;
+  @include transform(translateY(0));
+  @include transition(all .25s);
+  &.btn-default {
+    @include box-shadow(0px 4px 0px darken($brand-default, 14%));
+    &:hover { background-color: darken($brand-default, 5%) }
+    &:active {
+      @include box-shadow(0px 0px 0px darken($brand-default, 14%));
+    }
+  }
+  &.btn-primary {
+    @include box-shadow(0px 4px 0px darken($brand-primary, 14%));
+    &:hover { background-color: darken($brand-primary, 5%) }
+    &:active {
+      @include box-shadow(0px 0px 0px darken($brand-primary, 14%));
+    }
+  }
+  &.btn-info {
+    @include box-shadow(0px 4px 0px darken($brand-info, 14%));
+    &:hover { background-color: darken($brand-info, 5%) }
+    &:active {
+      @include box-shadow(0px 0px 0px darken($brand-info, 14%));
+    }
+  }
+  &.btn-success {
+    @include box-shadow(0px 4px 0px darken($brand-success, 14%));
+    &:hover { background-color: darken($brand-success, 5%) }
+    &:active {
+      @include box-shadow(0px 0px 0px darken($brand-success, 14%));
+    }
+  }
+  &.btn-warning {
+    @include box-shadow(0px 4px 0px darken($brand-warning, 14%));
+    &:hover { background-color: darken($brand-warning, 5%) }
+    &:active {
+      @include box-shadow(0px 0px 0px darken($brand-warning, 14%));
+    }
+  }
+  &.btn-danger {
+    @include box-shadow(0px 4px 0px darken($brand-danger, 14%));
+    &:hover { background-color: darken($brand-danger, 5%) }
+    &:active {
+      @include box-shadow(0px 0px 0px darken($brand-danger, 14%));
+    }
+  }
+  &:active {
+    @include transform(translateY(4px));
+  }
+}
+
+// Close Button
+.close-btn {
+  font-size: $font-size-h4;
+  background: none;
+  border: none;
+  color: $brand-danger;
+  padding-left: 0;
+  padding-right: 0;
+  &:focus { outline: none; }
+}
+
+// Login / Sign Up Buttons
+.login-btn,
+.google-login,
+.twitter-login,
+.facebook-login {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-size: $font-size-small;
+  font-weight: normal;
+  text-align: center;
+  margin: 0;
+  margin-bottom: floor($line-height-computed / 2);
+  padding: 0 45px 0 25px;
+  > i {
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    margin-top: -7px;
+    &:before {
+      font-size: $font-size-small;
+    }
+  }
+}
+.google-login {
+  background-color: #f4b400;
+  &:hover {
+    background-color: darken(#f4b400, 10%);
+  }
+}
+.twitter-login {
+  background-color: #55acee;
+  &:hover {
+    background-color: darken(#55acee, 10%);
+  }
+}
+.facebook-login {
+  background-color: #3b5998;
+  &:hover {
+    background-color: darken(#3b5998, 10%);
+  }
+}
+
+// Market Buttons
+.btn-app-store,
+.btn-google-play,
+.btn-windows,
+.btn-amazon {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  margin: 10px 10px 10px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.btn-app-store,
+.btn-windows,
+.btn-amazon {
+  width: 216px;
+  height: 72px;
+}
+.btn-google-play {
+  width: 228px;
+  height: 88px;
+  margin-top: 15px;
+}
+// .btn-app-store {
+  // background-image: url(/assets/img/app-store.png);
+// }
+.btn-google-play {
+  background-image: url(/assets/img/google-play.png);
+}
+.btn-amazon {
+  background-image: url(/assets/img/amazon.png);
+}
+.btn-windows {
+  background-image: url(/assets/img/windows.png);
+}
+
+// Special Buttons
+.btn-kickstarter {
+   @include button-variant(#2bde73);
+}
+.btn-indie {
+   @include button-variant(#eb1478);
+}
+
+/*!
+ * Waves v0.6.0
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/Waves/blob/master/LICENSE
+ */
+
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.waves-effect .waves-ripple {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.2);
+  background: -webkit-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 60%, rgba(255, 255, 255, 0) 70%);
+  background: -o-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 60%, rgba(255, 255, 255, 0) 70%);
+  background: -moz-radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 60%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.2) 40%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.4) 60%, rgba(255, 255, 255, 0) 70%);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+.waves-effect.waves-light .waves-ripple {
+  background: rgba(255, 255, 255, 0.5);
+  background: -webkit-radial-gradient(rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 70%);
+  background: -o-radial-gradient(rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 70%);
+  background: -moz-radial-gradient(rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 70%);
+}
+.waves-effect.waves-classic .waves-ripple {
+  background: rgba(0, 0, 0, 0.2);
+}
+.waves-effect.waves-classic.waves-light .waves-ripple {
+  background: rgba(255, 255, 255, 0.5);
+}

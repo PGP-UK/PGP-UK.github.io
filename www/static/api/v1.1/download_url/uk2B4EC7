@@ -1,0 +1,18 @@
+[
+  {
+    "type": "WGS Fastq (_1)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122555/ERR2122555_1.fastq.gz"
+  },
+  {
+    "type": "WGS Fastq (_2)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR212/005/ERR2122555/ERR2122555_2.fastq.gz"
+  },
+  {
+    "type": "WGS Cram",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR212/ERR2122555/20464_8%231.cram"
+  },
+  {
+    "type": "Genome Report (Released by PGP-UK on 10th August 2017)",
+    "download_url": "https://my.personalgenomes.org.uk/datasets/170/download"
+  }
+]

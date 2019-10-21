@@ -1,0 +1,21 @@
+{
+  "deceased": null,
+  "confirmed_family_relations": [
+
+  ],
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukE7405B",
+  "zip": null,
+  "files": [
+    {
+      "file_source": "Participant",
+      "date": "2016-03-23",
+      "description": "23andMe genotyping",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/119",
+      "data_type": "23andMe",
+      "report_url": null,
+      "name": "JP"
+    }
+  ],
+  "hex": "ukE7405B",
+  "type": "pgp_profile"
+}

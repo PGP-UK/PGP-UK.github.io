@@ -1,0 +1,29 @@
+[
+  {
+    "analysis_accession": "ERZ389530",
+    "study_accession": "PRJEB17529",
+    "secondary_study_accession": "ERP019394",
+    "sample_accession": "SAMEA4545245",
+    "secondary_sample_accession": "ERS1444424",
+    "analysis_title": "Variants from sample FR07961001 from the PGP_UK project",
+    "analysis_type": "SEQUENCE_VARIATION",
+    "center_name": "UCL Cancer Institute",
+    "first_public": "2017-02-07",
+    "last_updated": "2017-05-19",
+    "study_title": "Personal Genome Project - United Kingdom",
+    "tax_id": "9606",
+    "scientific_name": "Homo sapiens",
+    "analysis_alias": "FR07961001_PGP_UK",
+    "study_alias": "ena-STUDY-UNIVERSITY COLLEGE LONDON-31-10-2016-15:46:14:765-442",
+    "submitted_bytes": "86497812;132;1540561",
+    "submitted_md5": "746fe08cd1ea28b79382b68a3418172c;9c30fb152058bd5e61bab4a5f1d7e568;737122c594f8ed045d930d13dc6aa1a5",
+    "submitted_ftp": "ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz;ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/ERZ389530.md5;ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz.tbi",
+    "submitted_aspera": "fasp.sra.ebi.ac.uk:/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz;fasp.sra.ebi.ac.uk:/vol1/ERZ389/ERZ389530/ERZ389530.md5;fasp.sra.ebi.ac.uk:/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz.tbi",
+    "submitted_galaxy": "ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz;ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/ERZ389530.md5;ftp.sra.ebi.ac.uk/vol1/ERZ389/ERZ389530/FR07961001.pass.recode.vcf.gz.tbi",
+    "sample_alias": "uk35C650",
+    "broker_name": "EBI",
+    "sample_title": "Personal Genomes Project UK Sample",
+    "type": "variant",
+    "meta_data_source": "https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB17529&result=analysis"
+  }
+]

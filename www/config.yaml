@@ -1,5 +1,5 @@
 ---
-baseURL: https://pgp-uk-dev.netlify.com/
+baseURL: /
 languageCode: en-us
 menu:
   main:

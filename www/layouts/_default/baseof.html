@@ -21,22 +21,22 @@
   {{end}}
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicon.ico" ) }}
-    <link rel="shortcut icon" href="{{.Permalink}}">
+    <link rel="shortcut icon" href="{{.RelPermalink}}">
   {{end}}
   {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicons-apple-touch-icon.png" ) }}
-    <link rel="apple-touch-icon" sizes="180x180" href="{{.Permalink}}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{.RelPermalink}}">
   {{end}}
   {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicon-32x32.png" ) }}
-    <link rel="icon" type="image/png" sizes="32x32" href="{{.Permalink}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{.RelPermalink}}">
   {{end}}
   {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicon-16x16.png" ) }}
-    <link rel="icon" type="image/png" sizes="16x16" href="{{.Permalink}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{.RelPermalink}}">
   {{end}}
   {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicons-manifest.json" ) }}
-    <link rel="manifest" href="{{.Permalink}}">
+    <link rel="manifest" href="{{.RelPermalink}}">
   {{end}}
   {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/favicons-safari-pinned-tab.svg" ) }}
-    <link rel="mask-icon" color="#5bbad5" href="{{.Permalink}}">
+    <link rel="mask-icon" color="#5bbad5" href="{{.RelPermalink}}">
   {{end}}
   <meta name="theme-color" content="#ffffff">
 
@@ -45,10 +45,10 @@
   {{ $masterslider := resources.Get "scss/masterslider.css"}}
   {{ $style := resources.Get "scss/styles.scss" | toCSS }}
   {{ $css := slice $masterslider $style | resources.Concat "css/bundle.css" | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
 
   {{ $swagger := resources.Get "scss/swagger-ui/swagger-ui.css" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $swagger.Permalink }}" integrity="{{ $swagger.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $swagger.RelPermalink }}">
 
 
   {{ $modernizr := resources.Get "js/vendor/modernizr.custom.js" }}
@@ -69,7 +69,7 @@
   {{ $turbolinks := resources.Get "js/vendor/turbolinks.js"}}
 
   {{ $js := slice $modernizr $detectizr $jquery $preloader $bootstrap $waves $waypoints $velocity $magnific_popup $jquery_stellar $masterslider $scrollreveal $jquery_dataTables $dataTables_bootstrap $data $turbolinks | resources.Concat "js/bundle.js" | minify | fingerprint }}
-  <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+  <script src="{{ $js.RelPermalink }}"></script>
   <script src="https://kit.fontawesome.com/764f5a3290.js" crossorigin="anonymous"></script>
 </head>
 
@@ -127,7 +127,7 @@
   {{ partial "footer" . }}
 
   {{ $globaljs := resources.Get "js/scripts.js" | minify | fingerprint}}
-  <script src="{{$globaljs.Permalink}}" integrity="{{ $globaljs.Data.Integrity }}"></script>
+  <script src="{{$globaljs.RelPermalink}}"></script>
 
   {{ if eq .RelPermalink "/data/" }}
     <script>

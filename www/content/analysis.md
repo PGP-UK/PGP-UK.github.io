@@ -7,7 +7,7 @@ body: |2+
 
   The genomes are also analysed for epigenetic variants (in DNA mehtylation) in the context of age, and environmental exposures. Epigentic variants are chemical changes to the DNA, which alter how it is used without changing the DNA sequence. The result od this analysis is summarised in the Methylome Report, available on the Data page.
 
-  Read [here](https://google.co.uk) for more information.
+  Read our scientific publications (on [BMC Genomics](https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-018-0423-1) and [BioRxiv](https://www.biorxiv.org/content/10.1101/566711v1.full)) and our [news page](/news) for more information.
 
   ## DIY Analysis
   Coming soon.

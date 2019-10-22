@@ -70,7 +70,10 @@
 
   {{ $js := slice $modernizr $detectizr $jquery $preloader $bootstrap $waves $waypoints $velocity $magnific_popup $jquery_stellar $masterslider $scrollreveal $jquery_dataTables $dataTables_bootstrap $data $turbolinks | resources.Concat "js/bundle.js" | minify | fingerprint }}
   <script src="{{ $js.RelPermalink }}"></script>
+
   <script src="https://kit.fontawesome.com/764f5a3290.js" crossorigin="anonymous"></script>
+  {{ $appJS := resources.Get "js/app.js" | minify | fingerprint}}
+  <script src="{{$appJS.RelPermalink}}"></script>
 </head>
 
 <!-- "is-preloader preloading" is a helper classes if preloader is enabled. -->

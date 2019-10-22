@@ -4,15 +4,15 @@ header: News
 subheader: Read all about us!
 lead_paragraph: Selected news about the Personal Genome Project UK
 news_items:
-- data: Apr 2019
+- date: Apr 2019
   details: "New technologies and sharing comprehensive personal precision-medicine data - Keynote lecture by George Church (Harvard University, USA) at Personal Genomes: Accessing, Sharing and Interpretation conference (11-12 April 2019)"
   link: https://www.youtube.com/watch?v=E60Rp-axhT8&feature=youtu.be&utm_campaign=1468209_Upcoming+deadlines+%28May-June+19%29&utm_medium=email&utm_source=Connecting+Science&dm_i=2SUU%2CVGVL%2CUTIB3%2C39R42%2C1
   type: Youtube Video
-- data: Apr 2019
+- date: Apr 2019
   details: Getting Up Close and Personal With Medical Genomics - Professor Stephan Beck speaks at the Chinese University of Hong Kong
   link: https://youtu.be/KYo0_ys1BHo
   type: Youtube Video
-- data: Apr 2019
+- date: Apr 2019
   details: Could your DNA data be used for Facebook ads?' Wellcome genetics panel asked
   link: https://www.cambridgeindependent.co.uk/news/could-your-dna-data-be-used-for-facebook-ads-wellcome-genetics-panel-asked-9068183/
   type: News Article

@@ -22,7 +22,7 @@
             <h4 class="text-light">{{$slider.subheader}}</h4>
             <div class="padding-top">
               {{range $slider.btns}}
-              <a href="{{.link}}" class="btn {{.class}} waves-effect ">
+              <a href="{{.link}}" class="btn {{.class}} waves-effect">
                 {{.text}}
                 <i class="{{.icon}}"></i>
               </a>
@@ -38,7 +38,10 @@
 <section class="fw-section bg-default border-top padding-top-3x padding-bottom-3x">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-7 mobile-center padding-bottom scrollReveal sr-left">
+      <div class="col-sm-7 mobile-center padding-bottom scrollReveal sr-left">
+        {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" .Params.intro_section.img ) }}
+          <img src="{{.Permalink}}" class="visible-xs-block" style="max-height:100px; margin-bottom: 20px">
+        {{end}}
         <h2 class="block-title"> {{.Params.intro_section.header}}
           <small>{{.Params.intro_section.subheader}}</small>
         </h2>
@@ -50,7 +53,7 @@
           <i class="icon-arrow-right"></i>
         </a>
       </div>
-      <div class="col-lg-5 col-md-5 scrollReveal sr-right">
+      <div class="col-sm-5 scrollReveal sr-right hidden-xs">
         {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" .Params.intro_section.img ) }}
           <img src="{{.Permalink}}" style="max-height:350px; float:right; margin-top: 40px">
         {{end}}

@@ -14,12 +14,6 @@
   $(window).on('turbolinks:load', function () {
     'use strict';
 
-    // Disable default link behavior for dummy links that have href='#'
-    var $emptyLink = $('a[href=#]');
-    $emptyLink.on('click', function(e){
-      e.preventDefault();
-    });
-
     // Stuck navbar on scroll
     if($('.navbar-sticky').length && $('.main-navigation').length) {
       var sticky = new Waypoint.Sticky({
@@ -69,7 +63,6 @@
       $('html').velocity("scroll", { offset:$(this.hash).offset().top-$elemOffsetTop, duration: 1000, easing:'easeOutExpo', mobileHA: false});
       event.preventDefault();
     });
-
 
     // Toggle Mobile Navigation
     var $navToggle = $('.nav-toggle', '.navbar');
@@ -472,7 +465,6 @@ document.addEventListener("turbolinks:before-visit", function () {
 PGP.resetDatatables = function () {
   dataTable = $($.fn.dataTable.tables(true)).DataTable();
   if (dataTable != null) {
-    console.log('destroying')
     dataTable.destroy();
   }
   dataTable = null;

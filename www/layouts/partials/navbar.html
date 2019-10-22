@@ -20,10 +20,12 @@
         <a href="https://my.personalgenomes.org.uk/" class="btn btn-sm btn-default btn-icon-right waves-effect waves-light">Log In
           <i class="icon-head"></i>
         </a>
-        {{with .Params.social_media.twitter}}
-          <a href="{{.}}" target="_blank" class="cart-btn">
-            <i class="fab fa-twitter"></i>
-          </a>
+        {{ with .Site.GetPage "/" }}
+          {{with .Params.social_media.twitter}}
+            <a href="{{.}}" target="_blank" class="cart-btn">
+              <i class="fab fa-twitter"></i>
+            </a>
+          {{end}}
         {{end}}
       </div>
     </div>

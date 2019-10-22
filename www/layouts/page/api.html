@@ -5,8 +5,8 @@
 
   {{ $swagger_ui_bundle  := resources.Get "js/vendor/swagger-ui/swagger-ui-bundle.js" | minify | fingerprint }}
   {{ $swagger_ui_standalone  := resources.Get "js/vendor/swagger-ui/swagger-ui-standalone-preset.js" | minify | fingerprint }}
-  <script src="{{$swagger_ui_bundle.Permalink}}" integrity="{{ $swagger_ui_bundle.Data.Integrity }}"></script>
-  <script src="{{$swagger_ui_standalone.Permalink}}" integrity="{{ $swagger_ui_standalone.Data.Integrity }}"></script>
+  <script src="{{$swagger_ui_bundle.Permalink}}"></script>
+  <script src="{{$swagger_ui_standalone.Permalink}}"></script>
 
   <script>
     window.onload = function () {

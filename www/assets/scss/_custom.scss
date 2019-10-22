@@ -28,7 +28,6 @@
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-
 .teammate-2 {
   .social-bar {
     bottom: 100px;
@@ -451,4 +450,8 @@ ul.pagination {
   .mobile_footer_spacer {
     margin-left: 56px
   }
+}
+
+.social-bar.mobile-socials.expanded {
+  background-color: #fff;
 }

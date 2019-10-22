@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4a760548-07c0-42b0-b613-cd993b8c8777/deploy-status)](https://app.netlify.com/sites/pgp-uk-dev/deploys)
 
-Static website running: https://www.personalgenomes.org.uk
+Static website running: [https://www.personalgenomes.org.uk](https://www.personalgenomes.org.uk)
 
 This is the live branch that is built and hosted on Netlify.
 
@@ -23,7 +23,7 @@ bash deploy.sh
 3. Start the Local Webserver
 
 ```bash
-hugo server --source www
+hugo server --source www --disableLiveReload
 ```
 
 ### Other Branches

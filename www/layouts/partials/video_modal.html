@@ -18,42 +18,42 @@
         <div class="modal-body">
           <div class="tab-content">
             <div id="ambassador_{{$i}}_tab1" class="tab-pane transition fade scaledown active in" role="tabpanel">
-              <video width="100%" controls>
+              <video width="100%" controls preload="none">
                 {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.intro ) }}
                   <source src="{{.Permalink}}" type="video/mp4" />
                 {{end}}
               </video>
             </div>
             <div id="ambassador_{{$i}}_tab2" class="tab-pane transition fade scaledown" role="tabpanel">
-              <video width="100%" controls>
+              <video width="100%" controls preload="none">
                 {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.ancestry ) }}
                   <source src="{{.Permalink}}" type="video/mp4" />
                 {{end}}
               </video>
             </div>
             <div id="ambassador_{{$i}}_tab3" class="tab-pane transition fade scaledown" role="tabpanel">
-              <video width="100%" controls>
+              <video width="100%" controls preload="none">
                 {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.age ) }}
                   <source src="{{.Permalink}}" type="video/mp4" />
                 {{end}}
               </video>
             </div>
             <div id="ambassador_{{$i}}_tab4" class="tab-pane transition fade scaledown" role="tabpanel">
-              <video width="100%" controls>
+              <video width="100%" controls preload="none">
                 {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.eye_colour ) }}
                   <source src="{{.Permalink}}" type="video/mp4" />
                 {{end}}
               </video>
             </div>
             <div id="ambassador_{{$i}}_tab5" class="tab-pane transition fade scaledown" role="tabpanel">
-              <video width="100%" style="max-height:80vh" controls>
+              <video width="100%" style="max-height:80vh" controls preload="none">
                 {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.smoking ) }}
                   <source src="{{.Permalink}}" type="video/mp4" />
                 {{end}}
               </video>
             </div>
             <div id="ambassador_{{$i}}_tab6" class="tab-pane transition fade scaledown" role="tabpanel">
-              <video width="100%" controls>
+              <video width="100%" controls preload="none">
                 {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.videos.health ) }}
                   <source src="{{.Permalink}}" type="video/mp4" />
                 {{end}}

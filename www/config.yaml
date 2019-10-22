@@ -50,6 +50,6 @@ menu:
   - url: /data
     name: PGP-UK Data
   - url: https://www.ebi.ac.uk/ena/data/view/PRJEB17529
-    name: EBI PGP data warehouse
+    name: EBI PGP data
   - url: https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5377/
     name: ArrayExpress

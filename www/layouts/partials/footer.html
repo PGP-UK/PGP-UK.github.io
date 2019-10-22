@@ -20,38 +20,42 @@
         </div>
         <div class="col-md-7 col-sm-12">
           <div class="row">
-            <div class="col-sm-4">
-              <section class="widget widget_text" style="margin-top: 18px;">
-                {{ with .Site.GetPage "/" }}
-                  <h3 class="widget-title">{{.Params.menu_1_title}}</h3>
-                {{end}}
-                <ul>
-                  {{ $url := .RelPermalink }}
-                  {{ range .Site.Menus.footer1 }}
-                    <li class="{{ if eq $url .URL }}current-menu-item{{ end }}">
-                      <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
-                    </li>
-                  {{ end }}
-                </ul>
-              </section>
+            <div class="col-sm-8">
+              <div class="row mobile_footer_spacer">
+                <div class="col-xs-6">
+                  <section class="widget widget_text" style="margin-top: 18px;">
+                    {{ with .Site.GetPage "/" }}
+                    <h3 class="widget-title">{{.Params.menu_1_title}}</h3>
+                    {{end}}
+                    <ul>
+                      {{ $url := .RelPermalink }}
+                      {{ range .Site.Menus.footer1 }}
+                      <li class="{{ if eq $url .URL }}current-menu-item{{ end }}">
+                        <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+                      </li>
+                      {{ end }}
+                    </ul>
+                  </section>
+                </div>
+                <div class="col-xs-6">
+                  <section class="widget widget_text" style="margin-top: 18px;">
+                    {{ with .Site.GetPage "/" }}
+                    <h3 class="widget-title">{{.Params.menu_2_title}}</h3>
+                    {{end}}
+                    <ul>
+                      {{ $url := .RelPermalink }}
+                      {{ range .Site.Menus.footer2 }}
+                      <li class="{{ if eq $url .URL }}current-menu-item{{ end }}">
+                        <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
+                      </li>
+                      {{ end }}
+                    </ul>
+                  </section>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-4 ">
-              <section class="widget widget_text" style="margin-top: 18px;">
-                {{ with .Site.GetPage "/" }}
-                  <h3 class="widget-title">{{.Params.menu_2_title}}</h3>
-                {{end}}
-                <ul>
-                  {{ $url := .RelPermalink }}
-                  {{ range .Site.Menus.footer2 }}
-                    <li class="{{ if eq $url .URL }}current-menu-item{{ end }}">
-                      <a href="{{ .URL }}" target="_blank">{{ .Name }}</a>
-                    </li>
-                  {{ end }}
-                </ul>
-              </section>
-            </div>
             <div class="col-sm-4">
-              <section class="widget widget_text" style="margin-top: 18px;">
+              <section class="widget widget_text contact_col" style="margin-top: 18px;">
                 <h3 class="widget-title"></h3>
                 {{ with .Site.GetPage "/" }}
                   {{with .Params.social_media.twitter}}

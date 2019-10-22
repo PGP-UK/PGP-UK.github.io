@@ -16,8 +16,8 @@ slider:
   subheader: Download our free GenoME app on iPad now.
   btns:
   - text: Start Exploring
-    link: "#gemome_section"
-    class: btn-primary waves-light
+    link: "#genome_section"
+    class: btn-primary waves-light scroll-to
 intro_section:
   header: Our Goal
   subheader: Non-profit Open Genome Research

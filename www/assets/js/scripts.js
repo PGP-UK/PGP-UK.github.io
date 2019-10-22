@@ -61,9 +61,11 @@
     }
 
     // Smooth scroll to element
-    var $scrollTo = $('.scroll-to');
-    $scrollTo.on('click', function(event){
+    $(document).on('click', '.scroll-to', function(event){
       var $elemOffsetTop = $(this).data('offset-top');
+      if ($elemOffsetTop == undefined) {
+        $elemOffsetTop = 40;
+      }
       $('html').velocity("scroll", { offset:$(this.hash).offset().top-$elemOffsetTop, duration: 1000, easing:'easeOutExpo', mobileHA: false});
       event.preventDefault();
     });

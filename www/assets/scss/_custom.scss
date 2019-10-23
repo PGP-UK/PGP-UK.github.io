@@ -222,6 +222,15 @@ ul.pagination {
       @media #{$tablet-land} {
         padding-top: 75px !important;
       }
+
+      @media #{$tablet-port} {
+        padding-top: 104px !important;
+      }
+
+      @media #{$mobile-land} {
+        padding-top: 104px !important;
+      }
+
     }
   }
 
@@ -536,14 +545,14 @@ ul.pagination {
 @media #{$mobile-land} {
   .ms-slide {
     h1 {
-      font-size: 24px;
+      font-size: 34px;
       font-weight: 600;
       margin-bottom: 6px;
     }
 
     h4 {
       font-size: 16px;
-      font-weight: 300;
+      font-weight: 600;
       margin-bottom: 5px;
       padding: 0 15px;
     }
@@ -562,14 +571,14 @@ ul.pagination {
 @media #{$mobile-port} {
   .ms-slide {
     h1 {
-      font-size: 18px;
+      font-size: 24px;
       font-weight: 600;
       margin-bottom: 6px;
     }
 
     h4 {
-      font-size: 14px;
-      font-weight: 300;
+      font-size: 16px;
+      font-weight: 600;
       margin-bottom: 5px;
       padding: 0 15px;
     }

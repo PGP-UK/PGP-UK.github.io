@@ -21,11 +21,13 @@ end
 
 def write_all_participants
   outfile = API_DIR + 'all_participants.json'
+  outfile1 = API_DIR + 'all_participants'
   File.open(outfile, 'w') { |io| io.puts JSON.pretty_generate(JSON_DATA) }
+  File.open(outfile1, 'w') { |io| io.puts JSON.pretty_generate(JSON_DATA) }
 end
 
 def write_all_participants_as_nd_json
-  outfile = API_DIR + 'all_participants'
+  outfile = API_DIR + 'all_participants.ndjson'
   File.open(outfile, 'w') do |io|
     JSON_DATA.each do |hex_id, data|
       io.puts({ hex_id: hex_id, data: data }.to_json) unless data.nil?

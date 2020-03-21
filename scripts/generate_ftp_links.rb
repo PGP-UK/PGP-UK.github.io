@@ -130,10 +130,18 @@ def get_wgbs_type(url)
 end
 
 def get_meth_array_type(url)
-  return 'Methylation 450k Array Green Saliva IDAT' if url.end_with? 'Grn.idat?saliva'
-  return 'Methylation 450k Array Red Saliva IDAT' if url.end_with? 'Red.idat?saliva'
-  return 'Methylation 450k Array Green Blood IDAT' if url.end_with? 'Grn.idat?blood'
-  return 'Methylation 450k Array Red Blood IDAT' if url.end_with? 'Red.idat?blood'
+  if url.end_with? 'Grn.idat?saliva'
+    return 'Methylation 450k Array Green Saliva IDAT'
+  end
+  if url.end_with? 'Red.idat?saliva'
+    return 'Methylation 450k Array Red Saliva IDAT'
+  end
+  if url.end_with? 'Grn.idat?blood'
+    return 'Methylation 450k Array Green Blood IDAT'
+  end
+  if url.end_with? 'Red.idat?blood'
+    return 'Methylation 450k Array Red Blood IDAT'
+  end
 end
 
 def get_pgp_profile_type(url)
@@ -148,7 +156,9 @@ end
 
 def get_rna_seq_type(url)
   return 'Transcriptomic - RNAseq BAM' if url.end_with? '.bam?download'
-  return 'Transcriptomic - RNAseq BAM index' if url.end_with? '.bam.bai?download'
+  if url.end_with? '.bam.bai?download'
+    return 'Transcriptomic - RNAseq BAM index'
+  end
 end
 
 def get_amplicon_type(url)

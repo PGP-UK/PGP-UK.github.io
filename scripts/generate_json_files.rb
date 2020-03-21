@@ -4,6 +4,7 @@ require 'typhoeus'
 require 'csv'
 require 'fileutils'
 require 'json'
+require 'nokogiri'
 require 'pathname'
 require 'uri'
 
@@ -172,35 +173,28 @@ def get_sample_id(h)
   end
 end
 
-def parse_hex_id(h)
-  return parse_hex_id_using_key(h, WGBS_KEY) if h[:type] == 'wgbs'
+def parse_hex_id(data)
+  hex_id = use_XML_to_parse_hex_id(data[:sample_accession])
+  hex_id = normalize_hex_id(hex_id)
+  return hex_id if hex_id.match?(/^uk\S{6}$/)
 
-  if %w[amplicon_rna_seq proton_rna_seq].include? h[:type]
-    return parse_hex_id_using_key(h, RNASEQ_KEY)
-  end
-
-  # PGP10 use sample_alias
-  # while PGP-donations uses library_name
-  # And PGP 2019 participants use sample_title
-  %i[sample_alias library_name sample_title].each do |key|
-    return normalize_hex_id(h[key]) if h[key] =~ /uk\S{6}/
-  end
-  parse_pgp100_hex_id(h) if h[:sample_alias] =~ /\S{8}-\S{9}-\S{4}-\S{12}/
   raise StandardError, 'Unable to parse PGP HEX id'
 end
 
-def parse_hex_id_using_key(h, convert_key)
-  h_key = :sample_alias if h[:type] == 'wgbs'
-  h_key = :sample_title if %w[amplicon_rna_seq proton_rna_seq].include? h[:type]
-  d = h[h_key] =~ /uk\S{6}/ ? h[h_key] : convert_key[h[h_key]]
-  normalize_hex_id(d)
-end
+def use_XML_to_parse_hex_id(sample_accession)
+  url = "https://www.ebi.ac.uk/ena/browser/api/xml/#{sample_accession}"
+  result = Typhoeus.get(url)
+  doc = Nokogiri::XML(result.response_body.to_s)
 
-def parse_pgp100_hex_id(h)
-  d = SANGER_KEY[h[:sample_alias]]
-  return nil if h[:sample_title] != d[:sanger_id]
+  hex_id = doc.at_xpath('//TITLE').content
+  hex_id = RNASEQ_KEY[hex_id] if RNASEQ_KEY.key? hex_id
+  return hex_id if hex_id.match?(/^uk\S{6}$/)
 
-  normalize_hex_id(d[:pgp_id])
+  hex_id = doc.at_xpath('//SUBMITTER_ID').content
+  hex_id = WGBS_KEY[hex_id] if WGBS_KEY.key? hex_id
+  return hex_id if hex_id.match?(/^uk\S{6}$/)
+
+  raise StandardError, 'Unable to parse PGP HEX id'
 end
 
 def normalize_hex_id(id)
@@ -399,12 +393,6 @@ TAPESTRY_URL = 'https://my.personalgenomes.org.uk/public_genetic_data.json'
 data_dir = Pathname.new(__dir__).parent + 'data'
 phenotype_csv_file = data_dir + 'phenotype.csv'
 sanger_ids_file = data_dir + 'sanger_ids_key.csv'
-
-# parse SANGER keys for PGP100
-SANGER_KEY = {}
-CSV.foreach(sanger_ids_file) do |r|
-  SANGER_KEY[r[0]] = { pgp_id: r[1], sanger_id: r[2] }
-end
 
 ## Parse Phenotype data
 PHENOTYPE_DATA = parse_phenotype_csv(phenotype_csv_file)

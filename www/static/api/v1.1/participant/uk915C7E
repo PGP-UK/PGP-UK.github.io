@@ -1,0 +1,114 @@
+{
+  "wgs": [
+    {
+      "study_accession": "PRJEB17529",
+      "secondary_study_accession": "ERP019394",
+      "sample_accession": "SAMEA5925166",
+      "secondary_sample_accession": "ERS3713706",
+      "experiment_accession": "ERX3523132",
+      "run_accession": "ERR3501895",
+      "submission_accession": "ERA2108306",
+      "tax_id": "9606",
+      "scientific_name": "Homo sapiens",
+      "instrument_platform": "BGISEQ",
+      "instrument_model": "BGISEQ-500",
+      "library_name": "unspecified",
+      "library_layout": "PAIRED",
+      "nominal_length": "250",
+      "library_strategy": "WGS",
+      "library_source": "GENOMIC",
+      "library_selection": "unspecified",
+      "read_count": "665018401",
+      "base_count": "132982175000",
+      "center_name": "UNIVERSITY COLLEGE LONDON",
+      "first_public": "2019-08-30",
+      "last_updated": "2019-08-29",
+      "experiment_title": "BGISEQ-500 paired end sequencing",
+      "study_title": "Personal Genome Project - United Kingdom",
+      "study_alias": "ena-STUDY-UNIVERSITY COLLEGE LONDON-31-10-2016-15:46:14:765-442",
+      "experiment_alias": "ena-EXPERIMENT-UNIVERSITY COLLEGE LONDON-29-08-2019-20:50:37:000-8",
+      "run_alias": "ena-RUN-UNIVERSITY COLLEGE LONDON-29-08-2019-20:50:37:000-8",
+      "fastq_bytes": "24895768;44086575964;45294822476",
+      "fastq_md5": "c6e9b2190996ae48daab80b2f76ac604;af38819c162eca97fc369c6a8d7711bd;e632a77cca96613290de0a379c84f463",
+      "fastq_ftp": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_2.fastq.gz",
+      "fastq_aspera": "fasp.sra.ebi.ac.uk:/vol1/fastq/ERR350/005/ERR3501895/ERR3501895.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_1.fastq.gz;fasp.sra.ebi.ac.uk:/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_2.fastq.gz",
+      "fastq_galaxy": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_2.fastq.gz",
+      "submitted_bytes": "150426656365;9316592",
+      "submitted_md5": "d48709a3d8c7d78b953f734f472f295a;68a7c55c0ab3ebcb242ae6c1770d5957",
+      "submitted_ftp": "ftp.sra.ebi.ac.uk/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam;ftp.sra.ebi.ac.uk/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam.bai",
+      "submitted_aspera": "fasp.sra.ebi.ac.uk:/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam;fasp.sra.ebi.ac.uk:/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam.bai",
+      "submitted_galaxy": "ftp.sra.ebi.ac.uk/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam;ftp.sra.ebi.ac.uk/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam.bai",
+      "submitted_format": "BAM;BAI",
+      "sra_bytes": "90962485132",
+      "sra_md5": "ace8d6f38ecc2b609b63d1f6f2e214d5",
+      "sra_ftp": "ftp.sra.ebi.ac.uk/vol1/err/ERR350/005/ERR3501895",
+      "sra_aspera": "fasp.sra.ebi.ac.uk:/vol1/err/ERR350/005/ERR3501895",
+      "sra_galaxy": "ftp.sra.ebi.ac.uk/vol1/err/ERR350/005/ERR3501895",
+      "cram_index_ftp": null,
+      "cram_index_aspera": null,
+      "cram_index_galaxy": null,
+      "sample_alias": "8",
+      "broker_name": null,
+      "nominal_sdev": "0",
+      "first_created": "2019-08-29",
+      "type": "wgs",
+      "meta_data_source": "https://www.ebi.ac.uk/ena/data/warehouse/filereport?accession=PRJEB17529&result=read_run"
+    }
+  ],
+  "pgp_profile": {
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk915C7E",
+    "hex": "uk915C7E",
+    "zip": "BS164RR",
+    "deceased": null,
+    "files": [
+      {
+        "name": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "data_type": "Genome Report",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/199/download",
+        "file_source": "PGP"
+      }
+    ],
+    "confirmed_family_relations": [
+
+    ],
+    "type": "pgp_profile"
+  },
+  "phenotype": null,
+  "genome_report": [
+    {
+      "published": "06/19/2019",
+      "pgp_hex_id": "uk915C7E",
+      "name": "Genome Report (Released by PGP-UK on 19th June 2019)",
+      "data_type": "Genome Report",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/199/download",
+      "file_source": "PGP",
+      "type": "genome_report"
+    }
+  ],
+  "download_url": [
+    {
+      "type": "WGS Fastq",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895.fastq.gz"
+    },
+    {
+      "type": "WGS Fastq (_1)",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_1.fastq.gz"
+    },
+    {
+      "type": "WGS Fastq (_2)",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_2.fastq.gz"
+    },
+    {
+      "type": "WGS Bam",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam"
+    },
+    {
+      "type": "WGS Bam Index",
+      "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam.bai"
+    },
+    {
+      "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/199/download"
+    }
+  ]
+}

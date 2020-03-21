@@ -45,7 +45,7 @@ def write_subset_files(dir, key)
 end
 
 def write_all_subset_as_ndjson(fname, key)
-  outfile = API_DIR + fname
+  outfile = API_DIR + "#{fname}.ndjson"
   File.open(outfile, 'w') do |io|
     JSON_DATA.each do |hex_id, d|
       next unless d.key? key
@@ -57,6 +57,7 @@ end
 
 def write_all_subset(fname, key)
   outfile = API_DIR + "#{fname}.json"
+  outfile1 = API_DIR + fname
   subset = []
   JSON_DATA.each do |hex_id, d|
     next unless d.key? key
@@ -64,6 +65,7 @@ def write_all_subset(fname, key)
     subset << { hex_id: hex_id, data: d[key] } unless d[key].nil?
   end
   File.open(outfile, 'w') { |io| io.puts JSON.pretty_generate(subset) }
+  File.open(outfile1, 'w') { |io| io.puts JSON.pretty_generate(subset) }
 end
 
 # RUN ANALYSIS

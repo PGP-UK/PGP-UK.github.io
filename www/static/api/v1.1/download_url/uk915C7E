@@ -1,0 +1,26 @@
+[
+  {
+    "type": "WGS Fastq",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895.fastq.gz"
+  },
+  {
+    "type": "WGS Fastq (_1)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_1.fastq.gz"
+  },
+  {
+    "type": "WGS Fastq (_2)",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/fastq/ERR350/005/ERR3501895/ERR3501895_2.fastq.gz"
+  },
+  {
+    "type": "WGS Bam",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam"
+  },
+  {
+    "type": "WGS Bam Index",
+    "download_url": "ftp.sra.ebi.ac.uk/vol1/run/ERR350/ERR3501895/uk915C7E_0.md.bam.bai"
+  },
+  {
+    "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+    "download_url": "https://my.personalgenomes.org.uk/datasets/199/download"
+  }
+]

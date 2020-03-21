@@ -4,7 +4,7 @@ set -ex # exit immediately with nonzero exit code if anything fails
 # Install dependencies
 bundle install
 
-LATEST_API_VERSION="v1.1"
+LATEST_API_VERSION="v1.2"
 
 # generate the json files
 bundle exec ruby scripts/generate_json_files.rb
@@ -27,6 +27,7 @@ cp -r www/public/api/v1.0  www/public/api/v1
 
 cp www/public/api/index.html www/public/api/v1
 cp www/public/api/index.html www/public/api/v1.0
+cp www/public/api/index.html www/public/api/v1.1
 cp www/public/api/index.html www/public/api/${LATEST_API_VERSION}
 
 rsync -a --ignore-existing www/content/uploads/* www/public/images && rm www/public/images/_index.md

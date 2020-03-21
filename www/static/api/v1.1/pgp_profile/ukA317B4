@@ -1,0 +1,21 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukA317B4",
+  "hex": "ukA317B4",
+  "zip": "BA33JR",
+  "deceased": null,
+  "files": [
+    {
+      "name": "Richard Stelling",
+      "data_type": "23andMe",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/180",
+      "report_url": null,
+      "date": "2019-02-25",
+      "description": "Genotyping data",
+      "file_source": "Participant"
+    }
+  ],
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

@@ -40,9 +40,9 @@ def create_urls(accessions, type)
 end
 
 def ena_eva_file_report_url(accession)
-  url_start = 'https://www.ebi.ac.uk/ena/data/warehouse/filereport'
-  ["#{url_start}?accession=#{accession}&result=read_run",
-   "#{url_start}?accession=#{accession}&result=analysis"]
+  url_start = 'https://www.ebi.ac.uk/ena/portal/api/filereport'
+  ["#{url_start}?accession=#{accession}&fields=all&result=read_run",
+   "#{url_start}?accession=#{accession}&fields=all&result=analysis"]
 end
 
 def queue_request(hydra, url)
@@ -64,7 +64,7 @@ end
 def parse_tabular_results(body, request_url)
   csv = CSV.new(body, headers: true, header_converters: :symbol, col_sep: "\t")
   csv.to_a.map do |row|
-    data_hash = row.to_hash
+    data_hash = row.to_hash&.delete_if { |_, v| v.nil? || v.empty? }
     type = determine_type(data_hash, request_url)
     data_hash.merge!(type)
   end

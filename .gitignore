@@ -5,17 +5,20 @@ www/_site
 www/resources
 www/public
 
-www/data/json/*
-www/data/phenotype.csv
-www/data/data_file_links.csv
-!www/data/json/.gitkeep
+www/static/data/json/*
+!www/static/data/json/.gitkeep
+
+www/static/data/phenotype.csv
+www/static/data/data_file_links.csv
 
 www/static/api/v*/*
 !www/static/api/v1.0/*
 !www/static/api/v1.1/*
-!www/static/api/v*/.gitkeep
+!www/static/api/v1.2/*
 
 data/*csv
 data/*json
-!data/phenotype.csv
-!data/sanger_ids_key.csv
+!data/phenotype-*.csv
+
+
+

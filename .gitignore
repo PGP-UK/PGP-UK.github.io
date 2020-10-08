@@ -19,6 +19,3 @@ www/static/api/v*/*
 data/*csv
 data/*json
 !data/phenotype-*.csv
-
-
-

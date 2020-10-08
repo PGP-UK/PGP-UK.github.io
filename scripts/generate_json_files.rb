@@ -350,17 +350,21 @@ def title_tooltip(display, title, direction = 'left')
   "#{display}</span>"
 end
 
-def parse_phenotype_csv(input_file)
+def parse_phenotype_csv(phenotype_datasets)
   r = {}
-  File.open(input_file) do |f|
-    CSV.foreach(f, headers: true, converters: [:all]).each_with_index do |csv_row, _idx|
-      next if csv_row.empty?
+  phenotype_datasets.each do |d|
+    File.open(d[:file]) do |f|
+      CSV.foreach(f, headers: true, converters: [:all]).each_with_index do |csv_row, _idx|
+        next if csv_row.empty?
 
-      pgp_id = normalize_hex_id(csv_row[0]).to_sym
-      r[pgp_id] ||= []
-      r[pgp_id] << csv_row.to_a.map do |e|
-        e[1] ||= ''
-        { question: e[0], answer: e[1] }
+        pgp_id = normalize_hex_id(csv_row[0]).to_sym
+        csv_data = csv_row.to_a.map do |e|
+          e[1] ||= ''
+          { question: e[0], answer: e[1] }
+        end
+
+        r[pgp_id] ||= []
+        r[pgp_id] << { name: d[:name], data: csv_data }
       end
     end
   end
@@ -391,11 +395,13 @@ RNASEQ_KEY = { 'Sample_1_PGPUK_B1' => 'uk35C650',
 TAPESTRY_URL = 'https://my.personalgenomes.org.uk/public_genetic_data.json'
 
 data_dir = Pathname.new(__dir__).parent + 'data'
-phenotype_csv_file = data_dir + 'phenotype.csv'
-sanger_ids_file = data_dir + 'sanger_ids_key.csv'
+phenotype_data = [
+  { name: 'General Questionnaire', file: data_dir + 'phenotype-general.csv' },
+  { name: 'COVID-19 Questionnaire', file: data_dir + 'phenotype-covid.csv' }
+]
 
 ## Parse Phenotype data
-PHENOTYPE_DATA = parse_phenotype_csv(phenotype_csv_file)
+PHENOTYPE_DATA = parse_phenotype_csv(phenotype_data)
 
 project_accession = %w[PRJEB17529 PRJEB13150 PRJEB25139]
 arrayexpress_accessions = %w[E-MTAB-5377 E-MTAB-6523]

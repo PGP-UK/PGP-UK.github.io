@@ -10,9 +10,10 @@ www/data/phenotype.csv
 www/data/data_file_links.csv
 !www/data/json/.gitkeep
 
-www/api/v*/*
-!www/api/v1.0/*
-!www/api/v*/.gitkeep
+www/static/api/v*/*
+!www/static/api/v1.0/*
+!www/static/api/v1.1/*
+!www/static/api/v*/.gitkeep
 
 data/*csv
 data/*json

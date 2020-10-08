@@ -1,0 +1,125 @@
+{
+  "genome_report": [
+    {
+      "published": "08/21/2017",
+      "pgp_hex_id": "ukE80D96",
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/152/download",
+      "type": "genome_report"
+    }
+  ],
+  "pgp_profile": {
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukE80D96",
+    "deceased": null,
+    "files": [
+      {
+        "file_source": "PGP",
+        "data_type": "Genome Report",
+        "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/152/download"
+      }
+    ],
+    "zip": "PO157JR",
+    "hex": "ukE80D96",
+    "confirmed_family_relations": [
+
+    ],
+    "type": "pgp_profile"
+  },
+  "phenotype": [
+    [
+      {
+        "question": "PGP-UK ID",
+        "answer": "ukE80D96"
+      },
+      {
+        "question": "Sex (from birth)",
+        "answer": "Male"
+      },
+      {
+        "question": "Gender",
+        "answer": "Male"
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "07/12/1973"
+      },
+      {
+        "question": "Have you ever smoked?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you currently smoke?",
+        "answer": ""
+      },
+      {
+        "question": "If you are an ex-smoker, at what age did you give up smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+        "answer": ""
+      },
+      {
+        "question": "What is your blood type?",
+        "answer": "Unknown"
+      },
+      {
+        "question": "What is your blood Rh (Rhesus) factor?",
+        "answer": "Unknown"
+      },
+      {
+        "question": "Are you left- or right-handed?",
+        "answer": "Right"
+      },
+      {
+        "question": "What is your weight in kg?",
+        "answer": 95
+      },
+      {
+        "question": "What is your height in cm?",
+        "answer": 178
+      },
+      {
+        "question": "What is your main natural hair colour?",
+        "answer": "Brown"
+      },
+      {
+        "question": "Please, provide details about your hair colour",
+        "answer": "Blonde as a young child, turned dark brown in my teens"
+      },
+      {
+        "question": "What is your right eye main colour?",
+        "answer": "Gray"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your right eye colour.",
+        "answer": ""
+      },
+      {
+        "question": "What is your left eye main colour?",
+        "answer": "Gray"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your left eye colour.",
+        "answer": ""
+      },
+      {
+        "question": "Please, use this field to add any extra information about yourself",
+        "answer": ""
+      }
+    ]
+  ],
+  "download_url": [
+    {
+      "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/152/download"
+    }
+  ]
+}

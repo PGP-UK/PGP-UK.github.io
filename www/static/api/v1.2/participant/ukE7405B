@@ -1,0 +1,43 @@
+{
+  "genotype": [
+    {
+      "published": "03/23/2016",
+      "pgp_hex_id": "ukE7405B",
+      "file_source": "Participant",
+      "date": "2016-03-23",
+      "data_type": "23andMe",
+      "name": "JP",
+      "description": "23andMe genotyping",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/119",
+      "type": "genotype"
+    }
+  ],
+  "pgp_profile": {
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukE7405B",
+    "deceased": null,
+    "files": [
+      {
+        "file_source": "Participant",
+        "date": "2016-03-23",
+        "data_type": "23andMe",
+        "name": "JP",
+        "description": "23andMe genotyping",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/119",
+        "report_url": null
+      }
+    ],
+    "zip": null,
+    "hex": "ukE7405B",
+    "confirmed_family_relations": [
+
+    ],
+    "type": "pgp_profile"
+  },
+  "phenotype": null,
+  "download_url": [
+    {
+      "type": "23andMe",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/119"
+    }
+  ]
+}

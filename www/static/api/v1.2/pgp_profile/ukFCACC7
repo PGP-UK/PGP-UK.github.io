@@ -1,0 +1,18 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukFCACC7",
+  "deceased": null,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/116/download"
+    }
+  ],
+  "zip": "se11",
+  "hex": "ukFCACC7",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

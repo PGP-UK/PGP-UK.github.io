@@ -1,0 +1,19 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk55955C",
+  "deceased": null,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/134/download"
+    }
+  ],
+  "real_name": "Andrew S Parkes",
+  "zip": "DY68LT",
+  "hex": "uk55955C",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "published": "02/25/2019",
+    "pgp_hex_id": "ukA317B4",
+    "file_source": "Participant",
+    "date": "2019-02-25",
+    "data_type": "23andMe",
+    "name": "Richard Stelling",
+    "description": "Genotyping data",
+    "download_url": "https://my.personalgenomes.org.uk/user_file/download/180",
+    "type": "genotype"
+  }
+]

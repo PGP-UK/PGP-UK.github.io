@@ -1,0 +1,27 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk65E564",
+  "deceased": null,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 19th June 2019)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/197/download"
+    },
+    {
+      "file_source": "Participant",
+      "date": "2013-05-04",
+      "data_type": "23andMe",
+      "name": "23andMe",
+      "description": "",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/113",
+      "report_url": null
+    }
+  ],
+  "zip": "CM7 2NX",
+  "hex": "uk65E564",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

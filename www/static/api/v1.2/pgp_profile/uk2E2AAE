@@ -1,0 +1,24 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk2E2AAE",
+  "deceased": false,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Methylome Report",
+      "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/186/download"
+    },
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 21 July 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/73/download"
+    }
+  ],
+  "zip": null,
+  "hex": "uk2E2AAE",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

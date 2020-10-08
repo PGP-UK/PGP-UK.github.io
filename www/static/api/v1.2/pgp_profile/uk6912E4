@@ -1,0 +1,22 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk6912E4",
+  "deceased": false,
+  "files": [
+    {
+      "file_source": "Participant",
+      "date": null,
+      "data_type": "23andMe",
+      "name": "1234",
+      "description": "",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/103",
+      "report_url": null
+    }
+  ],
+  "real_name": "Sevgi Umur",
+  "zip": "W92NF",
+  "hex": "uk6912E4",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

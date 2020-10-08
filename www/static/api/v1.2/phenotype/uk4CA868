@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk4CA868"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Male"
+    },
+    {
+      "question": "Gender",
+      "answer": ""
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "06/12/1959"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": "No"
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": "22 years ago, but I did chew nicotine chewing gum, after quitting smoking, for 15 years up until 2010"
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": ""
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Left"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 95
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 179
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": ""
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Blue-Green-Grey with flecks"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": ""
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": ""
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "same as the right one!"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": ""
+    }
+  ]
+]

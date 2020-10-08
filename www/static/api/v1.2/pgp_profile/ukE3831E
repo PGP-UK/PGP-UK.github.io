@@ -1,0 +1,19 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukE3831E",
+  "deceased": null,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/115/download"
+    }
+  ],
+  "real_name": "John M Alfwynn",
+  "zip": "SK137AJ",
+  "hex": "ukE3831E",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

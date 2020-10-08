@@ -1,0 +1,125 @@
+{
+  "genome_report": [
+    {
+      "published": "08/02/2017",
+      "pgp_hex_id": "uk58BACF",
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/92/download",
+      "type": "genome_report"
+    }
+  ],
+  "pgp_profile": {
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk58BACF",
+    "deceased": null,
+    "files": [
+      {
+        "file_source": "PGP",
+        "data_type": "Genome Report",
+        "name": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/92/download"
+      }
+    ],
+    "zip": "YO243NF",
+    "hex": "uk58BACF",
+    "confirmed_family_relations": [
+
+    ],
+    "type": "pgp_profile"
+  },
+  "phenotype": [
+    [
+      {
+        "question": "PGP-UK ID",
+        "answer": "uk58BACF"
+      },
+      {
+        "question": "Sex (from birth)",
+        "answer": "Female"
+      },
+      {
+        "question": "Gender",
+        "answer": "Female"
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "17/01/1965"
+      },
+      {
+        "question": "Have you ever smoked?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you currently smoke?",
+        "answer": ""
+      },
+      {
+        "question": "If you are an ex-smoker, at what age did you give up smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+        "answer": ""
+      },
+      {
+        "question": "What is your blood type?",
+        "answer": "O"
+      },
+      {
+        "question": "What is your blood Rh (Rhesus) factor?",
+        "answer": "+"
+      },
+      {
+        "question": "Are you left- or right-handed?",
+        "answer": "Right"
+      },
+      {
+        "question": "What is your weight in kg?",
+        "answer": 73
+      },
+      {
+        "question": "What is your height in cm?",
+        "answer": 178
+      },
+      {
+        "question": "What is your main natural hair colour?",
+        "answer": "Brown"
+      },
+      {
+        "question": "Please, provide details about your hair colour",
+        "answer": "It was light brown curly hair when as was born which got darker brown as i got older.  It also was straight after about 2 years.  I started to go grey/white at about 25 after my first child and I am now almost 80% grey"
+      },
+      {
+        "question": "What is your right eye main colour?",
+        "answer": "Blue"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your right eye colour.",
+        "answer": "My eye is blue/green with brown specs  I have a darker blue/grey ring on the outside of the iris"
+      },
+      {
+        "question": "What is your left eye main colour?",
+        "answer": "Blue"
+      },
+      {
+        "question": "Please, use this field to provide any detail about your left eye colour.",
+        "answer": "My eye is blue/green with brown specs  I have a darker blue/grey ring on the outside of the iris"
+      },
+      {
+        "question": "Please, use this field to add any extra information about yourself",
+        "answer": "I am short sighted since 18 and have had depression over many years of my life with limited response to anti depressants.  My parents are alcoholics and I know I have a strong urge to drink too much so am very careful about how often I drink.  I have had a bone scan recently and was told my scores are as follows BUA 97  %Exp 135  Zu 1.51  Tu 0.45     I suffer from asthma.    I hope this extra data is useful"
+      }
+    ]
+  ],
+  "download_url": [
+    {
+      "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/92/download"
+    }
+  ]
+}

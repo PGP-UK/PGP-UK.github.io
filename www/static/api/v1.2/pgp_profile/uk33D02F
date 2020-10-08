@@ -1,0 +1,25 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk33D02F",
+  "deceased": false,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Methylome Report",
+      "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/191/download"
+    },
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 21 July 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/79/download"
+    }
+  ],
+  "real_name": "Laura McCormack",
+  "zip": "WC1E6AU",
+  "hex": "uk33D02F",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

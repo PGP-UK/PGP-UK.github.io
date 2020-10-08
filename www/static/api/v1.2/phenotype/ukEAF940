@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "ukEAF940"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Male"
+    },
+    {
+      "question": "Gender",
+      "answer": "Male"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "05/08/1971"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "No"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": ""
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": ""
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 70
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 177
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "Fair brown hair, turned darker in later life  before balding.  Beard colour was bright red before turning brown to grey"
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "was very pale blue at birth, turning darker grey in later life"
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "was very pale blue at birth, turning darker grey in later life"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": "Keratoconus in both eyes. \r\nFamily history of heart &  CV disease:  grandfather (maternal and paternal), grandmother (maternal), father + 5 paternal uncles had heart attacks or chronic cardiovascular disease.  Oldest (father) died at age 65, youngest (grandfather) died at age 55. Most uncles had first heart attack in early 40s. Paternal cousin  had a stroke at age 40.\r\n1 paternal uncle had pancreatic cancer at age 45"
+    }
+  ]
+]

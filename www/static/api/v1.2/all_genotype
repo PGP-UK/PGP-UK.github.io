@@ -1,0 +1,145 @@
+[
+  {
+    "hex_id": "uk35C650",
+    "data": [
+      {
+        "published": "06/08/2017",
+        "pgp_hex_id": "uk35C650",
+        "file_source": "Participant",
+        "date": "2014-05-15",
+        "data_type": "23andMe",
+        "name": "uk35C650_23andMe",
+        "description": "Genotyping data",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/166",
+        "type": "genotype"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk4CA868",
+    "data": [
+      {
+        "published": "02/06/2018",
+        "pgp_hex_id": "uk4CA868",
+        "file_source": "Participant",
+        "date": "2018-01-28",
+        "data_type": "23andMe",
+        "name": "Genome_Colin_P_Smith_v4_Full_20180128.txt",
+        "description": "My raw 23andMe genotyping data",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/170",
+        "type": "genotype"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk6D0CFA",
+    "data": [
+      {
+        "published": "01/28/2018",
+        "pgp_hex_id": "uk6D0CFA",
+        "file_source": "Participant",
+        "date": "2012-07-16",
+        "data_type": "23andMe",
+        "name": "Son.txt",
+        "description": "23andMe genotype data for Son in the Corpasome dataset, version 2 of the SNP array used by the genetic testing provider. ",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/169",
+        "type": "genotype"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE3E2DF",
+    "data": [
+      {
+        "published": "05/17/2018",
+        "pgp_hex_id": "ukE3E2DF",
+        "file_source": "Participant",
+        "date": "2018-05-17",
+        "data_type": "23andMe",
+        "name": "23andMe genotyping",
+        "description": "",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/176",
+        "type": "genotype"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk65E564",
+    "data": [
+      {
+        "published": "03/23/2016",
+        "pgp_hex_id": "uk65E564",
+        "file_source": "Participant",
+        "date": "2013-05-04",
+        "data_type": "23andMe",
+        "name": "23andMe",
+        "description": "",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/113",
+        "type": "genotype"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukA317B4",
+    "data": [
+      {
+        "published": "02/25/2019",
+        "pgp_hex_id": "ukA317B4",
+        "file_source": "Participant",
+        "date": "2019-02-25",
+        "data_type": "23andMe",
+        "name": "Richard Stelling",
+        "description": "Genotyping data",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/180",
+        "type": "genotype"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE7405B",
+    "data": [
+      {
+        "published": "03/23/2016",
+        "pgp_hex_id": "ukE7405B",
+        "file_source": "Participant",
+        "date": "2016-03-23",
+        "data_type": "23andMe",
+        "name": "JP",
+        "description": "23andMe genotyping",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/119",
+        "type": "genotype"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk6912E4",
+    "data": [
+      {
+        "published": "06/23/2015",
+        "pgp_hex_id": "uk6912E4",
+        "file_source": "Participant",
+        "data_type": "23andMe",
+        "name": "1234",
+        "description": "",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/103",
+        "type": "genotype"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukB08E17",
+    "data": [
+      {
+        "published": "05/19/2015",
+        "pgp_hex_id": "ukB08E17",
+        "file_source": "Participant",
+        "date": "2011-02-24",
+        "data_type": "23andMe",
+        "name": "23andMe raw genotype data for Stuart Harris",
+        "description": "",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/101",
+        "type": "genotype"
+      }
+    ]
+  }
+]

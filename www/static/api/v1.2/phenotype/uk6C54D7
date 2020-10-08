@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk6C54D7"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Male"
+    },
+    {
+      "question": "Gender",
+      "answer": "Male"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "09/05/1954"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": "No"
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": 28
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": 14
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": 20
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 88
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 168
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "I have always had straight brown hair that started going grey at the temples only around age 60"
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Hazel"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "The colour immediately around the pupil is amber/ brown getting progressively grey/ green towards the outer edges of the iris and encircled by a dark grey ring."
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Hazel"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "The colour immediately around the pupil is amber/ brown getting progressively grey/ green towards the outer edges of the iris and encircled by a dark grey ring."
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": "I am long sighted (age related, needing glasses from around age 40). I have had nasal polyps; and a heart attack aged 62. I have osteoarthritis largely in the hands and shoulders."
+    }
+  ]
+]

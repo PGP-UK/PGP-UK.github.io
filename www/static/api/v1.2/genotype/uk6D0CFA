@@ -1,0 +1,13 @@
+[
+  {
+    "published": "01/28/2018",
+    "pgp_hex_id": "uk6D0CFA",
+    "file_source": "Participant",
+    "date": "2012-07-16",
+    "data_type": "23andMe",
+    "name": "Son.txt",
+    "description": "23andMe genotype data for Son in the Corpasome dataset, version 2 of the SNP array used by the genetic testing provider. ",
+    "download_url": "https://my.personalgenomes.org.uk/user_file/download/169",
+    "type": "genotype"
+  }
+]

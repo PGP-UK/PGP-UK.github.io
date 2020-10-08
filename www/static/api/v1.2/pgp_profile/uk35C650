@@ -1,0 +1,40 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk35C650",
+  "deceased": false,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 23rd October 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/193/download"
+    },
+    {
+      "file_source": "PGP",
+      "data_type": "Methylome Report",
+      "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/183/download"
+    },
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 21 July 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/74/download"
+    },
+    {
+      "file_source": "Participant",
+      "date": "2014-05-15",
+      "data_type": "23andMe",
+      "name": "uk35C650_23andMe",
+      "description": "Genotyping data",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/166",
+      "report_url": null
+    }
+  ],
+  "real_name": "Stephan Beck",
+  "zip": "CB22 4NZ",
+  "hex": "uk35C650",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

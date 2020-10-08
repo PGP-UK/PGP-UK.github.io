@@ -1,0 +1,18 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk915C7E",
+  "deceased": null,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 19th June 2019)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/199/download"
+    }
+  ],
+  "zip": "BS164RR",
+  "hex": "uk915C7E",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

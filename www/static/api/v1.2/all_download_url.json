@@ -1,0 +1,1420 @@
+[
+  {
+    "hex_id": "uk35C650",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R04C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R04C02_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R03C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R03C01_Red.idat"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 23rd October 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/193/download"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/183/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/74/download"
+      },
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/166"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P1.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P1.bam/PGP_Targeted_RNAseq_P1.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2E2AAE",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C02_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R03C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R03C01_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/186/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/73/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P2.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P2.bam/PGP_Targeted_RNAseq_P2.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2DF242",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R06C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R06C02_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R03C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R03C02_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/187/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/78/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P3.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P3.bam/PGP_Targeted_RNAseq_P3.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk740176",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R06C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R06C02_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R06C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R06C01_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/189/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/81/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P4.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P4.bam/PGP_Targeted_RNAseq_P4.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk33D02F",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C02_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R04C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R04C02_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/191/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/79/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P5.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P5.bam/PGP_Targeted_RNAseq_P5.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk0C72FF",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R06C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R06C01_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R01C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R01C01_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/184/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/71/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P6.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P6.bam/PGP_Targeted_RNAseq_P6.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk1097F9",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R02C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R02C01_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R01C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R01C02_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/185/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/77/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P7.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P7.bam/PGP_Targeted_RNAseq_P7.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk174659",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R05C01_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C01_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/192/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/72/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P8.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P8.bam/PGP_Targeted_RNAseq_P8.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk85AA3B",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R02C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R02C02_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R01C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R01C01_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/180/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/76/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P9.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P9.bam/PGP_Targeted_RNAseq_P9.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk481F67",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R02C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R02C01_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R02C02_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760050_R02C02_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/182/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/80/download"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P10.bam"
+      },
+      {
+        "type": "Transcriptomic - RNAseq BAM",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P10.bam/PGP_Targeted_RNAseq_P10.bam"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk4CA868",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R05C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R05C01_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/188/download"
+      },
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/170"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/75/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk6D0CFA",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R06C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R06C01_Red.idat"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/181/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 26th February 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/174/download"
+      },
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/169"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE3E2DF",
+    "data": [
+      {
+        "type": "Methylation 450k Array Green Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R01C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Saliva IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R01C01_Red.idat"
+      },
+      {
+        "type": "Methylation 450k Array Green Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R02C01_Grn.idat"
+      },
+      {
+        "type": "Methylation 450k Array Red Blood IDAT",
+        "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/200069280184_R02C01_Red.idat"
+      },
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/176"
+      },
+      {
+        "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/190/download"
+      },
+      {
+        "type": "Genome Report (Released by PGP-UK on 26th February 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/175/download"
+      },
+      {
+        "type": "Fundus image left",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/175"
+      },
+      {
+        "type": "Fundus image right",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/174"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2293AB",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/205/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukB4491A",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/204/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk187685",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/196/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk6F5B69",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/202/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk48E359",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/203/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk9F6EDA",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/200/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk97975D",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/198/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk915C7E",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/199/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukF3D20F",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/201/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk65E564",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/197/download"
+      },
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/113"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk20E91D",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/194/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2FAAF0",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 19th June 2019)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/195/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukC4864A",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/147/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukB8CD68",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/104/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk689863",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/130/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk496F0B",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 10th August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/172/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2ABD6B",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 10th August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/171/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk37D41A",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/157/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukBCED7A",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/97/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk486E45",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/93/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukAE0694",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/91/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk0A0D88",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/100/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk0AD39D",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/166/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk401869",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/165/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukA2FF31",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/128/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukDC29B8",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/90/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE53A44",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/163/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk63112C",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/161/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk421E54",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/159/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk1115FE",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/94/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk28996F",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/155/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk09D62F",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/153/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk9148F7",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/111/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukDD3C78",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/112/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk1C9883",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/149/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukBA4FF7",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/114/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk5F1C15",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/148/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukD653EA",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/89/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk09B2EE",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/146/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk92A44E",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/118/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukB4A6DF",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/145/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukB5E082",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/121/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukB66F1C",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/142/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2C1EB9",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/123/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukB367C8",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/139/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk7BD52F",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/137/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk5EC8D0",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/88/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk79373B",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/127/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2FDC52",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/164/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk9F08CE",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/168/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk305BA4",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/98/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE80D96",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/152/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2B4EC7",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 10th August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/170/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukAA8E38",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/105/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk1E5B60",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/122/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukA866BF",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/131/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE52AAC",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 10th August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/169/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk6C54D7",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/162/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukC8A0B0",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/109/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukA66537",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/125/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukF1A7A6",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/141/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukDAC808",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/96/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk87BD26",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/83/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk0E6FFA",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/120/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk39054D",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/132/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk55955C",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/134/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk64379B",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/151/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk4D2EA6",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/138/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk393BF2",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/108/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE7EF69",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/117/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE8DC4E",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/101/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukEAF940",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/156/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk14F6AD",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/103/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk75E7BC",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/160/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk58B97E",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/110/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk072667",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/107/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukA41CB7",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/86/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk3CAFB3",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/150/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk457688",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/124/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk39B2EB",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/133/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk324659",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/144/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk0D2BB4",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/129/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk58BACF",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/92/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk2200DC",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/95/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk655115",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/85/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukFCACC7",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/116/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukAC4950",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/136/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk48CE67",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/106/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukDEA88B",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/140/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk5C0AD5",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/113/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk5FABB5",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/135/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukD768D4",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/143/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukC97BE5",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/167/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukBAF52F",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/102/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukF6D075",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/84/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk31EDD4",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/126/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk5E5B15",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/154/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk9A677F",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/87/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk247AEC",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/99/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE3831E",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/115/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukAED6EE",
+    "data": [
+      {
+        "type": "Genome Report (Released by PGP-UK on 2nd August 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/158/download"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukA317B4",
+    "data": [
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/180"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukE7405B",
+    "data": [
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/119"
+      }
+    ]
+  },
+  {
+    "hex_id": "uk6912E4",
+    "data": [
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/103"
+      }
+    ]
+  },
+  {
+    "hex_id": "ukB08E17",
+    "data": [
+      {
+        "type": "23andMe",
+        "download_url": "https://my.personalgenomes.org.uk/user_file/download/101"
+      }
+    ]
+  }
+]

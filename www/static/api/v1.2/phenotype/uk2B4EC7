@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk2B4EC7"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Male"
+    },
+    {
+      "question": "Gender",
+      "answer": "Male"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "18/07/1989"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": "No"
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": 25
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": 22
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": 5
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "A"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "+"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 88.3
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 171
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Black"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "Black and straight my entire life"
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "Born blue, currently blue with a green/yellow ring around the pupil"
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Blue"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "Born blue, currently blue with a green/yellow ring around the pupil"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": "My right pupil has always been slightly larger than my left pupil. "
+    }
+  ]
+]

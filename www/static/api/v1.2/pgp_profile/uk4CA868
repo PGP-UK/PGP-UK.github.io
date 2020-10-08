@@ -1,0 +1,34 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk4CA868",
+  "deceased": false,
+  "files": [
+    {
+      "file_source": "PGP",
+      "data_type": "Methylome Report",
+      "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/188/download"
+    },
+    {
+      "file_source": "Participant",
+      "date": "2018-01-28",
+      "data_type": "23andMe",
+      "name": "Genome_Colin_P_Smith_v4_Full_20180128.txt",
+      "description": "My raw 23andMe genotyping data",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/170",
+      "report_url": null
+    },
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 21 July 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/75/download"
+    }
+  ],
+  "real_name": "Colin P Smith",
+  "zip": null,
+  "hex": "uk4CA868",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "type": "Methylation 450k Array Green Blood IDAT",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C02_Grn.idat"
+  },
+  {
+    "type": "Methylation 450k Array Red Blood IDAT",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C02_Red.idat"
+  },
+  {
+    "type": "Methylation 450k Array Green Saliva IDAT",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R04C02_Grn.idat"
+  },
+  {
+    "type": "Methylation 450k Array Red Saliva IDAT",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R04C02_Red.idat"
+  },
+  {
+    "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+    "download_url": "https://my.personalgenomes.org.uk/datasets/191/download"
+  },
+  {
+    "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+    "download_url": "https://my.personalgenomes.org.uk/datasets/79/download"
+  },
+  {
+    "type": "Transcriptomic - RNAseq BAM",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P5.bam"
+  },
+  {
+    "type": "Transcriptomic - RNAseq BAM",
+    "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P5.bam/PGP_Targeted_RNAseq_P5.bam"
+  }
+]

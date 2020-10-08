@@ -1,0 +1,52 @@
+{
+  "public_profile_url": "https://my.personalgenomes.org.uk/profile/ukE3E2DF",
+  "deceased": null,
+  "files": [
+    {
+      "file_source": "Participant",
+      "date": "2018-05-17",
+      "data_type": "23andMe",
+      "name": "23andMe genotyping",
+      "description": "",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/176",
+      "report_url": null
+    },
+    {
+      "file_source": "PGP",
+      "data_type": "Methylome Report",
+      "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/190/download"
+    },
+    {
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 26th February 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/175/download"
+    },
+    {
+      "file_source": "Participant",
+      "date": "2018-02-15",
+      "data_type": "image",
+      "name": "Fundus image left",
+      "description": "",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/175",
+      "report_url": null
+    },
+    {
+      "file_source": "Participant",
+      "date": "2018-02-15",
+      "data_type": "image",
+      "name": "Fundus image right",
+      "description": "",
+      "download_url": "https://my.personalgenomes.org.uk/user_file/download/174",
+      "report_url": null
+    }
+  ],
+  "real_name": "Nikolas Pontikos",
+  "zip": null,
+  "hex": "ukE3E2DF",
+  "confirmed_family_relations": [
+
+  ],
+  "type": "pgp_profile"
+}

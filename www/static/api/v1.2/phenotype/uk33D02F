@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk33D02F"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Female"
+    },
+    {
+      "question": "Gender",
+      "answer": ""
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "11/01/1971"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "No"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": "No"
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": ""
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": ""
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "A"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "+"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Right"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 80
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 171
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "I was almost platinum blond when born then hair darkened progressively with age especially after puberty and turned into brown with natural highlights and some grey (I have never dyed my hair and do not intend to do so).Also texture changed dramatically from straight to very curly at puberty!"
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": ""
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "it is multi coloured with a dark grey ring on the outside of the iris then some kaki greenish and some brown rays emanating from the middle"
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": ""
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "Exactly as right eye"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": ""
+    }
+  ]
+]

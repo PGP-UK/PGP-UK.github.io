@@ -1,0 +1,88 @@
+[
+  [
+    {
+      "question": "PGP-UK ID",
+      "answer": "uk5F1C15"
+    },
+    {
+      "question": "Sex (from birth)",
+      "answer": "Female"
+    },
+    {
+      "question": "Gender",
+      "answer": "Female"
+    },
+    {
+      "question": "Date of Birth",
+      "answer": "06/07/1983"
+    },
+    {
+      "question": "Have you ever smoked?",
+      "answer": "Yes"
+    },
+    {
+      "question": "Do you currently smoke?",
+      "answer": "No"
+    },
+    {
+      "question": "If you are an ex-smoker, at what age did you give up smoking?",
+      "answer": 24
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+      "answer": 16
+    },
+    {
+      "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+      "answer": 20
+    },
+    {
+      "question": "What is your blood type?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "What is your blood Rh (Rhesus) factor?",
+      "answer": "Unknown"
+    },
+    {
+      "question": "Are you left- or right-handed?",
+      "answer": "Left"
+    },
+    {
+      "question": "What is your weight in kg?",
+      "answer": 68
+    },
+    {
+      "question": "What is your height in cm?",
+      "answer": 170
+    },
+    {
+      "question": "What is your main natural hair colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, provide details about your hair colour",
+      "answer": "Light brown as a toddler, brown since. Straight, gets greasy quickly."
+    },
+    {
+      "question": "What is your right eye main colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your right eye colour.",
+      "answer": "Brown with a slightly lighter coloured ring arounf the iris"
+    },
+    {
+      "question": "What is your left eye main colour?",
+      "answer": "Brown"
+    },
+    {
+      "question": "Please, use this field to provide any detail about your left eye colour.",
+      "answer": "Brown with a slightly lighter coloured ring arounf the iris"
+    },
+    {
+      "question": "Please, use this field to add any extra information about yourself",
+      "answer": ""
+    }
+  ]
+]

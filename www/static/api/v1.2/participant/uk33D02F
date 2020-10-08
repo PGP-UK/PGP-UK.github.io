@@ -1,0 +1,428 @@
+{
+  "meth_array": [
+    {
+      "source_name": "Sample 5_PGPUK_B5",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsindividual": "uk33D02F",
+      "commentbiosd_sample": "SAMEA4545249",
+      "characteristicsorganism_part": "blood",
+      "characteristicsage": "44.57",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicssex": "female",
+      "characteristicssmoking_status": "never smoked",
+      "commentupdate_information": "  ",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-53550",
+      "extract_name": "Sample 5_PGPUK_B5",
+      "labeled_extract_name": "Sample 5_PGPUK_B5:Cy3",
+      "label": "Cy3",
+      "assay_name": "101130760049_R05C02",
+      "technology_type": "array assay",
+      "array_design_ref": "A-GEOD-18809",
+      "array_data_file": "101130760049_R05C02_Grn.idat",
+      "comment_arrayexpress_ftp_file": "ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-5377/E-MTAB-5377.raw.1.zip",
+      "factor_valueage": "44.57",
+      "factor_value_organism_part": "blood",
+      "factor_value_smoking_status": "never smoked",
+      "factor_value_individual": "uk33D02F",
+      "type": "meth_array",
+      "accession": "E-MTAB-5377",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.sdrf.txt"
+    },
+    {
+      "source_name": "Sample 5_PGPUK_B5",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsindividual": "uk33D02F",
+      "commentbiosd_sample": "SAMEA4545249",
+      "characteristicsorganism_part": "blood",
+      "characteristicsage": "44.57",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicssex": "female",
+      "characteristicssmoking_status": "never smoked",
+      "commentupdate_information": "  ",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-53550",
+      "extract_name": "Sample 5_PGPUK_B5",
+      "labeled_extract_name": "Sample 5_PGPUK_B5:Cy5",
+      "label": "Cy5",
+      "assay_name": "101130760049_R05C02",
+      "technology_type": "array assay",
+      "array_design_ref": "A-GEOD-18809",
+      "array_data_file": "101130760049_R05C02_Red.idat",
+      "comment_arrayexpress_ftp_file": "ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-5377/E-MTAB-5377.raw.1.zip",
+      "factor_valueage": "44.57",
+      "factor_value_organism_part": "blood",
+      "factor_value_smoking_status": "never smoked",
+      "factor_value_individual": "uk33D02F",
+      "type": "meth_array",
+      "accession": "E-MTAB-5377",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.sdrf.txt"
+    },
+    {
+      "source_name": "Sample 15_PGPUK_S5",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsindividual": "uk33D02F",
+      "commentbiosd_sample": "SAMEA4545249",
+      "characteristicsorganism_part": "saliva",
+      "characteristicsage": "44.57",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicssex": "female",
+      "characteristicssmoking_status": "never smoked",
+      "commentupdate_information": "  ",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-53549",
+      "extract_name": "Sample 15_PGPUK_S5",
+      "labeled_extract_name": "Sample 15_PGPUK_S5:Cy3",
+      "label": "Cy3",
+      "assay_name": "101130760049_R04C02",
+      "technology_type": "array assay",
+      "array_design_ref": "A-GEOD-18809",
+      "array_data_file": "101130760049_R04C02_Grn.idat",
+      "comment_arrayexpress_ftp_file": "ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-5377/E-MTAB-5377.raw.1.zip",
+      "factor_valueage": "44.57",
+      "factor_value_organism_part": "saliva",
+      "factor_value_smoking_status": "never smoked",
+      "factor_value_individual": "uk33D02F",
+      "type": "meth_array",
+      "accession": "E-MTAB-5377",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.sdrf.txt"
+    },
+    {
+      "source_name": "Sample 15_PGPUK_S5",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsindividual": "uk33D02F",
+      "commentbiosd_sample": "SAMEA4545249",
+      "characteristicsorganism_part": "saliva",
+      "characteristicsage": "44.57",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicssex": "female",
+      "characteristicssmoking_status": "never smoked",
+      "commentupdate_information": "  ",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-53549",
+      "extract_name": "Sample 15_PGPUK_S5",
+      "labeled_extract_name": "Sample 15_PGPUK_S5:Cy5",
+      "label": "Cy5",
+      "assay_name": "101130760049_R04C02",
+      "technology_type": "array assay",
+      "array_design_ref": "A-GEOD-18809",
+      "array_data_file": "101130760049_R04C02_Red.idat",
+      "comment_arrayexpress_ftp_file": "ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-5377/E-MTAB-5377.raw.1.zip",
+      "factor_valueage": "44.57",
+      "factor_value_organism_part": "saliva",
+      "factor_value_smoking_status": "never smoked",
+      "factor_value_individual": "uk33D02F",
+      "type": "meth_array",
+      "accession": "E-MTAB-5377",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.sdrf.txt"
+    }
+  ],
+  "pgp_profile": {
+    "public_profile_url": "https://my.personalgenomes.org.uk/profile/uk33D02F",
+    "deceased": false,
+    "files": [
+      {
+        "file_source": "PGP",
+        "data_type": "Methylome Report",
+        "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/191/download"
+      },
+      {
+        "file_source": "PGP",
+        "data_type": "Genome Report",
+        "name": "Genome Report (Released by PGP-UK on 21 July 2017)",
+        "download_url": "https://my.personalgenomes.org.uk/datasets/79/download"
+      }
+    ],
+    "real_name": "Laura McCormack",
+    "zip": "WC1E6AU",
+    "hex": "uk33D02F",
+    "confirmed_family_relations": [
+
+    ],
+    "type": "pgp_profile"
+  },
+  "phenotype": [
+    [
+      {
+        "question": "PGP-UK ID",
+        "answer": "uk33D02F"
+      },
+      {
+        "question": "Sex (from birth)",
+        "answer": "Female"
+      },
+      {
+        "question": "Gender",
+        "answer": ""
+      },
+      {
+        "question": "Date of Birth",
+        "answer": "11/01/1971"
+      },
+      {
+        "question": "Have you ever smoked?",
+        "answer": "No"
+      },
+      {
+        "question": "Do you currently smoke?",
+        "answer": "No"
+      },
+      {
+        "question": "If you are an ex-smoker, at what age did you give up smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, at what age did you start smoking?",
+        "answer": ""
+      },
+      {
+        "question": "If you are a current smoker/ex-smoker, what is/was your average number of cigarettes smoked per day?",
+        "answer": ""
+      },
+      {
+        "question": "What is your blood type?",
+        "answer": "A"
+      },
+      {
+        "question": "What is your blood Rh (Rhesus) factor?",
+        "answer": "+"
+      },
+      {
+        "question": "Are you left- or right-handed?",
+        "answer": "Right"
+      },
+      {
+        "question": "What is your weight in kg?",
+        "answer": 80
+      },
+      {
+        "question": "What is your height in cm?",
+        "answer": 171
+      },
+      {
+        "question": "What is your main natural hair colour?",
+        "answer": "Brown"
+      },
+      {
+        "question": "Please, provide details about your hair colour",
+        "answer": "I was almost platinum blond when born then hair darkened progressively with age especially after puberty and turned into brown with natural highlights and some grey (I have never dyed my hair and do not intend to do so).Also texture changed dramatically from straight to very curly at puberty!"
+      },
+      {
+        "question": "What is your right eye main colour?",
+        "answer": ""
+      },
+      {
+        "question": "Please, use this field to provide any detail about your right eye colour.",
+        "answer": "it is multi coloured with a dark grey ring on the outside of the iris then some kaki greenish and some brown rays emanating from the middle"
+      },
+      {
+        "question": "What is your left eye main colour?",
+        "answer": ""
+      },
+      {
+        "question": "Please, use this field to provide any detail about your left eye colour.",
+        "answer": "Exactly as right eye"
+      },
+      {
+        "question": "Please, use this field to add any extra information about yourself",
+        "answer": ""
+      }
+    ]
+  ],
+  "rna_seq": [
+    {
+      "source_name": "Sample_5_PGPUK_B5",
+      "commentena_sample": "ERS2220945",
+      "commentbiosd_sample": "SAMEA104609663",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsdisease": "normal",
+      "characteristicssex": "female",
+      "characteristicsindividual": "uk33D02F",
+      "characteristicsage": "44.57",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicsclinical_history": "never smoked",
+      "characteristicsorganism_part": "blood",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-72313",
+      "extract_name": "Sample_5_PGPUK_B5",
+      "commentlibrary_layout": "PAIRED",
+      "commentlibrary_selection": "PolyA",
+      "commentlibrary_source": "TRANSCRIPTOMIC",
+      "commentlibrary_strategy": "RNA-Seq",
+      "commentnominal_length": "150",
+      "commentnominal_sdev": "1.91",
+      "commentorientation": "5'-3'-3'-5'",
+      "performer": "UCL",
+      "assay_name": "Sample_5_PGPUK_B5",
+      "technology_type": "sequencing assay",
+      "commentena_experiment": "ERX2373316",
+      "scan_name": "PGP_UK_RNAseq_P5_R1.fastq.gz",
+      "commentsubmitted_file_name": "PGP_UK_RNAseq_P5_R1.fastq.gz",
+      "commentena_run": "ERR2322363",
+      "commentfastq_uri": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_1.fastq.gz",
+      "commentspot_length": "302",
+      "commentread_index_1_base_coord": "152",
+      "derived_array_data_file": "  ",
+      "comment_derived_arrayexpress_ftp_file": "  ",
+      "factor_valueclinical_history": "never smoked",
+      "factor_valueindividual": "uk85AA3B",
+      "factor_valueprotocol": "RNA-seq",
+      "type": "rna_seq",
+      "accession": "E-MTAB-6523",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.sdrf.txt"
+    },
+    {
+      "source_name": "Sample_5_PGPUK_B5",
+      "commentena_sample": "ERS2220945",
+      "commentbiosd_sample": "SAMEA104609663",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsdisease": "normal",
+      "characteristicssex": "female",
+      "characteristicsindividual": "uk33D02F",
+      "characteristicsage": "44.57",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicsclinical_history": "never smoked",
+      "characteristicsorganism_part": "blood",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-72313",
+      "extract_name": "Sample_5_PGPUK_B5",
+      "commentlibrary_layout": "PAIRED",
+      "commentlibrary_selection": "PolyA",
+      "commentlibrary_source": "TRANSCRIPTOMIC",
+      "commentlibrary_strategy": "RNA-Seq",
+      "commentnominal_length": "150",
+      "commentnominal_sdev": "1.91",
+      "commentorientation": "5'-3'-3'-5'",
+      "performer": "UCL",
+      "assay_name": "Sample_5_PGPUK_B5",
+      "technology_type": "sequencing assay",
+      "commentena_experiment": "ERX2373316",
+      "scan_name": "PGP_UK_RNAseq_P5_R2.fastq.gz",
+      "commentsubmitted_file_name": "PGP_UK_RNAseq_P5_R2.fastq.gz",
+      "commentena_run": "ERR2322363",
+      "commentfastq_uri": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/003/ERR2322363/ERR2322363_2.fastq.gz",
+      "commentspot_length": "302",
+      "commentread_index_1_base_coord": "152",
+      "derived_array_data_file": "  ",
+      "comment_derived_arrayexpress_ftp_file": "  ",
+      "factor_valueclinical_history": "never smoked",
+      "factor_valueindividual": "uk85AA3B",
+      "factor_valueprotocol": "RNA-seq",
+      "type": "rna_seq",
+      "accession": "E-MTAB-6523",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.sdrf.txt"
+    },
+    {
+      "source_name": "Sample_5_PGPUK_B5",
+      "commentena_sample": "ERS2220945",
+      "commentbiosd_sample": "SAMEA104609663",
+      "characteristicsorganism": "Homo sapiens",
+      "characteristicsdisease": "normal",
+      "characteristicssex": "female",
+      "characteristicsindividual": "uk33D02F",
+      "characteristicsage": "44.57",
+      "unittime_unit": "year",
+      "term_source_ref": "EFO",
+      "term_accession_number": "UO_0000036",
+      "characteristicsclinical_history": "never smoked",
+      "characteristicsorganism_part": "blood",
+      "material_type": "organism part",
+      "protocol_ref": "P-MTAB-72313",
+      "extract_name": "Sample_5_PGPUK_B5_targeted",
+      "commentlibrary_layout": "SINGLE",
+      "commentlibrary_selection": "other",
+      "commentlibrary_source": "TRANSCRIPTOMIC",
+      "commentlibrary_strategy": "AMPLICON",
+      "commentnominal_length": "  ",
+      "commentnominal_sdev": "  ",
+      "commentorientation": "  ",
+      "performer": "UCL",
+      "assay_name": "Sample_5_PGPUK_B5_targeted",
+      "technology_type": "sequencing assay",
+      "commentena_experiment": "ERX2373330",
+      "scan_name": "PGP_UK_Targeted_RNAseq_P5.fastq.gz",
+      "commentsubmitted_file_name": "PGP_UK_Targeted_RNAseq_P5.fastq.gz",
+      "commentena_run": "ERR2322357",
+      "commentfastq_uri": "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR232/007/ERR2322357/ERR2322357.fastq.gz",
+      "commentspot_length": "50",
+      "commentread_index_1_base_coord": "26",
+      "derived_array_data_file": "PGP_Targeted_RNAseq_P5.bam",
+      "comment_derived_arrayexpress_ftp_file": "ftp://ftp.ebi.ac.uk/pub/databases/microarray/data/experiment/MTAB/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P5.bam",
+      "factor_valueclinical_history": "never smoked",
+      "factor_valueindividual": "uk481F67",
+      "factor_valueprotocol": "AmpliSeq",
+      "type": "rna_seq",
+      "accession": "E-MTAB-6523",
+      "meta_data_source": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.sdrf.txt"
+    }
+  ],
+  "genome_report": [
+    {
+      "published": "07/24/2017",
+      "pgp_hex_id": "uk33D02F",
+      "file_source": "PGP",
+      "data_type": "Genome Report",
+      "name": "Genome Report (Released by PGP-UK on 21 July 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/79/download",
+      "type": "genome_report"
+    }
+  ],
+  "methylome_report": [
+    {
+      "published": "03/08/2018",
+      "pgp_hex_id": "uk33D02F",
+      "file_source": "PGP",
+      "data_type": "Methylome Report",
+      "name": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/191/download",
+      "type": "methylome_report"
+    }
+  ],
+  "download_url": [
+    {
+      "type": "Methylation 450k Array Green Blood IDAT",
+      "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C02_Grn.idat"
+    },
+    {
+      "type": "Methylation 450k Array Red Blood IDAT",
+      "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R05C02_Red.idat"
+    },
+    {
+      "type": "Methylation 450k Array Green Saliva IDAT",
+      "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R04C02_Grn.idat"
+    },
+    {
+      "type": "Methylation 450k Array Red Saliva IDAT",
+      "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-5377/E-MTAB-5377.raw.1.zip/101130760049_R04C02_Red.idat"
+    },
+    {
+      "type": "Methylome Report (Released by PGP-UK on 8th March 2018)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/191/download"
+    },
+    {
+      "type": "Genome Report (Released by PGP-UK on 21 July 2017)",
+      "download_url": "https://my.personalgenomes.org.uk/datasets/79/download"
+    },
+    {
+      "type": "Transcriptomic - RNAseq BAM",
+      "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P5.bam"
+    },
+    {
+      "type": "Transcriptomic - RNAseq BAM",
+      "download_url": "https://www.ebi.ac.uk/arrayexpress/files/E-MTAB-6523/E-MTAB-6523.PGP_Targeted_RNAseq_P5.bam/PGP_Targeted_RNAseq_P5.bam"
+    }
+  ]
+}

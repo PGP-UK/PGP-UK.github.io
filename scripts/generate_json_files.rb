@@ -41,8 +41,8 @@ end
 
 def ena_eva_file_report_url(accession)
   url_start = 'https://www.ebi.ac.uk/ena/portal/api/filereport'
-  ["#{url_start}?accession=#{accession}&fields=all&result=read_run",
-   "#{url_start}?accession=#{accession}&fields=all&result=analysis"]
+  ["#{url_start}?fields=all&accession=#{accession}&result=read_run",
+   "#{url_start}?fields=all&accession=#{accession}&result=analysis"]
 end
 
 def queue_request(hydra, url)
@@ -55,7 +55,14 @@ def analyse_responses(responses)
   results = responses.map do |request|
     next unless request.response.success?
 
-    parse_tabular_results(request.response.body, request.base_url)
+    if request.base_url.match?(/accession=PRJEB17529&result=analysis$/)
+      # TODO - QUICK FIX FOR BAD EBI DATA
+      fname = Pathname.new(__dir__).parent + 'data' + 'PRJEB17529_analysis_files.tsv'
+      data = File.read(fname)
+      parse_tabular_results(data, request.base_url)
+    else
+      parse_tabular_results(request.response.body, request.base_url)
+    end
   end
   results += query_tapestry
   restructure_results(results.flatten)
@@ -119,11 +126,6 @@ end
 def restructure_results(results)
   r = {}
   results.compact.each do |result|
-    # skip the PGP100 VCF - because they have been uploaded badly...
-    if result[:type] == 'variant' && result[:analysis_accession] == 'ERZ1065952'
-      next
-    end
-
     pgp_id = get_pgp_id(result)
     next if pgp_id.to_s == 'ukD24C3E' # withdrawn participant
 

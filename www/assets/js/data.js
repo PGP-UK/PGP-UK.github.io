@@ -5,7 +5,7 @@ if (!PGP) {
 
 (function() {
   // PGP module
-  PGP.API_VERSION = 'v1.1';
+  PGP.API_VERSION = 'v1.3';
   PGP.init = function() {
     if (PGP.table_json !== undefined) {
       PGP.initializeTable('#data_table');
@@ -183,7 +183,7 @@ if (!PGP) {
     if (dataset.phenotype == undefined) {
       data = null;
     } else {
-      data = dataset.phenotype[0];
+      data = dataset.phenotype;
     }
     traits_html = PGP.updateTraitsHtml(data, traits_html);
     return traits_html;
@@ -197,18 +197,24 @@ if (!PGP) {
           'There is no trait data currently associated with this participant.'
         );
     } else {
-      for (var i = 0; i < data.length; i++) {
-        $('<div>')
-          .addClass('question')
-          .append(
-            $('<p>').append(
-              $('<strong>').text(i + 1 + '. ' + data[i].question),
-              $('<br>'),
-              $('<span>').text(data[i].answer),
-              $('<br>')
+      for (var j = 0; j < data.length; j++) {
+        $('<h4>' + data[j].name + '</h4>').appendTo(
+          $(traits_html).find('#child_template_body')
+        );
+        var question = data[j].data
+        for (var i = 0; i < question.length; i++) {
+          $('<div>')
+            .addClass('question')
+            .append(
+              $('<p>').append(
+                $('<strong>').text(i + 1 + '. ' + question[i].question),
+                $('<br>'),
+                $('<span>').text(question[i].answer),
+                $('<br>')
+              )
             )
-          )
-          .appendTo($(traits_html).find('#child_template_body'));
+            .appendTo($(traits_html).find('#child_template_body'));
+        }
       }
     }
     return traits_html;

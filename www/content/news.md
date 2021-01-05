@@ -4,6 +4,18 @@ header: News
 subheader: Read all about us!
 lead_paragraph: Selected news about the Personal Genome Project UK
 news_items:
+- date: Sep 2020
+  details: Full description of PGP-UK data analysis and reports generation is published in Frontiers in Genetics
+  link: https://www.frontiersin.org/articles/10.3389/fgene.2020.518644/full
+  type: Research Paper
+- date: Jan 2020
+  details: PGP-UK data is now available for analysis through the Galaxy platform
+  link: https://galaxyproject.eu/posts/2020/01/16/pgp/
+  type: News Article
+- date: Oct 2019
+  details: PGP-UK pilot data description is published in Nature Scientific Data journal
+  link: https://www.nature.com/articles/s41597-019-0205-4
+  type: Research Paper
 - date: Apr 2019
   details: "New technologies and sharing comprehensive personal precision-medicine data - Keynote lecture by George Church (Harvard University, USA) at Personal Genomes: Accessing, Sharing and Interpretation conference (11-12 April 2019)"
   link: https://www.youtube.com/watch?v=E60Rp-axhT8&feature=youtu.be&utm_campaign=1468209_Upcoming+deadlines+%28May-June+19%29&utm_medium=email&utm_source=Connecting+Science&dm_i=2SUU%2CVGVL%2CUTIB3%2C39R42%2C1

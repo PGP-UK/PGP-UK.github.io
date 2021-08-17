@@ -121,38 +121,12 @@ team_members:
     scholar: https://scholar.google.com/citations?user=TCB24ysAAAAJ
     university: https://iris.ucl.ac.uk/iris/browse/profile?upi=SECKE34
 - hover_text: "Find me below:"
-  image: "/images/team_stamatina.jpg"
-  name: Stamatina Liosi
-  text: Bioethics & Legal
-  social:
-    linkedin: https://www.linkedin.com/in/stamatina-liosi-432503147/
-    twitter: https://twitter.com/MatinaLiosi
-    wordpress:
-    github:
-    medium:
-    researchgate:
-    scholar:
-    university: https://iris.ucl.ac.uk/iris/browse/profile?upi=SLIOS34
-- hover_text: "Find me below:"
   image: "/images/team_Alison_Berner.jpg"
   name: Alison Berner
   text: Medical Doctor
   social:
     linkedin:
     twitter: https://twitter.com/DrAllyCat
-    wordpress:
-    github:
-    medium:
-    researchgate:
-    scholar:
-    university:
-- hover_text: "Find me below:"
-  image: "/images/team_lauren_marks.jpg"
-  name: Lauren Marks
-  text: Media & Communications Lead
-  social:
-    linkedin: https://www.linkedin.com/in/lauren-marks-5a2301121/
-    twitter: https://twitter.com/uhhlaurenmary
     wordpress:
     github:
     medium:
@@ -172,9 +146,28 @@ team_members:
     researchgate:
     scholar:
     university: https://www.dundee.ac.uk/people/paul-harrison
+- hover_text: "Find me below:"
+  image: "/images/team_ishaq_moghul.png"
+  name: Ishaq Moghul
+  text: Frontend Developer
+  social:
+    linkedin: https://www.linkedin.com/in/ishaq-moghul/
+    twitter:
+    wordpress:
+    github: https://github.com/ishaqmoghul
+    medium:
+    researchgate:
+    scholar:
+    university:
 alumni:
   header: Alumni
   team_members:
+  - name: Stamatina Liosi
+    title: Bioethics & Legal
+    time: "- 2021"
+  - name: Lauren Marks
+    title: Media & Communications Lead
+    time: "- 2021"
   - name: Rifat Hamoudi
     title: Computational Analysis and Software Development Leader
     time: 2015 - 2018
@@ -202,4 +195,5 @@ alumni:
   - name: Polly Kerr
     title: Student
     time: 2015 - 2017
+
 ---

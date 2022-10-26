@@ -171,9 +171,6 @@ alumni:
   - name: Rifat Hamoudi
     title: Computational Analysis and Software Development Leader
     time: 2015 - 2018
-  - name: Sevgi Umur
-    title: Testing and Development
-    time: 2015 - 2016
   - name: Erica Jones
     title: Administration Leader
     time: 2014 - 2018
@@ -195,5 +192,8 @@ alumni:
   - name: Polly Kerr
     title: Student
     time: 2015 - 2017
+  - name: Sevgi Umur
+    title: Testing and Development
+    time: 2015 - 2016
 
 ---

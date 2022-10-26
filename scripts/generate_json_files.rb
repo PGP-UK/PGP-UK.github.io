@@ -71,7 +71,7 @@ end
 def parse_tabular_results(body, request_url)
   csv = CSV.new(body, headers: true, header_converters: :symbol, col_sep: "\t")
   csv.to_a.map do |row|
-    data_hash = row.to_hash&.delete_if { |_, v| v.nil? || v.empty? }
+    data_hash = row.to_hash&.delete_if { |_, v| v.nil? || v.empty? }&.transform_values { |v| v.force_encoding('utf-8') }
     type = determine_type(data_hash, request_url)
     data_hash.merge!(type)
   end

@@ -176,7 +176,7 @@ alumni:
     time: 2015 - 2016
   - name: Erica Jones
     title: Administration Leader
-    time: 2015 - 2017
+    time: 2014 - 2018
   - name: Sharmini Rajanayagam
     title: Postdoc
     time: 2015 - 2017

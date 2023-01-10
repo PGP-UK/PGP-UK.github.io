@@ -10,7 +10,9 @@ body: |
 
   #### Information Collection and Use
 
-  For a better experience, while using our app, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy.
+  PGP-UK does not collect, store, use or share any information, personal or otherwise on the GenoME app.
+
+  If you email PGP-UK for support or other feedback, the emails with email addresses will be retained for quality assurance purposes. The email addresses will be used only to reply to the concerns or suggestions raised and will never be used for any marketing purpose.
 
   The app does use third-party services that may collect information used to identify you. Here are links to the privacy policy of third-party service providers used by the app\:
 
@@ -24,7 +26,7 @@ body: |
 
   #### Third-party Service Providers
 
-  We may employ third-party companies due to the following reasons:
+  We may employ third-party companies due to the following reasons\:
 
   * To facilitate our app;
   * To provide the app on our behalf;
@@ -51,7 +53,7 @@ body: |
 
   We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.
 
-  This policy is effective as of 2023-01-10
+  This policy is effective as of 10th January 2023.
 
   #### Contact Us
 

@@ -159,6 +159,46 @@ team_members:
     researchgate:
     scholar:
     university:
+- hover_text: "Find me below:"
+  image: "/images/team_errolson_gonito.jpg"
+  name: Errolson Gonito
+  text: Frontend Developer
+  social:
+    linkedin:
+    twitter:
+    wordpress:
+    github: https://github.com/E-gonito
+    medium:
+    researchgate:
+    scholar:
+    university:
+- hover_text: "Find me below:"
+  image: "/images/team_nathanial_donato.jpg"
+  name: Nathaniel Donato
+  text: Frontend Developer
+  social:
+    linkedin: https://www.linkedin.com/in/nathaniel-donato-843aa4161/
+    twitter: https://twitter.com/NateCreedDonato
+    wordpress:
+    github: https://github.com/NateCreedDonato
+    medium:
+    researchgate:
+    scholar:
+    university:
+- hover_text: "Find me below:"
+  image: "/images/team_ron_finn.jpeg"
+  name: Ron Finn
+  text: Frontend Developer
+  social:
+    linkedin: https://www.linkedin.com/in/ron-finn-736057107/
+    twitter: https://twitter.com/Finnsense
+    wordpress:
+    github: https://github.com/ronfinn
+    medium:
+    researchgate:
+    scholar:
+    university:
+
 alumni:
   header: Alumni
   team_members:

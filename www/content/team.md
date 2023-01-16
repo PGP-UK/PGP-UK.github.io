@@ -149,7 +149,7 @@ team_members:
 - hover_text: "Find me below:"
   image: "/images/team_ishaq_moghul.png"
   name: Ishaq Moghul
-  text: Frontend Developer
+  text: Frontend & Mobile Developer
   social:
     linkedin: https://www.linkedin.com/in/ishaq-moghul/
     twitter:
@@ -162,7 +162,7 @@ team_members:
 - hover_text: "Find me below:"
   image: "/images/team_errolson_gonito.jpg"
   name: Errolson Gonito
-  text: Frontend Developer
+  text: Frontend & Mobile Developer
   social:
     linkedin:
     twitter:
@@ -175,7 +175,7 @@ team_members:
 - hover_text: "Find me below:"
   image: "/images/team_nathanial_donato.jpg"
   name: Nathaniel Donato
-  text: Frontend Developer
+  text: Frontend & Mobile Developer
   social:
     linkedin: https://www.linkedin.com/in/nathaniel-donato-843aa4161/
     twitter: https://twitter.com/NateCreedDonato
@@ -188,7 +188,7 @@ team_members:
 - hover_text: "Find me below:"
   image: "/images/team_ron_finn.jpeg"
   name: Ron Finn
-  text: Frontend Developer
+  text: Frontend & Mobile Developer
   social:
     linkedin: https://www.linkedin.com/in/ron-finn-736057107/
     twitter: https://twitter.com/Finnsense

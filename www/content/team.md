@@ -147,7 +147,7 @@ team_members:
     scholar:
     university: https://www.dundee.ac.uk/people/paul-harrison
 - hover_text: "Find me below:"
-  image: "/images/team_ishaq_moghul.png"
+  image: "/images/team_ishaq_moghul.jpg"
   name: Ishaq Moghul
   text: Frontend & Mobile Developer
   social:

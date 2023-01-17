@@ -198,6 +198,19 @@ team_members:
     researchgate:
     scholar:
     university:
+- hover_text: "Find me below:"
+  image: "/images/team_chiara.jpeg"
+  name: https://www.linkedin.com/in/chiara-zambianchi/
+  text: Bioinformatician
+  social:
+    linkedin: https://www.linkedin.com/in/chiara-zambianchi/
+    twitter:
+    wordpress:
+    github:
+    medium:
+    researchgate:
+    scholar:
+    university:
 
 alumni:
   header: Alumni

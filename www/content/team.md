@@ -199,8 +199,8 @@ team_members:
     scholar:
     university:
 - hover_text: "Find me below:"
-  image: "/images/team_chiara.jpeg"
-  name: https://www.linkedin.com/in/chiara-zambianchi/
+  image: "/images/team_chiara.jpg"
+  name: Chiara Zambianchi
   text: Bioinformatician
   social:
     linkedin: https://www.linkedin.com/in/chiara-zambianchi/

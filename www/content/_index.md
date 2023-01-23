@@ -129,7 +129,8 @@ genome_section:
   subheader: Discover the secrets hidden in human DNA.
   body: Learn more about ancestry, traits, health and environmental exposures of our
     ambassadors.
-  apple_store_link: https://itunes.apple.com/gb/app/genome/id1358680703?mt=8
+  apple_store_link: https://apps.apple.com/app/genome/id1358680703
+  android_store_link: https://play.google.com/store/apps/details?id=uk.org.personalgenomes.genome
   intro_video:
     link: https://www.youtube.com/watch?v=4Mmd2B8vQSU
     btn_text: View Introductory Video

@@ -152,11 +152,18 @@
         {{.body | markdownify}}
       </div>
       <div class="clearfix"></div>
-      <a href="{{.apple_store_link}}" class="btn-app-store" style="margin-top:4rem;">
-        {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/app-store.png" ) }}
-          <img src="{{.Permalink}}">
-        {{end}}
-      </a>
+      <div style="margin-top:4rem; display: flex; align-content: center; justify-content: center; flex-wrap: wrap;">
+        <a href="{{.apple_store_link}}" target="_blank" class="" style="border-bottom:none; display: flex; align-content: center;flex-wrap: wrap;">
+          {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/apple-app-store.svg" ) }}
+            <img src="{{.Permalink}}" style="height: 64px;">
+          {{end}}
+        </a>
+        <a href="{{.android_store_link}}" target="_blank" class="" style="border-bottom:none; display: flex; align-content: center;flex-wrap: wrap;">
+          {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/google-play-badge.png" ) }}
+            <img src="{{.Permalink}}" style="max-height: 90px;">
+          {{end}}
+        </a>
+      </div>
       <div class="clearfix"></div>
       <a href="{{.intro_video.link}}" class="btn btn-default waves-effect waves-light play-btn btn-icon-left">
         <i class="far fa-video"></i>&nbsp;&nbsp;{{.intro_video.btn_text}}

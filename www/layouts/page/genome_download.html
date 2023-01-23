@@ -92,14 +92,15 @@
     var i, os = ['Windows', 'Android', 'Unix', 'Mac', 'Linux', 'BlackBerry'];
     for (i = 0; i < os.length; i++) if (new RegExp(os[i],'i').test(uA)) return os[i];
   }
-  const androidStoreLink = "https://apps.apple.com/app/genome/id1358680703"
-  const appleStoreLink = "https://play.google.com/store/apps/details?id=uk.org.personalgenomes.genome"
+  const appleStoreLink = "https://apps.apple.com/app/genome/id1358680703"
+  const androidStoreLink = "https://play.google.com/store/apps/details?id=uk.org.personalgenomes.genome"
   $(document).on("ready", function () {
-    const os = getOS()
+    let os = getOS()
     if (os === 'Android') {
-      $('#android_link').click()
-    } else if (os === 'Mac' || os == 'iOS') {
-      $('#apple_link').click()
+      window.open(androidStoreLink, '_top')
+    }
+    if (os === 'Mac' || os === 'iOS') {
+      window.open(appleStoreLink, '_top')
     }
   });
 </script>

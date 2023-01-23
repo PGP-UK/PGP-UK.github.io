@@ -1,0 +1,107 @@
+{{define "main"}}
+
+
+<!-- Download GenoME App -->
+{{with .Params.genome_section}}
+
+<section id="genome_section" class=" border-top fw-section padding-top-3x padding-bottom-3x">
+  <div class="container text-center">
+    <h2 class="block-title scrollReveal sr-bottom sr-ease-in-out-back">{{.header}}
+      <small>{{.subheader}}</small>
+    </h2>
+    <div class="scrollReveal sr-bottom sr-delay-1 sr-ease-in-out-back">
+      <video width="100%" autoplay="true" muted="true">
+        {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/genome_logo.mp4" ) }}
+          <source src="{{.Permalink}}" type="video/mp4" />
+        {{end}}
+      </video>
+      <div class="text-gray text-lg text-center mobile-center">
+        {{.body | markdownify}}
+      </div>
+      <div class="clearfix"></div>
+      <div style="margin-top:4rem; display: flex; align-content: center; justify-content: center; flex-wrap: wrap;">
+        <a id="apple_link" href="{{.apple_store_link}}" target="_blank" class="" style="border-bottom:none; display: flex; align-content: center;flex-wrap: wrap;">
+          {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/apple-app-store.svg" ) }}
+            <img src="{{.Permalink}}" style="height: 64px;">
+          {{end}}
+        </a>
+        <a id="android_link" href="{{.android_store_link}}" target="_blank" class="" style="border-bottom:none; display: flex; align-content: center;flex-wrap: wrap;">
+          {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" "/images/google-play-badge.png" ) }}
+            <img src="{{.Permalink}}" style="max-height: 90px;">
+          {{end}}
+        </a>
+      </div>
+      <div class="clearfix"></div>
+      <a href="{{.intro_video.link}}" class="btn btn-default waves-effect waves-light play-btn btn-icon-left">
+        <i class="far fa-video"></i>&nbsp;&nbsp;{{.intro_video.btn_text}}
+      </a>
+    </div>
+  </div>
+</section>
+{{end}}
+
+
+{{with .Params.ambassadors_section}}
+<section class="fw-section next-to-footer border-bottom padding-top-3x padding-bottom-3x" style="background-color: #FBFCFD">
+  <div class="container">
+    <h2 class="block-title text-center scrollReveal sr-bottom sr-ease-in-out-back">
+      {{.header}}
+      <small>{{.subheader}}</small>
+    </h2>
+    <div class="row padding-top">
+      {{ range $i, $ambassador := .ambassadors}}
+      <div class="col-lg-3 col-sm-6 scrollReveal sr-bottom sr-ease-in-out-back
+        {{if ne $i 0 }} sr-delay-{{$i}} {{end}} ">
+        <div class="teammate-2 mobile-center">
+          <div class="thumbnail" onclick="$('.pgp_participant_{{$i}}_modal').modal('show');" style="cursor: pointer;">
+            {{ with ($.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/images/" $ambassador.img ) }}
+              <img src="{{.Permalink}}" alt="PGP Ambassador">
+            {{end}}
+            <div class="social-bar">
+              <a class="btn btn-default waves-effect waves-light btn-icon-left">
+                <i class="far fa-video"></i>&nbsp;&nbsp;View Intro Videos
+              </a>
+            </div>
+          </div>
+          <h3 class="teammate-name" style="text-align:center;">{{$ambassador.header}}</h3>
+          <span class="teammate-position" style="text-align:center;">{{$ambassador.subheader}}</span>
+        </div>
+      </div>
+      {{end}}
+    </div>
+
+    <div class="text-center scrollReveal sr-bottom sr-ease-in-out-back">
+      <p>Click on an ambassador for videos on their PGP-UK story!</p>
+      <a href="{{.action_btn.link}}" class="btn btn-default btn-icon-right waves-effect waves-light">
+        {{.action_btn.text}}
+        <i class="{{.action_btn.icon}}"></i>
+      </a>
+    </div>
+  </div>
+</section>
+{{end}}
+
+{{ partial "video_modal" . }}
+
+
+<script>
+  function getOS() {
+    var uA = navigator.userAgent || navigator.vendor || window.opera;
+    if ((/iPad|iPhone|iPod/.test(uA) && !window.MSStream) || (uA.includes('Mac') && 'ontouchend' in document)) return 'iOS';
+
+    var i, os = ['Windows', 'Android', 'Unix', 'Mac', 'Linux', 'BlackBerry'];
+    for (i = 0; i < os.length; i++) if (new RegExp(os[i],'i').test(uA)) return os[i];
+  }
+  const androidStoreLink = "https://apps.apple.com/app/genome/id1358680703"
+  const appleStoreLink = "https://play.google.com/store/apps/details?id=uk.org.personalgenomes.genome"
+  $(document).on("ready", function () {
+    const os = getOS()
+    if (os === 'Android') {
+      $('#android_link').click()
+    } else if (os === 'Mac' || os == 'iOS') {
+      $('#apple_link').click()
+    }
+  });
+</script>
+
+{{end}}

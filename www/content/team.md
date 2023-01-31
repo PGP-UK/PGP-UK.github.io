@@ -84,7 +84,7 @@ team_members:
 - hover_text: "Find me below:"
   image: "/images/team_Ismail_Moghul.jpeg"
   name: Ismail Moghul
-  text: Data Analyst & Backend Lead
+  text: Data Analysis & Application Leader
   social:
     linkedin: https://linkedin.com/in/ismail-moghul
     twitter: https://twitter.com/Ismail_Moghul

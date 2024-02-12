@@ -173,6 +173,19 @@ team_members:
     scholar:
     university:
 - hover_text: "Find me below:"
+  image: "/images/team_hassan_ansari.jpg"
+  name: Hassan Ansari
+  text: Frontend & Mobile Developer
+  social:
+    linkedin: https://www.linkedin.com/in/hassansari4a/
+    twitter:
+    wordpress:
+    github: https://github.com/hassansari4a
+    medium:
+    researchgate:
+    scholar:
+    university:
+- hover_text: "Find me below:"
   image: "/images/team_nathanial_donato.jpg"
   name: Nathaniel Donato
   text: Frontend & Mobile Developer

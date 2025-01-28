@@ -2,7 +2,7 @@
 
 require 'json'
 require 'pathname'
-require 'uri'
+require 'cgi'
 
 def get_wgs_links(id, wgs)
   return if wgs.nil?
@@ -86,7 +86,7 @@ def generate_urls(hash, keys, is_array = false)
   urls = keys.map do |k|
     is_array ? hash.map { |h| h[k]&.split(';') } : hash[k]&.split(';')
   end.flatten.compact
-  urls.map { |e| URI.encode(e) }
+  urls.map { |e| CGI.escape(e) }
 end
 
 def process_links(links, id, type)

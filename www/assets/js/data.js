@@ -158,7 +158,7 @@ if (!PGP) {
   PGP.addReports = function(data, child_html, type, wrapper_id) {
     if (data[type] == undefined) return;
     for (var i = 0; i < data[type].length; i++) {
-      $('<a download="">')
+      $('<a>')
         .addClass('btn btn-3d btn-default btn-icon-left btn-lg')
         .css('margin-right', '5px')
         .attr('type', 'button')
@@ -282,7 +282,7 @@ if (!PGP) {
       $(file_html)
         .find('.' + data[i].section)
         .append(
-          $('<a download="">')
+          $('<a>')
             .addClass('btn btn-3d btn-default btn-icon-left btn-lg')
             .css('margin-right', '10px')
             .attr('type', 'button')
